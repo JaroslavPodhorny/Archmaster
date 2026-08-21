@@ -8,7 +8,7 @@ The main idea is that expensive platforms where the test sheets mimic CERMAT tes
 
 I want this project aspire to be a platform that can be deployed to several thousand of active users and to be a product that is worth purchasing not AI-slop exam preparation that already exists in some form somewhere.
 
-The platform is meant to prepare the student by familiarizing him with CERMAT type question through repeated tesing and reinforcement. It is meant to replace the [Todáš](https://www.todas.cz) - a platform that provides students with practice CERMAT test in pdf form and live streams where the write and correct them.
+The platform is meant to prepare the student by familiarizing him with CERMAT type question through repeated tesing and reinforcement. It is meant to replace the [Todáš](https://www.to-das.cz) - a platform that provides students with practice CERMAT test in pdf form and live streams where the write and correct them.
 
 ## Tech Stack
 
