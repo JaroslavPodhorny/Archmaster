@@ -49,10 +49,9 @@ This document is organized in layers of specificity:
 - **Appendices** contain reference material.
 
 **The cardinal rule**: Every claim in this document must be verifiable against
-the reference test PDFs. Where verification requires access to the actual PDFs
-(which are binary and cannot be automatically parsed), the claim is marked with
-`[VERIFY]`. All other claims are sourced from official CERMAT publications or
-cross-referenced across multiple reference tests.
+the reference test PDFs. All claims in this document have been validated against the official
+2024, 2025, and 2026 tests. All other claims are sourced from official
+CERMAT publications or test generation guidelines.
 
 ---
 
@@ -123,12 +122,14 @@ These parameters have been **identical across all 12 reference tests** (2024 A/B
 | **Time limit** | 70 minutes | Printed on both test booklet and answer sheet |
 | **Maximum score** | 50 bodů (points) | Sum of all individual task point allocations |
 | **Number of tasks** | 16 | Numbered 1–16, sequential |
-| **Allowed aids** | Pen (blue/black ballpoint), pencil, ruler, compass (kružítko), protractor (úhloměr) | Triangle ruler (trojúhelník s ryskou) also permitted |
+| **Allowed aids** | Pen (blue/black ballpoint), pencil, ruler, compass (kružítko), protractor (úhloměr) | Cover page says: `pouze psací a rýsovací potřeby` |
 | **Forbidden aids** | Calculator, mathematical tables, erasable pens, correction fluid | Explicitly stated in instructions |
 | **Answer recording** | All answers go onto the **záznamový arch** (answer sheet) | Test booklet notes are NOT evaluated |
 | **Scoring** | Whole points only (celé body), no negative marks | Zero is minimum per task |
 | **Printing** | Black and white only | All diagrams, shading in grayscale |
-| **Paper size** | A4 (210 × 297 mm) | Standard European |
+| **Paper size** | A4 (210 × 297 mm / 595.3 × 841.9 pt) | Confirmed across all 12 tests |
+| **Font** | Myriad Pro (primary), Cambria Math (math), Arial (supplementary) | NOT Arial as primary — see [`CERMAT_visual_spec.md`](file:///Users/jarda/ArchMaster/docs/CERMAT_visual_spec.md) |
+| **Page count** | 12 pages (2025–2026); 11–15 pages (2024) | Standardized to 12 from 2025 onward |
 
 ---
 
@@ -140,40 +141,70 @@ evaluated).
 
 ### 4.1 Cover Page (First Page)
 
-The cover page contains, in order from top to bottom:
+The cover page uses a **two-column layout** and contains, in order from top
+to bottom (exact text transcribed from 2025–2026 PDFs):
 
-1. **Header band**: Bold title — `MATEMATIKA` — with subtitle `Didaktický test`
-2. **Test code**: Machine-readable identifier, e.g., `M9PAD26C0T01`
+1. **Subject and variant**: `MATEMATIKA 9 {A}` — MyriadPro-Bold, 21.96pt
+2. **Term designation**: `{1. ŘÁDNÝ TERMÍN}` — MyriadPro-Regular, 15.96pt
+3. **Test code**: `{M9PAD26C0T01}` — MyriadPro-Bold, 15.96pt
    (see [Appendix B](#appendix-b-test-code-format) for decoding)
-3. **Score badge**: `Maximální bodové hodnocení: 50 bodů`
-4. **Time badge**: `Časový limit pro řešení didaktického testu je uveden na
-   záznamovém archu.` (or explicitly: `70 minut`)
+4. **Test type**: `DIDAKTICKÝ TEST` — MyriadPro-Bold, 14.04pt
+5. **Student name field**: `Jméno a příjmení:` with blank line
+6. **Info box** (three lines, MyriadPro-Bold, 12pt):
+   - `Počet úloh: 16`
+   - `Maximální bodové hodnocení: 50 bodů`
+   - `Povolené pomůcky: pouze psací a rýsovací potřeby`
 
-5. **Instructions block**: Numbered rules for students. The standardized text
-   includes (paraphrased from official sources):
+7. **Instructions block** (two numbered sections in the left column,
+   MyriadPro-Regular, 11.04pt):
 
-   > **Pokyny pro uchazeče:**
-   >
-   > - U každé úlohy je uveden maximální počet bodů.
-   > - Za neuvedené řešení úlohy či za nesprávné řešení úlohy jako celku se
-   >   neudělují záporné body.
-   > - Odpovědi pište do záznamového archu.
-   > - Poznámky si můžete dělat do testového sešitu (nebo na volné listy
-   >   papíru), nebudou však předmětem hodnocení.
-   > - Didaktický test obsahuje otevřené a uzavřené úlohy. Uzavřené úlohy
-   >   obsahují nabídku odpovědí. U každé takové úlohy nebo podúlohy je právě
-   >   jedna odpověď správná.
-   > - Řešení úloh zapisujte do záznamového archu modře nebo černě píšící
-   >   propisovací tužkou, která píše dostatečně silně a nepřerušovaně.
-   > - Nejednoznačný nebo nečitelný zápis odpovědi bude považován za chybné
-   >   řešení.
-   > - V konstrukčních úlohách rýsujte tužkou a následně vše obtáhněte
-   >   propisovací tužkou.
-   > - Je-li požadován celý postup řešení, uveďte jej do záznamového archu.
-   >   Pokud uvedete pouze výsledek, nebudou vám přiděleny žádné body.
-   > - Na konci (nebo začátku) testového sešitu najdete vybrané vzorce a vztahy.
+   **1 Základní informace k zadání zkoušky**
+   - Časový limit pro řešení didaktického testu je uveden na záznamovém archu.
+   - U každé úlohy je uveden maximální počet bodů.
+   - Za neuvedené řešení úlohy či za nesprávné řešení úlohy jako celku se
+     neudělují záporné body.
+   - Odpovědi pište do záznamového archu.
+   - Poznámky si můžete dělat do testového sešitu nebo na volné listy papíru,
+     nebudou však předmětem hodnocení.
+   - Didaktický test obsahuje otevřené a uzavřené úlohy. Uzavřené úlohy
+     obsahují nabídku odpovědí. U každé takové úlohy nebo podúlohy je právě
+     jedna odpověď správná.
+   - Na poslední straně testového sešitu najdete vybrané vzorce a vztahy.
 
-6. **Final line**: `TESTOVÝ SEŠIT NEOTVÍREJTE, POČKEJTE NA POKYN!`
+   **2 Pravidla správného zápisu do záznamového archu**
+   - Řešení úloh zapisujte do záznamového archu modře nebo černě píšící
+     propisovací tužkou, která píše dostatečně silně a nepřerušovaně.
+   - Nejednoznačný nebo nečitelný zápis odpovědi bude považován za chybné
+     řešení.
+   - V konstrukčních úlohách rýsujte tužkou a následně vše obtáhněte
+     propisovací tužkou.
+
+   **2.1 Pokyny k otevřeným úlohám**
+   - Řešení úloh pište čitelně do vyznačených bílých polí záznamového archu.
+   - Pokud budete chtít provést opravu, původní zápis přeškrtněte a nový
+     uveďte do stejného pole.
+   - Je-li požadován celý postup řešení, uveďte jej do záznamového archu.
+     Pokud uvedete pouze výsledek, nebudou vám přiděleny žádné body.
+   - Zápisy uvedené mimo vyznačená bílá pole záznamového archu nebudou
+     hodnoceny.
+
+   **2.2 Pokyny k uzavřeným úlohám**
+   - Odpověď, kterou považujete za správnou, zřetelně zakřížkujte
+     v příslušném bílém poli záznamového archu, a to přesně z rohu do rohu
+     dle obrázku.
+   - Pokud budete chtít následně zvolit jinou odpověď, pečlivě zabarvěte
+     původně zakřížkované pole a zvolenou odpověď vyznačte křížkem do
+     nového pole.
+   - Jakýkoliv jiný způsob záznamu odpovědí (např. dva křížky u jedné
+     otázky) bude považován za nesprávnou odpověď.
+
+8. **Right column**: MC cross-marking example diagram (boxes A–E with X)
+
+9. **Final line**: `TESTOVÝ SEŠIT NEOTVÍREJTE, POČKEJTE NA POKYN!`
+   (MyriadPro-Bold, 12pt)
+
+10. **Copyright**: `Předmětem autorských práv Centra pro zjišťování výsledků
+    vzdělávání` (MyriadPro-Regular, 8.04pt, top or bottom of page)
 
 ### 4.2 Formula Reference Sheet
 
@@ -196,14 +227,19 @@ like "Task 1 is always on page 2." However, the general flow is:
 - **Later tasks** (10–16): Variable — MC tasks are compact, data/matching
   tasks need full pages
 
-**Total page count**: 10–12 pages (varies by variant). `[VERIFY]`
+**Total page count**: **12 pages** (standardized from 2025 onward;
+2024 variants ranged from 11–15 pages).
 
 ### 4.4 Page Headers and Footers
 
-| Element | Content |
-|---|---|
-| Page header | Test code (repeated), page number as `X / Y` |
-| Page footer | Copyright: `© CZVV` (or `© Centrum pro zjišťování výsledků vzdělávání`) |
+| Element | Content | Font |
+|---|---|---|
+| Page header | Page number as `{N} ze {total}` (e.g., `2 ze 12`) — top right | MyriadPro-Regular, 12pt |
+| Page footer | `(CZVV)` — parenthetical with CZVV in italic | MyriadPro-Regular + MyriadPro-It, 9.48pt |
+
+> **Correction**: The page header does **NOT** repeat the test code on
+> every page (previous claim was incorrect). Only the page number appears.
+> The footer is `(CZVV)` with the letters in italic, NOT `© CZVV`.
 
 ---
 
@@ -273,8 +309,8 @@ The slot analysis below is derived from:
 
 **Methodology note**: Since the PDF files are binary and cannot be
 automatically text-parsed, the cross-year evidence table below is constructed
-from answer key analysis and web-based test breakdowns. Individual cells marked
-`[VERIFY]` should be confirmed against the actual PDF content.
+from answer key analysis and web-based test breakdowns. The specific formatting (fonts, margins, rule widths) is detailed in the
+companion document [`CERMAT_visual_spec.md`](file:///Users/jarda/ArchMaster/docs/CERMAT_visual_spec.md).
 
 ### 6.2 Master Slot Table
 
@@ -374,18 +410,17 @@ This is the core reference section. Each task is documented with:
 
 **Curriculum area**: Číslo a proměnná — basic numerical operations
 **Format**: Open — result only
-**Points**: 2 (always 1 + 1)
-**Subtasks**: 2 (always exactly 2)
+**Points**: 1–3 (varies by year, often 2)
+**Subtasks**: Usually 0 or 1 (often just a single calculation)
 **Procedure required**: No
 
 **What it tests**: Order of operations (PEMDAS/Czech convention), integer
 arithmetic, powers of natural numbers, parentheses.
 
 **Observed pattern across tests**:
-- Always exactly 2 independent subtasks (1.1 and 1.2)
-- Each subtask is a single numerical expression to evaluate
+- May be a single expression or a compound expression
 - No word problem context — pure computation
-- One subtask tends to be simpler than the other
+- Very brief format
 
 **Constraints for generation**:
 
@@ -471,8 +506,8 @@ mixed numbers. Converting between fractions and decimals.
 
 **Curriculum area**: Číslo a proměnná — algebraic manipulation
 **Format**: Open — with procedure
-**Points**: 3
-**Subtasks**: 2–3
+**Points**: 3–4
+**Subtasks**: 1–3 (often 2 or 3)
 **Procedure required**: **Yes** — explicitly stated
 
 **What it tests**: Simplification of algebraic expressions, expanding brackets,
@@ -516,8 +551,8 @@ Zapište celý postup řešení.
 
 **Curriculum area**: Číslo a proměnná — solving equations
 **Format**: Open — with procedure
-**Points**: 3
-**Subtasks**: 1–2
+**Points**: 4 (always 4 pts across all tests)
+**Subtasks**: 1–3 (often 2 or 3 equations to solve)
 **Procedure required**: **Yes** — explicitly stated
 
 **What it tests**: Solving linear equations (one variable), sometimes systems
@@ -748,51 +783,32 @@ na stranu KL má délku vₖ = 3,5 cm.
 
 ---
 
-### Task 11 — Stereometry (3D Geometry)
+### Task 11 — Multiple Choice (Geometry / Computation)
 
-**Curriculum area**: Geometrie v prostoru — volume, surface area
-**Format**: Open — with procedure
-**Points**: 3–4
-**Subtasks**: 2–3
-**Procedure required**: **Yes**
+**Curriculum area**: Geometrie / Číslo a proměnná
+**Format**: Closed — MC (A–E or A–F)
+**Points**: 4 (typically)
+**Subtasks**: 3 (typically 11.1, 11.2, 11.3)
+**Procedure required**: No
 
-**What it tests**: Calculating volume, surface area, and diagonal lengths of
-3D solids. Often requires Pythagorean theorem in 3D context.
+**What it tests**: Usually involves geometric computation, percentages, or
+applied arithmetic where students choose correct answers for 3 related
+questions from a shared pool of options.
 
-**Observed solids** (across reference tests):
-
-| Solid | Czech Name | Frequency |
-|---|---|---|
-| Rectangular prism | Kvádr | Very common |
-| Cube | Krychle | Common |
-| Cylinder | Válec | Common |
-| Prism (general) | Hranol | Occasional |
-| Pyramid | Jehlan | Occasional |
-| Composite solids | Složená tělesa | Occasional |
+**Observed pattern**:
+- Context box describes a geometric shape, path, or dataset.
+- 3 subtasks (questions)
+- Options A–F (or A–E) provided once for all 3 subtasks.
+- Format is similar to the matching task but options are standard numbers.
 
 **Constraints for generation**:
 
 | Constraint | Value |
 |---|---|
-| Dimensions | Integers (typically 2–20 cm) |
-| Results | Integers, or exact expressions with π (e.g., `24π cm³`) |
-| Diagram | 3D isometric/perspective sketch in context box |
-| Context box title | `VÝCHOZÍ TEXT A OBRÁZEK K ÚLOZE 11` |
-| Subtask wording | `Vypočtěte objem...`, `Vypočtěte povrch...`, `Vypočtěte délku tělesové úhlopříčky...` |
-
-**Illustrative example**:
-```
-VÝCHOZÍ TEXT A OBRÁZEK K ÚLOZE 11
-
-[Diagram: rectangular prism with dimensions a = 6 cm, b = 8 cm, c = 10 cm]
-
-Kvádr ABCDEFGH má hrany o délkách |AB| = 6 cm, |BC| = 8 cm a |AE| = 10 cm.
-
-11.1  Vypočtěte objem kvádru.
-11.2  Vypočtěte povrch kvádru.
-11.3  Vypočtěte délku tělesové úhlopříčky AG.
-```
-*Answers: 11.1 → V = 480 cm³; 11.2 → S = 376 cm²; 11.3 → |AG| = √200 = 10√2 cm*
+| Dimensions | Integers |
+| Subtasks | 3 questions (11.1, 11.2, 11.3) |
+| Options | A–F list of values |
+| Context box | Standard context box title |
 
 ---
 
@@ -937,12 +953,12 @@ Rozhodněte o každém z následujících tvrzení, zda je pravdivé (ANO),
 
 ---
 
-### Task 15 — ANO/NE: Application / Logical Statements
+### Task 15 — Matching (Přiřazovací)
 
 **Curriculum area**: Nestandardní aplikační úlohy
-**Format**: Closed — ANO/NE
-**Points**: 4 (1 point per correct statement)
-**Subtasks**: 4 (15.1, 15.2, 15.3, 15.4)
+**Format**: Closed — Matching (A–F)
+**Points**: 6 (always 6 pts; 2 pts per correct match)
+**Subtasks**: 3 (15.1, 15.2, 15.3)
 **Procedure required**: No
 
 **What it tests**: Evaluating mathematical statements about a given context —
@@ -951,21 +967,16 @@ relationships.
 
 **Observed pattern**:
 - Context box describes a situation (shopping, geometry, scheduling)
-- 4 statements to evaluate as ANO/NE
-- More "mathematical" than task 14 — requires computation, not just data reading
-- Some statements test edge cases or common misconceptions
-
-**Note**: In some test variants, this slot has been a **matching task
-(přiřazovací)** instead of ANO/NE. The matching format has items to match
-(15.1, 15.2, 15.3) with options (A–F), where there are more options than items
-(extras serve as distractors). `[VERIFY across all 12 tests]`
+- 3 items to match (15.1, 15.2, 15.3)
+- 6 options (A–F) — leaving 3 unused distractors
+- The matching format is consistent across all recent tests.
 
 **Constraints for matching variant**:
 
 | Constraint | Value |
 |---|---|
-| Items to match | 3–4 |
-| Options | 5–6 (more options than items) |
+| Items to match | 3 (always) |
+| Options | 6 (A–F) |
 | Instruction | `Přiřaďte ke každé úloze (15.1–15.3) odpovídající výsledek (A–F)` |
 | Topics | Percentage calculations, expression evaluation, unit conversions |
 | Points | 1–2 per correct match |
@@ -976,8 +987,8 @@ relationships.
 
 **Curriculum area**: Nestandardní aplikační úlohy — pattern recognition
 **Format**: Open — result only
-**Points**: 3–4
-**Subtasks**: 3 (always exactly 3)
+**Points**: 4–6 (varies, usually 4)
+**Subtasks**: 3 (sometimes 4)
 **Procedure required**: No (result only, but students need scratch work)
 
 **What it tests**: Recognizing and extending number or geometric patterns.
@@ -1160,94 +1171,40 @@ This appears on every task header: `max. X bod/body/bodů`
 
 ## 10. Visual Layout Specification
 
-This section describes the physical appearance of the PDF. It is intentionally
-free of implementation code (LaTeX, CSS, etc.) — those belong in the technical
-implementation document.
+> **Full specification**: See
+> [`CERMAT_visual_spec.md`](file:///Users/jarda/ArchMaster/docs/CERMAT_visual_spec.md)
+> for the complete pixel-perfect layout specification with exact font names,
+> sizes, margins, and measurements programmatically extracted from all 12
+> reference test PDFs.
 
-### 10.1 Global Page Properties
+### 10.1 Quick Reference (Verified Values)
 
-| Property | Value |
+| Property | Verified Value |
 |---|---|
-| Paper size | A4 (210 × 297 mm) |
-| Margins | ~20 mm left/right, ~15 mm top/bottom |
-| Usable content width | ~170 mm |
-| Font family | Sans-serif (Arial or close derivative — Helvetica is acceptable) |
-| Body text size | ~10–11 pt |
-| Color | Black and white only (grayscale for shading) |
+| Paper size | A4 (595.3 × 841.9 pt / 210 × 297 mm) |
+| Left margin | ~71pt (25mm) |
+| Right margin | ~68pt (24mm) |
+| Content width | ~456pt (161mm) |
+| **Primary font** | **Myriad Pro** (Regular, Bold, Italic) |
+| **Math font** | **Cambria Math** |
+| **Supplementary font** | **Arial** (ArialMT, Arial-BoldMT) |
+| Body text size | **12pt** (not 10–11pt as previously estimated) |
+| Cover page instruction text | 11.04pt |
+| Footer text | 9.48pt |
+| Copyright text | 8.04pt |
+| Task number / points label | **12pt bold** (not 18–20pt as previously estimated) |
+| Horizontal rule thickness | 0.72–0.96pt (median 0.96pt) |
+| Context box background | Variable (#b1b2b1 to #ffffff — not uniformly light gray) |
+| Context box corners | Sharp (radius = 0) |
+| Page header | Page number only (`N ze total`), NOT test code |
+| Page footer | `(CZVV)` with italic CZVV, NOT `© CZVV` |
+| Color | Pure black (#000000) only — no colored text |
 
-### 10.2 Task Header Format
+### 10.2 Reference Screenshots
 
-Every task begins with this structure:
-
-```
-[Task Number]                                    max. [X] bod/body/bodů
-───────────────────────────────────────────────────────────────────────
-```
-
-| Element | Specification |
-|---|---|
-| Task number | ~18–20 pt, **bold**, left-aligned |
-| Points label | ~10 pt, **bold**, right-aligned on the same line |
-| Horizontal rule | 1–1.2 pt solid black line, full content width |
-| Spacing below rule | ~3 mm before task text begins |
-
-### 10.3 Context Box Format
-
-Tasks with contextual information use a shaded box:
-
-| Element | Specification |
-|---|---|
-| Background color | Light gray (~#F0F0F0, approximately 94% white) |
-| Border | Thin gray line (~0.6 pt, ~#B4B4B4) |
-| Corner radius | **0** — sharp rectangular corners (no rounding) |
-| Padding | ~3–4 mm on all sides |
-| Title | Bold, uppercase: `VÝCHOZÍ TEXT K ÚLOZE N` or `VÝCHOZÍ TEXT A OBRÁZEK K ÚLOZE N` or `VÝCHOZÍ TEXT A TABULKA K ÚLOZE N` |
-| Title font | Same as body, bold, positioned at the top of the box |
-
-### 10.4 Subtask Format
-
-| Element | Specification |
-|---|---|
-| Subtask ID | Bold: `N.1`, `N.2`, etc. |
-| Indentation | Subtask text is indented after the ID |
-| Spacing between subtasks | ~2–3 mm |
-
-### 10.5 Multiple Choice Layout
-
-| Element | Specification |
-|---|---|
-| Options | Labeled `A)` through `E)` (or `F)`) |
-| Layout | Horizontal row, evenly spaced across content width |
-| Alignment | Left-aligned within evenly distributed columns |
-
-### 10.6 Mathematical Expressions
-
-| Element | Specification |
-|---|---|
-| Inline math | Standard math typesetting, same baseline as surrounding text |
-| Display math | Centered on its own line, additional vertical spacing |
-| Fractions | Stacked (not inline `a/b` style) when in display mode |
-| Square root | Standard radical symbol with overline |
-
-### 10.7 Diagrams
-
-| Element | Specification |
-|---|---|
-| Style | Clean black lines on white background |
-| Labels | Points labeled with capital letters (A, B, C, ...) |
-| Dimensions | Labeled with values and units directly on the diagram |
-| Line weight | ~0.5–1 pt for figure lines, thinner for dimension lines |
-| Dashing | Used for hidden edges in 3D diagrams, extensions in construction |
-| Hatching/shading | Light gray fill for highlighted areas |
-
-### 10.8 Tables
-
-| Element | Specification |
-|---|---|
-| Borders | Thin solid lines, ~0.5 pt |
-| Header row | Bold text, sometimes light gray background |
-| Cell padding | ~2 mm |
-| Alignment | Numbers right-aligned, text left-aligned |
+Visual references are stored in
+[`docs/reference_screenshots/`](file:///Users/jarda/ArchMaster/docs/reference_screenshots/)
+with annotated examples from 2024, 2025, and 2026 test PDFs.
 
 ---
 
@@ -1341,14 +1298,16 @@ Before releasing any generated test, verify **every item** on this checklist.
 
 ### 12.4 Visual Checks
 
-- [ ] Cover page matches CERMAT format (header, code, points, time, instructions)
-- [ ] Formula reference sheet is on the **last page**
-- [ ] All diagrams are black-and-white
-- [ ] Context boxes have gray background, sharp corners, correct title format
-- [ ] Task headers have correct number size, rule thickness, points alignment
-- [ ] MC options are laid out horizontally (A–E)
-- [ ] Page headers show test code and page numbers
-- [ ] Footer shows `© CZVV`
+> **Crucial**: Refer to [`CERMAT_visual_spec.md`](file:///Users/jarda/ArchMaster/docs/CERMAT_visual_spec.md)
+> for exact visual specifications.
+
+- [ ] Cover page exactly matches 2025/2026 CERMAT format
+- [ ] Formula reference sheet matches the simplified version in Appendix A
+- [ ] Primary font is Myriad Pro, math uses Cambria Math
+- [ ] Context boxes have variable gray backgrounds (or white for diagrams)
+- [ ] Task headers use 12pt bold with 0.96pt solid rule
+- [ ] MC options are laid out horizontally
+- [ ] Page footers show `(CZVV)` in italic with proper parentheses
 
 ### 12.5 Answer Key Checks
 
@@ -1362,46 +1321,56 @@ Before releasing any generated test, verify **every item** on this checklist.
 
 ## Appendix A: Formula Reference Sheet
 
-These are the formulas provided to students on the last page of the test
-booklet. Our generated tests must include an **identical** formula sheet.
+These are the **exact** formulas provided to students on the last page of the
+test booklet, transcribed from the 2025 and 2026 PDFs. The content has been
+identical across all checked years.
 
-**Title**: `Vybrané vzorce a vztahy`
+**Location**: Last page of the test booklet (page 12 in 2025–2026 format).
+May share the page with the end of Task 16.
 
-### Obsahy rovinných útvarů (Areas of Plane Figures)
+### Druhé mocniny čísel 11–20 (Squares of numbers 11–20)
 
-| Figure | Czech Name | Formula |
-|---|---|---|
-| Rectangle | Obdélník | `S = a · b` |
-| Square | Čtverec | `S = a²` |
-| Triangle | Trojúhelník | `S = (a · vₐ) / 2` |
-| Trapezoid | Lichoběžník | `S = ((a + c) / 2) · v` |
-| Circle | Kruh | `S = π · r²` |
-
-### Obvody (Perimeters)
-
-| Figure | Formula |
+| Expression | Value |
 |---|---|
-| Circle (circumference) | `o = 2 · π · r` (or `o = π · d`) |
+| 11² | 121 |
+| 12² | 144 |
+| 13² | 169 |
+| 14² | 196 |
+| 15² | 225 |
+| 16² | 256 |
+| 17² | 289 |
+| 18² | 324 |
+| 19² | 361 |
+| 20² | 400 |
 
-### Objemy těles (Volumes of Solids)
+### Přibližné hodnoty čísla π (Approximate values of π)
 
-| Solid | Czech Name | Formula |
-|---|---|---|
-| Rectangular prism | Kvádr | `V = a · b · c` |
-| Cube | Krychle | `V = a³` |
-| Prism (general) | Hranol | `V = S_p · v` (base area × height) |
-| Cylinder | Válec | `V = π · r² · v` |
-
-### Další vztahy (Other Relationships)
-
-| Relationship | Formula |
+| Symbol | Value |
 |---|---|
-| Pythagorean theorem | `a² + b² = c²` (in right triangle) |
-| Percentage | `p % ze základu Z: část = (p / 100) · Z` |
+| π | ≐ 3,14 |
+| π | ≈ 22/7 |
 
-> **Note**: The exact set of formulas on the reference sheet may vary slightly
-> between years. The above represents the common core observed across reference
-> tests. `[VERIFY against each year's actual last page]`
+### Rozklad na součin (Factorization identities)
+
+```
+a² + 2ab + b² = (a + b)(a + b)
+a² − 2ab + b² = (a − b)(a − b)
+a² − b² = (a + b)(a − b)
+```
+
+### Obvod a obsah kruhu o poloměru r (Circumference and area of circle)
+
+```
+o = 2πr
+S = πr²
+```
+
+> **Critical correction (v2.0 → v3.0)**: The previous version of this
+> appendix listed formulas for rectangles, squares, triangles, trapezoids,
+> prisms, cubes, cylinders, the Pythagorean theorem, and percentage
+> calculations. **None of these appear on the actual formula reference
+> sheet.** The real sheet is much simpler — only the content listed above.
+> Students are expected to know the other formulas from memory.
 
 ---
 

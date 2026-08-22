@@ -1,0 +1,3319 @@
+{
+  "metadata": {
+    "description": "CERMAT M9 Math cross-reference data extracted from answer key PDFs",
+    "source_count": 12,
+    "extraction_tool": "PyMuPDF + analyze_cermat_layout.py"
+  },
+  "tests": [
+    {
+      "id": "M9_2024_1_termin_A",
+      "year": 2024,
+      "term": "1_radny",
+      "variant": "A",
+      "test_code": null,
+      "total_points": 50,
+      "page_count": 13,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 3,
+          "max_points": null,
+          "subtasks": [
+            "3.1",
+            "3.2"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "13"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "1"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "2"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 5,
+          "max_points": null,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "x = –1,1"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "y = 3"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": null,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "306 cm2"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "15 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": null,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "8 dívek"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "26 žáků"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": null,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "43 cm2"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "51 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 10,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "11",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 3,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "N"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "A"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "N"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 6,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "C"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "E"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2024_2_termin_B",
+      "year": 2024,
+      "term": "2_radny",
+      "variant": "B",
+      "test_code": null,
+      "total_points": 50,
+      "page_count": 15,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": null,
+          "subtasks": [
+            "3.1"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "−10"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": null,
+          "subtasks": [
+            "4.1",
+            "4.2",
+            "4.3"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "2"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "("
+            },
+            {
+              "subtask": "4.3",
+              "answer": "3"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 5,
+          "max_points": null,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "x = – 1"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "y = 3"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": null,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "84 cm2"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "48 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": null,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "1,5x"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "58"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": null,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "64"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "20."
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 10,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "11",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 3,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 6,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "D"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "C"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2024_nahradni_1_C",
+      "year": 2024,
+      "term": "nahradni_1",
+      "variant": "C",
+      "test_code": "M9PCD24C0T03",
+      "total_points": 50,
+      "page_count": 14,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "21"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "2"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 5,
+          "max_points": 2,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "x = 9"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "x = 2"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": null,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "8 cm"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "88 cm2"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": null,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "6 m"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "2 m"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 4,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "78o"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "2o"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "11",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "E"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 3,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 6,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "E"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "D"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2024_nahradni_2_D",
+      "year": 2024,
+      "term": "nahradni_2",
+      "variant": "D",
+      "test_code": "M9PDD24C0T04",
+      "total_points": 50,
+      "page_count": 11,
+      "answer_key_pages": 5,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 2,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1",
+            "3.2"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "1"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "1"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": null,
+          "subtasks": [
+            "4.1",
+            "4.2"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "−"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "−"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 5,
+          "max_points": null,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "x = 18"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "x = 2"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": null,
+          "subtasks": [
+            "6.1"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "4"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": null,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "280 Kč"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "300 Kč"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": null,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "6 hodin"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "58 minut"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "11",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": null,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 6,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "D"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "A"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "E"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2025_1_termin_A",
+      "year": 2025,
+      "term": "1_radny",
+      "variant": "A",
+      "test_code": "M9PAD25C0T01",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 2,
+          "max_points": 3,
+          "subtasks": [
+            "2.1"
+          ],
+          "answers": [
+            {
+              "subtask": "2.1",
+              "answer": "1"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "9; 81"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "4𝑛+ 5"
+            },
+            {
+              "subtask": "3.3",
+              "answer": "(12 −𝑥) ⋅(12 + 𝑥) a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "𝑥= 20 a správný postup řešení"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "rovnice nemá řešení a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 4,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "𝑏= 12 m"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "558 m2"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 6,
+          "max_points": 2,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "1,5 litru"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "20 mm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 3,
+          "subtasks": [
+            "7.1",
+            "7.2",
+            "7.3"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "𝛼=  30°"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "𝛽=  50°"
+            },
+            {
+              "subtask": "7.3",
+              "answer": "𝛾= 140°"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 4,
+          "subtasks": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "26 metrů"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "o 5 rostlin"
+            },
+            {
+              "subtask": "8.3",
+              "answer": "39 červeně kvetoucích rostlin"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [
+            "9.1",
+            "9.2"
+          ],
+          "answers": [
+            {
+              "subtask": "9.1",
+              "answer": "3 b."
+            },
+            {
+              "subtask": "9.2",
+              "answer": "Konstrukce obsahuje právě jeden z následujících nedostatků:"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "B"
+            },
+            {
+              "subtask": "13",
+              "answer": "B"
+            },
+            {
+              "subtask": "13",
+              "answer": "C"
+            },
+            {
+              "subtask": "13",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "B"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "E"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "24 obdélníčků"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "o 12 obdélníčků"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "36 obdélníčků"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2025_2_termin_B",
+      "year": 2025,
+      "term": "2_radny",
+      "variant": "B",
+      "test_code": "M9PBD25C0T02",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 5,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 3,
+          "subtasks": [
+            "3.1"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "−11"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2",
+            "4.3"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "2𝑥2 −9"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "𝑘⋅(2𝑘−1)"
+            },
+            {
+              "subtask": "4.3",
+              "answer": "𝑎2 −7𝑎+ 10 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 4,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "𝑥= −3"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "𝑥= 3,  𝑦= −4 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": 3,
+          "subtasks": [
+            "6.1"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "3"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 4,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "1 200 korun"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "2"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 4,
+          "subtasks": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "3 600 cm2"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "320 cm"
+            },
+            {
+              "subtask": "8.3",
+              "answer": "210 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "9",
+              "answer": "A"
+            },
+            {
+              "subtask": "9",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "N"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "F"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "47"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "235"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "99"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2025_nahradni_1_C",
+      "year": 2025,
+      "term": "nahradni_1",
+      "variant": "C",
+      "test_code": "M9PCD25C0T03",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 3,
+          "subtasks": [
+            "3.1"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "9"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2",
+            "4.3"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "64𝑎2 −64𝑎+ 16"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "4𝑥2 + 4"
+            },
+            {
+              "subtask": "4.3",
+              "answer": "2𝑛2 + 𝑛  a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 4,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "𝑥= −1"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "𝑦= 0 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": 4,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "2𝑛"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "3"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 4,
+          "subtasks": [
+            "7.1",
+            "7.2",
+            "7.3"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "42 km/h"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "30 km"
+            },
+            {
+              "subtask": "7.3",
+              "answer": "40 minut"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 3,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "79 cm2"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "o 120"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "10",
+              "answer": "B"
+            },
+            {
+              "subtask": "10",
+              "answer": "A"
+            },
+            {
+              "subtask": "10",
+              "answer": "C"
+            },
+            {
+              "subtask": "10",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "N"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "F"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "B"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "42 trojúhelníků"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "108 šedých trojúhelníků"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "ve 38. obrazci"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2025_nahradni_2_D",
+      "year": 2025,
+      "term": "nahradni_2",
+      "variant": "D",
+      "test_code": "M9PDD25C0T04",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": null,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 3,
+          "subtasks": [
+            "3.1"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "−7"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2",
+            "4.3"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "3𝑦2 + 1"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "(𝑘+ 12)(𝑘−12)"
+            },
+            {
+              "subtask": "4.3",
+              "answer": "𝑥2 −5𝑥−17 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 4,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "𝑥= 20 a správný postup řešení"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "𝑥= 2,  𝑦= −5 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": 4,
+          "subtasks": [
+            "6.1",
+            "6.2",
+            "6.3"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "5 ∶6"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "1 ∶2"
+            },
+            {
+              "subtask": "6.3",
+              "answer": "33 beden"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 4,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "9,1 bodu"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "1 soutěžící; 3 soutěžící; 5 soutěžících"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 3,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "o 60 cm2"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "40 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [
+            "9.1",
+            "9.2"
+          ],
+          "answers": [
+            {
+              "subtask": "9.1",
+              "answer": "1 b."
+            },
+            {
+              "subtask": "9.2",
+              "answer": "2 b."
+            },
+            {
+              "subtask": "9.1",
+              "answer": "Chybná nebo chybějící přímka o."
+            },
+            {
+              "subtask": "9.2",
+              "answer": "Nastane právě jedna z následujících situací:"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "E"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "A"
+            },
+            {
+              "subtask": "14",
+              "answer": "A"
+            },
+            {
+              "subtask": "14",
+              "answer": "C"
+            },
+            {
+              "subtask": "14",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "D"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "C"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3",
+            "16.4"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "6 m"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "30 m"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "150 m"
+            },
+            {
+              "subtask": "16.4",
+              "answer": "18 m"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2026_1_termin_A",
+      "year": 2026,
+      "term": "1_radny",
+      "variant": "A",
+      "test_code": "M9PAD26C0T01",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 3,
+          "subtasks": [
+            "1.1"
+          ],
+          "answers": [
+            {
+              "subtask": "1.1",
+              "answer": "𝐴= 1"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": 3,
+          "subtasks": [
+            "2.1",
+            "2.2"
+          ],
+          "answers": [
+            {
+              "subtask": "2.1",
+              "answer": "1,25"
+            },
+            {
+              "subtask": "2.2",
+              "answer": "− 1"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "400"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "(1 + 4𝑛) ⋅(1 −4𝑛)"
+            },
+            {
+              "subtask": "3.3",
+              "answer": "2 −𝑥 a postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "𝑥= 0,5 a správný postup řešení"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "𝑥= 2,  𝑦= −5 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 6,
+          "max_points": 4,
+          "subtasks": [
+            "6.1",
+            "6.3"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "𝑥"
+            },
+            {
+              "subtask": "6.3",
+              "answer": "64 km"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 3,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "5 km"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "54 minut"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 3,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "𝜑= 10°"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "𝛼= 70°"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "E"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "D"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "18 míčků"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "ve 28. sekundě"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "78 míčků"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2026_2_termin_B",
+      "year": 2026,
+      "term": "2_radny",
+      "variant": "B",
+      "test_code": "M9PBD26C0T02",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": 4,
+          "subtasks": [
+            "2.1"
+          ],
+          "answers": [
+            {
+              "subtask": "2.1",
+              "answer": "1"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "2𝑥"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "𝑏⋅(𝑎−1)"
+            },
+            {
+              "subtask": "3.3",
+              "answer": "1 −4𝑦 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "𝑥= −3 a správný postup řešení"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "𝑦= 12 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 3,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "85 g"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "o 200 % více"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 6,
+          "max_points": 4,
+          "subtasks": [
+            "6.1",
+            "6.2",
+            "6.3"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "70 korun"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "40𝑥"
+            },
+            {
+              "subtask": "6.3",
+              "answer": "200 čajů"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 3,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "3krát"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "35,7 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 2,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "24 cm"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "36 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "10",
+              "answer": "A"
+            },
+            {
+              "subtask": "10",
+              "answer": "B"
+            },
+            {
+              "subtask": "10",
+              "answer": "F"
+            },
+            {
+              "subtask": "10",
+              "answer": "D"
+            },
+            {
+              "subtask": "10",
+              "answer": "C"
+            },
+            {
+              "subtask": "10",
+              "answer": "E"
+            },
+            {
+              "subtask": "10",
+              "answer": "A"
+            },
+            {
+              "subtask": "10",
+              "answer": "B"
+            },
+            {
+              "subtask": "10",
+              "answer": "D"
+            },
+            {
+              "subtask": "10",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "A"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "N"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "D"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "B"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "E"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "17 šedých dílů"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "45. obrazec"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "5"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2026_nahradni_1_C",
+      "year": 2026,
+      "term": "nahradni_1",
+      "variant": "C",
+      "test_code": "M9PCD26C0T03",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": true
+        },
+        {
+          "number": 2,
+          "max_points": 4,
+          "subtasks": [
+            "2.1",
+            "2.2"
+          ],
+          "answers": [
+            {
+              "subtask": "2.1",
+              "answer": "0"
+            },
+            {
+              "subtask": "2.2",
+              "answer": "−5"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "(6 + 5𝑎) ⋅(6 −5𝑎)"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "4𝑛2 −4𝑛+ 1"
+            },
+            {
+              "subtask": "3.3",
+              "answer": "−2𝑥+ 15 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "𝑥= −2 a správný postup řešení"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "𝑥= 3, 𝑦= 4 a správný postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 3,
+          "subtasks": [
+            "5.1",
+            "5.2"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "120𝑥+ 600"
+            },
+            {
+              "subtask": "5.2",
+              "answer": "15krát"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 6,
+          "max_points": 3,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "7 cm"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "23 cm"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 3,
+          "subtasks": [
+            "7.1",
+            "7.2"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "3 cm"
+            },
+            {
+              "subtask": "7.2",
+              "answer": "67,5 cm3"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 3,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "𝜑= 54°"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "𝜔= 36°"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "10",
+              "answer": "A"
+            },
+            {
+              "subtask": "10",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "C"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "F"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "E"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "60 cm"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "o 720 cm2"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "414 cm"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    },
+    {
+      "id": "M9_2026_nahradni_2_D",
+      "year": 2026,
+      "term": "nahradni_2",
+      "variant": "D",
+      "test_code": "M9PDD26C0T04",
+      "total_points": 50,
+      "page_count": 12,
+      "answer_key_pages": 4,
+      "tasks": [
+        {
+          "number": 1,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 2,
+          "max_points": 4,
+          "subtasks": [
+            "2.1",
+            "2.2"
+          ],
+          "answers": [
+            {
+              "subtask": "2.1",
+              "answer": "−2,02"
+            },
+            {
+              "subtask": "2.2",
+              "answer": "1"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 3,
+          "max_points": 4,
+          "subtasks": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "answers": [
+            {
+              "subtask": "3.1",
+              "answer": "(−𝑥) ⋅(4𝑥−8𝑦+ 1)"
+            },
+            {
+              "subtask": "3.2",
+              "answer": "2𝑎2 + 8𝑎+ 8"
+            },
+            {
+              "subtask": "3.3",
+              "answer": "5𝑛2 −2𝑛+ 2 a postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 4,
+          "max_points": 4,
+          "subtasks": [
+            "4.1",
+            "4.2"
+          ],
+          "answers": [
+            {
+              "subtask": "4.1",
+              "answer": "𝑥= 0 a postup řešení"
+            },
+            {
+              "subtask": "4.2",
+              "answer": "𝑦= −5 a postup řešení"
+            }
+          ],
+          "has_partial_credit": true
+        },
+        {
+          "number": 5,
+          "max_points": 4,
+          "subtasks": [
+            "5.1"
+          ],
+          "answers": [
+            {
+              "subtask": "5.1",
+              "answer": "𝑟"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 6,
+          "max_points": 2,
+          "subtasks": [
+            "6.1",
+            "6.2"
+          ],
+          "answers": [
+            {
+              "subtask": "6.1",
+              "answer": "24 cm"
+            },
+            {
+              "subtask": "6.2",
+              "answer": "150 cm2"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 7,
+          "max_points": 3,
+          "subtasks": [
+            "7.1"
+          ],
+          "answers": [
+            {
+              "subtask": "7.1",
+              "answer": "3"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 8,
+          "max_points": 3,
+          "subtasks": [
+            "8.1",
+            "8.2"
+          ],
+          "answers": [
+            {
+              "subtask": "8.1",
+              "answer": "15 minut"
+            },
+            {
+              "subtask": "8.2",
+              "answer": "48 minut"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 9,
+          "max_points": 3,
+          "subtasks": [
+            "9.1",
+            "9.2"
+          ],
+          "answers": [
+            {
+              "subtask": "9.1",
+              "answer": "3 b."
+            },
+            {
+              "subtask": "9.2",
+              "answer": "Nastane právě jedna z následujících situací:"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 10,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [],
+          "has_partial_credit": false
+        },
+        {
+          "number": 11,
+          "max_points": 4,
+          "subtasks": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "answers": [
+            {
+              "subtask": "11.1",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.2",
+              "answer": "N"
+            },
+            {
+              "subtask": "11.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 12,
+          "max_points": 1,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "12",
+              "answer": "E"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 13,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "13",
+              "answer": "D"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 14,
+          "max_points": 2,
+          "subtasks": [],
+          "answers": [
+            {
+              "subtask": "14",
+              "answer": "B"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 15,
+          "max_points": 6,
+          "subtasks": [
+            "15.1",
+            "15.2",
+            "15.3"
+          ],
+          "answers": [
+            {
+              "subtask": "15.1",
+              "answer": "C"
+            },
+            {
+              "subtask": "15.2",
+              "answer": "B"
+            },
+            {
+              "subtask": "15.3",
+              "answer": "A"
+            }
+          ],
+          "has_partial_credit": false
+        },
+        {
+          "number": 16,
+          "max_points": 4,
+          "subtasks": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "answers": [
+            {
+              "subtask": "16.1",
+              "answer": "25 žetonů"
+            },
+            {
+              "subtask": "16.2",
+              "answer": "10 žetonů"
+            },
+            {
+              "subtask": "16.3",
+              "answer": "ani jednou; dvakrát"
+            }
+          ],
+          "has_partial_credit": false
+        }
+      ]
+    }
+  ]
+}
