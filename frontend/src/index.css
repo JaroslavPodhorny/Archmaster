@@ -1,0 +1,22 @@
+/* Global base styles only. Feature styles live with the feature. */
+:root {
+  --text: #1c1c1c;
+  --muted: #646464;
+  --line: #dcdcdc;
+  --surface: #f5f5f4;
+  --accent: #1d4f91;
+  --accent-soft: #e9eff7;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text);
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
