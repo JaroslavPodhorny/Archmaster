@@ -1,0 +1,406 @@
+/* Styles of the problem database page; every class is prefixed pd-.
+   The page fills the window and never scrolls as a whole: the filters stay
+   on top, and the list and the detail scroll separately below them. */
+
+.pd-page {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.pd-top {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 16px 0;
+}
+
+.pd-top h1 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.pd-top p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Controls */
+
+.pd-button {
+  font: inherit;
+  color: inherit;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid #b9b9b9;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pd-button:hover:not(:disabled) {
+  background: var(--surface);
+}
+
+.pd-button:disabled {
+  color: #a0a0a0;
+  border-color: var(--line);
+  cursor: default;
+}
+
+.pd-button-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.pd-button-active:hover:not(:disabled) {
+  background: var(--accent-soft);
+}
+
+.pd-button:focus-visible,
+.pd-search:focus-visible,
+.pd-row:focus-visible,
+.pd-chip:focus-visible,
+.pd-link:focus-visible,
+.pd-range input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.pd-link {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Filter bar */
+
+.pd-filterbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px 8px;
+}
+
+.pd-search {
+  font: inherit;
+  color: inherit;
+  height: 34px;
+  width: 220px;
+  padding: 0 10px;
+  border: 1px solid #b9b9b9;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.pd-sort {
+  margin-left: auto;
+}
+
+.pd-dropdown {
+  position: relative;
+}
+
+.pd-caret {
+  display: inline-block;
+  margin-left: 8px;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+  border-bottom-width: 0;
+  vertical-align: middle;
+}
+
+.pd-panel {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 240px;
+  max-width: calc(100vw - 16px);
+  max-height: 70dvh;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid #b9b9b9;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.12);
+}
+
+.pd-panel-wide {
+  width: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6px;
+}
+
+.pd-option {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pd-option:hover {
+  background: var(--surface);
+}
+
+.pd-option-count {
+  margin-left: auto;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.pd-range {
+  width: 260px;
+  padding: 6px 8px;
+}
+
+.pd-range p {
+  margin: 0 0 8px;
+}
+
+.pd-range-fields {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.pd-range-fields label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pd-range input {
+  font: inherit;
+  width: 64px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #b9b9b9;
+  border-radius: 6px;
+}
+
+.pd-range .pd-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Result count and active filters */
+
+.pd-active {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  padding: 0 16px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.pd-total {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.pd-chip {
+  font: inherit;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px 2px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.pd-chip:hover {
+  border-color: #b9b9b9;
+}
+
+.pd-message {
+  margin: 0;
+  padding: 24px 16px;
+  color: var(--muted);
+}
+
+.pd-error {
+  color: #a11;
+}
+
+/* List and detail */
+
+.pd-panes {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: clamp(250px, 34%, 400px) minmax(0, 1fr);
+}
+
+.pd-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  border-right: 1px solid var(--line);
+}
+
+.pd-row {
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 12px;
+  width: 100%;
+  padding: 8px 16px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  cursor: pointer;
+}
+
+.pd-row:hover {
+  background: var(--surface);
+}
+
+.pd-row-selected,
+.pd-row-selected:hover {
+  background: var(--accent-soft);
+}
+
+.pd-row-source {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pd-row-success {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.pd-row-description {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.pd-more {
+  padding: 12px 16px;
+}
+
+.pd-detail {
+  overflow-y: auto;
+  padding: 16px 20px 32px;
+}
+
+.pd-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.pd-detail-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.pd-detail-title h2 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.pd-detail-title p {
+  margin: 2px 0 0;
+  color: var(--muted);
+}
+
+.pd-detail-nav {
+  display: flex;
+  gap: 6px;
+}
+
+.pd-back {
+  display: none;
+}
+
+.pd-shot {
+  display: block;
+  max-width: min(100%, 720px);
+  height: auto;
+  margin-bottom: 14px;
+  border: 1px solid var(--line);
+}
+
+/* Narrow windows: the list and the detail take turns. */
+@media (max-width: 640px) {
+  .pd-top {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .pd-search {
+    width: 100%;
+  }
+
+  .pd-sort {
+    margin-left: 0;
+  }
+
+  .pd-panel-wide {
+    width: calc(100vw - 16px);
+    grid-template-columns: 1fr;
+  }
+
+  .pd-panes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pd-list {
+    border-right: 0;
+  }
+
+  .pd-page:not(.pd-page-detail) .pd-detail,
+  .pd-page-detail .pd-list,
+  .pd-page-detail .pd-top,
+  .pd-page-detail .pd-filterbar,
+  .pd-page-detail .pd-active {
+    display: none;
+  }
+
+  .pd-back {
+    display: inline-block;
+  }
+
+  .pd-detail-header {
+    flex-wrap: wrap;
+  }
+
+  .pd-detail-title {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .pd-detail-nav {
+    margin-left: auto;
+  }
+}
