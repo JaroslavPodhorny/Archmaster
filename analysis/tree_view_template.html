@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strom učiva M9</title>
+<style>
+  :root { --bg: #fff; --fg: #1a1a1a; --dim: #6b6b6b; --line: #dcdcdc; --hover: #f3f3f3; --sel: #e6effb; --accent: #1558b0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1b1b1b; --fg: #e6e6e6; --dim: #9a9a9a; --line: #3a3a3a; --hover: #262626; --sel: #1f3350; --accent: #7fb0f0; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { display: flex; flex-direction: column; background: var(--bg); color: var(--fg);
+         font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  #bar { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+  #bar input[type=search] { width: 220px; font: inherit; padding: 3px 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+  #bar select, #bar button { font: inherit; padding: 2px 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+  #bar label { white-space: nowrap; }
+  #count { color: var(--dim); margin-left: auto; }
+  #panes { flex: 1; display: flex; min-height: 0; }
+  #tree { flex: 0 0 46%; overflow: auto; border-right: 1px solid var(--line); padding: 4px 0; outline: none; }
+  #detail { flex: 1; overflow: auto; padding: 12px 16px; }
+  .row { display: flex; align-items: baseline; gap: 6px; padding: 1px 10px; cursor: default; white-space: nowrap; }
+  .row:hover { background: var(--hover); }
+  .row.sel { background: var(--sel); }
+  .tw { width: 12px; flex: none; color: var(--dim); text-align: center; }
+  .p { width: 12px; flex: none; color: var(--dim); text-align: center; font-variant-numeric: tabular-nums; }
+  .d0 { font-weight: 600; margin-top: 6px; }
+  .d1 { padding-left: 26px; font-weight: 600; }
+  .d2 { padding-left: 46px; }
+  .p1 .nm { font-weight: 600; } .pS .nm, .p3 .nm { color: var(--dim); }
+  .n { color: var(--dim); font-weight: 400; }
+  .nm { overflow: hidden; text-overflow: ellipsis; }
+  h1 { font-size: 17px; margin: 0 0 2px; }
+  .path, .id { color: var(--dim); }
+  dl { display: grid; grid-template-columns: 110px 1fr; gap: 4px 12px; margin: 12px 0; }
+  dt { color: var(--dim); } dd { margin: 0; }
+  a { color: var(--accent); text-decoration: none; cursor: pointer; } a:hover { text-decoration: underline; }
+  ul { margin: 0; padding-left: 16px; }
+  #shot { max-width: 100%; border: 1px solid var(--line); margin-top: 8px; display: block; background: #fff; }
+  #shot[hidden] { display: none; }
+  @media (max-width: 640px) { #panes { flex-direction: column; } #tree { flex: 0 0 50%; border-right: 0; border-bottom: 1px solid var(--line); } }
+</style>
+</head>
+<body>
+<div id="bar">
+  <input id="q" type="search" placeholder="Hledat">
+  <span>Priorita
+    <label><input type="checkbox" class="pf" value="1" checked> 1</label>
+    <label><input type="checkbox" class="pf" value="2" checked> 2</label>
+    <label><input type="checkbox" class="pf" value="3" checked> 3</label>
+    <label><input type="checkbox" class="pf" value="S" checked> S</label>
+  </span>
+  <select id="kind"><option value="">Všechny druhy</option></select>
+  <button id="open">Rozbalit vše</button>
+  <button id="close">Sbalit vše</button>
+  <span id="count"></span>
+</div>
+<div id="panes">
+  <div id="tree" tabindex="0"></div>
+  <div id="detail"></div>
+</div>
+<script>
+const DATA = /*DATA*/;
+const PRIORITY = {1: 'in every or nearly every test', 2: 'recurring', 3: 'rare, or decides only the top score', S: 'in the specification, not seen in the 20 tests'};
+const KIND = {postup: 'a procedure to drill', 'překlad': 'turning the wording into mathematics', znalost: 'a fact known by heart', rozbor: 'finding the route through a multi-step task'};
+const byId = {}, kids = {}, neededBy = {};
+for (const n of DATA) { byId[n.id] = n; (kids[n.parent] ||= []).push(n); }
+for (const n of DATA) for (const r of n.requires) (neededBy[r] ||= []).push(n.id);
+const depth = n => n.id.split('.').length - 1;
+const collapsed = new Set();
+let selected = DATA[0].id, visible = [];
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+for (const k of Object.keys(KIND)) $('kind').add(new Option(k, k));
+
+function matches(n) {
+  const q = $('q').value.trim().toLowerCase(), kind = $('kind').value;
+  const ps = [...document.querySelectorAll('.pf:checked')].map(c => c.value);
+  return ps.includes(n.priority) && (!kind || n.kind === kind) &&
+    (!q || (n.name + ' ' + n.note + ' ' + n.id).toLowerCase().includes(q));
+}
+function leavesOf(n) { return depth(n) === 2 ? [n] : (kids[n.id] || []).flatMap(leavesOf); }
+
+function renderTree() {
+  const filtering = $('q').value.trim() || $('kind').value || document.querySelectorAll('.pf:not(:checked)').length;
+  const html = []; visible = []; let shown = 0;
+  const walk = n => {
+    const d = depth(n), hits = leavesOf(n).filter(matches);
+    if (!hits.length) return;
+    visible.push(n.id);
+    const open = d < 2 && (filtering || !collapsed.has(n.id));
+    html.push(`<div class="row d${d} ${d === 2 ? 'p' + n.priority : ''} ${n.id === selected ? 'sel' : ''}" data-id="${n.id}">` +
+      (d === 2 ? `<span class="p" title="${PRIORITY[n.priority]}">${n.priority}</span>` : `<span class="tw">${open ? '▾' : '▸'}</span>`) +
+      `<span class="nm">${esc(n.name)}</span>${d < 2 ? `<span class="n">${hits.length}</span>` : ''}</div>`);
+    if (d === 2) shown++;
+    if (open) (kids[n.id] || []).forEach(walk);
+  };
+  kids[''].forEach(walk);
+  $('tree').innerHTML = html.join('');
+  $('count').textContent = `${DATA.filter(n => depth(n) === 2 && matches(n)).length} z ${DATA.filter(n => depth(n) === 2).length} dovedností`;
+}
+
+function nodeLink(id) { return `<a data-go="${id}">${esc(byId[id].name)}</a> <span class="id">${esc(byId[byId[id].parent].name)}</span>`; }
+function renderDetail() {
+  const n = byId[selected], d = depth(n), rows = [];
+  const path = []; for (let p = byId[n.parent]; p; p = byId[p.parent]) path.unshift(esc(p.name));
+  if (d === 2) {
+    rows.push(['Priorita', `${n.priority} – ${PRIORITY[n.priority]}`], ['Druh', `${n.kind} – ${KIND[n.kind]}`]);
+    if (n.requires.length) rows.push(['Potřebuje', '<ul>' + n.requires.map(r => `<li>${nodeLink(r)}</li>`).join('') + '</ul>']);
+    if (neededBy[n.id]) rows.push(['Je potřeba pro', '<ul>' + neededBy[n.id].map(r => `<li>${nodeLink(r)}</li>`).join('') + '</ul>']);
+    if (n.ex.length) rows.push(['Příklady', n.ex.map(e => `<a data-shot="${e.png}">${e.ref}</a>${e.pct === null ? '' : ' ' + e.pct + ' %'}`).join(' · ')]);
+  } else {
+    const ls = leavesOf(n), c = p => ls.filter(l => l.priority === p).length;
+    rows.push(['Dovednosti', `${ls.length} (priorita 1: ${c('1')}, 2: ${c('2')}, 3: ${c('3')}, S: ${c('S')})`]);
+  }
+  if (n.tag) rows.push(['Tag v katalogu', esc(n.tag)]);
+  if (n.spec) rows.push(['Specifikace', 'oblast ' + esc(n.spec)]);
+  if (n.note) rows.push(['Poznámka', esc(n.note)]);
+  $('detail').innerHTML = `<div class="path">${path.join(' › ')}</div><h1>${esc(n.name)}</h1><div class="id">${n.id}</div>` +
+    `<dl>${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl><img id="shot" hidden>`;
+}
+function select(id, reveal) {
+  selected = id;
+  if (reveal) for (let p = byId[id].parent; p; p = byId[p].parent) collapsed.delete(p);
+  renderTree(); renderDetail();
+  document.querySelector('.row.sel')?.scrollIntoView({block: 'nearest'});
+}
+
+$('tree').addEventListener('click', e => {
+  const row = e.target.closest('.row'); if (!row) return;
+  const id = row.dataset.id;
+  if (depth(byId[id]) < 2)
+    collapsed.has(id) ? collapsed.delete(id) : collapsed.add(id);
+  select(id);
+});
+$('tree').addEventListener('keydown', e => {
+  const i = visible.indexOf(selected), n = byId[selected];
+  if (e.key === 'ArrowDown' && i < visible.length - 1) select(visible[i + 1]);
+  else if (e.key === 'ArrowUp' && i > 0) select(visible[i - 1]);
+  else if (e.key === 'ArrowLeft') { if (depth(n) < 2 && !collapsed.has(n.id)) { collapsed.add(n.id); select(n.id); } else if (n.parent) select(n.parent); }
+  else if (e.key === 'ArrowRight' && depth(n) < 2) { collapsed.delete(n.id); select(n.id); }
+  else return;
+  e.preventDefault();
+});
+$('detail').addEventListener('click', e => {
+  if (e.target.dataset.go) select(e.target.dataset.go, true);
+  if (e.target.dataset.shot) { const img = $('shot'); img.src = e.target.dataset.shot; img.hidden = false; }
+});
+$('q').addEventListener('input', renderTree);
+$('kind').addEventListener('change', renderTree);
+document.querySelectorAll('.pf').forEach(c => c.addEventListener('change', renderTree));
+$('open').onclick = () => { collapsed.clear(); renderTree(); };
+$('close').onclick = () => { DATA.forEach(n => depth(n) < 2 && collapsed.add(n.id)); renderTree(); };
+DATA.forEach(n => depth(n) === 1 && collapsed.add(n.id));
+select(selected);
+</script>
+</body>
+</html>
