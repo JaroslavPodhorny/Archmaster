@@ -4,11 +4,14 @@ version = "0.1.0"
 description = "ArchMaster backend: CERMAT preparation tools"
 requires-python = ">=3.11"
 dependencies = [
+    "fastapi>=0.142.2",
     "pymupdf>=1.26",  # reads and crops the test booklet PDFs (imported as fitz)
+    "uvicorn[standard]>=0.54.0",
 ]
 
 [dependency-groups]
 dev = [
+    "httpx>=0.28.1",
     "pytest>=8",
 ]
 
