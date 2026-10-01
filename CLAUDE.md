@@ -21,16 +21,18 @@ The owner has experience with React + TypeScript frontends and has not built a f
 - **Backend: Python with FastAPI.** Python was chosen for its libraries (e.g. SymPy for checking that answers are mathematically equivalent, PyMuPDF for working with the test PDFs) and because the analysis code is already Python.
 - **Frontend: a React + TypeScript app** that talks to the backend over HTTP. Not Next.js: the owner prefers the clear split where all frontend code runs in the browser and all backend code runs on the server.
 
-Suggested but **not decided** (confirm with the owner before adopting): SQLite as the first database, KaTeX for rendering math, Vite for the frontend build, where to host.
+- **Tooling: Vite** for the frontend build and **uv** for Python dependencies.
+
+Suggested but **not decided** (confirm with the owner before adopting): SQLite as the long-term database, KaTeX for rendering math, where to host.
 
 ## Repository layout
 
 Exists now:
 
 - `References/` holds the official CERMAT test booklets and answer keys (PDFs) plus CERMAT's requirements specification for the math exam. These are the primary evidence for the analysis.
-- `analysis/` holds the findings derived from those PDFs and from official CERMAT publications (written October 2026): `01_baseline_M9.md` is the baseline for the 9th-grade math test, `02_katalog_uloh.md` lists every task of the 20 tests with CERMAT's success rates, `data/` has the same as TSV/CSV, and `build_catalog.py` regenerates the catalog and summary numbers. Extend these rather than starting over; the 2024 tests follow a different design from the other years (see the baseline, section 3).
+- `analysis/` holds the findings derived from those PDFs and from official CERMAT publications (written October 2026): `01_baseline_M9.md` is the baseline for the 9th-grade math test, `02_katalog_uloh.md` lists every task of the 20 tests with CERMAT's success rates, `03_ucivo_M9.md` says per topic what a student must know, how it is tested and which tasks show it (it links to the screenshots in `backend/data/screenshots/`), `04_strom_M9.md` arranges the same curriculum as a tree in learning order (7 areas, 24 topics, 140 skills with priority, prerequisites and example tasks; generated, like the tree view `04_strom_M9.html`, from `data/m9_topic_tree.json`; that JSON is the only copy of the tree and is changed through `topic_tree.py`, a console editor that validates, saves and rebuilds both views: `uv run --project backend python analysis/topic_tree.py --help`), `data/` has the same as TSV/CSV, and `build_catalog.py` regenerates the catalog and summary numbers. Extend these rather than starting over; the 2024 tests follow a different design from the other years (see the baseline, section 3).
 
-Planned, to be created when the first tool is built:
+Layout the code follows:
 
 ```
 backend/
@@ -40,9 +42,52 @@ backend/
 frontend/    React + TypeScript pages that only call the API
 ```
 
-Problem database, script stage (branch `problem-database`, October 2026; no tests, API or page yet): `backend/core/booklet.py` finds and crops each task in a booklet PDF, `catalog.py` reads `analysis/data`, `problem_db.py` has `build_database`, `search_problems`, `filter_options`. Dependencies are managed with uv (`backend/pyproject.toml`, `backend/uv.lock`, Python 3.13 in `backend/.venv`); run everything from the repository root. `uv run --project backend python backend/try_problem_db.py build` writes `backend/data/` (SQLite file + 320 screenshots, not in git). Covers M9 2022–2026 only. SQLite is used locally for now; the owner is considering a hosted database (Supabase) for later.
+Problem database (branch `problem-database`, October 2026), working end to end for M9 2022–2026 only:
+
+- `backend/core/booklet.py` finds and crops each task in a booklet PDF, `answer_key.py` does the same for each task's rows (solution and scoring notes) in the official key PDF, `catalog.py` reads `analysis/data`, `problem_db.py` has `build_database`, `search_problems`, `filter_options`.
+- `backend/api/problems.py` exposes `GET /api/problems` and `GET /api/problems/filters`; `main.py` mounts it and serves the images under `/api/screenshots/`. `create_app(data_dir)` lets tests point it at a temporary database.
+- `backend/tests/` builds the database from the real booklets once per run (about 6 s) and tests core and API against it.
+- `frontend/src/features/problem-database/` is the page: a filter bar with one dropdown menu per filter on top, a compact result list on the left and the selected problem with its solution on the right. The window never scrolls as a whole; arrow keys step through the list; below 640 px the list and the detail take turns. In development Vite proxies `/api` to FastAPI on port 8000, so there is no CORS setup.
+- SQLite is used locally for now; the owner is considering a hosted database (Supabase) for later.
+
+Commands, all from the repository root (Python dependencies are managed with uv: `backend/pyproject.toml`, `backend/uv.lock`, Python 3.13 in `backend/.venv`):
+
+```
+uv run --project backend python backend/try_problem_db.py build   # writes backend/data/ (SQLite + 640 images: each task and its solution, not in git)
+uv run --project backend pytest backend/tests
+uv run --project backend uvicorn backend.api.main:app --reload    # API on :8000
+npm --prefix frontend install                                      # once
+npm --prefix frontend run dev                                      # page on :5173
+npm --prefix frontend run build && npm --prefix frontend run lint
+```
 
 Earlier folders named `scripts/`, `docs/`, `backend/`, `frontend/`, `output/` and the files `readme.md`, `GEMINI.md` were generated by another AI tool, are considered low quality and have been deleted from the working tree. Do not restore them from git history, build on them, or cite their conclusions.
+
+## Code organization
+
+The owner plans a large project and wants every tool kept as an isolated, neatly organized feature. Each tool gets one module or folder per layer, under the same name, and nothing of it leaks into shared files:
+
+```
+backend/core/<tool>.py            logic (plus helper modules it needs)
+backend/api/<tool>.py             an APIRouter built by create_router(...); main.py only includes it
+backend/tests/test_<tool>*.py
+frontend/src/features/<tool>/     index.ts (the only file imported from outside), <Tool>Page.tsx,
+                                  api.ts, types.ts, a use<Tool>.ts state hook, components/, <tool>.css
+frontend/src/shared/              code used by more than one feature (http.ts so far)
+```
+
+- `frontend/src/App.tsx` and `backend/api/main.py` are shells that only mount features. Do not put feature code in them.
+- A feature never imports from another feature's folder; code two features need moves to `shared/` (frontend) or its own `core/` module (backend).
+- Feature CSS classes carry a short prefix (`pd-` for the problem database); `index.css` holds only global base styles.
+- No router yet: there is one page. Add one (not decided which) when the second page arrives.
+
+## Interface design
+
+The owner rejects generic AI-looking interfaces and long scrolling pages. For every page:
+
+- Controls the user needs repeatedly (filters, navigation) stay visible; never make the user scroll to reach them. Prefer a fixed bar plus panes that scroll separately over one long page.
+- Plain and dense: system font, neutral greys, one accent colour used only for selection and links, hairline borders. No letter-spaced or uppercase labels, gradients, purple/indigo palettes, decorative cards, icons for decoration, or animations.
+- For a new page or a real redesign, show the owner a mockup before building.
 
 ## How to build tools
 
