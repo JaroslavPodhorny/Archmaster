@@ -1,0 +1,321 @@
+year	term	task	fmt	tags	subpoints	keys	desc
+2022	A	1	OV	N-ARIT	1		Číselný výraz s druhou mocninou a odmocninou ve zlomku
+2022	A	2	OV	N-JED;G-ROV	2.1:1,2.2:1		Obdélník (šířka v cm, obsah v dm²) – rozdíl stran; kolikrát větší je 1,2 dm³ než 300 mm³
+2022	A	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky (závorka; složený zlomek), výsledek v základním tvaru
+2022	A	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Vytknutí 3y; umocnění (x+3/2)²; roznásobení a zjednodušení
+2022	A	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice s desetinnými čísly; lineární rovnice se zlomky
+2022	A	6	OV	G-TEL;G-PYT	6:3		Objem trojbokého hranolu a pravidelného čtyřbokého hranolu (společná stěna, přepona = hrana)
+2022	A	7	OV	P-POM	7.1:1,7.2:1,7.3:1		Spotřeba balení vitaminů – přímá/nepřímá úměrnost, společná spotřeba
+2022	A	8	OV	A-SLOV	8.1:1,8.2:1,8.3:2		Výraz s proměnnou x (cena dortíku, koláčů) a slovní úloha na rovnici
+2022	A	9	K	G-KON	9:3		Rovnoramenný trojúhelník: dán vrchol C, střed ramene S, přímka q (2 řešení)
+2022	A	10	K	G-KON	10:2		Čtverec: dán střed O a přímka p se stranou BC
+2022	A	11	AN	N-ZLOM;N-JED	b4	N,N,A	Zlomky z časových údajů (minuty, hodiny, dny)
+2022	A	12	MC	G-UHLY	12:2	B	Úhly u čtyř různoběžek (α a 3α)
+2022	A	13	MC	G-KRUH	13:2	D	Obvod kruhové výseče (pětina kruhu, r = 10 cm)
+2022	A	14	MC	D-GRAF;P-PROC	14:2	A	Kruhový diagram, dopočet četností, aritmetický průměr
+2022	A	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	E,C,D	Procenta (o x % více/méně) s tabulkou sběru papíru
+2022	A	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Mince přidávané v pravidelných kolech (periodicita, násobky)
+2022	B	1	OV	N-ARIT	1		Číselný výraz se zápornými čísly a mocninou
+2022	B	2	OV	P-POM	2.1:1,2.2:1		Číselná osa: poměr dělení úsečky, určení čísla v bodě
+2022	B	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky (součin a součet; složený zlomek)
+2022	B	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Úprava a vytknutí; umocnění (5b−0,4a)²; roznásobení
+2022	B	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice se závorkami a desetinnými čísly; se zlomky
+2022	B	6	OV	N-ZLOM;A-SLOV	6:3		Kuličky tří barev: čtvrtina, šestina, „o 20 více“ – celek a rozdíl
+2022	B	7	OV	D-GRAF	7.1:2,7.2:2		Sloupcový graf s chybějícími údaji, aritmetický průměr
+2022	B	8	OV	G-ROV	8:3		Vnořené čtverce – strana z obsahu (odmocnina), obvod
+2022	B	9	K	G-KON	9:2		Rovnoramenný trojúhelník: vrchol C, základna délky 6 cm na přímce q
+2022	B	10	K	G-KON	10:3		Rovnoběžník: vrcholy A, C, strany rovnoběžné s p, úhlopříčka kolmá k p; nejprve střed S
+2022	B	11	AN	G-TEL	b4	A,N,A	Hranol slepený ze tří krychlí, síť, povrch
+2022	B	12	MC	G-TEL;G-KRUH	12:2	C	Plášť válce je čtverec – výška válce
+2022	B	13	MC	G-UHLY	13:2	D	Úhly u rovnoběžek a příček
+2022	B	14	MC	A-SLOV	14:2	A	Výběr výrazu popisujícího situaci (k polic, o 8 knih více)
+2022	B	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	E,B,D	Procenta: snížení ceny, část ze zbytku, zdražení (méně kusů za stejnou částku)
+2022	B	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Hvězdičky v mřížových bodech obdélníku
+2022	C	1	OV	N-ARIT	1		Číselný výraz s mocninami 10 (zlomek)
+2022	C	2	OV	N-JED;N-ZLOM	2.1:1,2.2:1		Dělení kabelu (m → cm); tři pětiny z 1 h 50 min
+2022	C	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky
+2022	C	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Vytknutí; zjednodušení součinu; umocnění a roznásobení
+2022	C	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice se závorkami a zlomky
+2022	C	6	OV	A-SLOV	6.1:1,6.2:1,6.3:1		Výrazy s proměnnou x („o třetinu více“, „o 12 více“) a rovnice
+2022	C	7	OV	P-POM	7:3		Křídy v krabičkách dvou velikostí – úsudek
+2022	C	8	OV	G-ROV;G-PYT	8.1:1,8.2:2		Obvod obdélníku z obsahu; obsah pravoúhlého trojúhelníku (Pythagorova věta)
+2022	C	9	K	G-KON	9:3		Trojúhelník PQR: přímka o je osou některé strany (2 řešení)
+2022	C	10	K	G-KON	10:3		Obdélník: vrchol A, bod X na straně AB, vrcholy na rovnoběžkách c, p (2 řešení)
+2022	C	11	AN	D-GRAF	b4	A,A,A	Sloupcový graf se třemi řadami (zakoupené, vzrostlé, prodané)
+2022	C	12	MC	G-UHLY	12:2	A	Úhly u rovnoběžek a kolmic (2α, 3α)
+2022	C	13	MC	G-TEL	13:2	B	Objem trojbokého hranolu vzniklého řezem kvádru
+2022	C	14	MC	G-TEL;G-KRUH	14:2	C	Poměr obsahu pláště a podstavy válce
+2022	C	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	B,E,C	Procenta: zbytek po odvozu, zlomek + procento, „o 50 % více než … a méně než …“
+2022	C	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Obrazec z přímek a puntíků – zákonitost (druhé mocniny)
+2022	D	1	OV	N-DEL	1		Dělitelé čísla 95
+2022	D	2	OV	N-ARIT	2.1:1,2.2:1		Výraz se zápornými čísly a mocninami; výraz s desetinnými čísly
+2022	D	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky
+2022	D	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Zjednodušení s odmocninou; doplnění čísel do vzorce (y+□)²; roznásobení
+2022	D	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice s desetinnými čísly; se zlomky
+2022	D	6	OV	P-POM	6.1:1,6.2:1,6.3:1		Hmotnost krabic s činkami – úsudek (soustava bez rovnic)
+2022	D	7	OV	P-POM	7.1:2,7.2:2		Dvě schodiště s různým počtem schodů – poměr
+2022	D	8	OV	G-ROV	8.1:1,8.2:2		Výška trojúhelníku a lichoběžníku z obsahů
+2022	D	9	K	G-KON	9:2		Rovnoběžník: vrchol A, střed S, úhel ASB = 120°
+2022	D	10	K	G-KON	10:3		Rovnoramenný trojúhelník: ramena 5 cm, vrchol na přímce, osa souměrnosti bodem Q (2 řešení)
+2022	D	11	AN	G-SOUM	b4	A,N,N	Útvary ve čtvercové síti – počet os souměrnosti po přemístění čtverce
+2022	D	12	MC	G-UHLY	12:2	E	Úhly ve složeném útvaru s rovnostrannými trojúhelníky
+2022	D	13	MC	G-TEL;G-PYT	13:2	D	Obsah stěn tělesa slepeného z trojbokých hranolů (8–15–17)
+2022	D	14	MC	G-TEL	14:2	B	Objem téhož tělesa
+2022	D	15	PR	P-PROC;N-ZLOM	15.1:2,15.2:2,15.3:2	B,A,E	Převod zlomek ↔ procenta, změna základu
+2022	D	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Číselná řada tvořená trojicemi
+2023	A	1	OV	N-ZLOM	1		Film trvá 1 hodinu, zbývá polovina uplynulé doby
+2023	A	2	OV	P-POM;N-JED	2.1:2,2.2:1		Objemy sud–kbelík–konvička; kvádr z krychlí 8 dm³ → krychličky 1 cm³
+2023	A	3	OV+OP	N-ZLOM	3.1:1,3.2:1,3.3:2		Tři výrazy se zlomky (poslední složený, s postupem)
+2023	A	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Vytknutí; umocnění (2/3·a−3)²; roznásobení
+2023	A	5	OP	A-ROV	5.1:2,5.2:2		Rovnice bez řešení; rovnice se zlomky
+2023	A	6	OV	G-ROV	6.1:1,6.2:1		Obsah trojúhelníku a pravoúhlého lichoběžníku
+2023	A	7	OV	D-GRAF;P-PROC;P-POM	7.1:1,7.2:1,7.3:1		Sloupcový graf bez popisu osy, chybějící údaj; procenta a poměr
+2023	A	8	OV	A-SLOV;G-ROV	8.1:1,8.2:2,8.3:1		Čtvercový a obdélníkový pozemek se stejným obvodem – výraz, rovnice, rozdíl obsahů
+2023	A	9	K	G-KON	9:2		Obdélník: vrcholy A, C a bod M na úhlopříčce BD
+2023	A	10	K	G-KON	10:3		Rovnoramenný trojúhelník s vrcholy na kružnici (2 řešení)
+2023	A	11	AN	P-POM	b4	N,A,N	Měřítko mapy
+2023	A	12	MC	G-TEL;G-PYT	12:2	C	Lomená čára v kvádru – stěnové úhlopříčky
+2023	A	13	MC	G-TEL;G-KRUH	13:2	D	Povrch válce (plášť = trojnásobek podstavy)
+2023	A	14	MC	G-UHLY	14:2	B	Úhly u rovnoběžek (2α, 4α)
+2023	A	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	E,C,A	Procenta: dvojí růst, „o čtvrtinu více“, pokles a růst – zpětný výpočet základu
+2023	A	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Dělení trojúhelníků (mocniny tří)
+2023	B	1	OV	N-ARIT	1		Odmocnina z rozdílu druhých mocnin
+2023	B	2	OV	P-PROC	2.1:1,2.2:1		„O 150 % dražší“ – kolikrát více, rozdíl cen
+2023	B	3	OV+OP	N-ZLOM	3.1:1,3.2:1,3.3:2		Tři výrazy se zlomky
+2023	B	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Úprava a vytknutí; vzorec a²−b² (kterým výrazem násobit); umocnění a roznásobení
+2023	B	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice s desetinnými čísly; se zlomky
+2023	B	6	OV	P-POM	6.1:1,6.2:1,6.3:2		Zásoby pro expedici – nepřímá úměrnost
+2023	B	7	OV	A-SLOV	7.1:1,7.2:1,7.3:1		Doba cesty: výrazy s x („dvakrát déle“, „o čtvrtinu déle“) a rovnice
+2023	B	8	OV	G-KRUH;G-TEL	8.1:1,8.2:2		Průměr kruhu z obsahu; objem válce z obsahu řezu, zaokrouhlení
+2023	B	9	K	G-KON	9:2		Rovnoramenný lichoběžník: základna AB, střed ramene S
+2023	B	10	K	G-KON	10:3		Pravoúhlý trojúhelník vepsaný kružnici (Thaletova kružnice, 2 řešení)
+2023	B	11	AN	G-ROV;G-PYT	b4	N,A,A	Kosočtverec složený ze čtyř trojúhelníků – strana, výška
+2023	B	12	MC	G-UHLY	12:2	E	Úhly v rovnoramenném trojúhelníku s rovnoběžkou
+2023	B	13	MC	G-TEL	13:2	C	Objem trojbokého hranolu
+2023	B	14	MC	N-ZLOM;A-SLOV	14:2	A	Pomlázky: pětina a „o 180 více“
+2023	B	15	PR	P-PROC;N-ZLOM	15.1:2,15.2:2,15.3:2	D,C,B	Procenta: růst, zlomek ze zlomku, podíl z celku
+2023	B	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Obrazce ve čtvercové síti, tmavá a světlá pole (všechna řešení)
+2023	C	1	OV	N-ARIT	1		Kolikrát je součet čísel 0,2 a 0,5 větší než jejich součin
+2023	C	2	OV	N-ARIT	2.1:1,2.2:1		Pořadí operací; odmocnina z rozdílu mocnin desetinných čísel
+2023	C	3	OV+OP	N-ZLOM	3.1:1,3.2:1,3.3:2		Tři výrazy se zlomky
+2023	C	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Rozklad 4a²−9; zjednodušení; umocnění a roznásobení
+2023	C	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice s desetinnými čísly; se zlomky
+2023	C	6	OV	A-SLOV	6.1:1,6.2:2		Trasa: výraz s x (třetina, „o 60 km méně“, dvě pětiny) a rovnice
+2023	C	7	OV	G-TEL;G-PYT;G-KRUH	7:3		Kvádr vepsaný do válce – poloměr (Pythagorova věta), objem válce
+2023	C	8	OV	P-POM	8.1:1,8.2:2		Cena směsi oříšků z tabulky cen
+2023	C	9	K	G-KON	9:3		Pravoúhlý lichoběžník: strana AB, vrchol C na p, |AC| = |AB| (2 řešení)
+2023	C	10	K	G-KON	10:3		Rovnoramenný trojúhelník: základna AC, výška na p; osa souměrnosti
+2023	C	11	AN	D-GRAF;P-POM	b4	A,N,A	Diagram počtů s chybějícími údaji a poměr
+2023	C	12	MC	N-ZLOM	12:2	C	Lokomotiva a vagony – zlomky délky
+2023	C	13	MC	G-UHLY	13:2	D	Úhly v pětiúhelníku složeném z trojúhelníků
+2023	C	14	MC	G-TEL	14:2	B	Objem pravidelného čtyřbokého hranolu z povrchu
+2023	C	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	E,A,B	Procenta: „o 25 % více“, část a zbytek, procento + zlomek z celku
+2023	C	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Obrazce z malých a velkých čtverečků
+2023	D	1	OV	P-POM	1		Hmotnosti v poměru 3 : 5 s rozdílem 600 g
+2023	D	2	OV	N-ARIT	2.1:1,2.2:1		Číselná osa se stejnými dílky – určení čísel
+2023	D	3	OV+OP	N-ZLOM	3.1:1,3.2:1,3.3:2		Tři výrazy se zlomky
+2023	D	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Umocnění (0,3x+0,5)²; rozklad 49−(−4a)²; roznásobení
+2023	D	5	OP	A-ROV	5.1:2,5.2:2		Lineární rovnice se zlomkem a desetinným číslem; se zlomky
+2023	D	6	OV	A-SLOV;P-PROC	6.1:1,6.2:1,6.3:1		Výrazy s p („o třetinu více“, „o 60 % více“) a rovnice
+2023	D	7	OV	A-SLOV	7.1:1,7.2:2		Parkoviště pro auta a autobusy – rovnice
+2023	D	8	OV	G-SOUM	8.1:2,8.2:2		Osová souměrnost ve čtvercové síti – odebrání čtverce (obě řešení)
+2023	D	9	K	G-KON	9:3		Čtverec: strana na přímce a, body P, Q, R (2 řešení)
+2023	D	10	K	G-KON	10:2		Pravoúhlý trojúhelník: úhel 40°, vrcholy na přímkách (2 řešení)
+2023	D	11	AN	D-GRAF	b4	A,A,N	Skládaný sloupcový graf s chybějícími údaji
+2023	D	12	MC	G-ROV	12:2	B	Obvod obdélníku složeného ze dvou čtverců
+2023	D	13	MC	G-UHLY	13:2	C	Úhly v trojúhelníku a rovnoběžka
+2023	D	14	MC	G-TEL;G-PYT	14:2	A	Rozdíl povrchů kvádru a pětibokého hranolu
+2023	D	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	E,B,D	Procenta: zpětný výpočet základu („o 40 % více než loni“)
+2023	D	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Trojúhelníkové obrazce – puntíky a úsečky
+2024	A	1	OV	P-POM	1		Švadleny – společná práce (nepřímá úměrnost)
+2024	A	2	OV	G-TEL;G-KRUH	2		Objem dutého válce, zaokrouhlení, π ≐ 3,14
+2024	A	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky (dělení; složený zlomek s desetinným číslem)
+2024	A	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Umocnění (a−a/4)²; rozklad 9a²−16; zjednodušení a vytknutí
+2024	A	5	OP	A-ROV	5.1:2,5.2:2		Rovnice s (x+1)², která vede na lineární; rovnice se zlomkem
+2024	A	6	OV	G-ROV;G-PYT	6.1:2,6.2:2		Pravoúhlý lichoběžník – obsah a rameno (Pythagorova věta)
+2024	A	7	OV	D-GRAF	7.1:2,7.2:2		Třída dělená na skupiny – úsudek z údajů v textu
+2024	A	8	OV	G-KRUH	8.1:2,8.2:2		Obsah a obvod obrazce ohraničeného čtvrtkružnicemi
+2024	A	9	K	G-KON	9:3		Rovnostranný trojúhelník: vrchol C a střed S strany AB
+2024	A	10	K	G-KON	10:3		Obdélník: vrchol A, přímky, |BD| = |AE|
+2024	A	11	MC	G-UHLY	11:2	B	Úhly v trojúhelníku tvořeném třemi přímkami
+2024	A	12	MC	G-ROV	12:2	C	Obvod obrazce ze 7 shodných rovnoramenných trojúhelníků
+2024	A	13	MC	G-ROV;A-SLOV	13:2	A	Obvod čtverce děleného na obdélníky
+2024	A	14	MC	A-SLOV	14:2	D	Neznámé číslo – rovnice
+2024	A	15	AN	P-POM	b3	N,A,N	Měřítko plánu (délka, obsah)
+2024	A	16	PR	P-PROC	16.1:2,16.2:2,16.3:2	A,C,E	Procenta ve finančním kontextu: úrok, daň z úroku, zlevnění a zdražení
+2024	B	1	OV	N-JED	1		Délka kroku × počet kroků, rozdíl v km
+2024	B	2	OV	G-PYT;P-PROC	2		O kolik procent je cesta po odvěsnách delší než po přeponě
+2024	B	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky (součin závorek; složený zlomek)
+2024	B	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Umocnění (−3−2x)²; rozklad 6 400−(x²−3 600); roznásobení
+2024	B	5	OP	A-ROV	5.1:2,5.2:2		Rovnice s desetinnými čísly a zlomkem; rovnice se zlomky
+2024	B	6	OV	G-ROV;G-PYT	6.1:2,6.2:2		Lichoběžník – obsah a obvod (Pythagorova věta)
+2024	B	7	OV	A-SLOV	7.1:2,7.2:2		Výraz s x („o polovinu více“) a rovnice
+2024	B	8	OV	X-NEST	8.1:2,8.2:2		Obrazce z kruhů – zákonitost (druhé mocniny)
+2024	B	9	K	G-KON	9:3		Kosočtverec: vrcholy A, B, vrchol C na přímce OA
+2024	B	10	K	G-KON	10:3		Rovnoramenný trojúhelník s vrcholem na kružnici (2 řešení)
+2024	B	11	MC	P-PROC	11:2	B	Zdražení o 40 % a zlevnění o 40 %
+2024	B	12	MC	P-PROC;A-SLOV	12:2	C	Koláčky – cena, tržba, neprodaná desetina
+2024	B	13	MC	G-UHLY	13:2	D	Úhly u čtyř přímek a trojúhelníku
+2024	B	14	MC	G-KRUH	14:2	D	Obsah půlkruhu ve čtvercové síti
+2024	B	15	AN	D-GRAF;P-PROC	b3	A,N,A	Sloupcový graf (chlapci, dívky) a procenta
+2024	B	16	PR	P-PROC	16.1:2,16.2:2,16.3:2	D,C,B	Procenta: část z celku, sleva, podíl
+2024	C	1	OV	A-SLOV	1		Dvě města – součet a rozdíl počtu obyvatel
+2024	C	2	OV	G-TEL;G-KRUH	2		Přelití vody mezi válcovými nádobami – výška hladiny
+2024	C	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky, desetinnými a smíšenými čísly
+2024	C	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Umocnění; úprava a rozklad podle vzorců; roznásobení
+2024	C	5	OP	A-ROV	5.1:2,5.2:2		Rovnice se zlomky; rovnice s druhými mocninami dvojčlenů vedoucí na lineární
+2024	C	6	OV	G-ROV	6.1:2,6.2:2		Pravoúhlý lichoběžník – výška z obsahu trojúhelníku, obsah
+2024	C	7	OV	G-KRUH	7.1:2,7.2:2		Obvod kruhu z obsahu; poloměr čtvrtkruhu z obsahu
+2024	C	8	OV	G-UHLY	8.1:2,8.2:2		Úhly v trojúhelníku, poměr úhlů 2 : 3
+2024	C	9	K	G-KON	9:3		Pravoúhlý lichoběžník s vrcholy na kružnici (Thaletova kružnice)
+2024	C	10	K	G-KON	10:3		Rovnoramenný lichoběžník – osová souměrnost
+2024	C	11	MC	G-TEL	11:2	B	Změna povrchu po rozříznutí krychle
+2024	C	12	MC	P-PROC;A-SLOV	12:2	C	Spoření na dárek – procenta a rovnice
+2024	C	13	MC	P-PROC	13:2	D	Obsazenost sálu 70 % → 75 %
+2024	C	14	MC	N-ZLOM;A-SLOV	14:2	E	Komiksy – „o osminu více“
+2024	C	15	AN	D-GRAF;P-PROC	b3	A,N,A	Dva kruhové diagramy, procenta a počty
+2024	C	16	PR	P-POM	16.1:2,16.2:2,16.3:2	E,D,B	Zedníci – nepřímá úměrnost
+2024	D	1	OV	N-JED	1		Délka kroku, o kolik kroků více
+2024	D	2	OV	P-PROC	2		Dvojí zlevnění – o kolik procent je konečná cena nižší
+2024	D	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky a desetinnými čísly
+2024	D	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Úprava a vytknutí; umocnění; roznásobení
+2024	D	5	OP	A-ROV	5.1:2,5.2:2		Rovnice se zlomky; rovnice se závorkami a desetinným číslem
+2024	D	6	OV	A-SLOV	6.1:2,6.2:2		Vagony 1. a 2. třídy – rovnice
+2024	D	7	OV	P-POM	7.1:2,7.2:2		Ceny obědů z tabulky – úsudek
+2024	D	8	OV	D-GRAF;P-PROC	8.1:2,8.2:2		Dva kruhové diagramy – procenta z času, zaokrouhlení
+2024	D	9	K	G-KON	9:3		Obdélník: vrchol A, střed S, vrchol D na p (Thaletova kružnice, 2 řešení)
+2024	D	10	K	G-KON	10:3		Pravoúhlý trojúhelník: vrchol C, střed strany S, strana rovnoběžná s p (2 řešení)
+2024	D	11	MC	P-PROC	11:2	A	Trička – procenta a zlomky ze zásob
+2024	D	12	MC	P-PROC	12:2	B	Kolik procent zbývá dočíst
+2024	D	13	MC	P-POM	13:2	C	Společná práce – škrábání brambor
+2024	D	14	MC	G-UHLY	14:2	C	Součet úhlů u tří přímek (stupně a minuty)
+2024	D	15	AN	A-SLOV	b3	A,N,A	Nákup jablek dvou cen – celočíselná řešení
+2024	D	16	PR	P-PROC;P-POM	16.1:2,16.2:2,16.3:2	D,A,E	Procenta a poměr výkonů
+2025	A	1	OV	N-ARIT	1		Slovně zadaný výraz: součet čísel vs. odmocnina ze součinu
+2025	A	2	OV+OP	N-ZLOM;N-ARIT	2.1:1,2.2:2		Výraz se zlomky; složený zlomek s odmocninami
+2025	A	3	OV+OP	A-VYR	3.1:1,3.2:1,3.3:2		Doplnění čísel do vzorce (a+□)²; zjednodušení; úprava a rozklad vzorcem
+2025	A	4	OP	A-ROV	4.1:2,4.2:2		Rovnice se zlomky; rovnice bez řešení
+2025	A	5	OV	G-ROV;P-PROC	5.1:2,5.2:2		Plánek pozemku – rozměr z obsahu, procenta z rozlohy
+2025	A	6	OV	G-TEL;N-JED	6.1:1,6.2:1		Válcový sud – objem v litrech z výšky hladiny v mm a naopak
+2025	A	7	OV	G-UHLY	7.1:1,7.2:1,7.3:1		Úhly u rovnoběžek, kolmice a tří přímek
+2025	A	8	OV	G-ROV;N-ZLOM;N-DEL	8.1:1,8.2:2,8.3:1		Rostliny po obvodu čtyřúhelníku – rozestupy, zlomky, dělitelnost
+2025	A	9	K	G-KON	9:3		Osa úhlu dvou přímek; obdélník s vrcholy na přímkách
+2025	A	10	K	G-KON	10:2		Trojúhelník: výška v_c na přímce p, těžnice t_c na přímce q
+2025	A	11	AN	G-TEL	b4	A,A,A	Tělesa slepená ze dvou kvádrů – hrany a povrch
+2025	A	12	MC	G-TEL	12:2	A	Objem bazénu se šikmým dnem
+2025	A	13	MC	P-PROC;A-SLOV	13:2	B	Přihlášky na tábor – „o pětinu“ a „o 30 %“ více
+2025	A	14	MC	D-GRAF	14:2	D	Aritmetický průměr známek z tabulky četností
+2025	A	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	B,E,C	Procenta: část z celku, složení družstev, řetězení „o % více/méně“
+2025	A	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Obrazce z obdélníčků kolem čtverce
+2025	B	1	OV	N-ZLOM;A-SLOV	1		Vstupenky – dvě pětiny ceny
+2025	B	2	OV	N-ZLOM;N-ARIT	1		Odmocnina ze součinu smíšených čísel
+2025	B	3	OV+OP	N-ZLOM;N-ARIT	3.1:1,3.2:2		Výraz se zlomky; výraz s odmocninami a zlomky
+2025	B	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Zjednodušení s (x−3)²; úprava a vytknutí; roznásobení
+2025	B	5	OP	A-ROV;A-SOU	5.1:2,5.2:2		Rovnice se zlomky; soustava dvou rovnic
+2025	B	6	OV	N-DEL	6.1:1,6.2:1,6.3:1		Rozklad čísla 231 na prvočísla, dělitelé
+2025	B	7	OV	N-ZLOM;A-SLOV	7.1:1,7.2:1,7.3:2		Prodej salátů – třetina, „o třetinu méně“, výraz s x
+2025	B	8	OV	G-ROV;G-PYT	8.1:1,8.2:2,8.3:1		Pravoúhlý lichoběžník – obsah, obvod, obvod rovnoběžníku
+2025	B	9	K	G-KON	9:3		Rovnoramenný trojúhelník: vrcholy A, B, bod M na těžnici (2 řešení)
+2025	B	10	K	G-KON	10:3		Rovnoběžník: vrcholy A, D, úhlopříčky
+2025	B	11	AN	D-GRAF	b4	A,N,N	Kruhový diagram zadaný středovými úhly
+2025	B	12	MC	G-UHLY	12:2	B	Úhly u shodných rovnoramenných trojúhelníků a rovnoběžek
+2025	B	13	MC	G-TEL	13:2	C	Krychle 4×4×4 z krychliček – prostorová představivost
+2025	B	14	MC	G-TEL;G-KRUH	14:2	D	Objem dvou válců jako násobek π
+2025	B	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	A,F,D	Procenta: část z celku, „o třetinu méně → o kolik % více“, rovnice
+2025	B	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Odříkávaná čísla – číselná řada se součty
+2025	C	1	OV	N-JED	1		Kolikrát více je 5 kg než 0,25 g
+2025	C	2	OV	N-DEL	1		Prvočísla – druhá mocnina o 3 menší než jiné prvočíslo
+2025	C	3	OV+OP	N-ZLOM;N-ARIT	3.1:1,3.2:2		Výraz s odmocninami; složený zlomek s mocninami
+2025	C	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Úprava a umocnění; zjednodušení; roznásobení
+2025	C	5	OP	A-ROV	5.1:2,5.2:2		Dvě lineární rovnice se zlomky
+2025	C	6	OV	A-SLOV	6.1:1,6.2:1,6.3:2		Ceny nábytku: výrazy s n („o polovinu levnější“, „o třetinu dražší“) a rovnice
+2025	C	7	OV	P-POM;P-PROC	7.1:1,7.2:2,7.3:1		Cyklista – rychlost, dráha, čas, procenta
+2025	C	8	OV	G-KRUH	8.1:1,8.2:2		Obsah kruhu na dlaždici; počty kruhů na podlaze
+2025	C	9	K	G-KON	9:3		Rovnoramenný trojúhelník: vrchol B, výška BM, vrchol A na q
+2025	C	10	K	G-KON	10:3		Obdélník: vrchol A, střed strany S, vrchol D na p (2 řešení)
+2025	C	11	AN	D-GRAF;P-PROC	b4	A,A,N	Sloupcový graf návštěvnosti – násobky, průměr, procenta
+2025	C	12	MC	G-PYT	12:2	D	Uzavřený okruh s kolmými úseky – Pythagorova věta
+2025	C	13	MC	G-TEL	13:2	B	Krychle polepená čtverci – hrana z obsahu
+2025	C	14	MC	G-UHLY	14:2	C	Úhly v obdélníku s osami úhlů
+2025	C	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	F,B,A	Procenta a zlomky – hrnky
+2025	C	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Šestiúhelníkové obrazce z trojúhelníků
+2025	D	1	OV	N-ZLOM	1		Stuha – čtvrtina a dvě pětiny zbytku
+2025	D	2	OV	P-POM	1		Dvě čísla v poměru 4 : 5
+2025	D	3	OV+OP	N-ZLOM;N-ARIT	3.1:1,3.2:2		Výraz se zlomky; složený zlomek s mocninou a odmocninou
+2025	D	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Zjednodušení s (y+1)²; úprava a rozklad vzorcem; roznásobení
+2025	D	5	OP	A-ROV;A-SOU	5.1:2,5.2:2		Rovnice s desetinnými čísly; soustava dvou rovnic
+2025	D	6	OV	P-POM	6.1:1,6.2:1,6.3:2		Roboti – poměr výkonů, společná práce
+2025	D	7	OV	D-GRAF	7.1:1,7.2:3		Aritmetický průměr z tabulky s chybějícími údaji (všechna řešení)
+2025	D	8	OV	G-ROV;G-PYT	8.1:1,8.2:2		Lichoběžník vystřižený ze čtverce – obsah, obvod
+2025	D	9	K	G-KON;G-SOUM	9.1:1,9.2:2		Osa souměrnosti; rovnostranný trojúhelník a jeho obraz
+2025	D	10	K	G-KON	10:3		Rovnoběžník: vrcholy L, M, střed na p, |LM| = |LN| (2 řešení)
+2025	D	11	AN	G-UHLY	b4	N,N,A	Úhly v kružnici s průměry
+2025	D	12	MC	G-TEL	12:2	C	Rozdíl objemů krychlí z povrchu a součtu hran
+2025	D	13	MC	A-SLOV	13:2	E	Vagony tří vlaků – rovnice
+2025	D	14	MC	D-GRAF	14:2	A	Sloupcový graf bez popisu osy, chybějící údaj
+2025	D	15	PR	P-PROC;N-ZLOM	15.1:2,15.2:2,15.3:2	D,C,B	Zlomky, procenta a poměr – věk
+2025	D	16	OV	X-NEST;G-ROV	16.1:1,16.2:1,16.3:1,16.4:1		Hřiště – délky úseků po obvodu obdélníku (úsudek)
+2026	A	1	OV	N-ZLOM;D-GRAF	1.1:1,1.2:1,1.3:1		Součet a podíl zlomků, aritmetický průměr dvou zlomků
+2026	A	2	OV+OP	N-ARIT;N-ZLOM	2.1:1,2.2:2		Součin závorek s desetinnými čísly; složený zlomek
+2026	A	3	OV+OP	A-VYR	3.1:1,3.2:1,3.3:2		Hodnota výrazu pro a = 7; úprava a rozklad vzorcem; roznásobení
+2026	A	4	OP	A-ROV;A-SOU	4.1:2,4.2:2		Rovnice s desetinnými čísly; soustava dvou rovnic
+2026	A	5	OV	N-ZLOM	1		„O třetinu větší objem“ – zpětný výpočet
+2026	A	6	OV	A-SLOV;N-ZLOM	6.1:1,6.2:1,6.3:2		Cyklostezka: výrazy s x (dvě třetiny, čtvrtina z ujeté části) a rovnice
+2026	A	7	OV	P-POM	7.1:1,7.2:2		Dva běžci – rychlost, dráha, čas
+2026	A	8	OV	G-UHLY	8.1:2,8.2:1		Úhly v trojúhelníku vepsaném do půlkružnice, osa úhlu, výška
+2026	A	9	K	G-KON	9:3		Trojúhelník: AB kolmá k b, BC o 2 cm delší než AB, C na c (2 řešení)
+2026	A	10	K	G-KON;G-SOUM	10:2		Rovnoběžník s osou souměrnosti (kosočtverec), poměr úhlopříček 2 : 1
+2026	A	11	AN	D-GRAF;P-PROC;P-POM	b4	A,A,A	Kruhový diagram – zlomek, poměr, výpočet základu
+2026	A	12	MC	P-PROC;N-ZLOM	12:2	C	Parkoviště – dvacetina vs. 4 %
+2026	A	13	MC	G-ROV;G-PYT	13:2	A	Obsah rovnoramenného trojúhelníku z obvodu (Pythagorova věta)
+2026	A	14	MC	G-TEL	14:2	B	Rozdíl výšek hranolů z rozdílu povrchů
+2026	A	15	PR	P-PROC;G-TEL	15.1:2,15.2:2,15.3:2	E,D,A	O kolik procent větší/menší objem těles ze základních kvádrů
+2026	A	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Roboti přidávají a odebírají míčky – periodický děj
+2026	B	1	OV	N-JED	1		Rozdíl ploch 0,1 m² a 20 cm² v cm²
+2026	B	2	OV+OP	N-ZLOM	2.1:1,2.2:1,2.3:2		Tři výrazy se zlomky (poslední složený, s postupem)
+2026	B	3	OV+OP	A-VYR	3.1:1,3.2:1,3.3:2		Zjednodušení; úprava a vytknutí; roznásobení
+2026	B	4	OP	A-ROV	4.1:2,4.2:2		Dvě lineární rovnice se zlomky
+2026	B	5	OV	P-POM;P-PROC	5.1:1,5.2:2		Recept – přímá úměrnost; o kolik procent více
+2026	B	6	OV	P-PROC;A-SLOV	6.1:1,6.2:1,6.3:2		Čaj a punč – cena o 75 % vyšší, výraz, soustava slovně
+2026	B	7	OV	G-KRUH	7.1:1,7.2:2		Kruh dělený na části – poměr obsahů, obvod části (zaokrouhlení)
+2026	B	8	OV	G-ROV	8.1:1,8.2:1		Trojúhelníková nerovnost – nejmenší a největší možný obvod
+2026	B	9	K	G-KON	9:2		Pravidelný šestiúhelník: vrchol A, osa strany AB
+2026	B	10	K	G-KON	10:3		Dva pravoúhlé trojúhelníky se společným vrcholem C (Thaletovy kružnice)
+2026	B	11	AN	D-GRAF	b4	N,A,N	Skládaný sloupcový graf s chybějícími údaji (parkoviště)
+2026	B	12	MC	N-DEL	12:2	D	Trojúhelníkový diagram – stejný součin čísel na stranách
+2026	B	13	MC	G-TEL	13:2	C	Povrch krychle s vyříznutými krychličkami
+2026	B	14	MC	N-ZLOM;A-SLOV	14:2	A	Hrnky a kanystr – sedm osmin objemu
+2026	B	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	D,B,E	Procenta: zpětný výpočet základu, zbytek, „o 60 % lehčí“
+2026	B	16	OV	X-NEST;N-ZLOM	16.1:1,16.2:1,16.3:2		Vnořené čtverce – počty dílů, zlomek obsahu
+2026	C	1	OV	N-JED	1		Časové údaje – příjezd do cíle
+2026	C	2	OV+OP	N-ZLOM	2.1:1,2.2:1,2.3:2		Tři výrazy se zlomky a desetinným číslem
+2026	C	3	OV+OP	A-VYR	3.1:1,3.2:1,3.3:2		Rozklad vzorcem; umocnění 4·(n−1/2)²; roznásobení
+2026	C	4	OP	A-ROV;A-SOU	4.1:2,4.2:2		Rovnice se zlomky; soustava dvou rovnic
+2026	C	5	OV	A-SLOV	5.1:1,5.2:2		Fitcentrum – výraz 120x + 600 a rovnice
+2026	C	6	OV	G-ROV	6.1:2,6.2:1		Obvody šestiúhelníků složených z trojúhelníků
+2026	C	7	OV	G-TEL	7.1:1,7.2:2		Hrana krychle z povrchu; objem hranolu
+2026	C	8	OV	G-UHLY	8.1:1,8.2:2		Úhly v pravidelném pětiúhelníku s osami souměrnosti
+2026	C	9	K	G-KON	9:3		Rovnoramenný trojúhelník: vrchol A, střed strany S, střed P na p (2 řešení)
+2026	C	10	K	G-KON	10:2		Obdélník: bod U na straně, strana na k, V střed kružnice opsané
+2026	C	11	AN	D-GRAF	b4	N,N,A	Sloupcový graf služeb – úsudek z podmínek
+2026	C	12	MC	P-POM	12:2	A	Rychlost nahrávání – nepřímá úměrnost
+2026	C	13	MC	P-POM	13:2	D	Výměna zboží – poměr
+2026	C	14	MC	A-SLOV;N-ZLOM	14:2	C	Štafety – soustava slovně, výsledek zlomkem
+2026	C	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	F,E,B	Procenta: podíl, poměr → procenta, rozdíl cen
+2026	C	16	OV	X-NEST;G-ROV	16.1:1,16.2:1,16.3:2		Obrazce ze čtverců – strana, obsah, obvod
+2026	D	1	OV	P-PROC;N-JED	1		Každý hod o desetinu delší než předchozí
+2026	D	2	OV+OP	N-ARIT;N-ZLOM	2.1:1,2.2:1,2.3:2		Výraz s desetinnými čísly; dva výrazy se zlomky
+2026	D	3	OV+OP	A-VYR	3.1:1,3.2:1,3.3:2		Vytknutí (−x); roznásobení ½·(2a+4)²; roznásobení
+2026	D	4	OP	A-ROV	4.1:2,4.2:2		Rovnice s desetinnými čísly; rovnice se zlomky
+2026	D	5	OV	A-SLOV	5.1:1,5.2:1,5.3:2		Úseky kanalizace: výrazy s r a rovnice
+2026	D	6	OV	G-ROV	6.1:1,6.2:1		Obdélník složený ze dvou obdélníků – obvody, obsah
+2026	D	7	OV	G-TEL;N-ZLOM;P-POM	7.1:1,7.2:2		Krychle s lichoběžníky na stěnách – zlomek plochy, poměr ploch
+2026	D	8	OV	P-POM	8.1:1,8.2:2		Dva běžci – rychlost, dráha, čas
+2026	D	9	K	G-KON	9:3		Pravoúhlý rovnoramenný trojúhelník BCD; lichoběžník s vrcholem na p (2 řešení)
+2026	D	10	K	G-KON	10:2		Obdélník vepsaný kružnici: vrchol D, střed S, úhlopříčka bodem U
+2026	D	11	AN	D-GRAF	b4	N,N,A	Graf výšky s chybějícími údaji, aritmetický průměr
+2026	D	12	MC	P-PROC	12:2	E	Ceny dílů románu – řetězení procent
+2026	D	13	MC	N-DEL;A-SLOV	13:2	D	Dělení do trojic a pětic – zbytek
+2026	D	14	MC	G-TEL	14:2	B	Objem hranolu s kosočtvercovou podstavou ze sítě
+2026	D	15	PR	P-PROC	15.1:2,15.2:2,15.3:2	C,B,A	Procenta s tabulkou účastníků kurzů
+2026	D	16	OV	X-NEST	16.1:1,16.2:1,16.3:2		Hra s žetony – strategická/kombinatorická úloha (všechna řešení)
