@@ -247,20 +247,26 @@ def locate_tasks(pdf_path: str) -> List[TaskRegion]:
     return [regions[n] for n in found]
 
 
-def render_task(pdf_path: str, region: TaskRegion, png_path: str, dpi: int = 130) -> None:
-    """Writes one task as a PNG, stacking its page strips top to bottom.
+def render_strips(pdf_path: str, segments: List[Segment], png_path: str,
+                  left: float, right: float, dpi: int = 130) -> None:
+    """Writes page strips as one PNG, stacked top to bottom and cropped to
+    the given x range.
 
     Notes added to the PDF afterwards (annotations) are not drawn.
     """
     src = fitz.open(pdf_path)
-    width = CROP_RIGHT - CROP_LEFT
-    height = sum(s.y1 - s.y0 for s in region.segments)
+    width = right - left
+    height = sum(s.y1 - s.y0 for s in segments)
     out = fitz.open()
     page = out.new_page(width=width, height=height)
     y = 0.0
-    for s in region.segments:
+    for s in segments:
         h = s.y1 - s.y0
-        clip = fitz.Rect(CROP_LEFT, s.y0, CROP_RIGHT, s.y1)
-        page.show_pdf_page(fitz.Rect(0, y, width, y + h), src, s.page, clip=clip)
+        page.show_pdf_page(fitz.Rect(0, y, width, y + h), src, s.page, clip=fitz.Rect(left, s.y0, right, s.y1))
         y += h
     page.get_pixmap(dpi=dpi).save(png_path)
+
+
+def render_task(pdf_path: str, region: TaskRegion, png_path: str, dpi: int = 130) -> None:
+    """Writes one task as a PNG, stacking its page strips top to bottom."""
+    render_strips(pdf_path, region.segments, png_path, CROP_LEFT, CROP_RIGHT, dpi)

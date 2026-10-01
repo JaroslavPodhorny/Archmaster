@@ -1,8 +1,8 @@
 """Throwaway try-out of backend/core/problem_db.py on the real booklets.
 
-    python3 backend/try_problem_db.py build
-    python3 backend/try_problem_db.py search "obdelnik" --tags G-ROV --years 2025 2026
-    python3 backend/try_problem_db.py filters
+    uv run --project backend python backend/try_problem_db.py build
+    uv run --project backend python backend/try_problem_db.py search "obdelnik" --tags G-ROV --years 2025 2026
+    uv run --project backend python backend/try_problem_db.py filters
 
 search opens the screenshots of the listed problems in Preview (macOS);
 add --no-open to only print them.

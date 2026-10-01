@@ -1,7 +1,8 @@
 """The problem database: every task of the official M9 tests, searchable.
 
-build_database() fills a SQLite file and a folder of task screenshots from
-the booklets in References/ and the catalog in analysis/data.
+build_database() fills a SQLite file and a folder of screenshots (each task
+and its official solution) from the booklets and answer keys in References/
+and the catalog in analysis/data.
 search_problems() and filter_options() read it.
 """
 from __future__ import annotations
@@ -12,7 +13,7 @@ import sqlite3
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Sequence
 
-from . import booklet
+from . import answer_key, booklet
 from .catalog import FORMATS, TAGS, TERMS, load_catalog
 
 _BOOKLET_NAMES = {'A': '1_termin_A', 'B': '2_termin_B', 'C': 'nahradni_1_C', 'D': 'nahradni_2_D'}
@@ -31,6 +32,7 @@ CREATE TABLE problems (
     success_pct  REAL,
     skipped_pct  REAL,
     screenshot   TEXT NOT NULL,         -- file name inside the screenshots folder
+    solution     TEXT NOT NULL,         -- the task's rows of the official key, same folder
     source_pdf   TEXT NOT NULL,
     pages        TEXT NOT NULL          -- e.g. "4" or "11,12"
 );
@@ -68,6 +70,7 @@ class Problem:
     success_pct: Optional[float]
     skipped_pct: Optional[float]
     screenshot: str
+    solution: str
     source_pdf: str
     pages: List[int]
 
@@ -81,7 +84,7 @@ class SearchResult:
 def build_database(db_path: str, screenshots_dir: str, booklets_dir: str, analysis_data_dir: str) -> int:
     """Rebuilds the database and all screenshots from scratch.
 
-    booklets_dir is References/Matematika, analysis_data_dir is analysis/data.
+    booklets_dir is References/Matematika (tests and their keys), analysis_data_dir is analysis/data.
     Returns the number of problems stored.
     """
     catalog = load_catalog(analysis_data_dir)
@@ -93,19 +96,25 @@ def build_database(db_path: str, screenshots_dir: str, booklets_dir: str, analys
     db.executescript(_SCHEMA)
 
     regions: Dict[tuple, Dict[int, booklet.TaskRegion]] = {}
+    solutions: Dict[tuple, Dict[int, booklet.TaskRegion]] = {}
     for t in catalog:
         pdf_name = f'M9_{t.year}_{_BOOKLET_NAMES[t.term]}_test.pdf'
         pdf_path = os.path.join(booklets_dir, pdf_name)
+        key_path = os.path.join(booklets_dir, f'M9_{t.year}_{_BOOKLET_NAMES[t.term]}_klic.pdf')
         if (t.year, t.term) not in regions:
             regions[(t.year, t.term)] = {r.task: r for r in booklet.locate_tasks(pdf_path)}
+            solutions[(t.year, t.term)] = {r.task: r for r in answer_key.locate_solutions(key_path)}
         region = regions[(t.year, t.term)][t.task]
         problem_id = f'M9-{t.year}-{t.term}-{t.task:02d}'
         screenshot = f'{problem_id}.png'
+        solution = f'{problem_id}-reseni.png'
         booklet.render_task(pdf_path, region, os.path.join(screenshots_dir, screenshot))
+        answer_key.render_solution(key_path, solutions[(t.year, t.term)][t.task],
+                                   os.path.join(screenshots_dir, solution))
         db.execute(
-            'INSERT INTO problems VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+            'INSERT INTO problems VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
             (problem_id, t.year, t.term, t.task, t.format, t.points, t.description, region.text,
-             t.answer_key, t.success_pct, t.skipped_pct, screenshot, pdf_name,
+             t.answer_key, t.success_pct, t.skipped_pct, screenshot, solution, pdf_name,
              ','.join(str(p) for p in region.pages)))
         db.executemany('INSERT INTO problem_tags VALUES (?,?)', [(problem_id, tag) for tag in t.tags])
         db.execute('INSERT INTO problems_fts VALUES (?,?,?)', (problem_id, t.description, region.text))
@@ -186,7 +195,8 @@ def search_problems(
         id=r['id'], year=r['year'], term=r['term'], task=r['task'], format=r['format'],
         points=r['points'], tags=sorted(r['tags'].split(',')), description=r['description'],
         text=r['text'], answer_key=r['answer_key'], success_pct=r['success_pct'],
-        skipped_pct=r['skipped_pct'], screenshot=r['screenshot'], source_pdf=r['source_pdf'],
+        skipped_pct=r['skipped_pct'], screenshot=r['screenshot'],
+        solution=r['solution'], source_pdf=r['source_pdf'],
         pages=[int(p) for p in r['pages'].split(',')]) for r in rows]
     return SearchResult(total, problems)
 
