@@ -20,3 +20,6 @@ dist/
 # Generator outputs
 output/
 
+
+# Built from References/ by backend/core (database + task screenshots)
+backend/data/
