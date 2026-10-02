@@ -1,0 +1,157 @@
+# working vocabulary of principles (id<TAB>name). Updated while solving. S = specification only, kept from the old tree.
+POC.VYR.poradi	Pořadí operací a závorky
+POC.VYR.zaporna	Počítání se zápornými čísly
+POC.VYR.desetinna	Počítání s desetinnými čísly
+POC.VYR.mocnina	Druhá mocnina čísla
+POC.VYR.odmocnina	Druhá odmocnina
+POC.VYR.slovy	Výraz zadaný slovy
+POC.VYR.osa	Číselná osa se stejnými dílky
+POC.VYR.zaokrouhleni	Zaokrouhlení na daný řád
+POC.ZLOM.kraceni	Krácení, rozšiřování, základní tvar
+POC.ZLOM.scitani	Sčítání a odčítání zlomků: společný jmenovatel
+POC.ZLOM.nasobeni	Násobení a dělení zlomků
+POC.ZLOM.slozeny	Složený zlomek
+POC.ZLOM.desetinna	Převod desetinného čísla na zlomek a zpět
+POC.ZLOM.mocnina	Mocnina a odmocnina zlomku
+POC.ZLOM.smisene	Smíšené číslo
+POC.ZLOM.porovnani	Porovnávání zlomků
+POC.DEL.delitele	Dělitelé a násobky čísla
+POC.DEL.prvocisla	Prvočísla a rozklad na prvočísla
+POC.DEL.zbytek	Dělení se zbytkem
+POC.DEL.nasobek	Společný násobek
+POC.JED.delka	Jednotky délky
+POC.JED.obsah	Jednotky obsahu
+POC.JED.objem	Jednotky objemu a litry
+POC.JED.hmotnost	Jednotky hmotnosti
+POC.JED.cas	Jednotky času
+POC.JED.uhel	Stupně a minuty
+ALG.VYR.hodnota	Dosazení čísla do výrazu
+ALG.VYR.scitani	Sloučení členů, minus před závorkou
+ALG.VYR.nasobeni	Násobení jednočlenů a mnohočlenů (roznásobení závorek)
+ALG.VYR.umocneni	Vzorec (a ± b)²
+ALG.VYR.rozdil	Rozklad a² − b² na součin
+ALG.VYR.vytykani	Vytýkání
+ALG.VYR.rozklad	Rozklad trojčlenu podle (a ± b)²
+ALG.ROV.upravy	Ekvivalentní úpravy rovnice
+ALG.ROV.zlomky	Odstranění zlomků z rovnice
+ALG.ROV.pocet-reseni	Rovnice bez řešení a s nekonečně mnoha řešeními
+ALG.ROV.soustava	Soustava dvou rovnic
+VZT.CAST.cast	Zlomek z čísla
+VZT.CAST.podil	Jakou částí celku je
+VZT.CAST.zbytek	Zbytek celku a část ze zbytku
+VZT.CAST.zlomek-ze-zlomku	Zlomek ze zlomku
+VZT.CAST.celek	Celek z části
+VZT.NEZ.okolik-kolikrat	„o kolik“ je rozdíl, „kolikrát“ je podíl
+VZT.NEZ.o-zlomek	„o třetinu více / méně než“ jako násobení
+VZT.NEZ.krat-mene	„kolikrát méně / menší než“ jako dělení
+VZT.NEZ.obraceni	Obrácení vztahu
+VZT.PROC.cast	Procentová část
+VZT.PROC.pocet	Počet procent
+VZT.PROC.zaklad	Základ z procentové části
+VZT.PROC.nasobitel	„o x % více / méně“ jako násobitel
+VZT.PROC.zaklad-po-zmene	Základ po změně
+VZT.PROC.o-kolik-procent	O kolik procent se liší dvě veličiny
+VZT.PROC.obracene	Obrácené srovnání v procentech
+VZT.PROC.postupne	Dvě změny po sobě
+VZT.PROC.prevody	Procento, zlomek a poměr: převody
+VZT.PROC.body	Procentní body
+VZT.PROC.urok	Úrok a daň z úroku
+VZT.POM.pomer	Poměr: zápis, krácení, poměr jako zlomek
+VZT.POM.deleni	Díly poměru: z celku, části nebo rozdílu
+VZT.POM.meritko	Měřítko mapy a plánu
+VZT.POM.prima	Přímá úměrnost
+VZT.POM.neprima	Nepřímá úměrnost
+VZT.POM.prace	Společná práce
+VZT.POM.pohyb	Pohyb: s = v · t
+VZT.POM.smesi	Směsi a průměrná cena
+VZT.SLOV.vyraz	Vyjádření veličiny výrazem s proměnnou
+VZT.SLOV.rovnice	Sestavení rovnice ze zadání
+VZT.SLOV.dve-nezname	Dvě neznámé
+VZT.SLOV.cela-cisla	Podmínka celého čísla
+DAT.GRAF.sloupcovy	Čtení sloupcového grafu
+DAT.GRAF.kruhovy	Kruhový diagram
+DAT.GRAF.tabulka	Čtení tabulky
+DAT.PRUM.vypocet	Aritmetický průměr
+DAT.PRUM.cetnosti	Průměr z četností
+DAT.PRUM.zpetne	Součet z průměru, chybějící hodnota
+GEO.UHLY.vedlejsi	Vedlejší a vrcholové úhly
+GEO.UHLY.rovnobezky	Souhlasné a střídavé úhly
+GEO.UHLY.trojuhelnik	Součet úhlů v trojúhelníku
+GEO.UHLY.ctyruhelnik	Součet úhlů ve čtyřúhelníku
+GEO.UHLY.rovnoramenny	Úhly v rovnoramenném a rovnostranném trojúhelníku
+GEO.UHLY.osa	Osa úhlu
+GEO.UHLY.mnohouhelnik	Pravidelný mnohoúhelník
+GEO.UHLY.kruznice	Poloměry kružnice tvoří rovnoramenný trojúhelník
+GEO.UHLY.thales	Thaletova věta
+GEO.UHLY.rovnice	Úhly s proměnnou: rovnice pro úhel
+GEO.PYT.veta	Pythagorova věta
+GEO.PYT.najit	Nalezení pravoúhlého trojúhelníku v útvaru
+GEO.PYT.telesa	Pythagorova věta v tělesech
+GEO.ROV.obvod	Obvod mnohoúhelníku
+GEO.ROV.obdelnik	Obsah čtverce a obdélníku
+GEO.ROV.trojuhelnik	Obsah trojúhelníku
+GEO.ROV.rovnobeznik	Obsah rovnoběžníku a kosočtverce
+GEO.ROV.lichobeznik	Obsah lichoběžníku
+GEO.ROV.zpetne	Strana nebo výška z obsahu či obvodu
+GEO.ROV.dvojim	Obsah vypočtený dvěma způsoby
+GEO.ROV.slozene	Složené útvary: součet a rozdíl částí
+GEO.ROV.s-promennou	Délky a obvod vyjádřené proměnnou
+GEO.ROV.nerovnost	Trojúhelníková nerovnost
+GEO.ROV.rozestupy	Rozestupy po obvodu
+GEO.KRUH.obvod	Obvod kruhu
+GEO.KRUH.obsah	Obsah kruhu
+GEO.KRUH.zpetne	Poloměr z obsahu nebo obvodu
+GEO.KRUH.casti	Půlkruh, čtvrtkruh, výseč
+GEO.TEL.kvadr-objem	Objem krychle a kvádru
+GEO.TEL.kvadr-povrch	Povrch krychle a kvádru
+GEO.TEL.hranol-objem	Objem hranolu
+GEO.TEL.hranol-povrch	Povrch hranolu
+GEO.TEL.valec-objem	Objem válce
+GEO.TEL.valec-povrch	Plášť a povrch válce
+GEO.TEL.sit	Síť tělesa
+GEO.TEL.slepena	Slepená a rozříznutá tělesa
+GEO.TEL.krychlicky	Tělesa z krychliček
+GEO.TEL.zpetne	Hrana nebo výška z objemu či povrchu
+KON.ZAKL.kolmice	Kolmice daným bodem
+KON.ZAKL.rovnobezka	Rovnoběžka daným bodem
+KON.ZAKL.osa-usecky	Střed a osa úsečky
+KON.ZAKL.osa-uhlu	Osa úhlu
+KON.ZAKL.kruznice	Kružnice: body v dané vzdálenosti
+KON.ZAKL.uhel	Úhel dané velikosti
+KON.ZAKL.thales	Thaletova kružnice
+KON.ZAKL.stredova	Středová souměrnost
+KON.ZAKL.osova	Osová souměrnost
+KON.VLAST.rovnoramenny	Rovnoramenný trojúhelník
+KON.VLAST.rovnostranny	Rovnostranný trojúhelník
+KON.VLAST.pravouhly	Pravoúhlý trojúhelník
+KON.VLAST.vyska	Výška trojúhelníku
+KON.VLAST.teznice	Těžnice trojúhelníku
+KON.VLAST.ctverec	Čtverec
+KON.VLAST.obdelnik	Obdélník
+KON.VLAST.rovnobeznik	Rovnoběžník
+KON.VLAST.kosoctverec	Kosočtverec
+KON.VLAST.lichobeznik	Lichoběžník
+KON.VLAST.sestiuhelnik	Pravidelný šestiúhelník
+KON.ROZBOR.mnoziny	Podmínka jako množina bodů, bod jako průsečík dvou čar
+KON.ROZBOR.dve-reseni	Všechna řešení
+KON.SOUM.osy	Osy souměrnosti útvaru
+ZAK.RADA.tabulka	Pokračování pravidla po krocích
+ZAK.RADA.nty-clen	Obecný n-tý člen
+ZAK.RADA.obraceni	Obrácení pravidla
+ZAK.RADA.nasobenim	Růst násobením
+ZAK.RADA.cisla	Číselná řada daná pravidlem
+ZAK.USUDEK.periody	Periodické děje
+ZAK.USUDEK.vsechna	Systematické vypsání možností
+VZT.SLOV.usudek	Rozbor textu: řetěz jednoduchých výpočtů
+# RULES: list every principle the natural solution applies as a step, main first. A formula that is only a shortcut (a²−b² when expanding) is not listed. One-step equations (ax = b) do not list ALG.ROV.upravy. Sloučení členů inside an equation is part of ALG.ROV.upravy. poradi only when the order is a real decision.
+GEO.ROV.vyska	Výška jako kolmá vzdálenost (i vně útvaru)
+DAT.GRAF.dilek	Graf bez stupnice: hodnota dílku z podmínky
+# GEO.ROV.s-promennou dropped: use VZT.SLOV.vyraz / VZT.SLOV.rovnice + GEO.ROV.obvod. VZT.NEZ.krat-mene: use okolik-kolikrat (n-krát více/méně) unless clearly distinct.
+# Thales: KON.ZAKL.thales in constructions, GEO.UHLY.thales in angle tasks; merge at consolidation. KON.VLAST.pravouhly only when legs' perpendicularity is used without Thales.
+# GEO.TEL.slepena covers also řez tělesa.
+DAT.GRAF.cteni	Čtení hodnot z grafu nebo diagramu
+# DAT.GRAF.sloupcovy -> DAT.GRAF.cteni at consolidation (generic reading); DAT.GRAF.kruhovy only for parts of a circle as percentages/angles.
+DAT.GRAF.chybejici	Dopočet chybějícího údaje ze vztahu mezi údaji
+VZT.POM.obsah-meritko	Měřítko a obsah: poměr obsahů je druhá mocnina měřítka
+# GEO.ROV.slozene = skládání a rozklad útvarů (obsah i obvod).
+GEO.TEL.kvadr-hrany	Hrany, stěny a vrcholy kvádru

@@ -1,0 +1,4690 @@
+{
+ "2022 A": {
+  "1": {
+   "reseni": "(49 − 7) : 7 = 6",
+   "principy": [
+    "POC.VYR.odmocnina",
+    "POC.VYR.mocnina"
+   ]
+  },
+  "2.1": {
+   "reseni": "4 dm² = 400 cm²; délka 400 : 8 = 50 cm; 50 − 8 = 42 cm",
+   "principy": [
+    "POC.JED.obsah",
+    "GEO.ROV.zpetne"
+   ]
+  },
+  "2.2": {
+   "reseni": "1,2 dm³ = 1 200 000 mm³; 1 200 000 : 300 = 4 000krát",
+   "principy": [
+    "POC.JED.objem",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "3.1": {
+   "reseni": "8/5 · (7/12 − 10/12) = 8/5 · (−1/4) = −2/5",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel (12/15 − 10/15) · 5/8 = 1/12; 1/12 : 2/3 = 1/8",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "4.1": {
+   "reseni": "3y · (y − 3 + 2x)",
+   "principy": [
+    "ALG.VYR.vytykani"
+   ]
+  },
+  "4.2": {
+   "reseni": "x² + 2 · x · 3/2 + (3/2)² = x² + 3x + 9/4",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "POC.ZLOM.mocnina"
+   ]
+  },
+  "4.3": {
+   "reseni": "(4 + 3n) · n − 5n² + 5n = 4n + 3n² − 5n² + 5n = −2n² + 9n",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "2 − 1,5x = 0,5x + 7; −2x = 5; x = −2,5",
+   "principy": [
+    "ALG.ROV.upravy",
+    "POC.VYR.desetinna",
+    "POC.VYR.poradi",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 15: 5(3 − y) + 9(y + 1) + 5y = 15y; 24 + 9y = 15y; y = 4",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6": {
+   "reseni": "trojboký: (6 · 8 : 2) · 20 = 480 cm³; x je přepona: x² = 36 + 64, x = 10; čtyřboký: 10 · 10 · 20 = 2 000 cm³",
+   "principy": [
+    "GEO.TEL.hranol-objem",
+    "GEO.PYT.veta",
+    "GEO.ROV.trojuhelnik",
+    "GEO.TEL.kvadr-objem"
+   ]
+  },
+  "7.1": {
+   "reseni": "2 dospělí za 30 dní 1 balení, za 360 dní 12 balení; jeden dospělý 6 balení",
+   "principy": [
+    "VZT.POM.prima"
+   ]
+  },
+  "7.2": {
+   "reseni": "dítě spotřebuje čtvrtinu toho, co dva dospělí: 30 · 4 = 120 dní",
+   "principy": [
+    "VZT.POM.neprima"
+   ]
+  },
+  "7.3": {
+   "reseni": "2 dospělí + dítě = 5 dětských dávek místo 4: 30 · 4 : 5 = 24 dní",
+   "principy": [
+    "VZT.POM.prace",
+    "VZT.POM.neprima"
+   ]
+  },
+  "8.1": {
+   "reseni": "dortík x/4",
+   "principy": [
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "8.2": {
+   "reseni": "koláč x/5, čtyři koláče 4x/5",
+   "principy": [
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "8.3": {
+   "reseni": "5 · x/4 + 4x/5 = 246; 25x + 16x = 4 920; x = 120; dortík 120 : 4 = 30 Kč",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.SLOV.vyraz",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "9": {
+   "reseni": "druhý konec ramene je obraz C ve středové souměrnosti podle S; ramena jsou shodná, takže zbylý vrchol leží na kružnici (C, délka ramene) a na q: dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "kolmice z O na p dá střed strany BC; polovina strany = vzdálenost O od p, tu nanést na p na obě strany (B, C); A, D jsou obrazy C, B podle O",
+   "principy": [
+    "KON.VLAST.ctverec",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.stredova"
+   ]
+  },
+  "11.1": {
+   "reseni": "3/4 z 200 min = 150 min; polovina ze 3 h = 90 min; N",
+   "principy": [
+    "VZT.CAST.cast",
+    "POC.JED.cas"
+   ]
+  },
+  "11.2": {
+   "reseni": "2/3 z 2,4 h = 1,6 h = 96 min = 1 h 36 min, méně než 1 h 40 min; N",
+   "principy": [
+    "VZT.CAST.cast",
+    "POC.JED.cas"
+   ]
+  },
+  "11.3": {
+   "reseni": "3/8 · 5 = 15/8 = 5/8 · 3; A",
+   "principy": [
+    "VZT.CAST.cast"
+   ]
+  },
+  "12": {
+   "reseni": "v trojúhelníku mezi přímkami: vrcholový 60°, vedlejší k 132° je 48°, třetí úhel 72°; u bodu A na přímce 3α + α + 72° = 180°, α = 27°",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "GEO.UHLY.vedlejsi",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "13": {
+   "reseni": "oblouk 2π · 10 : 5 = 12,56 cm, plus dva poloměry 20 cm, celkem asi 33 cm",
+   "principy": [
+    "GEO.KRUH.casti",
+    "GEO.KRUH.obvod"
+   ]
+  },
+  "14": {
+   "reseni": "bez bodu 30 : 2 = 15 soutěžících; 45 soutěžících je 90 %, všech je 50; dva body má 5; průměr (30 · 1 + 5 · 2) : 50 = 0,8",
+   "principy": [
+    "DAT.PRUM.cetnosti",
+    "DAT.GRAF.kruhovy",
+    "VZT.PROC.zaklad",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "15.1": {
+   "reseni": "600 · 0,75 = 450 kg",
+   "principy": [
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "15.2": {
+   "reseni": "600 je 120 % hledaného: 600 : 1,2 = 500 kg",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "15.3": {
+   "reseni": "chlapci x, dívky 1,5x: 2,5x = 1 200, x = 480 kg",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "16.1": {
+   "reseni": "Julie 35, Čeněk 8krát po 4 (35 : 4 = 8, zb. 3), Pavla 7krát po 5: 35 + 32 + 35 = 102",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "POC.DEL.zbytek"
+   ]
+  },
+  "16.2": {
+   "reseni": "Čeněk 14krát znamená 56. až 59. kolo; Pavla přidala 56 : 5 = 11krát (zb. 1)",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "POC.DEL.zbytek"
+   ]
+  },
+  "16.3": {
+   "reseni": "po 20 kolech (společný násobek 4 a 5) je 60 mincí; 180 mincí po 60 kolech, pak tři kola po jedné minci: 63 kol",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "POC.DEL.nasobek"
+   ]
+  }
+ },
+ "2022 B": {
+  "1": {
+   "reseni": "36 − (−9) = 36 + 9 = 45",
+   "principy": [
+    "POC.VYR.zaporna",
+    "POC.VYR.mocnina",
+    "POC.VYR.poradi"
+   ]
+  },
+  "2.1": {
+   "reseni": "BC = 22 − 10 = 12, CD = 52 − 22 = 30; 12 : 30 = 2 : 5",
+   "principy": [
+    "VZT.POM.pomer",
+    "POC.VYR.osa"
+   ]
+  },
+  "2.2": {
+   "reseni": "BC = 12 jsou 3 díly, díl je 4; AB = 7 · 4 = 28; A = 10 − 28 = −18",
+   "principy": [
+    "VZT.POM.deleni",
+    "POC.VYR.osa",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.1": {
+   "reseni": "7/5 · 3/8 · 10/21 = 1/4 (krácení); 5/20 + 6/20 = 11/20",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.ZLOM.scitani",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel 2/8 − 5/8 = −3/8, jmenovatel 15/12 = 5/4; −3/8 · 4/5 = −3/10",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.1": {
+   "reseni": "x² − x + 2x² = 3x² − x = x · (3x − 1)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "25b² − 2 · 5b · 0,4a + 0,16a² = 25b² − 4ab + 0,16a²",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "4.3": {
+   "reseni": "8n² − 4n − 12n + 6 + n² − 9 = 9n² − 16n − 3",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "x + 5 = 4 − 3x; 4x = −1; x = −1/4",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 6: 3(y − 5) + (3 − y) = 6 − 4y; 2y − 12 = 6 − 4y; y = 3",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6": {
+   "reseni": "zelené, červené a modré bez těch 20 navíc: 1/4 + 1/6 + 1/6 = 7/12; zbylých 5/12 je 20 kuliček, všech je 48; zelených 12, červených 8, rozdíl 4",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek",
+    "POC.ZLOM.scitani",
+    "VZT.CAST.cast"
+   ]
+  },
+  "7.1": {
+   "reseni": "C = (12 + 6) : 2 = 9; (12 + 6 + 9 + 4 + 4) : 5 = 7",
+   "principy": [
+    "DAT.PRUM.vypocet",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "7.2": {
+   "reseni": "součet má být 5 · 8 = 40; známé 6 + 14 + 2 + 6 = 28; D = 12",
+   "principy": [
+    "DAT.PRUM.zpetne",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "8": {
+   "reseni": "KLMN = 9 + 16 = 25 cm², KL = 5 cm; ABCD = 25 + 56 = 81 cm², strana 9 cm, obvod 36 cm",
+   "principy": [
+    "GEO.ROV.slozene",
+    "GEO.ROV.zpetne",
+    "POC.VYR.odmocnina",
+    "GEO.ROV.obvod"
+   ]
+  },
+  "9": {
+   "reseni": "kolmice z C na q je osa trojúhelníku, její pata je střed AB; od paty nanést 3 cm na obě strany",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.kruznice"
+   ]
+  },
+  "10": {
+   "reseni": "S je střed úhlopříčky AC; druhá úhlopříčka prochází S kolmo k p; strany jsou rovnoběžky s p body A a C; B, D jsou průsečíky",
+   "principy": [
+    "KON.VLAST.rovnobeznik",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.rovnobezka",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "hranol a × a × 3a má povrch ze 14 čtverců (4 · 3 + 2); A",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.sit"
+   ]
+  },
+  "11.2": {
+   "reseni": "jeden čtverec 126 : 14 = 9 cm²; síť krychle 6 · 9 = 54 cm²; N",
+   "principy": [
+    "GEO.TEL.kvadr-povrch",
+    "GEO.TEL.sit",
+    "GEO.TEL.slepena"
+   ]
+  },
+  "11.3": {
+   "reseni": "a² = 9, a = 3 cm; A",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "POC.VYR.odmocnina",
+    "GEO.TEL.slepena"
+   ]
+  },
+  "12": {
+   "reseni": "plášť je obdélník obvod podstavy × výška; je to čtverec, tedy výška = 2π · 50 = 314 cm",
+   "principy": [
+    "GEO.TEL.valec-povrch",
+    "GEO.KRUH.obvod"
+   ]
+  },
+  "13": {
+   "reseni": "v trojúhelníku mezi příčkami a jednou rovnoběžkou jsou úhly 70° (souhlasný k 110°, vedlejší) a 80° (vedlejší k 100°), třetí 30°; α = 180° − 30° = 150°",
+   "principy": [
+    "GEO.UHLY.rovnobezky",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "14": {
+   "reseni": "v polici k + 8 knih, celkem k · (k + 8) = k² + 8k",
+   "principy": [
+    "VZT.SLOV.vyraz",
+    "ALG.VYR.nasobeni"
+   ]
+  },
+  "15.1": {
+   "reseni": "snížení o 12 000 z 20 000 je 60 %",
+   "principy": [
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "15.2": {
+   "reseni": "zbývá 75 % louky, z toho 60 % je 45 %; neposečeno 100 − 25 − 45 = 30 %",
+   "principy": [
+    "VZT.CAST.zbytek",
+    "VZT.PROC.cast",
+    "VZT.PROC.prevody"
+   ]
+  },
+  "15.3": {
+   "reseni": "za stejnou částku 80 místo 120 kusů: cena kusu je 120 : 80 = 1,5krát vyšší, o 50 %",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "VZT.POM.neprima"
+   ]
+  },
+  "16.1": {
+   "reseni": "uvnitř obdélníku a × b je (a − 1) · (b − 1) mřížových bodů: 80 · 19 = 1 520",
+   "principy": [
+    "ZAK.RADA.nty-clen"
+   ]
+  },
+  "16.2": {
+   "reseni": "49 · (b − 1) = 9 800, b − 1 = 200, b = 201 cm",
+   "principy": [
+    "ZAK.RADA.obraceni",
+    "ZAK.RADA.nty-clen"
+   ]
+  },
+  "16.3": {
+   "reseni": "všech 40 · 22 = 880; bílé tvoří vnitřní obdélník 38 · 20 = 760; tmavých 120; rozdíl 640",
+   "principy": [
+    "ZAK.RADA.nty-clen"
+   ]
+  }
+ },
+ "2022 C": {
+  "1": {
+   "reseni": "100 · 99 : (1 000 + 100) = 9 900 : 1 100 = 9",
+   "principy": [
+    "POC.VYR.mocnina",
+    "POC.VYR.poradi"
+   ]
+  },
+  "2.1": {
+   "reseni": "5,1 m − 3 · 0,5 m = 3,6 m = 360 cm; 360 : 12 = 30 cm",
+   "principy": [
+    "POC.JED.delka",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "2.2": {
+   "reseni": "1 h 50 min = 110 min; 3/5 · 110 = 66 min",
+   "principy": [
+    "VZT.CAST.cast",
+    "POC.JED.cas"
+   ]
+  },
+  "3.1": {
+   "reseni": "5 − 13/5 = 12/5; 1/3 · 12/5 · 1/20 = 12/300 = 1/25",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel 4/6 − 9/6 = −5/6, jmenovatel 2/3 · 2/3 = 4/9; −5/6 · 9/4 = −15/8",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.1": {
+   "reseni": "4x + x² + 2x² = 4x + 3x² = x · (4 + 3x)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "nejdřív závorky: (−2y) · 4y = −8y²",
+   "principy": [
+    "ALG.VYR.scitani",
+    "ALG.VYR.nasobeni"
+   ]
+  },
+  "4.3": {
+   "reseni": "(n + 1)² + (1 + 4n)² = n² + 2n + 1 + 1 + 8n + 16n² = 17n² + 10n + 2",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "6x − 3 + 2/3 = 2/3 − x − 3; 7x = 0; x = 0",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 6: y + 1 − 9y = 12 + 1 − 2y; −6y = 12; y = −2",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "6.1": {
+   "reseni": "o třetinu více než x je 4x/3",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.2": {
+   "reseni": "x + 12",
+   "principy": [
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.3": {
+   "reseni": "x + (x + 12) = 2 · 4x/3; 6x + 36 = 8x; x = 18",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.NEZ.okolik-kolikrat",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "7": {
+   "reseni": "3 větší krabičky mají 30 kříd, menší má 30 : 5 = 6; ve větších je 300 − 30 = 270 kříd, tedy 27 krabiček",
+   "principy": [
+    "VZT.SLOV.usudek"
+   ]
+  },
+  "8.1": {
+   "reseni": "delší strana 270 : 9 = 30 cm; obvod 2 · (30 + 9) = 78 cm",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "GEO.ROV.obvod"
+   ]
+  },
+  "8.2": {
+   "reseni": "druhá odvěsna: 15² − 9² = 144, tedy 12 cm; S = 9 · 12 : 2 = 54 cm²",
+   "principy": [
+    "GEO.PYT.veta",
+    "GEO.ROV.trojuhelnik"
+   ]
+  },
+  "9": {
+   "reseni": "o není osou PQ, je tedy osou PR nebo QR: R je obraz P, nebo obraz Q v osové souměrnosti podle o; dvě řešení",
+   "principy": [
+    "KON.ZAKL.osova",
+    "KON.ZAKL.osa-usecky",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "strana AB leží na přímce AX; buď B je průsečík AX s p a C leží na kolmici v B a na c, nebo D je průsečík kolmice v A s p a C leží na rovnoběžce s AB bodem D a na c",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.rovnobezka",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "vzrostlých 12 + 9 + 8 + 8 = 37, prodaných 7 + 9 + 4 + 8 = 28; zůstalo 9; A",
+   "principy": [
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "zakoupených 42, prodaných 28; 42 = 28 + polovina z 28; A",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "zakoupené = prodané jen u druhu B; A",
+   "principy": [
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "12": {
+   "reseni": "2α + 3α = 180°, α = 36°; úhel 72° se přenese k druhé rovnoběžce (střídavý); v pravoúhlém trojúhelníku β = 90° − 72° = 18°",
+   "principy": [
+    "GEO.UHLY.rovnobezky",
+    "VZT.SLOV.rovnice",
+    "GEO.UHLY.vedlejsi",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "13": {
+   "reseni": "největší hranol má za podstavu trojúhelník se základnou 6 cm a výškou 4 cm, tedy polovinu obdélníku: 12 cm²; V = 12 · 5 = 60 cm³",
+   "principy": [
+    "GEO.TEL.hranol-objem",
+    "GEO.ROV.trojuhelnik",
+    "GEO.TEL.slepena"
+   ]
+  },
+  "14": {
+   "reseni": "plášť 2π · 5 · 20 = 200π, podstava π · 25 = 25π; 8krát",
+   "principy": [
+    "GEO.TEL.valec-povrch",
+    "GEO.KRUH.obsah",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "15.1": {
+   "reseni": "zbylo 40 % = 1 200 kg, celek 3 000 kg, odvezla 1 800 kg",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "15.2": {
+   "reseni": "2/5 = 40 % jedné palety a 10 % druhé je dohromady polovina palety = 750 kg; obě palety 3 000 kg, neprodáno 2 250 kg",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.PROC.prevody",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "15.3": {
+   "reseni": "jaro 1 500 : 1,5 = 1 000 kg, podzim 1 500 : 0,5 = 3 000 kg; rozdíl 2 000 kg",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "16.1": {
+   "reseni": "pro n bodů je černých n², vodorovných přímek 2n − 1, bílých 2(n − 1); 36 = 6², přímek 11",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "16.2": {
+   "reseni": "2n − 1 = 49, n = 25; bílých 2 · 24 = 48",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni"
+   ]
+  },
+  "16.3": {
+   "reseni": "2(n − 1) = 64, n = 33; černých 33² = 1 089",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni",
+    "POC.VYR.mocnina"
+   ]
+  }
+ },
+ "2022 D": {
+  "1": {
+   "reseni": "95 = 5 · 19; dělitelé 5 a 19",
+   "principy": [
+    "POC.DEL.delitele"
+   ]
+  },
+  "2.1": {
+   "reseni": "9 − 25 + 16 = 0",
+   "principy": [
+    "POC.VYR.zaporna",
+    "POC.VYR.mocnina",
+    "POC.VYR.poradi"
+   ]
+  },
+  "2.2": {
+   "reseni": "−0,92 : 0,2 = −9,2 : 2 = −4,6",
+   "principy": [
+    "POC.VYR.desetinna",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.1": {
+   "reseni": "36/100 − 15/100 = 21/100; 21/100 · 25/7 = 3/4",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.2": {
+   "reseni": "12 : 8/3 = 9/2; (4/3) : 18 = 2/27; 9/2 · 2/27 = 1/3",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "4.1": {
+   "reseni": "√36 = 6; 10x − 8 − 6x = 4x − 8",
+   "principy": [
+    "POC.VYR.odmocnina",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "2 · y · a = 10y, a = 5; a² = 25",
+   "principy": [
+    "ALG.VYR.rozklad"
+   ]
+  },
+  "4.3": {
+   "reseni": "(6n + 1) · (1 − 6n) − 4n + 8n² = 1 − 36n² − 4n + 8n² = −28n² − 4n + 1",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "x + x + 0,18 = 0,2x; 1,8x = −0,18; x = −0,1",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 18: 21(y − 3) − 2(6y + 6) = 6; 9y − 75 = 6; y = 9",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "dvě plné krabice 47 − 16 = 31 kg, jedna 15,5 kg",
+   "principy": [
+    "VZT.SLOV.usudek"
+   ]
+  },
+  "6.2": {
+   "reseni": "plná a poloprázdná krabice se liší o 3 činky: 15,5 − 8 = 7,5 kg; činka 2,5 kg",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "6.3": {
+   "reseni": "15,5 − 6 · 2,5 = 0,5 kg",
+   "principy": [
+    "VZT.SLOV.usudek",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "7.1": {
+   "reseni": "Václavovi zbývá 20 z 80 vyšších schodů; stejné výšce odpovídá 20 · 96 : 80 = 24 nižších schodů",
+   "principy": [
+    "VZT.POM.prima"
+   ]
+  },
+  "7.2": {
+   "reseni": "Dana sešla 24 + 30 = 54 schodů, k nádvoří zbývá 42 nižších; to je 42 · 80 : 96 = 35 vyšších schodů",
+   "principy": [
+    "VZT.POM.prima"
+   ]
+  },
+  "8.1": {
+   "reseni": "strana čtverce √144 = 12 cm; 30 = 12 · v : 2, v = 5 cm",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "GEO.ROV.trojuhelnik",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "8.2": {
+   "reseni": "bílá plocha 144 cm²; dva lichoběžníky 144 − 60 = 84, jeden 42 cm²; 42 = (12 + 9) · v : 2, v = 4 cm",
+   "principy": [
+    "GEO.ROV.slozene",
+    "GEO.ROV.lichobeznik",
+    "GEO.ROV.zpetne"
+   ]
+  },
+  "9": {
+   "reseni": "C je obraz A podle S; B leží na p a na rameni úhlu 120° sestrojeného u S k polopřímce SA; D je obraz B podle S",
+   "principy": [
+    "KON.VLAST.rovnobeznik",
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.uhel",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "osa souměrnosti je přímka CQ; vrchol na p je průsečík p s kružnicí (C, 5 cm), druhý vrchol je jeho obraz podle osy CQ; dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.osova",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "přemístěním jednoho čtverce získá útvar A nejvýše dvě osy souměrnosti; A",
+   "principy": [
+    "KON.VLAST.osy"
+   ]
+  },
+  "11.2": {
+   "reseni": "útvar B lze upravit tak, že má více os než dvě; N",
+   "principy": [
+    "KON.VLAST.osy"
+   ]
+  },
+  "11.3": {
+   "reseni": "útvar C lze upravit tak, že má více os než jednu; N",
+   "principy": [
+    "KON.VLAST.osy"
+   ]
+  },
+  "12": {
+   "reseni": "u dolního bodu: 180° − 36° − 60° (rovnostranný trojúhelník) = 84°; třetí úhel bílého trojúhelníku 180° − 41° − 84° = 55°; φ = 180° − 55° = 125°",
+   "principy": [
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi",
+    "KON.VLAST.rovnoramenny"
+   ]
+  },
+  "13": {
+   "reseni": "odvěsny 15 a 8 cm (17² − 15² = 64); těleso má průřez lichoběžník se základnami 45 a 15 cm a rameny 17 cm; bílé stěny 5 · (45 + 15 + 17 + 17) = 470 cm²",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.hranol-povrch",
+    "GEO.PYT.veta"
+   ]
+  },
+  "14": {
+   "reseni": "jeden hranol (15 · 8 : 2) · 5 = 300 cm³, čtyři 1 200 cm³",
+   "principy": [
+    "GEO.TEL.hranol-objem",
+    "GEO.PYT.veta",
+    "GEO.ROV.trojuhelnik"
+   ]
+  },
+  "15.1": {
+   "reseni": "každý dvacátý je 1/20 = 5 %",
+   "principy": [
+    "VZT.PROC.prevody"
+   ]
+  },
+  "15.2": {
+   "reseni": "26/25 je o 1/25 více, tedy o 4 %",
+   "principy": [
+    "VZT.PROC.prevody",
+    "VZT.NEZ.o-zlomek"
+   ]
+  },
+  "15.3": {
+   "reseni": "vychladlá má 25/27 objemu teplé; teplá je 27/25 vychladlé, o 2/25 = 8 % více",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.PROC.o-kolik-procent",
+    "VZT.PROC.prevody"
+   ]
+  },
+  "16.1": {
+   "reseni": "12 je poprvé třetím číslem trojice 10, 11, 12, to je 11. trojice: místo 33",
+   "principy": [
+    "ZAK.RADA.cisla"
+   ]
+  },
+  "16.2": {
+   "reseni": "v každých 6 číslech jsou 3 lichá; 125 = 20 · 6 + 5: 60 lichých a z dalších pěti (40, 41, 42, 41, 42) dvě; 62",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "ZAK.RADA.cisla",
+    "POC.DEL.zbytek"
+   ]
+  },
+  "16.3": {
+   "reseni": "152 = 3 · 50 + 2: druhé číslo 51. trojice (50, 51, 52) je 51",
+   "principy": [
+    "ZAK.RADA.cisla",
+    "POC.DEL.zbytek"
+   ]
+  }
+ },
+ "2023 A": {
+  "1": {
+   "reseni": "zbývá jeden díl, uplynuly dva: 60 : 3 = 20 minut",
+   "principy": [
+    "VZT.POM.deleni"
+   ]
+  },
+  "2.1": {
+   "reseni": "60 l jsou 2/3 sudu, sud má 90 l; kbelík 90 : 15 = 6 l; konvička 6 : 5 = 1,2 l",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2.2": {
+   "reseni": "200 · 8 dm³ = 1 600 dm³ = 1 600 000 cm³",
+   "principy": [
+    "POC.JED.objem"
+   ]
+  },
+  "3.1": {
+   "reseni": "nejdřív dělení: 5/9 : 5 = 1/9; 5/9 − 1/9 = 4/9",
+   "principy": [
+    "POC.VYR.poradi",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani"
+   ]
+  },
+  "3.2": {
+   "reseni": "−3/8 · 16/21 = −2/7",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.3": {
+   "reseni": "čitatel 3/5 : 9/10 = 2/3, jmenovatel 35/30 + 21/30 = 28/15; 2/3 · 15/28 = 5/14",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "4.1": {
+   "reseni": "2x² − 2x + x = 2x² − x = x · (2x − 1)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "4/9 a² − 2 · 2/3 a · 3 + 9 = 4/9 a² − 4a + 9",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "POC.ZLOM.mocnina"
+   ]
+  },
+  "4.3": {
+   "reseni": "3n · (2 + n) + 14n − 2n² + 7 − n = n² + 19n + 7",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "2,5x + 5 = 2,5x + 7,5; 5 = 7,5 neplatí; rovnice nemá řešení",
+   "principy": [
+    "ALG.ROV.pocet-reseni",
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 15: y + 10 + 6y = 15 − 5(5 − y); 7y + 10 = 5y − 10; y = −10",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "6.1": {
+   "reseni": "základna AB = 6 cm, výška k ní je BC = 8 cm (leží vně trojúhelníku): S = 6 · 8 : 2 = 24 cm²",
+   "principy": [
+    "GEO.ROV.trojuhelnik",
+    "KON.VLAST.vyska"
+   ]
+  },
+  "6.2": {
+   "reseni": "(10 + 6) · 8 : 2 = 64 cm²",
+   "principy": [
+    "GEO.ROV.lichobeznik"
+   ]
+  },
+  "7.1": {
+   "reseni": "sloupce 5 a 4 dílky: 5 je o čtvrtinu, tedy o 25 % více než 4",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "7.2": {
+   "reseni": "hudební 9 dílků, šachový 11 dílků; 2 dílky = 6 žáků, dílek jsou 3 žáci; 7 dílků = 21 žáků",
+   "principy": [
+    "DAT.GRAF.dilek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "7.3": {
+   "reseni": "8. třídy 5 + 4 + 3 = 12 dílků jsou 2 díly poměru, 9. třídy mají 18 dílků; robotický 18 − 4 − 7 = 7; poměr 3 : 7",
+   "principy": [
+    "VZT.POM.deleni",
+    "VZT.POM.pomer",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "8.1": {
+   "reseni": "o 25 % kratší než a je 0,75a",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "8.2": {
+   "reseni": "stejný obvod: 4a = 2 · (0,75a + a + 10); 0,5a = 20; a = 40 m",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "GEO.ROV.obvod",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "8.3": {
+   "reseni": "čtverec 40 · 40 = 1 600 m², obdélník 30 · 50 = 1 500 m²; rozdíl 100 m²",
+   "principy": [
+    "GEO.ROV.obdelnik"
+   ]
+  },
+  "9": {
+   "reseni": "úhlopříčky obdélníku jsou shodné a půlí se: S je střed AC, úhlopříčka BD je přímka SM, B a D leží na kružnici (S, |SA|)",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "základna vychází z A po přímce AP, její druhý konec je průsečík přímky AP s k; třetí vrchol leží na ose základny a na k",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.osa-usecky",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "1 cm na mapě je 200 m; 4,9 cm je 980 m; N",
+   "principy": [
+    "VZT.POM.meritko",
+    "POC.JED.delka"
+   ]
+  },
+  "11.2": {
+   "reseni": "6 km je 30 cm, přímá trasa 2 km je 10 cm; rozdíl 20 cm; A",
+   "principy": [
+    "VZT.POM.meritko",
+    "POC.JED.delka"
+   ]
+  },
+  "11.3": {
+   "reseni": "1 cm : 200 m = 1 : 20 000; N",
+   "principy": [
+    "VZT.POM.meritko",
+    "POC.JED.delka"
+   ]
+  },
+  "12": {
+   "reseni": "BC: 17² − 15² = 64, BC = 8 m; CF a HA jsou úhlopříčky stěn 8 × 6, tedy 10 m; FH = AC = 17 m; 17 + 10 + 17 + 10 = 54 m",
+   "principy": [
+    "GEO.PYT.najit",
+    "GEO.PYT.veta"
+   ]
+  },
+  "13": {
+   "reseni": "plášť = 3 podstavy, povrch = 5 podstav = 5 · π · 100 = 1 570 cm²",
+   "principy": [
+    "GEO.TEL.valec-povrch",
+    "GEO.KRUH.obsah"
+   ]
+  },
+  "14": {
+   "reseni": "trojúhelník mezi příčkami a rovnoběžkou má úhly 2α (vrcholový), 4α a 4α (přenesený po rovnoběžkách): 10α = 180°, α = 18°; β = 180° − 72° = 108°",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.rovnobezky",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "15.1": {
+   "reseni": "250 · 1,2 · 1,2 = 360",
+   "principy": [
+    "VZT.PROC.postupne",
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "15.2": {
+   "reseni": "400 je 5/4 Janiny vzdálenosti: 400 : 5 · 4 = 320 km",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek"
+   ]
+  },
+  "15.3": {
+   "reseni": "42 je 25 % stavu na konci krize, ten je 168; 168 je 60 % stavu před krizí: 168 : 0,6 = 280",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "16.1": {
+   "reseni": "bílých je vždy třikrát víc: 1, 3, 9, 27, 81",
+   "principy": [
+    "ZAK.RADA.nasobenim",
+    "ZAK.RADA.tabulka"
+   ]
+  },
+  "16.2": {
+   "reseni": "šedých přibude tolik, kolik bylo bílých: 121 + 243 = 364",
+   "principy": [
+    "ZAK.RADA.tabulka",
+    "ZAK.RADA.nasobenim"
+   ]
+  },
+  "16.3": {
+   "reseni": "přírůstek šedých 6 561 je počet bílých v předposledním obrazci; v posledním je jich 3 · 6 561 = 19 683",
+   "principy": [
+    "ZAK.RADA.nasobenim",
+    "ZAK.RADA.tabulka"
+   ]
+  }
+ },
+ "2023 B": {
+  "1": {
+   "reseni": "√25 − 9 = 5 − 9 = −4",
+   "principy": [
+    "POC.VYR.odmocnina",
+    "POC.VYR.mocnina",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "2.1": {
+   "reseni": "o 150 % dražší je 250 % ceny, tedy 2,5krát",
+   "principy": [
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "2.2": {
+   "reseni": "třídenní 600 · 2,5 = 1 500 Kč, tři jednodenní 1 800 Kč; o 300 Kč",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "3.1": {
+   "reseni": "1/6 − 8/9 = 3/18 − 16/18 = −13/18",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.VYR.zaporna",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.2": {
+   "reseni": "7/6 · 3/5 = 7/10",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "3.3": {
+   "reseni": "čitatel 14/21 + 6/21 = 20/21, jmenovatel (9/14 + 21/14) · 2 = 30/7; 20/21 · 7/30 = 2/9",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "4.1": {
+   "reseni": "xy − 3x + 3x − 6y = xy − 6y = y · (x − 6)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "3a − 2² = 3a − 4; 9a² − 16 = (3a − 4) · (3a + 4); hledaný výraz 3a + 4",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "POC.VYR.mocnina"
+   ]
+  },
+  "4.3": {
+   "reseni": "9n² + 12n + 4 − 3n² − 4n + n² = 7n² + 8n + 4",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "2 + 0,5x − 1,5 = 0,6x + 0,8; −0,1x = 0,3; x = −3",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "(2y − 1)/2 = (3y + 2)/8 + (y − 1)/8; · 8: 8y − 4 = 4y + 1; y = 5/4",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "POC.ZLOM.nasobeni",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "5/6 z 30 dní = 25 dní",
+   "principy": [
+    "VZT.CAST.cast"
+   ]
+  },
+  "6.2": {
+   "reseni": "zásoba 12 · 30 = 360 denních dávek; 360 : 45 = 8 členů",
+   "principy": [
+    "VZT.POM.neprima"
+   ]
+  },
+  "6.3": {
+   "reseni": "první x členů 4 dny, druhá 2x členů 8 dní: 4x + 16x = 360; x = 18",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.POM.neprima"
+   ]
+  },
+  "7.1": {
+   "reseni": "autobus trvá dvakrát déle než rychlík, rychlík tedy x/2",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "7.2": {
+   "reseni": "o čtvrtinu déle než x je 5x/4",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "7.3": {
+   "reseni": "5x/4 − x/2 = 15; 3x/4 = 15; x = 20 minut",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "8.1": {
+   "reseni": "πr² = π · 144, r = 12 cm, d = 24 cm",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "8.2": {
+   "reseni": "řez je obdélník průměr × výška ze dvou čtverců: d = 2v, 2v² = 200, v = 10 cm, r = 10 cm; V = π · 100 · 10 = 3 140 cm³",
+   "principy": [
+    "GEO.TEL.valec-objem",
+    "GEO.TEL.slepena",
+    "GEO.ROV.zpetne",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "9": {
+   "reseni": "D je obraz A podle S; rovnoramenný lichoběžník je souměrný podle osy základny AB, C je obraz D podle této osy",
+   "principy": [
+    "KON.VLAST.lichobeznik",
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.osova"
+   ]
+  },
+  "10": {
+   "reseni": "pravý úhel u C na kružnici znamená, že AB je průměr k; bodem Q prochází buď přepona (přímka SQ), nebo odvěsna (přímka CQ protne k ve vrcholu, druhý je naproti přes S)",
+   "principy": [
+    "KON.VLAST.thales",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "přemístěním dílů se obsah nemění; N",
+   "principy": [
+    "GEO.ROV.slozene"
+   ]
+  },
+  "11.2": {
+   "reseni": "strana kosočtverce je přepona trojúhelníku s odvěsnami 4 a 3 cm: 5 cm; A",
+   "principy": [
+    "GEO.PYT.veta",
+    "GEO.PYT.najit"
+   ]
+  },
+  "11.3": {
+   "reseni": "obsah 24 cm² = strana · výška = 5 · v, v = 4,8 cm; A",
+   "principy": [
+    "GEO.ROV.rovnobeznik",
+    "GEO.ROV.zpetne"
+   ]
+  },
+  "12": {
+   "reseni": "úhly při základně 80°, u C 20°; SC je osa trojúhelníku, úhel ACS = 10° = φ (střídavý); rovnoběžka svírá s BC 20° (souhlasný), ω = 160°; součet 170°",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "GEO.UHLY.rovnobezky",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "13": {
+   "reseni": "60 = 24 · v : 2, v = 5 cm; V = 60 · 5 = 300 cm³",
+   "principy": [
+    "GEO.TEL.hranol-objem",
+    "GEO.ROV.zpetne",
+    "GEO.ROV.trojuhelnik"
+   ]
+  },
+  "14": {
+   "reseni": "dvakrát pětina a 180 je celek: 3/5 je 180, celek 300; první den 60",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek",
+    "VZT.CAST.cast"
+   ]
+  },
+  "15.1": {
+   "reseni": "loni 40, letos o 20 více: 20 : 40 = 50 %",
+   "principy": [
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "15.2": {
+   "reseni": "3/4 · 3/5 = 9/20 = 45 %",
+   "principy": [
+    "VZT.CAST.zlomek-ze-zlomku",
+    "VZT.PROC.prevody"
+   ]
+  },
+  "15.3": {
+   "reseni": "dny v dílech 3, 3 a 4 (o třetinu více); 4 : 10 = 40 %",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.PROC.pocet"
+   ]
+  },
+  "16.1": {
+   "reseni": "přibývá 4, 8, 12, … polí, do n-tého obrazce 4(n − 1): 4 · 8 = 32",
+   "principy": [
+    "ZAK.RADA.tabulka",
+    "ZAK.RADA.nty-clen"
+   ]
+  },
+  "16.2": {
+   "reseni": "n-tý obrazec má n² polí naposled přidané barvy a (n − 1)² druhé: 100 tmavých a 81 světlých, rozdíl 19",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "POC.VYR.mocnina"
+   ]
+  },
+  "16.3": {
+   "reseni": "400 = 20²: buď 20. obrazec (světlých 19² = 361), nebo 21. obrazec (světlých 21² = 441)",
+   "principy": [
+    "ZAK.RADA.obraceni",
+    "ZAK.RADA.nty-clen",
+    "ZAK.USUDEK.vsechna",
+    "POC.VYR.odmocnina"
+   ]
+  }
+ },
+ "2023 C": {
+  "1": {
+   "reseni": "součet 0,7, součin 0,1; 0,7 : 0,1 = 7krát",
+   "principy": [
+    "POC.VYR.slovy",
+    "POC.VYR.desetinna",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2.1": {
+   "reseni": "4 + 3 − 5 · 2 = −3",
+   "principy": [
+    "POC.VYR.poradi",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "2.2": {
+   "reseni": "√(1,69 − 1,44) = √0,25 = 0,5",
+   "principy": [
+    "POC.VYR.odmocnina",
+    "POC.VYR.mocnina",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "3.1": {
+   "reseni": "6/7 − 2/7 = 4/7",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.2": {
+   "reseni": "nejdřív dělení: 14/5 : 2 = 7/5; 1 − 7/5 = −2/5",
+   "principy": [
+    "POC.VYR.poradi",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.3": {
+   "reseni": "čitatel 9/12 + 16/12 = 25/12, jmenovatel 10/3; 25/12 · 3/10 = 5/8",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "4.1": {
+   "reseni": "(2a)² − 3² = (2a + 3) · (2a − 3)",
+   "principy": [
+    "ALG.VYR.rozdil"
+   ]
+  },
+  "4.2": {
+   "reseni": "x − 1/2 − x = −1/2",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani",
+    "POC.ZLOM.nasobeni"
+   ]
+  },
+  "4.3": {
+   "reseni": "16n² − 24n + 9 − 16n² + 12n = −12n + 9",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "0,6x + 0,3 = 0,2x − 0,7; 0,4x = −1; x = −2,5",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 12: 12y + 10y = 3(2y − 1) + 6(y + 1); 22y = 12y + 3; y = 0,3",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "Vítek x/3, Rudolf o 60 km méně: x/3 − 60",
+   "principy": [
+    "VZT.SLOV.vyraz",
+    "VZT.CAST.cast"
+   ]
+  },
+  "6.2": {
+   "reseni": "x/3 + (x/3 − 60) + 2x/5 = x; 16x/15 − 60 = x; x = 900 km",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "7": {
+   "reseni": "podstava kvádru 8 × 6 cm je vepsána do podstavy válce, její úhlopříčka 10 cm je průměr, r = 5 cm; V = π · 25 · 12 = 942, po zaokrouhlení 940 cm³",
+   "principy": [
+    "GEO.PYT.najit",
+    "GEO.PYT.veta",
+    "GEO.TEL.valec-objem",
+    "POC.VYR.zaokrouhleni"
+   ]
+  },
+  "8.1": {
+   "reseni": "0,8 · 80 + 1,2 · 200 = 304 Kč za 2 kg, tedy 152 Kč za kilogram",
+   "principy": [
+    "VZT.POM.smesi",
+    "POC.JED.hmotnost"
+   ]
+  },
+  "8.2": {
+   "reseni": "x kg kešu: 0,5 · 80 + 280x = 200 · (0,5 + x); 80x = 60; x = 0,75 kg = 750 g",
+   "principy": [
+    "VZT.POM.smesi",
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.upravy",
+    "POC.JED.hmotnost"
+   ]
+  },
+  "9": {
+   "reseni": "C je průsečík p s kružnicí (A, |AB|); pravé úhly mohou být u A a D (CD rovnoběžná s AB, D na kolmici v A), nebo u C a D (AD rovnoběžná s BC, D na kolmici v C); dvě řešení",
+   "principy": [
+    "KON.VLAST.lichobeznik",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.rovnobezka",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "osa souměrnosti je osa základny AC; p prochází C, je to tedy výška z C, kolmá na stranu AB: B leží na kolmici k p bodem A a na ose o",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.VLAST.vyska",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.kolmice",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "A má 9 + 7 = 16 dětí, C polovinu, tedy 8; dívek 8 − 3 = 5; A",
+   "principy": [
+    "VZT.NEZ.okolik-kolikrat",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "A : B = 4 : 3, B má 12 dětí, chlapců 8, dívek 4; to je dvakrát víc, ne o polovinu; N",
+   "principy": [
+    "VZT.POM.deleni",
+    "VZT.NEZ.o-zlomek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "dívek 7 + 4 + 5 = 16, chlapců 9 + 8 + 3 = 20; 16 je o pětinu méně než 20; A",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "12": {
+   "reseni": "vagony tvoří 16/17 soupravy, tedy 16 délek lokomotivy; lokomotiva je 3/4 vagonu: 16 · 3/4 = 12 vagonů",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.CAST.zbytek",
+    "VZT.CAST.celek"
+   ]
+  },
+  "13": {
+   "reseni": "úhel ABC = 180° − 55° = 125° (BC rovnoběžná s AE); ABE = 55°, EBD = 60°, zbývá DBC = 10°; ω = 90° − 10° = 80°",
+   "principy": [
+    "GEO.UHLY.rovnobezky",
+    "KON.VLAST.rovnoramenny",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "14": {
+   "reseni": "povrch = 2 podstavy + plášť = 4 podstavy: a² = 36, a = 6 cm; plášť 72 = 4 · 6 · v, v = 3 cm; V = 36 · 3 = 108 cm³",
+   "principy": [
+    "GEO.TEL.hranol-povrch",
+    "GEO.TEL.zpetne",
+    "GEO.TEL.kvadr-objem",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "15.1": {
+   "reseni": "200 · 1,25 = 250",
+   "principy": [
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "15.2": {
+   "reseni": "nepřečetla x, přečetla 1,5x: 2,5x = 500, x = 200",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "15.3": {
+   "reseni": "30 je 10 %, všech 300; anglicky 60; česky 300 − 30 − 60 = 210",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.CAST.cast",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "16.1": {
+   "reseni": "n-tý obrazec: dole 2n + 3 šedých, vlevo 2n + 1, bílých n · (n + 1); 2n + 3 = 41, n = 19; bílých 19 · 20 = 380",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni"
+   ]
+  },
+  "16.2": {
+   "reseni": "n · (n + 1) = 90, n = 9; šedých (2n + 3) + (2n + 1) − 1 = 39",
+   "principy": [
+    "ZAK.RADA.obraceni",
+    "ZAK.RADA.nty-clen"
+   ]
+  },
+  "16.3": {
+   "reseni": "všech je n² + 5n + 3, rozdíl sousedních 2n + 4 = 106, n = 51; šedých 4n + 3 = 207",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni"
+   ]
+  }
+ },
+ "2023 D": {
+  "1": {
+   "reseni": "rozdíl 600 g jsou 2 díly, díl je 300 g; lehčí závaží 3 · 300 = 900 g",
+   "principy": [
+    "VZT.POM.deleni"
+   ]
+  },
+  "2.1": {
+   "reseni": "A a B leží stejně daleko od 20, jejich součet je 40; C = 40",
+   "principy": [
+    "POC.VYR.osa",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "2.2": {
+   "reseni": "od 20 do C je 5 dílků = 20, dílek je 4; B = 20 + 2 · 4 = 28",
+   "principy": [
+    "POC.VYR.osa"
+   ]
+  },
+  "3.1": {
+   "reseni": "−1/3 : 8/9 = −1/3 · 9/8 = −3/8",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "1/3 − 3/2 = 2/6 − 9/6 = −7/6",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.3": {
+   "reseni": "čitatel 12/14 − 9/14 = 3/14; jmenovatel 8/7 + 6/7 · 2/3 = 12/7; 3/14 · 7/12 = 1/8",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "4.1": {
+   "reseni": "0,09x² + 2 · 0,3x · 0,5 + 0,25 = 0,09x² + 0,3x + 0,25",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "4.2": {
+   "reseni": "49 − 16a² = (7 + 4a) · (7 − 4a)",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "ALG.VYR.nasobeni"
+   ]
+  },
+  "4.3": {
+   "reseni": "2n² − n − (−3n) · (3n + 2) + 1 − 4n² = 2n² − n + 9n² + 6n + 1 − 4n² = 7n² + 5n + 1",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "· 2: 2 − x + 4x = 5x − 6; 8 = 2x; x = 4",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "5.2": {
+   "reseni": "(3y + 3)/2 − y/3 = (2y − 3)/2 + 3/2; · 6: 9y + 9 − 2y = 6y; y = −9",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "POC.ZLOM.nasobeni",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "6.1": {
+   "reseni": "o třetinu více než p je 4p/3",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.2": {
+   "reseni": "o 60 % více než p je 1,6p = 8p/5",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.3": {
+   "reseni": "p + 290 = 4p/3 + 8p/5; · 15: 15p + 4 350 = 44p; p = 150",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "7.1": {
+   "reseni": "x aut a x autobusů zabere x + 4x = 105 míst; x = 21",
+   "principy": [
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "7.2": {
+   "reseni": "autobusů b, aut 5b/4: 5b/4 + 4b = 105; 21b = 420; b = 20",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.NEZ.o-zlomek",
+    "ALG.ROV.zlomky"
+   ]
+  },
+  "8.1": {
+   "reseni": "odebráním čtverce 6, nebo 10 vznikne útvar souměrný podle osy",
+   "principy": [
+    "KON.VLAST.osy"
+   ]
+  },
+  "8.2": {
+   "reseni": "odebráním čtverce 1, nebo 9 vznikne útvar souměrný podle šikmé osy",
+   "principy": [
+    "KON.VLAST.osy"
+   ]
+  },
+  "9": {
+   "reseni": "strany AD, BC jsou kolmice k a, strana CD rovnoběžka s a; dva z bodů určí dvě strany (kolmici a rovnoběžku, nebo dvě kolmice), délka strany se přenese; třetí bod musí zůstat vně; dvě řešení",
+   "principy": [
+    "KON.VLAST.ctverec",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.rovnobezka",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "odvěsna AC je kolmice k b v bodě A, C je její průsečík s c; u C sestrojit úhel 40° k CA na obě strany, ramena protnou b v bodech B",
+   "principy": [
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.uhel",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "stav na konci 2018: 14 + 10 − 8 = 16; A",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "do 2021 přešlo 16: 13 + nových − 3 = 16, nových 6; A",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "16 + 5 − odešlí = 9, odešlo 12, ne více než 12; N",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "12": {
+   "reseni": "čtverec má stranu s, velký obdélník 2s × s, menší obdélník 2s × s/2; 2 · (2s + s/2) = 5s = 30, s = 6; obvod velkého 6s = 36 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "VZT.SLOV.vyraz",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "13": {
+   "reseni": "α = 30° (střídavý úhel); na přímce p: β + 2β + γ = 180°; v trojúhelníku 30° + β + γ = 180°; odečtením 2β = 30°, β = 15°, γ = 135°",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "GEO.UHLY.rovnobezky",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "14": {
+   "reseni": "úhlopříčka podstavy 10 cm, řezy 5 × 10 cm; ubude stěna 8 × 10 = 80 a dva trojúhelníky 8 · 3 : 2 = 12, přibudou dva řezy po 50: 100 − 80 − 24 = −4; o 4 cm²",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.hranol-povrch",
+    "GEO.PYT.veta",
+    "GEO.ROV.trojuhelnik"
+   ]
+  },
+  "15.1": {
+   "reseni": "420 : 1,4 = 300",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "15.2": {
+   "reseni": "180 : 0,75 = 240",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "15.3": {
+   "reseni": "ženy x, muži 0,7x: 1,7x = 680, x = 400; mužů 280",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "16.1": {
+   "reseni": "úseček přibývá 6, 9, 12, 15: 18 + 12 + 15 = 45",
+   "principy": [
+    "ZAK.RADA.tabulka"
+   ]
+  },
+  "16.2": {
+   "reseni": "s n-tým patrem přibude 3n úseček a n + 1 puntíků; 3n = 96, n = 32; puntíků o 33",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni"
+   ]
+  },
+  "16.3": {
+   "reseni": "puntíků (n + 1)(n + 2) : 2 = 300, tedy 24 · 25, n = 23; další obrazec n = 24 má 3 · 24 · 25 : 2 = 900 úseček",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni"
+   ]
+  }
+ },
+ "2024 A": {
+  "1": {
+   "reseni": "zakázka je 5 · 24 = 120 hodin práce, o polovinu větší 180 hodin; čtyři švadleny 180 : 4 = 45 hodin",
+   "principy": [
+    "VZT.POM.neprima",
+    "VZT.NEZ.o-zlomek",
+    "VZT.POM.prima"
+   ]
+  },
+  "2": {
+   "reseni": "celé těžítko π · 100 · 12 = 1 200π, modrá část π · 25 · 8 = 200π; čiré sklo 1 000π = 3 140 cm³",
+   "principy": [
+    "GEO.TEL.valec-objem",
+    "GEO.TEL.slepena"
+   ]
+  },
+  "3.1": {
+   "reseni": "(2 · 2/3) · 2 + (5/6 · 4/3) · 3/2 = 8/3 + 5/3 = 13/3",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel 13/10 − 14/10 = −1/10, jmenovatel 4/30 + 5/30 = 3/10; −1/10 · 10/3 = −1/3",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.desetinna",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.1": {
+   "reseni": "nejdřív závorka: a − a/4 = 3a/4; (3a/4)² = 9a²/16",
+   "principy": [
+    "ALG.VYR.scitani",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.mocnina"
+   ]
+  },
+  "4.2": {
+   "reseni": "(3a)² − 4² = (3a − 4) · (3a + 4)",
+   "principy": [
+    "ALG.VYR.rozdil"
+   ]
+  },
+  "4.3": {
+   "reseni": "2c − 3c² − 10 + 15c + 3c² − 7c = 10c − 10 = 10 · (c − 1)",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani",
+    "ALG.VYR.vytykani"
+   ]
+  },
+  "5.1": {
+   "reseni": "−2x − 8 − 3(x² + 2x + 1) = 2x − 3x²; −8x − 11 = 2x; x = −1,1",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 5: 30 − 2(3 − 2y) = 20y; 24 + 4y = 20y; y = 3/2",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "BC: 41² − 40² = 81, BC = 9 cm; S = (40 + 28) · 9 : 2 = 306 cm²",
+   "principy": [
+    "GEO.ROV.lichobeznik",
+    "GEO.PYT.veta"
+   ]
+  },
+  "6.2": {
+   "reseni": "kolmice z D na AB odřízne pravoúhlý trojúhelník s odvěsnami 40 − 28 = 12 a 9 cm; AD = 15 cm",
+   "principy": [
+    "GEO.PYT.najit",
+    "GEO.PYT.veta"
+   ]
+  },
+  "7.1": {
+   "reseni": "němčina: 14 − 5 = 9 chlapců a 4 dívky, 13 žáků; angličtina má také 13, dívek 13 − 5 = 8",
+   "principy": [
+    "DAT.GRAF.tabulka"
+   ]
+  },
+  "7.2": {
+   "reseni": "dvě skupiny po 13: 26 žáků",
+   "principy": [
+    "DAT.GRAF.tabulka"
+   ]
+  },
+  "8.1": {
+   "reseni": "obdélník 20 × 10 bez dvou čtvrtkruhů o poloměru 10: 200 − 2 · (3,14 · 100 : 4) = 43 cm²",
+   "principy": [
+    "GEO.ROV.slozene",
+    "GEO.KRUH.casti",
+    "GEO.KRUH.obsah"
+   ]
+  },
+  "8.2": {
+   "reseni": "úsečka 20 cm a dva čtvrtoblouky 2 · (2 · 3,14 · 10 : 4) = 31,4 cm; 51 cm",
+   "principy": [
+    "GEO.KRUH.casti",
+    "GEO.KRUH.obvod",
+    "POC.VYR.zaokrouhleni"
+   ]
+  },
+  "9": {
+   "reseni": "CS je výška i osa: AB je kolmice k CS bodem S; úhel SCA je 30°, rameno protne kolmici v A; B je souměrný s A podle S",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.uhel",
+    "KON.ZAKL.kruznice"
+   ]
+  },
+  "10": {
+   "reseni": "úhlopříčky obdélníku jsou shodné: |AC| = |AE|, C je průsečík p s kružnicí (A, |AE|); B je pata kolmice z C na AE; D doplnit kolmicemi",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.kolmice",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11": {
+   "reseni": "α = 180° − 107° = 73°; γ = 180° − 73° − 23° = 84°; rozdíl 11°",
+   "principy": [
+    "GEO.UHLY.vedlejsi",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "12": {
+   "reseni": "z obrázku: rameno a je složeno ze dvou základen b, a = 2b; 2a + b = 30, b = 6, a = 12; obvod tvoří 4 ramena a 3 základny: 48 + 18 = 66 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "GEO.ROV.slozene",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "13": {
+   "reseni": "strana s: obdélník v A má obvod 2 · (s + s/2) = 3s, v B 2 · (s + s/5) = 12s/5; 3s − 12s/5 = 6, s = 10; obvod čtverce 40 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "VZT.SLOV.vyraz",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "14": {
+   "reseni": "2x − 135 = x/2; 1,5x = 135; x = 90",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "POC.VYR.slovy",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "15.1": {
+   "reseni": "10 cm : 10 m = 10 cm : 1 000 cm = 1 : 100; N",
+   "principy": [
+    "VZT.POM.meritko",
+    "POC.JED.delka"
+   ]
+  },
+  "15.2": {
+   "reseni": "2 dm = 20 cm, ve skutečnosti 20 m; A",
+   "principy": [
+    "VZT.POM.meritko",
+    "POC.JED.delka"
+   ]
+  },
+  "15.3": {
+   "reseni": "délky 1 : 100, obsahy 1 : 10 000; N",
+   "principy": [
+    "VZT.POM.obsah-meritko",
+    "VZT.POM.meritko"
+   ]
+  },
+  "16.1": {
+   "reseni": "20 000 · 1,135 = 22 700 Kč",
+   "principy": [
+    "VZT.PROC.urok",
+    "VZT.PROC.cast"
+   ]
+  },
+  "16.2": {
+   "reseni": "úrok 2,5 % z 1 000 000 je 25 000 Kč; po dani zbude 85 %: 21 250 Kč",
+   "principy": [
+    "VZT.PROC.urok",
+    "VZT.PROC.cast"
+   ]
+  },
+  "16.3": {
+   "reseni": "20 000 · 0,9 · 1,1 = 19 800 Kč",
+   "principy": [
+    "VZT.PROC.postupne",
+    "VZT.PROC.nasobitel"
+   ]
+  }
+ },
+ "2024 B": {
+  "1": {
+   "reseni": "rozdíl kroku 15 cm · 10 000 = 150 000 cm = 1,5 km",
+   "principy": [
+    "POC.JED.delka",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2": {
+   "reseni": "Ota jde po přeponě: √(40² + 30²) = 50 m; Adam 70 m; 70 je o 20 z 50, tedy o 40 % více",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "GEO.PYT.veta"
+   ]
+  },
+  "3.1": {
+   "reseni": "25/12 · (−8/15) = −10/9",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel 5/9 − 5/2 = −35/18, jmenovatel 8/12 + 2/12 − 7/12 = 1/4; −35/18 · 4 = −70/9",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.1": {
+   "reseni": "(−3)² + 2 · (−3) · (−2x) + (−2x)² = 9 + 12x + 4x²",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.2": {
+   "reseni": "6 400 − x² + 3 600 = 10 000 − x² = (100 − x) · (100 + x)",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.3": {
+   "reseni": "9x² + 6x + 1 − 7x² − (2x² + 3x − 20) = 3x + 21",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "0,8 − 0,5x = 2,1x + 3,4; −2,6x = 2,6; x = −1",
+   "principy": [
+    "ALG.ROV.upravy",
+    "POC.VYR.desetinna",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 18: 6(5 − 2y) + 2y = 3(3 − y); 30 − 10y = 9 − 3y; y = 3",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "AB: 17² − 8² = 225, AB = 15 cm; trojúhelník ABD má 15 · 8 : 2 = 60 cm²; s trojúhelníkem BCD 60 + 24 = 84 cm²",
+   "principy": [
+    "GEO.PYT.veta",
+    "GEO.ROV.trojuhelnik",
+    "GEO.ROV.slozene"
+   ]
+  },
+  "6.2": {
+   "reseni": "CD z obsahu: 24 = CD · 8 : 2, CD = 6 cm; BC je přepona trojúhelníku BCD: √(64 + 36) = 10 cm; obvod 15 + 10 + 6 + 17 = 48 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "GEO.ROV.zpetne",
+    "GEO.PYT.najit",
+    "GEO.PYT.veta"
+   ]
+  },
+  "7.1": {
+   "reseni": "o polovinu více než x je 1,5x",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "7.2": {
+   "reseni": "x + 1,5x + 72 = 217; 2,5x = 145; x = 58",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "8.1": {
+   "reseni": "n-tý obrazec má n² bílých kruhů: 8² = 64",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "POC.VYR.mocnina"
+   ]
+  },
+  "8.2": {
+   "reseni": "tmavých je (n − 1)²: 361 = 19², n = 20",
+   "principy": [
+    "ZAK.RADA.obraceni",
+    "ZAK.RADA.nty-clen",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "9": {
+   "reseni": "strany kosočtverce jsou shodné: C leží na přímce OA a na kružnici (B, |AB|); D leží na rovnoběžce s AB bodem C ve vzdálenosti |AB| od C",
+   "principy": [
+    "KON.VLAST.kosoctverec",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.rovnobezka",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "základna je LM, ramena KL a KM jsou shodná: M leží na kružnici (K, |KL|) a na k; dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11": {
+   "reseni": "250 · 1,4 · 0,6 = 210 Kč",
+   "principy": [
+    "VZT.PROC.postupne",
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "12": {
+   "reseni": "30 Kč je 3/2 ceny malého, malý stojí 20 Kč; prodáno 3 600 : 20 = 180 malých, to je 9/10; přivezl 200",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek",
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "13": {
+   "reseni": "vnitřní úhly: u C 180° − 125° = 55°, u A 180° − 105° = 75°, u B 50°; na přímce l: 50° + α + 90° = 180°, α = 40°",
+   "principy": [
+    "GEO.UHLY.vedlejsi",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "14": {
+   "reseni": "průměr 4 čtverce = 8 cm, r = 4 cm; půlkruh 3,14 · 16 : 2 = 25,12 cm²",
+   "principy": [
+    "GEO.KRUH.casti",
+    "GEO.KRUH.obsah"
+   ]
+  },
+  "15.1": {
+   "reseni": "chlapců 7 + 2 + 5 + 7 + 4 = 25, dívek 4 + 6 + 8 + 5 + 2 = 25; A",
+   "principy": [
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "15.2": {
+   "reseni": "český jazyk 8 z 50 je právě 16 %, ne více; N",
+   "principy": [
+    "VZT.PROC.pocet",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "15.3": {
+   "reseni": "7 je o 3 více než 4, 3 : 4 = 75 %; A",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "16.1": {
+   "reseni": "doprava desetina = 10 %, ubytování 60 %; lístek 100 − 70 = 30 %",
+   "principy": [
+    "VZT.PROC.prevody",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "16.2": {
+   "reseni": "sleva 500 Kč z 2 000 Kč je 25 %",
+   "principy": [
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "16.3": {
+   "reseni": "40 z 200 je 20 %",
+   "principy": [
+    "VZT.PROC.pocet"
+   ]
+  }
+ },
+ "2024 C": {
+  "1": {
+   "reseni": "(86 200 − 16 000) : 2 = 35 100",
+   "principy": [
+    "VZT.SLOV.dve-nezname"
+   ]
+  },
+  "2": {
+   "reseni": "voda π · 5² · 20 = 500π cm³; v nádobě B: 500π : (π · 10²) = 5 cm",
+   "principy": [
+    "GEO.TEL.valec-objem",
+    "GEO.TEL.zpetne"
+   ]
+  },
+  "3.1": {
+   "reseni": "čitatel 14/10 + 33/10 − 5/10 = 21/5, jmenovatel 1/15 + 5/15 = 2/5; 21/5 · 5/2 = 21/2",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.desetinna",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "3.2": {
+   "reseni": "(1/2 + 2/5) − 7/2 + 2/5 − 1 = 9/10 − 35/10 + 4/10 − 10/10 = −16/5",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.1": {
+   "reseni": "nejdřív závorka: b/3 − 9b/3 = −8b/3; (−8b/3)² = 64b²/9",
+   "principy": [
+    "ALG.VYR.scitani",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.mocnina"
+   ]
+  },
+  "4.2": {
+   "reseni": "5 − 1 + x² − 2x² = 4 − x² = (2 + x) · (2 − x)",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "ALG.VYR.scitani",
+    "ALG.VYR.nasobeni"
+   ]
+  },
+  "4.3": {
+   "reseni": "c² − 14c + 49 − 3c² + 15c + 2c² = c + 49",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "3x = 7x/3 + 6; 9x = 7x + 18; x = 9",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "5.2": {
+   "reseni": "x/2 + 1 − (x² − 4x + 4) = 6 − x²; 4,5x − 3 = 6; x = 2",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.zlomky"
+   ]
+  },
+  "6.1": {
+   "reseni": "výška trojúhelníku ABC na stranu AB je výška lichoběžníku: 64 = 16 · v : 2, v = 8 cm",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "GEO.ROV.trojuhelnik",
+    "KON.VLAST.vyska"
+   ]
+  },
+  "6.2": {
+   "reseni": "(16 + 6) · 8 : 2 = 88 cm²",
+   "principy": [
+    "GEO.ROV.lichobeznik"
+   ]
+  },
+  "7.1": {
+   "reseni": "3,14 · r² = 314, r = 10 dm; obvod 2 · 3,14 · 10 = 62,8 dm, asi 6 m",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "GEO.KRUH.obvod",
+    "POC.JED.delka",
+    "POC.VYR.zaokrouhleni"
+   ]
+  },
+  "7.2": {
+   "reseni": "čtvrtkruh: 3,14 · r² : 4 = 314, r² = 400, r = 20 dm = 2 m",
+   "principy": [
+    "GEO.KRUH.casti",
+    "GEO.ROV.zpetne",
+    "POC.VYR.odmocnina",
+    "POC.JED.delka"
+   ]
+  },
+  "8.1": {
+   "reseni": "β = 180° − 130° = 50°; α + γ = 130° v poměru 2 : 3, díl 26°; γ = 78°",
+   "principy": [
+    "VZT.POM.deleni",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "8.2": {
+   "reseni": "α = 52°, β = 50°; rozdíl 2°",
+   "principy": [
+    "VZT.POM.deleni",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "9": {
+   "reseni": "u D je pravý úhel a A, C, D leží na k, AC je tedy průměr: C je naproti A přes S; B je obraz C podle E; D leží na k a na kolmici k AB v bodě A",
+   "principy": [
+    "KON.VLAST.thales",
+    "KON.VLAST.lichobeznik",
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.kolmice",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "B je obraz A v osové souměrnosti podle o; C je obraz B podle středu S; D je obraz C podle o",
+   "principy": [
+    "KON.VLAST.lichobeznik",
+    "KON.ZAKL.osova",
+    "KON.ZAKL.stredova"
+   ]
+  },
+  "11": {
+   "reseni": "dva hranoly 3 × 3 × 1,5 mají každý povrch 36 dm², dohromady 72; slepením zmizí dvakrát styčná plocha 3 × 1,5 = 4,5: 63 dm²; krychle má 54 dm²; o 9 dm²",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.kvadr-povrch"
+   ]
+  },
+  "12": {
+   "reseni": "Eva a Michal 80 % a 24 Kč, zbývá 72 Kč: 20 % ceny je 96 Kč, cena 480 Kč",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "13": {
+   "reseni": "11 lidí je 75 − 70 = 5 % kapacity; kapacita 220",
+   "principy": [
+    "VZT.PROC.zaklad"
+   ]
+  },
+  "14": {
+   "reseni": "osmina Cyrilova počtu jsou 3 komiksy, Cyril 24, Petr 27",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.CAST.celek"
+   ]
+  },
+  "15.1": {
+   "reseni": "GYM je 100 − 60 − 16 = 24 % = 12 žáků, všech 50; 3 z 50 je 6 %; A",
+   "principy": [
+    "VZT.PROC.pocet",
+    "VZT.PROC.zaklad",
+    "DAT.GRAF.kruhovy"
+   ]
+  },
+  "15.2": {
+   "reseni": "12 žáků je 24 %, všech je právě 50, ne více; N",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "DAT.GRAF.kruhovy"
+   ]
+  },
+  "15.3": {
+   "reseni": "SOŠ 60 % z 50 je 30; humanitní 30 − 15 − 3 = 12, stejně jako GYM; A",
+   "principy": [
+    "VZT.PROC.cast",
+    "DAT.GRAF.kruhovy"
+   ]
+  },
+  "16.1": {
+   "reseni": "práce 10 · 20 = 200 dnů jednoho zedníka; 200 : 4 = 50 dní",
+   "principy": [
+    "VZT.POM.neprima"
+   ]
+  },
+  "16.2": {
+   "reseni": "200 : 5 = 40 zedníků",
+   "principy": [
+    "VZT.POM.neprima"
+   ]
+  },
+  "16.3": {
+   "reseni": "polovina je 100 dnů práce: 8 zedníků 12,5 dne, 10 zedníků 10 dní; pracují současně, rozhoduje delší doba: 12,5 dne",
+   "principy": [
+    "VZT.POM.neprima"
+   ]
+  }
+ },
+ "2024 D": {
+  "1": {
+   "reseni": "2,7 km = 270 000 cm; Adam 270 000 : 75 = 3 600 kroků, Naďa 270 000 : 60 = 4 500; o 900",
+   "principy": [
+    "POC.JED.delka",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2": {
+   "reseni": "150 Kč je 15 %, původní cena 1 000 Kč; konečná 1 000 − 150 − 200 = 650 Kč; nižší o 350 z 1 000, o 35 %",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "3.1": {
+   "reseni": "čitatel −1/6 · (−3/5) = 1/10; 1/10 : 3/10 = 1/3",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.desetinna",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "1/6 + 1/3 · (−3/5) = 5/30 − 6/30 = −1/30",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.VYR.zaporna",
+    "POC.VYR.poradi"
+   ]
+  },
+  "4.1": {
+   "reseni": "−a² − 12a + 6a² = 5a² − 12a = a · (5a − 12)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "1/9 − 2 · 1/3 · 4b + 16b² = 1/9 − 8b/3 + 16b²",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "POC.ZLOM.mocnina"
+   ]
+  },
+  "4.3": {
+   "reseni": "4x² + 12x + 9 − 6x − 4(x² − 2x + 1) = 14x + 5",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "· 6: 6x − 3(x − 2) = 4x − 12; 3x + 6 = 4x − 12; x = 18",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "5.2": {
+   "reseni": "6x − 5 = −5 + 9x − 6; −3x = −6; x = 2",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "6.1": {
+   "reseni": "x vagónů 1. třídy po 60 místech, 2x vagónů 2. třídy po 80: 60x + 160x = 440, x = 2; 2. třídy 4 vagóny",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "6.2": {
+   "reseni": "2 vagóny po 60 místech: 120 míst",
+   "principy": [
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "7.1": {
+   "reseni": "A stojí 4 000 : 20 = 200 Kč; 10 · 200 + 10 · B = 4 800, B = 280 Kč",
+   "principy": [
+    "VZT.SLOV.usudek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "7.2": {
+   "reseni": "5 · 200 + 5 · 280 + 10 · C = 5 400, C = 300 Kč",
+   "principy": [
+    "VZT.SLOV.usudek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "8.1": {
+   "reseni": "25 % z 24 hodin je 6 hodin",
+   "principy": [
+    "VZT.PROC.cast",
+    "DAT.GRAF.kruhovy"
+   ]
+  },
+  "8.2": {
+   "reseni": "volný čas 10 % z 24 h = 2,4 h = 144 min; sport 40 % z toho: 57,6, asi 58 minut",
+   "principy": [
+    "VZT.PROC.cast",
+    "DAT.GRAF.kruhovy",
+    "POC.JED.cas",
+    "POC.VYR.zaokrouhleni"
+   ]
+  },
+  "9": {
+   "reseni": "C je obraz A podle S; vrcholy obdélníku leží na kružnici (S, |SA|), D je její průsečík s p; B je obraz D podle S; dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "B je obraz C podle S; AB je rovnoběžka s p bodem B; pravý úhel je buď u A (pata kolmice z C), nebo u C (kolmice k BC v bodě C); dvě řešení",
+   "principy": [
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.rovnobezka",
+    "KON.ZAKL.kolmice",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11": {
+   "reseni": "dámských 4 · 45 = 180, to je 60 %, všech 300, pánských 120; zůstalo 135 dámských a 60 pánských: 195",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.PROC.zaklad",
+    "VZT.CAST.zbytek",
+    "VZT.CAST.cast"
+   ]
+  },
+  "12": {
+   "reseni": "450 z 1 500 je 30 %",
+   "principy": [
+    "VZT.PROC.pocet"
+   ]
+  },
+  "13": {
+   "reseni": "maminka 1 kg za 144 : 6 = 24 min, babička za 80 : 2 = 40 min; za minutu spolu 1/24 + 1/40 = 1/15 kg; 15 minut",
+   "principy": [
+    "VZT.POM.prace",
+    "POC.JED.cas",
+    "POC.ZLOM.scitani"
+   ]
+  },
+  "14": {
+   "reseni": "γ = 180° − 126°30′ = 53°30′; α je vrcholový k γ; β = 90° − α = 36°30′; součet 143°30′",
+   "principy": [
+    "GEO.UHLY.vedlejsi",
+    "POC.JED.uhel"
+   ]
+  },
+  "15.1": {
+   "reseni": "6 · 30 + 6 · 25 = 330; A",
+   "principy": [
+    "VZT.SLOV.usudek"
+   ]
+  },
+  "15.2": {
+   "reseni": "330 : 25 = 13,2 není celé číslo; N",
+   "principy": [
+    "VZT.SLOV.cela-cisla",
+    "POC.DEL.delitele"
+   ]
+  },
+  "15.3": {
+   "reseni": "30a + 25b = 330 má řešení (1; 12), (6; 6), (11; 0); nejvíc kilogramů je 13 při jednom kilogramu drahých; A",
+   "principy": [
+    "VZT.SLOV.cela-cisla",
+    "ZAK.USUDEK.vsechna"
+   ]
+  },
+  "16.1": {
+   "reseni": "780 : 1,04 = 750",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "16.2": {
+   "reseni": "1/2 je čtyřnásobek 1/8, tedy o 300 % více",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "POC.ZLOM.nasobeni"
+   ]
+  },
+  "16.3": {
+   "reseni": "slabší 75 l za hodinu, to jsou 3 díly; výkonnější 7 dílů = 175 l za hodinu; za 5 hodin 875 l",
+   "principy": [
+    "VZT.POM.deleni",
+    "VZT.POM.prima"
+   ]
+  }
+ },
+ "2025 A": {
+  "1": {
+   "reseni": "součet 20, součin 64, odmocnina 8; 20 : 8 = 2,5krát",
+   "principy": [
+    "POC.VYR.slovy",
+    "POC.VYR.odmocnina",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2.1": {
+   "reseni": "(−3) · (9/12 − 10/12) = (−3) · (−1/12) = 1/4",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "2.2": {
+   "reseni": "čitatel 5/2; jmenovatel 3 · (9 − 4) : √9 = 15 : 3 = 5; 5/2 : 5 = 1/2",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.VYR.odmocnina",
+    "POC.VYR.mocnina",
+    "POC.ZLOM.nasobeni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.1": {
+   "reseni": "2 · a · b = 18a, b = 9; b² = 81",
+   "principy": [
+    "ALG.VYR.rozklad"
+   ]
+  },
+  "3.2": {
+   "reseni": "2 + n² + 2n + 3n + 3 − n² − n = 4n + 5",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "3.3": {
+   "reseni": "18x − x² + 144 − 18x = 144 − x² = (12 − x) · (12 + x)",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.1": {
+   "reseni": "4 − 7x/10 − x/5 + 16 = x/10; · 10: 200 − 7x − 2x = x; x = 20",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "POC.ZLOM.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "4.2": {
+   "reseni": "0,9y − 0,5 = 0,9y + 0,5; −0,5 = 0,5 neplatí; rovnice nemá řešení",
+   "principy": [
+    "ALG.ROV.pocet-reseni",
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "5.1": {
+   "reseni": "pozemek 900 m², dům 900 : 5 = 180 m²; a = 15 m; b = 180 : 15 = 12 m",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "GEO.ROV.obdelnik",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "5.2": {
+   "reseni": "rybníček 18 % z 900 = 162 m²; volná část 900 − 180 − 162 = 558 m²",
+   "principy": [
+    "VZT.PROC.cast",
+    "GEO.ROV.slozene"
+   ]
+  },
+  "6.1": {
+   "reseni": "10 mm = 1 cm; 1 500 cm² · 1 cm = 1 500 cm³ = 1,5 l",
+   "principy": [
+    "GEO.TEL.valec-objem",
+    "POC.JED.objem",
+    "POC.JED.delka"
+   ]
+  },
+  "6.2": {
+   "reseni": "3 l = 3 000 cm³; 3 000 : 1 500 = 2 cm = 20 mm",
+   "principy": [
+    "GEO.TEL.zpetne",
+    "POC.JED.objem",
+    "POC.JED.delka"
+   ]
+  },
+  "7.1": {
+   "reseni": "α je střídavý k úhlu 30° u bodu R: 30°",
+   "principy": [
+    "GEO.UHLY.rovnobezky"
+   ]
+  },
+  "7.2": {
+   "reseni": "q svírá s r úhel 180° − 130° = 50°; β je s ním souhlasný: 50°",
+   "principy": [
+    "GEO.UHLY.rovnobezky",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "7.3": {
+   "reseni": "v pravoúhlém trojúhelníku mezi q, s a t je u t úhel 90° − 50° = 40°; γ je vedlejší: 140°",
+   "principy": [
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi",
+    "GEO.UHLY.rovnobezky"
+   ]
+  },
+  "8.1": {
+   "reseni": "po uzavřeném obvodu je rozestupů tolik jako rostlin: 65 · 40 cm = 2 600 cm = 26 m",
+   "principy": [
+    "GEO.ROV.rozestupy",
+    "POC.JED.delka"
+   ]
+  },
+  "8.2": {
+   "reseni": "nejdelší strana d, ostatní 3d/4: d + 9d/4 = 26, d = 8 m, protější 6 m; rostlin 800 : 40 + 1 = 21 a 600 : 40 + 1 = 16; o 5",
+   "principy": [
+    "GEO.ROV.rozestupy",
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.rovnice",
+    "GEO.ROV.obvod"
+   ]
+  },
+  "8.3": {
+   "reseni": "skupina červených a dvě bílé se opakují, délka opakování dělí 65: 5, 13 nebo 65; při délce 5 jsou červené 3 ve 13 skupinách: 39",
+   "principy": [
+    "POC.DEL.delitele",
+    "ZAK.USUDEK.periody",
+    "ZAK.USUDEK.vsechna"
+   ]
+  },
+  "9": {
+   "reseni": "úhlopříčky obdélníku leží na p a q a protínají se v jejich průsečíku; strany jsou rovnoběžné s osami úhlů přímek: strana MN je kolmice k ose o bodem R, M a N jsou její průsečíky s p a q; K, L jsou jejich obrazy podle průsečíku",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "GEO.UHLY.osa",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "výška je kolmá na stranu c: přímka AB je kolmice k p bodem B; těžnice míří do středu strany c: střed je průsečík této kolmice s q; A je obraz B podle středu",
+   "principy": [
+    "KON.VLAST.vyska",
+    "KON.VLAST.teznice",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "4 · (1 + 2 + 3) = 24 cm; A",
+   "principy": [
+    "GEO.TEL.hrany"
+   ]
+  },
+  "11.2": {
+   "reseni": "M je kvádr 4 × 3 × 1: povrch 38 cm²; N je kvádr 2 × 3 × 2: povrch 32 cm²; rozdíl 6; A",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.kvadr-povrch"
+   ]
+  },
+  "11.3": {
+   "reseni": "povrch slepeného tělesa je 2 · 22 cm² bez dvojnásobku styčné plochy; ta je u P, Q, R stejná; A",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.kvadr-povrch"
+   ]
+  },
+  "12": {
+   "reseni": "kvádr 40 × 10 × 1 = 400 m³ a pod ním klín: trojboký hranol (20 · 1 : 2) · 10 = 100 m³; 500 m³",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.kvadr-objem",
+    "GEO.TEL.hranol-objem",
+    "GEO.ROV.trojuhelnik"
+   ]
+  },
+  "13": {
+   "reseni": "míst m v každém termínu, přihlášek 1,2m a 1,3m: 2,5m = 375, m = 150; odmítnuto 375 − 300 = 75",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.PROC.nasobitel",
+    "VZT.NEZ.o-zlomek"
+   ]
+  },
+  "14": {
+   "reseni": "jedniček i dvojek x, trojek 20 − 2x; součet známek 20 · 1,8 = 36: x + 2x + 3 · (20 − 2x) = 36, x = 8",
+   "principy": [
+    "DAT.PRUM.zpetne",
+    "DAT.PRUM.cetnosti",
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "15.1": {
+   "reseni": "hráčů 110, organizátorů 90; 90 z 200 je 45 %",
+   "principy": [
+    "VZT.PROC.pocet"
+   ]
+  },
+  "15.2": {
+   "reseni": "družstva v poměru 4 : 1, tedy 16 a 4; žen 16 · 2 + 4 · 1 = 36 z 60, to je 60 %",
+   "principy": [
+    "VZT.POM.deleni",
+    "VZT.PROC.pocet"
+   ]
+  },
+  "15.3": {
+   "reseni": "skokanů 12 · 1,5 = 18; to je 60 % běžců, běžců 30; všech 60; běžci 50 %",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.PROC.zaklad-po-zmene",
+    "VZT.PROC.pocet"
+   ]
+  },
+  "16.1": {
+   "reseni": "pás tmavého obrazce je široký 2 cm: bílý čtverec 16 cm; obsah pásu 20² − 16² = 144 cm², obdélníček má 6 cm²: 24",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "GEO.ROV.slozene"
+   ]
+  },
+  "16.2": {
+   "reseni": "tmavý: (23² − 19²) : 6 = 28; světlý má pás 3 cm: (23² − 17²) : 6 = 40; rozdíl 12",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "GEO.ROV.slozene"
+   ]
+  },
+  "16.3": {
+   "reseni": "tmavý s bílým čtvercem t má (4t + 8) : 3 obdélníčků, světlý se čtvercem s má 2s + 6; rovnost a t = s + 10 dá s = 15, t = 25; 36 obdélníčků",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "VZT.SLOV.rovnice",
+    "VZT.SLOV.dve-nezname"
+   ]
+  }
+ },
+ "2025 B": {
+  "1": {
+   "reseni": "dospělý a tři děti: 1 + 3 · 2/5 = 11/5 ceny dospělého = 330 Kč; dospělý 150 Kč, dítě 2/5 z toho: 60 Kč",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.cast"
+   ]
+  },
+  "2": {
+   "reseni": "25/4 · 25/9 = 625/36; odmocnina 25/6",
+   "principy": [
+    "POC.ZLOM.smisene",
+    "POC.ZLOM.mocnina",
+    "POC.ZLOM.nasobeni",
+    "POC.VYR.slovy"
+   ]
+  },
+  "3.1": {
+   "reseni": "(66/30 − 55/30) · (−3) = 11/30 · (−3) = −11/10",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "(20 − 6) : (3 · 6) = 14/18 = 7/9; 7/9 : 7/12 = 7/9 · 12/7 = 4/3",
+   "principy": [
+    "POC.VYR.odmocnina",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "4.1": {
+   "reseni": "3x² − 6x − (x² − 6x + 9) = 2x² − 9",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "4k² − k − 2k² = 2k² − k = k · (2k − 1)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.3": {
+   "reseni": "7a² + 21a + 2 · (−3a² − 14a + 5) = a² − 7a + 10",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "7x/12 + 3x/4 − 2 = −x/3 − 3; · 12: 16x − 24 = −4x − 36; x = −3/5",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "POC.ZLOM.nasobeni",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "y = 14 − 6x; 3x + 2 · (14 − 6x) = 1; −9x = −27; x = 3, y = −4",
+   "principy": [
+    "ALG.ROV.soustava",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "6.1": {
+   "reseni": "231 = 3 · 7 · 11; nejmenší 3",
+   "principy": [
+    "POC.DEL.prvocisla"
+   ]
+  },
+  "6.2": {
+   "reseni": "3 + 7 + 11 = 21",
+   "principy": [
+    "POC.DEL.prvocisla"
+   ]
+  },
+  "6.3": {
+   "reseni": "dělitelé jsou součiny prvočísel: 21, 33, 77; největší dvojciferný 77",
+   "principy": [
+    "POC.DEL.delitele",
+    "POC.DEL.prvocisla"
+   ]
+  },
+  "7.1": {
+   "reseni": "druhý den 2/3 z třetiny, tedy 2/9 všech; 2/9 z 5 400 = 1 200 Kč",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.CAST.zlomek-ze-zlomku",
+    "VZT.CAST.cast"
+   ]
+  },
+  "7.2": {
+   "reseni": "2/3 · x/3 = 2x/9",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.CAST.zlomek-ze-zlomku",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "7.3": {
+   "reseni": "třetí den 1 − 3/9 − 2/9 = 4/9 všech = 120; všech 270",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek",
+    "POC.ZLOM.scitani"
+   ]
+  },
+  "8.1": {
+   "reseni": "(140 + 100) · 30 : 2 = 3 600 cm²",
+   "principy": [
+    "GEO.ROV.lichobeznik"
+   ]
+  },
+  "8.2": {
+   "reseni": "šikmé rameno je přepona s odvěsnami 140 − 100 = 40 a 30 cm: 50 cm; obvod 140 + 100 + 30 + 50 = 320 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "GEO.PYT.najit",
+    "GEO.PYT.veta"
+   ]
+  },
+  "8.3": {
+   "reseni": "rovnoběžník má strany x a 50: obvod 2x + 100; menší lichoběžník (140 − x) + (100 − x) + 30 + 50 = 320 − 2x; rovnost dá x = 55; obvod 210 cm",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.SLOV.vyraz",
+    "GEO.ROV.obvod",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "9": {
+   "reseni": "M neleží na ose AB, AB je tedy rameno; těžnice prochází středem AB a bodem M; C leží na této přímce a na kružnici (A, |AB|), nebo (B, |AB|); dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.VLAST.teznice",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "úhlopříčky se půlí: střed S leží na polopřímce DM a |AS| je polovina |DM|, S je průsečík s kružnicí (A, |DM| : 2); C je obraz A a B obraz D podle S",
+   "principy": [
+    "KON.VLAST.rovnobeznik",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "60° je 20 m², 15° je 5 m²; jabloň 105° je 35 m², o 15 m² více; A",
+   "principy": [
+    "DAT.GRAF.kruhovy",
+    "VZT.POM.prima"
+   ]
+  },
+  "11.2": {
+   "reseni": "levandule a bazalka 75°, hortenzie 30°: 2,5krát, ne 1,5krát; N",
+   "principy": [
+    "DAT.GRAF.kruhovy",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "11.3": {
+   "reseni": "růže 360° − 270° = 90°, to je 30 m², ne méně; N",
+   "principy": [
+    "DAT.GRAF.kruhovy",
+    "VZT.POM.prima"
+   ]
+  },
+  "12": {
+   "reseni": "úhly při základně (180° − 40°) : 2 = 70°; rovnoběžné rameno svírá s p také 70°; ve druhém trojúhelníku je u dolního vrcholu úhel 70°, třetí strana svírá s p úhel 180° − 70° − 70° = 40°; α = 140°",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "GEO.UHLY.rovnobezky",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "13": {
+   "reseni": "na 6 stěnách je 6 · 4 = 24 šedých čtverců, ale 4 rohové krychličky patří třem úhlopříčkám: 24 − 8 = 16 šedých; bílých 64 − 16 = 48",
+   "principy": [
+    "GEO.TEL.krychlicky"
+   ]
+  },
+  "14": {
+   "reseni": "druhý poloměr 8 · 3/4 = 6 cm; π · 64 · 5 + π · 36 · 5 = 500π cm³",
+   "principy": [
+    "GEO.TEL.valec-objem",
+    "VZT.NEZ.o-zlomek"
+   ]
+  },
+  "15.1": {
+   "reseni": "pětina dětí je 20 %",
+   "principy": [
+    "VZT.PROC.prevody"
+   ]
+  },
+  "15.2": {
+   "reseni": "mladší jsou 2/3 starších, starší tedy 3/2 mladších: o 50 % více",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek",
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "15.3": {
+   "reseni": "d/2 − ch/4 = 4 a ch + d = 80: 2d − (80 − d) = 16, d = 32; 32 z 80 je 40 %",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "ALG.ROV.soustava",
+    "VZT.PROC.pocet"
+   ]
+  },
+  "16.1": {
+   "reseni": "po dvojici 23, 24 řekne Zuzka 23 + 24 = 47",
+   "principy": [
+    "ZAK.RADA.cisla"
+   ]
+  },
+  "16.2": {
+   "reseni": "v k-té trojici zazní 2k − 1, 2k, 4k − 1; 90. číslo je Zuzčino v 30. trojici: 119; Mirek je řekne jako první číslo 60. trojice, před ním zaznělo Zuzčino 4 · 59 − 1 = 235",
+   "principy": [
+    "ZAK.RADA.cisla",
+    "ZAK.RADA.nty-clen",
+    "POC.DEL.zbytek"
+   ]
+  },
+  "16.3": {
+   "reseni": "150 čísel je 50 trojic: Mirek řekl 1 až 100, Zuzka čísla 4k − 1; největší takové do 100 je 99",
+   "principy": [
+    "ZAK.RADA.cisla",
+    "ZAK.RADA.nty-clen"
+   ]
+  }
+ },
+ "2025 C": {
+  "1": {
+   "reseni": "5 kg = 5 000 g; 5 000 : 0,25 = 20 000krát",
+   "principy": [
+    "POC.JED.hmotnost",
+    "POC.VYR.desetinna",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2": {
+   "reseni": "p² + 3 má být prvočíslo: pro liché p je to sudé číslo, zbývá p = 2: 4 + 3 = 7",
+   "principy": [
+    "POC.DEL.prvocisla",
+    "POC.VYR.slovy"
+   ]
+  },
+  "3.1": {
+   "reseni": "√81 : √100 = 9/10",
+   "principy": [
+    "POC.VYR.odmocnina",
+    "POC.VYR.mocnina"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel 9/25; závorka 10/15 − 27/15 = −17/15; 27/34 · (−17/15) = −9/10; 9/25 : (−9/10) = −2/5",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.mocnina",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.1": {
+   "reseni": "(8a − 4)² = 64a² − 64a + 16",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "4 − 6x + 4x² + 6x = 4x² + 4",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.3": {
+   "reseni": "(1 − 2n) · (1 + 2n) − 2n + 6n² + 3n − 1 = 1 − 4n² + 6n² + n − 1 = 2n² + n",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "5.1": {
+   "reseni": "· 15: 75x + 2 + x = 10x − 9; 66x = −11; x = −1/6",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.2": {
+   "reseni": "· 10: 40 − 2(7 − 3y) = 30 + 7y − 4; 26 + 6y = 26 + 7y; y = 0",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "stolek je polovina ceny skříně, skříň stojí 2n",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.2": {
+   "reseni": "stolek je 4/3 ceny postele, postel stojí 3n/4",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.3": {
+   "reseni": "n + 2n + 3n/4 = 9 000; 15n = 36 000; n = 2 400 Kč",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "7.1": {
+   "reseni": "30 · 1,4 = 42 km/h",
+   "principy": [
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "7.2": {
+   "reseni": "rovina třetina, klesání pětina, stoupání 1 − 1/3 − 1/5 = 7/15 trasy = 14 km; trasa 30 km",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek",
+    "POC.ZLOM.scitani",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "7.3": {
+   "reseni": "rychlost ve stoupání 42 : 2 = 21 km/h; 14 : 21 = 2/3 h = 40 minut",
+   "principy": [
+    "VZT.POM.pohyb",
+    "VZT.NEZ.o-zlomek",
+    "POC.JED.cas"
+   ]
+  },
+  "8.1": {
+   "reseni": "malý kruh má poloměr 5 cm: 3,14 · 25 = 78,5, asi 79 cm²",
+   "principy": [
+    "GEO.KRUH.obsah",
+    "POC.VYR.zaokrouhleni"
+   ]
+  },
+  "8.2": {
+   "reseni": "dlaždic (200 : 20) · (320 : 20) = 160, malých kruhů 160; velký kruh je jeden na čtveřici: 40; rozdíl 120",
+   "principy": [
+    "VZT.SLOV.usudek",
+    "POC.JED.delka"
+   ]
+  },
+  "9": {
+   "reseni": "výška BM je kolmá na AC: přímka AC je kolmice k BM v bodě M, A je její průsečík s q; C leží na AC a na ose základny AB",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.VLAST.vyska",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.osa-usecky",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "úhel ADS je pravý, D leží na Thaletově kružnici nad AS a na p; C je obraz D podle S; B doplnit; dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.thales",
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "děti 30 + 10 + 30 = 70, dospělí 80 + 60 + 70 = 210; třikrát více; A",
+   "principy": [
+    "VZT.NEZ.okolik-kolikrat",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "dospělých 400 za 5 měsíců, průměr 80; A",
+   "principy": [
+    "DAT.PRUM.vypocet",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "dětí 160 z 560, to je asi 29 %, ne 40 %; N",
+   "principy": [
+    "VZT.PROC.pocet",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "12": {
+   "reseni": "šikmý úsek je přepona: vodorovně 30 + 50 = 80, svisle √(100² − 80²) = 60; poslední úsek 35 + 60 = 95 kroků",
+   "principy": [
+    "GEO.PYT.najit",
+    "GEO.PYT.veta"
+   ]
+  },
+  "13": {
+   "reseni": "šedý čtverec má stranu a/5, pět jich zabere pětinu stěny; bílé jsou 4/5 z 6a²: 24a²/5 = 480, a² = 100, a = 10 cm",
+   "principy": [
+    "GEO.TEL.kvadr-povrch",
+    "VZT.CAST.zbytek",
+    "GEO.ROV.zpetne",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "14": {
+   "reseni": "úhel BAX = 2 · 22° = 44°; v trojúhelníku mezi osami a stranou AX: u průsečíku os 180° − 62° = 118°, u X zbývá 40°, tedy AXB = 80°; úhel ABX = 180° − 44° − 80° = 56°; α = 90° − 56° = 34°",
+   "principy": [
+    "GEO.UHLY.osa",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "15.1": {
+   "reseni": "zbývá 54 % z 50, to je 27 hrnků",
+   "principy": [
+    "VZT.PROC.cast",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "15.2": {
+   "reseni": "Radim r, Petr 0,5r, Slávek i Tomáš 0,75r: 3r = 240, r = 80; Tomáš 60, Petr 40; o 20",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.PROC.nasobitel",
+    "VZT.NEZ.o-zlomek"
+   ]
+  },
+  "15.3": {
+   "reseni": "Jitka j, maminka 2j, babička 1,5j; 2j − 1,5j = 2, j = 4; dohromady 4,5 · 4 = 18",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.NEZ.o-zlomek",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "16.1": {
+   "reseni": "pásy mají 6, 18, 30, 42 trojúhelníků (přibývá 12)",
+   "principy": [
+    "ZAK.RADA.tabulka"
+   ]
+  },
+  "16.2": {
+   "reseni": "n-tý obrazec má 6n² trojúhelníků, polovina je šedá: 6 · 36 : 2 = 108",
+   "principy": [
+    "ZAK.RADA.nty-clen"
+   ]
+  },
+  "16.3": {
+   "reseni": "n-tý pás má 6(2n − 1) trojúhelníků, šedých 3(2n − 1) = 225; 2n − 1 = 75; n = 38",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.obraceni"
+   ]
+  }
+ },
+ "2025 D": {
+  "1": {
+   "reseni": "čtvrtina 75 cm, zbytek 225 cm; dvě pětiny zbytku 90 cm; na třetí dárek 225 − 90 = 135 cm",
+   "principy": [
+    "VZT.CAST.zbytek",
+    "VZT.CAST.cast",
+    "POC.JED.delka"
+   ]
+  },
+  "2": {
+   "reseni": "dvojnásobky se liší o 6, čísla o 3; to je jeden díl; menší číslo 4 · 3 = 12",
+   "principy": [
+    "VZT.POM.deleni"
+   ]
+  },
+  "3.1": {
+   "reseni": "(28/20 − 35/20) · 5/2 = −7/20 · 5/2 = −7/8",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "čitatel (8/7)² · 7/4 = 16/7; jmenovatel 5 − 9/5 = 16/5; 16/7 · 5/16 = 5/7",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.mocnina",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "4.1": {
+   "reseni": "y² + 2y + 1 + 2y² − 2y = 3y² + 1",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.2": {
+   "reseni": "k² − 9k + 9k − 144 = k² − 144 = (k + 12) · (k − 12)",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.3": {
+   "reseni": "(x − 15) · x − (5x − 8) · (−2) − 1 = x² − 15x + 10x − 16 − 1 = x² − 5x − 17",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.1": {
+   "reseni": "0,1x + 0,2x − 16 = 4 − 0,7x; x = 20",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "5.2": {
+   "reseni": "dosadit y = 2x − 9: 3x − (2x − 8) = 10; x = 2, y = −5",
+   "principy": [
+    "ALG.ROV.soustava",
+    "ALG.VYR.scitani",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "6.1": {
+   "reseni": "A 50 : 2 = 25 beden za hodinu, B 45 : 1,5 = 30; 25 : 30 = 5 : 6",
+   "principy": [
+    "VZT.POM.pomer",
+    "VZT.POM.prima"
+   ]
+  },
+  "6.2": {
+   "reseni": "A 25 : 5 = 5 jízd za hodinu, B 30 : 3 = 10 jízd; 1 : 2",
+   "principy": [
+    "VZT.POM.pomer",
+    "VZT.POM.prima"
+   ]
+  },
+  "6.3": {
+   "reseni": "oba 55 beden za hodinu; 36 minut je 0,6 hodiny: 33 beden",
+   "principy": [
+    "VZT.POM.prace",
+    "POC.JED.cas",
+    "VZT.POM.prima"
+   ]
+  },
+  "7.1": {
+   "reseni": "osm bodů x, deset bodů x + 1: 2x + 1 = 5, x = 2; průměr (2 · 8 + 5 · 9 + 3 · 10) : 10 = 9,1",
+   "principy": [
+    "DAT.PRUM.cetnosti",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "7.2": {
+   "reseni": "součet bodů 95, do plných 100 chybí 5: devítka ubere 1, osmička 2; možnosti 5, 3 nebo 1 soutěžící s 9 body",
+   "principy": [
+    "DAT.PRUM.zpetne",
+    "DAT.PRUM.cetnosti",
+    "VZT.SLOV.cela-cisla",
+    "ZAK.USUDEK.vsechna"
+   ]
+  },
+  "8.1": {
+   "reseni": "odstřižené trojúhelníky mají odvěsny 12 a (12 − 2) : 2 = 5 cm: 2 · (12 · 5 : 2) = 60 cm²",
+   "principy": [
+    "GEO.ROV.trojuhelnik",
+    "GEO.ROV.slozene"
+   ]
+  },
+  "8.2": {
+   "reseni": "rameno je přepona: √(144 + 25) = 13 cm; obvod 12 + 2 + 13 + 13 = 40 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "GEO.PYT.najit",
+    "GEO.PYT.veta"
+   ]
+  },
+  "9.1": {
+   "reseni": "osa souměrnosti je osa úsečky AA′",
+   "principy": [
+    "KON.ZAKL.osova",
+    "KON.ZAKL.osa-usecky"
+   ]
+  },
+  "9.2": {
+   "reseni": "společný bod C je samodružný, leží na ose: průsečík AM s o; B je třetí vrchol rovnostranného trojúhelníku nad AC (kružnice s poloměrem |AC|); B′ je obraz B podle o",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.osova",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "S je střed úhlopříčky LN, |LS| je polovina |LM|: S je průsečík p s kružnicí (L, |LM| : 2); N je obraz L a K obraz M podle S; dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnobeznik",
+    "KON.ZAKL.osa-usecky",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "11.1": {
+   "reseni": "SA a SK jsou poloměry, trojúhelník ASK je rovnoramenný: α = 64°, ne více; N",
+   "principy": [
+    "KON.VLAST.rovnoramenny"
+   ]
+  },
+  "11.2": {
+   "reseni": "AB je průměr, úhel AKB je pravý: α + β = 90°, ne více; N",
+   "principy": [
+    "KON.VLAST.thales",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "11.3": {
+   "reseni": "δ = 180° − 2 · 64° = 52°, γ = 180° − 52° = 128°; γ − α = 64° > 52°; A",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "12": {
+   "reseni": "malá krychle: hrana 36 : 12 = 3 cm, povrch 54 cm²; velká: povrch 96 cm², stěna 16 cm², hrana 4 cm; objemy 27 a 64 cm³, rozdíl 37",
+   "principy": [
+    "GEO.TEL.hrany",
+    "GEO.TEL.kvadr-povrch",
+    "GEO.TEL.zpetne",
+    "GEO.TEL.kvadr-objem"
+   ]
+  },
+  "13": {
+   "reseni": "první x, druhá x + 3, třetí 2 · (x + 3): 4x + 9 = 41, x = 8; třetí 22; o 14",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.okolik-kolikrat",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "14": {
+   "reseni": "pěnkav 5 dílků, sýkor 8 dílků, 3 dílky = 6 jedinců, dílek 2; Jonáš 12 dílků = 24, to je 6/5 Beátina počtu, Beáta 20 = 10 dílků; má zatím 9, brhlík 1 dílek = 2 jedinci",
+   "principy": [
+    "DAT.GRAF.dilek",
+    "DAT.GRAF.chybejici",
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "15.1": {
+   "reseni": "před Plzní žil 3/8 života = 27 let, život 72 let; v Plzni 5/8 = 45 let",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek",
+    "VZT.CAST.cast"
+   ]
+  },
+  "15.2": {
+   "reseni": "84 je 175 % doby gymnázia: 84 : 1,75 = 48 let; lyceum 2/3 z toho: 32 let",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene",
+    "VZT.POM.deleni"
+   ]
+  },
+  "15.3": {
+   "reseni": "bratr b, dvojče 0,6b: 2,2b = 99, b = 45; dvojče 27 let",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "16.1": {
+   "reseni": "KA = x, BK = DN = s, BL = b: x + s = 45, b + x = 39; odečtením s − b = 6 m",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "16.2": {
+   "reseni": "kratší strana KL = s + b, to je úsek CMD: 30 m",
+   "principy": [
+    "VZT.SLOV.vyraz",
+    "GEO.ROV.slozene"
+   ]
+  },
+  "16.3": {
+   "reseni": "KN = x + s = 45 m, KL = 30 m; obvod 2 · (45 + 30) = 150 m",
+   "principy": [
+    "GEO.ROV.obvod",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "16.4": {
+   "reseni": "s + b = 30 a s − b = 6: s = 18 m",
+   "principy": [
+    "VZT.SLOV.dve-nezname"
+   ]
+  }
+ },
+ "2026 A": {
+  "1.1": {
+   "reseni": "4/18 + 5/18 = 9/18 = 1/2",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "1.2": {
+   "reseni": "2/9 · 18/5 = 4/5",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "1.3": {
+   "reseni": "(1/2 + 4/5) : 2 = 13/10 : 2 = 13/20",
+   "principy": [
+    "DAT.PRUM.vypocet",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni"
+   ]
+  },
+  "2.1": {
+   "reseni": "(−2,5) · (−0,5) = 1,25",
+   "principy": [
+    "POC.VYR.zaporna",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "2.2": {
+   "reseni": "čitatel −5/14; jmenovatel 3/7 + 1 = 10/7; −5/14 · 7/10 = −1/4",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.1": {
+   "reseni": "9 · 49 − 6 · 7 + 1 = 441 − 42 + 1 = 400",
+   "principy": [
+    "ALG.VYR.hodnota",
+    "POC.VYR.mocnina"
+   ]
+  },
+  "3.2": {
+   "reseni": "1 − 2n + 2n − 16n² = 1 − 16n² = (1 + 4n) · (1 − 4n)",
+   "principy": [
+    "ALG.VYR.rozdil",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "3.3": {
+   "reseni": "x − x² + 2 − 2x + x² = 2 − x",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.1": {
+   "reseni": "0,5 − 2,5 + 0,5x = 0,5 − 4,5x; 5x = 2,5; x = 0,5",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "4.2": {
+   "reseni": "odečtením rovnic 3y = −15, y = −5; 3x + 5 = 11, x = 2",
+   "principy": [
+    "ALG.ROV.soustava",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5": {
+   "reseni": "360 l je 4/3 menšího sudu: 360 : 4 · 3 = 270 l",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.NEZ.o-zlomek"
+   ]
+  },
+  "6.1": {
+   "reseni": "zbývá x − 2x/3 = x/3",
+   "principy": [
+    "VZT.CAST.zbytek",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.2": {
+   "reseni": "čtvrtina z 2x/3 je x/6",
+   "principy": [
+    "VZT.CAST.zlomek-ze-zlomku",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.3": {
+   "reseni": "od telefonu k chatě x/6 + x/3 = x/2 = 24 km, x = 48; najezdil 2x/3 + x/6 + x/6 + x/3 = 4x/3 = 64 km",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.CAST.celek",
+    "POC.ZLOM.scitani"
+   ]
+  },
+  "7.1": {
+   "reseni": "Adam za 30 minut 6 km, zbývají 4 km; Báře zbývají také 4 km z 9, uběhla 5 km",
+   "principy": [
+    "VZT.POM.pohyb",
+    "VZT.POM.prima"
+   ]
+  },
+  "7.2": {
+   "reseni": "5 km za 30 minut, 1 km za 6 minut, 9 km za 54 minut",
+   "principy": [
+    "VZT.POM.prima",
+    "VZT.POM.pohyb"
+   ]
+  },
+  "8.1": {
+   "reseni": "v pravoúhlém trojúhelníku mezi q, AB a osou o: úhel u průsečíku os je 180° − 100° = 80°, u B zbývá 10°; φ = 10°",
+   "principy": [
+    "GEO.UHLY.osa",
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "8.2": {
+   "reseni": "úhel u B je 2 · 10° = 20°; střed opsané kružnice leží na AB, AB je průměr a úhel u C je pravý: α = 90° − 20° = 70°",
+   "principy": [
+    "KON.VLAST.thales",
+    "GEO.UHLY.osa",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "9": {
+   "reseni": "B je pata kolmice z A na b; C leží na c a na kružnici (B, |AB| + 2 cm); dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "rovnoběžník souměrný podle úhlopříčky je kosočtverec: C je obraz A podle o, střed S je pata kolmice z A; B a D leží na o ve vzdálenosti |AC| od S",
+   "principy": [
+    "KON.VLAST.kosoctverec",
+    "KON.ZAKL.osova",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.kruznice"
+   ]
+  },
+  "11.1": {
+   "reseni": "káva a banány 100 − 35 − 25 = 40 % = 2/5; A",
+   "principy": [
+    "DAT.GRAF.kruhovy",
+    "VZT.PROC.prevody",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "11.2": {
+   "reseni": "káva 20 %, rýže 35 %: 20 : 35 = 4 : 7; A",
+   "principy": [
+    "VZT.POM.pomer",
+    "DAT.GRAF.kruhovy"
+   ]
+  },
+  "11.3": {
+   "reseni": "72 t je 40 %, celek 180 t; rýže 35 % ze 180 = 63 t; A",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.PROC.cast",
+    "DAT.GRAF.kruhovy"
+   ]
+  },
+  "12": {
+   "reseni": "loni 15 · 20 = 300 míst; letos 15 je 4 %, tedy 375 míst; o 75",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.PROC.zaklad"
+   ]
+  },
+  "13": {
+   "reseni": "ramena (50 − 16) : 2 = 17 cm; výška na základnu √(17² − 8²) = 15 cm; S = 16 · 15 : 2 = 120 cm²",
+   "principy": [
+    "GEO.ROV.trojuhelnik",
+    "GEO.PYT.najit",
+    "GEO.PYT.veta",
+    "GEO.ROV.obvod"
+   ]
+  },
+  "14": {
+   "reseni": "podstavy jsou stejné, liší se jen plášť: 4 · 3 · rozdíl výšek = 72, rozdíl 6 cm",
+   "principy": [
+    "GEO.TEL.hranol-povrch",
+    "GEO.TEL.zpetne"
+   ]
+  },
+  "15.1": {
+   "reseni": "A jsou 2 kvádry (4 cm³), B 3 kvádry (6 cm³): o 50 % více",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "GEO.TEL.krychlicky",
+    "GEO.TEL.kvadr-objem"
+   ]
+  },
+  "15.2": {
+   "reseni": "C je 5 kvádrů (10 cm³); B má 6 cm³, o 4 z 10 méně: o 40 %",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "GEO.TEL.krychlicky",
+    "GEO.TEL.kvadr-objem"
+   ]
+  },
+  "15.3": {
+   "reseni": "otvor je krychle 1 cm³; 1 z 10 je 10 %",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "GEO.TEL.krychlicky"
+   ]
+  },
+  "16.1": {
+   "reseni": "Jas 14, Dok 7 · 2 = 14, Pat odebral 2 · 5 = 10: 18 míčků",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "POC.DEL.zbytek"
+   ]
+  },
+  "16.2": {
+   "reseni": "za každých 10 sekund přibude 10 míčků; po 20 s je jich 20, dál 21, 24, 25, 28, 24, 27, 28, 31: ve 28. sekundě",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "ZAK.RADA.tabulka"
+   ]
+  },
+  "16.3": {
+   "reseni": "o 3 se počet mění v sudých sekundách, které nejsou násobkem 10: čtyřikrát za 10 s; potřicáté v 74. sekundě; 74 + 74 − 5 · 14 = 78 míčků",
+   "principy": [
+    "ZAK.USUDEK.periody",
+    "POC.DEL.nasobek",
+    "POC.DEL.zbytek"
+   ]
+  }
+ },
+ "2026 B": {
+  "1": {
+   "reseni": "0,1 m² = 1 000 cm²; 1 000 − 20 = 980 cm²",
+   "principy": [
+    "POC.JED.obsah",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "2.1": {
+   "reseni": "3 · (6/9 − 7/9) + 2/3 = −1/3 + 2/3 = 1/3",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "2.2": {
+   "reseni": "5/6 − 1/30 = 25/30 − 1/30 = 24/30 = 4/5",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "2.3": {
+   "reseni": "čitatel 3/4; jmenovatel 5/4 − 2 = −3/4; výsledek −1",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.1": {
+   "reseni": "5x − 9x + 6x = 2x",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "ab − 2b² − b + 2b² = ab − b = b · (a − 1)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "3.3": {
+   "reseni": "4y · (y − 1) + 1 − 4y² = 4y² − 4y + 1 − 4y² = 1 − 4y",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.1": {
+   "reseni": "· 2: 3x + 4 + 10 = 2 − x; 4x = −12; x = −3",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.2": {
+   "reseni": "· 20: 4(6 + y) = 140 − (8 + 5y); 24 + 4y = 132 − 5y; y = 12",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "5.1": {
+   "reseni": "na 250 g rajčat 25 g cukru, tedy desetina: 85 g",
+   "principy": [
+    "VZT.POM.prima"
+   ]
+  },
+  "5.2": {
+   "reseni": "255 g je trojnásobek 85 g, tedy o 200 % více",
+   "principy": [
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "6.1": {
+   "reseni": "40 · 1,75 = 70 Kč",
+   "principy": [
+    "VZT.PROC.nasobitel"
+   ]
+  },
+  "6.2": {
+   "reseni": "40x",
+   "principy": [
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.3": {
+   "reseni": "punčů 510 − x: 40x + 70 · (510 − x) = 29 700; −30x = −6 000; x = 200",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.SLOV.dve-nezname",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "7.1": {
+   "reseni": "bílá část je čtvrtkruh (90°); tři šedé části mají dohromady 360° − 270° = 90°, jedna 30°; 90 : 30 = 3krát",
+   "principy": [
+    "GEO.KRUH.casti",
+    "VZT.NEZ.okolik-kolikrat"
+   ]
+  },
+  "7.2": {
+   "reseni": "čtvrtoblouk 2 · 3,14 · 10 : 4 = 15,7 cm a dva poloměry: 35,7 cm",
+   "principy": [
+    "GEO.KRUH.casti",
+    "GEO.KRUH.obvod"
+   ]
+  },
+  "8.1": {
+   "reseni": "c > 30 − 7 = 23, nejmenší celé 24 cm",
+   "principy": [
+    "KON.VLAST.nerovnost"
+   ]
+  },
+  "8.2": {
+   "reseni": "c < 30 + 7 = 37, největší celé 36 cm",
+   "principy": [
+    "KON.VLAST.nerovnost"
+   ]
+  },
+  "9": {
+   "reseni": "B je obraz A podle osy OP; střed S leží na ose a je od A stejně daleko, jako měří strana AB: průsečík polopřímky OP s kružnicí (A, |AB|); na kružnici (S, |SA|) nanášet stranu",
+   "principy": [
+    "KON.VLAST.mnohouhelnik",
+    "KON.ZAKL.osova",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "10": {
+   "reseni": "úhly ACB a BCD jsou pravé: C leží na Thaletově kružnici nad AB i nad BD, je to jejich druhý průsečík",
+   "principy": [
+    "KON.VLAST.thales",
+    "KON.ZAKL.osa-usecky",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "do úterý zůstalo 16: x + 14 − 4 = 16, x = 6, ne 10; N",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "do středy zůstalo 16 + 4 − 7 = 13; do čtvrtka 16: 13 + nová − 6 = 16, nových 9; A",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "16 + 5 − odjezdy = 9, odjelo právě 12, ne méně; N",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "12": {
+   "reseni": "horní roh a, dolní b: 48a = 4ab = 40b; z prvních dvou b = 12, pak 48a = 480, a = 10; součet 22",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "13": {
+   "reseni": "vyříznutím krychličky v rohu tři čtverce zmizí a tři nové přibudou: povrch se nemění, 6 · 100 = 600 cm²",
+   "principy": [
+    "GEO.TEL.slepena",
+    "GEO.TEL.kvadr-povrch"
+   ]
+  },
+  "14": {
+   "reseni": "28 hrnků je 7/8, osmina jsou 4 hrnky, kanystr 32 hrnků; po 29 hrncích chybí 3 hrnky = 1 050 ml; hrnek 350 ml",
+   "principy": [
+    "VZT.CAST.celek",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "15.1": {
+   "reseni": "20 : 1,25 = 16 kg",
+   "principy": [
+    "VZT.PROC.zaklad-po-zmene"
+   ]
+  },
+  "15.2": {
+   "reseni": "zbývá 15 % = 3 kg, vše 20 kg; džem 65 % z 20 = 13 kg",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.CAST.zbytek",
+    "VZT.PROC.cast"
+   ]
+  },
+  "15.3": {
+   "reseni": "větší v, menší 0,4v: 1,4v = 42, v = 30, menší 12; rozdíl 18 kg",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "16.1": {
+   "reseni": "každým vložením přibudou 4 trojúhelníky, barvy se střídají; 10. obrazec: šedé čtyři věnce po 4 a středový čtverec: 17",
+   "principy": [
+    "ZAK.RADA.nty-clen",
+    "ZAK.RADA.tabulka"
+   ]
+  },
+  "16.2": {
+   "reseni": "89 = 4 · 22 + 1: 22 bílých věnců a bílý střed; bílé věnce jsou liché, 22. je 43., střed je 45. čtverec: 45. obrazec",
+   "principy": [
+    "ZAK.RADA.obraceni",
+    "ZAK.RADA.nty-clen",
+    "POC.DEL.zbytek"
+   ]
+  },
+  "16.3": {
+   "reseni": "každý vložený čtverec má poloviční obsah: 1, 1/2, 1/4, 1/8, 1/16; šedé věnce 1/2 − 1/4 a 1/8 − 1/16: 1/4 + 1/16 = 5/16",
+   "principy": [
+    "GEO.ROV.slozene",
+    "ZAK.RADA.nasobenim",
+    "VZT.CAST.podil",
+    "POC.ZLOM.scitani"
+   ]
+  }
+ },
+ "2026 C": {
+  "1": {
+   "reseni": "7:44 + 7 h jízdy + 38 min pauzy = 15:22",
+   "principy": [
+    "POC.JED.cas"
+   ]
+  },
+  "2.1": {
+   "reseni": "6/5 · 15/9 − 2 = 2 − 2 = 0",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "2.2": {
+   "reseni": "5,5 = 11/2; 5/44 · (−11/2) = −5/8",
+   "principy": [
+    "POC.ZLOM.desetinna",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "2.3": {
+   "reseni": "čitatel 25/15 − 9/15 = 16/15, jmenovatel 16/5; 16/15 · 5/16 = 1/3",
+   "principy": [
+    "POC.ZLOM.slozeny",
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni"
+   ]
+  },
+  "3.1": {
+   "reseni": "36 − 25a² = (6 + 5a) · (6 − 5a)",
+   "principy": [
+    "ALG.VYR.rozdil"
+   ]
+  },
+  "3.2": {
+   "reseni": "4 · (n² − n + 1/4) = 4n² − 4n + 1",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni",
+    "POC.ZLOM.mocnina"
+   ]
+  },
+  "3.3": {
+   "reseni": "9 − x² + 3x² + 6 − 2x² − 2x = −2x + 15",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.1": {
+   "reseni": "· 14: 28 + 2(x − 6) − x = 7(4 + x); 16 + x = 28 + 7x; x = −2",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "4.2": {
+   "reseni": "odečtením rovnic −2y = −8, y = 4; 2x − 4 = 2, x = 3",
+   "principy": [
+    "ALG.ROV.soustava",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "5.1": {
+   "reseni": "600 + 120x",
+   "principy": [
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "5.2": {
+   "reseni": "160x = 120x + 600; x = 15",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "bílý trojúhelník má stranu s, šedý strany 10, s a t; první obvod 4s + 2t = 40, druhý 20 + 2s + 2t = 46; odečtením 2s − 20 = −6, s = 7 cm",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "GEO.ROV.obvod",
+    "GEO.ROV.slozene",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "6.2": {
+   "reseni": "t = 13 − 7 = 6 cm; obvod šedého 10 + 7 + 6 = 23 cm",
+   "principy": [
+    "GEO.ROV.obvod",
+    "VZT.SLOV.dve-nezname"
+   ]
+  },
+  "7.1": {
+   "reseni": "stěna 54 : 6 = 9 cm², hrana 3 cm",
+   "principy": [
+    "GEO.TEL.zpetne",
+    "GEO.TEL.kvadr-povrch",
+    "POC.VYR.odmocnina"
+   ]
+  },
+  "7.2": {
+   "reseni": "bílý hranol má délku 3 · 1,5 = 4,5 cm; velký hranol 3 × 3 × 7,5 cm: 67,5 cm³",
+   "principy": [
+    "GEO.TEL.kvadr-objem",
+    "VZT.NEZ.o-zlomek",
+    "GEO.TEL.slepena"
+   ]
+  },
+  "8.1": {
+   "reseni": "v pravoúhlém trojúhelníku mezi osami a stranou DC je u S úhel 36° (vrcholový), φ = 90° − 36° = 54°",
+   "principy": [
+    "GEO.UHLY.trojuhelnik",
+    "GEO.UHLY.vedlejsi"
+   ]
+  },
+  "8.2": {
+   "reseni": "vnitřní úhel pětiúhelníku je 2 · 54° = 108°; trojúhelník AED je rovnoramenný: ω = (180° − 108°) : 2 = 36°",
+   "principy": [
+    "KON.VLAST.mnohouhelnik",
+    "KON.VLAST.rovnoramenny",
+    "GEO.UHLY.trojuhelnik"
+   ]
+  },
+  "9": {
+   "reseni": "C je obraz A podle S; |CP| je polovina |BC| = |AC|, tedy |CP| = |CS|: P je průsečík p s kružnicí (C, |CS|); B je obraz C podle P; dva průsečíky, dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.ZAKL.stredova",
+    "KON.ZAKL.kruznice",
+    "KON.ROZBOR.mnoziny",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "K je pata kolmice z U na k; V je střed obdélníku: L leží na k a na kružnici (V, |VK|), M a N jsou obrazy K a L podle V",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.kolmice",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "od pondělí do čtvrtka sloužilo 7 + 7 + 8 + 6 = 28 dětí, na pátek zbývá 7, ne 9; N",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "v pondělí u večeře jedno dítě z pěti osob: 4 instruktoři; N",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "instruktorů za den: pondělí 7, úterý 7, středa 6, čtvrtek 8, pátek 2; každý slouží nejvýše jednou denně, je jich tedy aspoň 8; A",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni",
+    "VZT.SLOV.usudek"
+   ]
+  },
+  "12": {
+   "reseni": "rychlost 54 : 36 = 1,5krát větší, čas 1,5krát kratší: 60 : 1,5 = 40 minut",
+   "principy": [
+    "VZT.POM.neprima"
+   ]
+  },
+  "13": {
+   "reseni": "40 slepic je 40 · 18 = 720 kg brambor; 720 : 48 = 15 hus",
+   "principy": [
+    "VZT.POM.prima"
+   ]
+  },
+  "14": {
+   "reseni": "dvoučlenných a, čtyřčlenných b: a + b = 21, 2a + 4b = 60; 2b = 18, b = 9; 36 ze 60 je 3/5",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "ALG.ROV.soustava",
+    "VZT.CAST.podil"
+   ]
+  },
+  "15.1": {
+   "reseni": "sada 36 000 : 80 = 450 Kč; škola 360 ze 450, to je 80 %",
+   "principy": [
+    "VZT.PROC.pocet",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "15.2": {
+   "reseni": "3 díly proti 2: o polovinu, tedy o 50 % více",
+   "principy": [
+    "VZT.PROC.o-kolik-procent",
+    "VZT.PROC.prevody"
+   ]
+  },
+  "15.3": {
+   "reseni": "balíček (450 − 50) : 2 = 200 Kč, slabikář 250 Kč; 50 z 200 je 25 %",
+   "principy": [
+    "VZT.SLOV.dve-nezname",
+    "VZT.PROC.o-kolik-procent"
+   ]
+  },
+  "16.1": {
+   "reseni": "strana a; přidané čtverce mají strany a/2, a/3, a/4: delší strana a + a/2 + a/3 + a/4 = 25a/12 = 125, a = 60 cm",
+   "principy": [
+    "ZAK.RADA.tabulka",
+    "POC.ZLOM.scitani",
+    "VZT.CAST.celek"
+   ]
+  },
+  "16.2": {
+   "reseni": "přibude 5 čtverců o straně 60 : 5 = 12 cm: 5 · 144 = 720 cm²",
+   "principy": [
+    "ZAK.RADA.tabulka",
+    "GEO.ROV.obdelnik"
+   ]
+  },
+  "16.3": {
+   "reseni": "delší strana 125 + 12 + 10 = 147 cm, kratší 60 cm; obvod 2 · (147 + 60) = 414 cm",
+   "principy": [
+    "ZAK.RADA.tabulka",
+    "GEO.ROV.obvod"
+   ]
+  }
+ },
+ "2026 D": {
+  "1": {
+   "reseni": "druhý hod 7 · 1,1 = 7,7 m, třetí 7,7 · 1,1 = 8,47 m; rozdíl 1,47 m = 147 cm",
+   "principy": [
+    "VZT.NEZ.o-zlomek",
+    "VZT.PROC.postupne",
+    "POC.JED.delka"
+   ]
+  },
+  "2.1": {
+   "reseni": "−0,02 − 2 = −2,02",
+   "principy": [
+    "POC.VYR.desetinna",
+    "POC.VYR.zaporna",
+    "POC.VYR.poradi"
+   ]
+  },
+  "2.2": {
+   "reseni": "18/14 · 7/6 = 3/2; (3/2 − 1) : 6 = 1/12",
+   "principy": [
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.ZLOM.scitani"
+   ]
+  },
+  "2.3": {
+   "reseni": "21/6 − 1/6 = 10/3; 12 − 9/2 = 15/2; 10/3 · 2/15 = 4/9",
+   "principy": [
+    "POC.ZLOM.scitani",
+    "POC.ZLOM.nasobeni",
+    "POC.ZLOM.kraceni",
+    "POC.VYR.poradi"
+   ]
+  },
+  "3.1": {
+   "reseni": "(−x) · (4x + 1 − 8y)",
+   "principy": [
+    "ALG.VYR.vytykani",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "3.2": {
+   "reseni": "1/2 · (4a² + 16a + 16) = 2a² + 8a + 8",
+   "principy": [
+    "ALG.VYR.umocneni",
+    "ALG.VYR.nasobeni"
+   ]
+  },
+  "3.3": {
+   "reseni": "4 − 4n² − 2n − 2 + 3n · 3n = 5n² − 2n + 2",
+   "principy": [
+    "ALG.VYR.nasobeni",
+    "ALG.VYR.scitani"
+   ]
+  },
+  "4.1": {
+   "reseni": "1,5 − 2,5x = 0,75x + 1,5; −3,25x = 0; x = 0",
+   "principy": [
+    "ALG.ROV.upravy",
+    "ALG.VYR.nasobeni",
+    "POC.VYR.desetinna"
+   ]
+  },
+  "4.2": {
+   "reseni": "5y/3 − 5/2 + y/2 = 5y/3 − 5; y/2 = −5/2; y = −5",
+   "principy": [
+    "ALG.ROV.zlomky",
+    "ALG.VYR.nasobeni",
+    "POC.ZLOM.nasobeni",
+    "ALG.ROV.upravy",
+    "POC.VYR.zaporna"
+   ]
+  },
+  "5.1": {
+   "reseni": "Roura je dvakrát delší než Trubka, Trubka staví r/2",
+   "principy": [
+    "VZT.NEZ.obraceni",
+    "VZT.SLOV.vyraz"
+   ]
+  },
+  "5.2": {
+   "reseni": "čtvrtina z r + r/2 = 3r/2 je 3r/8",
+   "principy": [
+    "VZT.NEZ.okolik-kolikrat",
+    "VZT.SLOV.vyraz",
+    "POC.ZLOM.nasobeni"
+   ]
+  },
+  "5.3": {
+   "reseni": "r/2 − 3r/8 = 12; r/8 = 12; r = 96 km",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "ALG.ROV.zlomky",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "6.1": {
+   "reseni": "68 : 2 − 10 = 24 cm",
+   "principy": [
+    "GEO.ROV.zpetne",
+    "GEO.ROV.obvod"
+   ]
+  },
+  "6.2": {
+   "reseni": "šedý má šířku w, bílý 24 − w: 2 · (w + 10) − 2 · (34 − w) = 12; w = 15 cm; obsah 15 · 10 = 150 cm²",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "VZT.SLOV.vyraz",
+    "GEO.ROV.obvod",
+    "GEO.ROV.obdelnik"
+   ]
+  },
+  "7.1": {
+   "reseni": "lichoběžník má základny a a a/2, výšku a: (a + a/2) · a : 2 = 3/4 a²; 3/4 stěny",
+   "principy": [
+    "GEO.ROV.lichobeznik",
+    "VZT.CAST.podil"
+   ]
+  },
+  "7.2": {
+   "reseni": "šedé jsou tři lichoběžníky po 3/4 stěny: 9/4 stěny; bílé 6 − 9/4 = 15/4; poměr 9 : 15 = 3 : 5",
+   "principy": [
+    "VZT.POM.pomer",
+    "GEO.TEL.kvadr-povrch",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "8.1": {
+   "reseni": "8 km za 40 minut, 1 km za 5 minut, 3 km za 15 minut",
+   "principy": [
+    "VZT.POM.prima"
+   ]
+  },
+  "8.2": {
+   "reseni": "pomalejší uběhne 2,5 km za 15 minut, 1 km za 6 minut, 8 km za 48 minut",
+   "principy": [
+    "VZT.POM.prima",
+    "POC.JED.delka"
+   ]
+  },
+  "9": {
+   "reseni": "C leží na ose úsečky BD a na Thaletově kružnici nad BD (vybrat bod dál od p); A leží na p a na rovnoběžce s CD bodem B, nebo na rovnoběžce s BC bodem D; dvě řešení",
+   "principy": [
+    "KON.VLAST.rovnoramenny",
+    "KON.VLAST.thales",
+    "KON.ZAKL.osa-usecky",
+    "KON.VLAST.lichobeznik",
+    "KON.ZAKL.rovnobezka",
+    "KON.ROZBOR.dve-reseni"
+   ]
+  },
+  "10": {
+   "reseni": "k je kružnice (S, |SD|); úhlopříčka AC prochází středem S, leží na přímce US: A a C jsou její průsečíky s k; B je obraz D podle S",
+   "principy": [
+    "KON.VLAST.obdelnik",
+    "KON.ZAKL.kruznice",
+    "KON.ZAKL.stredova",
+    "KON.ROZBOR.mnoziny"
+   ]
+  },
+  "11.1": {
+   "reseni": "171 je průměr výšky v 15 letech a 173, v 15 letech 169 cm; 173 − 169 = 4 cm, ne 5; N",
+   "principy": [
+    "DAT.PRUM.zpetne",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.2": {
+   "reseni": "od 13 do 15 let dvakrát stejný přírůstek: (169 − 163) : 2 = 3 cm; ve 14 letech 166 cm, ne 167; N",
+   "principy": [
+    "DAT.GRAF.chybejici",
+    "DAT.PRUM.zpetne",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "11.3": {
+   "reseni": "(160 + 163 + 166 + 169 + 171 + 173) : 6 = 167; A",
+   "principy": [
+    "DAT.PRUM.vypocet",
+    "DAT.GRAF.chybejici",
+    "DAT.GRAF.cteni"
+   ]
+  },
+  "12": {
+   "reseni": "čtvrtý díl 40 % z 680 = 272 Kč; první a třetí 0,7d + 1,3d = 2d = 272; d = 136 Kč",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.PROC.cast",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "13": {
+   "reseni": "trojic t, pětic t − 9: 3t + 1 = 5 · (t − 9); t = 23; pětic 14",
+   "principy": [
+    "VZT.SLOV.rovnice",
+    "POC.DEL.zbytek",
+    "ALG.ROV.upravy"
+   ]
+  },
+  "14": {
+   "reseni": "boční stěny jsou čtverce, kosočtverec má stejné strany: všech 12 hran je stejných, 60 : 12 = 5 cm; V = 15 · 5 = 75 cm³",
+   "principy": [
+    "GEO.TEL.hranol-objem",
+    "GEO.TEL.sit",
+    "GEO.TEL.hrany"
+   ]
+  },
+  "15.1": {
+   "reseni": "dívek 25 % z 28 = 7",
+   "principy": [
+    "VZT.PROC.cast",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "15.2": {
+   "reseni": "chlapců c, dívek 1,5c: 2,5c = 30, c = 12, dívek 18; o 6",
+   "principy": [
+    "VZT.PROC.nasobitel",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "15.3": {
+   "reseni": "14 chlapců je 56 %, účastníků 25, dívek 11; nezúčastnilo se 16 − 11 = 5",
+   "principy": [
+    "VZT.PROC.zaklad",
+    "VZT.CAST.zbytek"
+   ]
+  },
+  "16.1": {
+   "reseni": "zaplatí 10 žetonů, získá 5 · 2 + 5 · 3 = 25",
+   "principy": [
+    "VZT.SLOV.usudek"
+   ]
+  },
+  "16.2": {
+   "reseni": "zisky 2a a 3b, 2a = 3b + 3 s a, b do 5: jen a = 3, b = 1; žetonů 10 − 9 + 6 + 3 = 10",
+   "principy": [
+    "VZT.SLOV.cela-cisla",
+    "ZAK.USUDEK.vsechna",
+    "VZT.SLOV.rovnice"
+   ]
+  },
+  "16.3": {
+   "reseni": "zisk 2a + 3b se rovná počtu koupených otázek (nejvýše 10); chyb je pak a + 2b; nejvíce 6 pro (a; b) = (0; 3) a (2; 2): ani jednou, nebo dvakrát",
+   "principy": [
+    "ZAK.USUDEK.vsechna",
+    "VZT.SLOV.cela-cisla",
+    "VZT.SLOV.rovnice"
+   ]
+  }
+ }
+}

@@ -1,0 +1,2738 @@
+{
+  "areas": [
+    {
+      "id": "POC",
+      "name": "Počítání s čísly",
+      "tags": [],
+      "spec": [
+        1
+      ],
+      "note": "The tools every other branch uses. Fast and error-free here is what frees time for tasks 6–16.",
+      "children": [
+        {
+          "id": "POC.VYR",
+          "name": "Číselné výrazy, mocniny, odmocniny",
+          "tags": [
+            "N-ARIT"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "One or two 1-point openers; from 2025 also inside the fraction task.",
+          "children": [
+            {
+              "id": "POC.VYR.poradi",
+              "name": "Pořadí operací, závorky, záporná čísla",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Sign rules: (−6)² = 36, −3·(−3) = +9."
+            },
+            {
+              "id": "POC.VYR.desetinna",
+              "name": "Počítání s desetinnými čísly bez kalkulačky",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.poradi"
+              ],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Multiplying and dividing by decimals: (0,08 − 1) : 0,2."
+            },
+            {
+              "id": "POC.VYR.mocniny",
+              "name": "Druhá mocnina a odmocnina",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Squares 1–20 and their roots, decimals, powers of ten, root of a fraction and of a product. Compute inside the root first. Needed all over geometry."
+            },
+            {
+              "id": "POC.VYR.slovy",
+              "name": "Výraz zadaný slovy (součet, rozdíl, součin, podíl)",
+              "kind": "translation",
+              "requires": [
+                "POC.VYR.poradi"
+              ],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The verbal items are the ones that fail, not the computations."
+            },
+            {
+              "id": "POC.VYR.osa",
+              "name": "Číselná osa se stejnými dílky",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.VYR.zaokrouhleni",
+              "name": "Zaokrouhlení výsledku na daný řád",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.desetinna"
+              ],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The last step of the π tasks: „zaokrouhlete na desítky cm³ / celé cm² / desetiny centimetru“. Round once, at the end."
+            },
+            {
+              "id": "POC.VYR.absolutni",
+              "name": "Absolutní hodnota a opačné číslo",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „určí číslo kladné, záporné a opačné, znázorní a určí absolutní hodnotu čísla“."
+            },
+            {
+              "id": "POC.VYR.periodicke",
+              "name": "Periodické číslo: zápis, porovnání, převod zlomku",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „rozumí zápisu … desetinného čísla včetně periodického čísla“, „převádí zlomek na desetinné číslo včetně čísla s periodou“. One appears only as an answer option (2022 A 14)."
+            },
+            {
+              "id": "POC.VYR.odhady",
+              "name": "Odhad výsledku s danou přesností",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „provádí odhady početních operací s racionálními čísly s danou přesností“."
+            }
+          ]
+        },
+        {
+          "id": "POC.ZLOM",
+          "name": "Počítání se zlomky",
+          "tags": [
+            "N-ZLOM"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "The computation task of every test: 3–4 points, among the best solved open tasks. Fraction word problems are in VZT.",
+          "children": [
+            {
+              "id": "POC.ZLOM.operace",
+              "name": "Čtyři operace se zlomky, společný jmenovatel, krácení, základní tvar",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.poradi"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "An unreduced result costs 1 of 2 points. Never multiply the expression by the common denominator as if it were an equation."
+            },
+            {
+              "id": "POC.ZLOM.slozeny",
+              "name": "Složený zlomek",
+              "kind": "procedure",
+              "requires": [
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The worked 2-point item in almost every test."
+            },
+            {
+              "id": "POC.ZLOM.desetinna",
+              "name": "Zlomky spolu s desetinnými čísly",
+              "kind": "procedure",
+              "requires": [
+                "POC.ZLOM.operace",
+                "POC.VYR.desetinna"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Convert the decimal to a fraction first (1,4 = 7/5)."
+            },
+            {
+              "id": "POC.ZLOM.mocniny",
+              "name": "Zlomky s druhou mocninou a odmocninou",
+              "kind": "procedure",
+              "requires": [
+                "POC.ZLOM.operace",
+                "POC.VYR.mocniny"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "From 2025."
+            },
+            {
+              "id": "POC.ZLOM.smisene",
+              "name": "Smíšené číslo",
+              "kind": "procedure",
+              "requires": [
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "POC.ZLOM.porovnani",
+              "name": "Porovnávání zlomků",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „porovnává zlomky“. Not asked as a task of its own."
+            },
+            {
+              "id": "POC.ZLOM.prevraceny",
+              "name": "Převrácený zlomek podle názvu",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „zapíše převrácený zlomek“. Used silently whenever a fraction divides."
+            }
+          ]
+        },
+        {
+          "id": "POC.DEL",
+          "name": "Dělitelnost",
+          "tags": [
+            "N-DEL"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "Small and badly solved (19 %); usually hidden in a word problem.",
+          "children": [
+            {
+              "id": "POC.DEL.delitele",
+              "name": "Dělitelé a násobky čísla",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.DEL.prvocisla",
+              "name": "Prvočísla a rozklad na prvočísla",
+              "kind": "procedure",
+              "requires": [
+                "POC.DEL.delitele"
+              ],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "2 is the only even prime."
+            },
+            {
+              "id": "POC.DEL.zbytek",
+              "name": "Dělení se zbytkem ve slovní úloze",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.DEL.nasobek",
+              "name": "Společný násobek",
+              "kind": "procedure",
+              "requires": [
+                "POC.DEL.delitele"
+              ],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Never asked by name, but it is what common denominators and the periodic tasks of task 16 use."
+            },
+            {
+              "id": "POC.DEL.znaky",
+              "name": "Znaky dělitelnosti čísly 2, 3, 4, 5, 6, 8 a 10",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1."
+            },
+            {
+              "id": "POC.DEL.nsn-nsd",
+              "name": "Nejmenší společný násobek a největší společný dělitel dvou až tří čísel",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1. The words do not occur in the 20 tests."
+            }
+          ]
+        },
+        {
+          "id": "POC.JED",
+          "name": "Převody jednotek",
+          "tags": [
+            "N-JED"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "Rarely a task of its own; mostly silent: data in one unit, answer demanded in another.",
+          "children": [
+            {
+              "id": "POC.JED.delka",
+              "name": "Délka (mm, cm, dm, m, km)",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.JED.obsah",
+              "name": "Obsah (krok × 100)",
+              "kind": "fact",
+              "requires": [
+                "POC.JED.delka"
+              ],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.JED.objem",
+              "name": "Objem a litry (krok × 1 000, 1 l = 1 dm³)",
+              "kind": "fact",
+              "requires": [
+                "POC.JED.delka"
+              ],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.JED.hmotnost",
+              "name": "Hmotnost (g, kg)",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.JED.cas",
+              "name": "Čas (hodiny, minuty, desetinné hodiny, sčítání časů)",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Needed for pohyb."
+            },
+            {
+              "id": "POC.JED.uhel",
+              "name": "Stupně a minuty (1° = 60′)",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "POC.JED.sekunda-tyden",
+              "name": "Sekunda a týden v převodech času",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "A1, 2: „časové jednotky (sekunda, minuta, hodina, den, týden)“."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ALG",
+      "name": "Výrazy a rovnice",
+      "tags": [],
+      "spec": [
+        1
+      ],
+      "note": "Two fixed tasks, 8 points in every one of the 20 tests, each with a fixed set of item roles. The most predictable points of the test.",
+      "children": [
+        {
+          "id": "ALG.VYR",
+          "name": "Úpravy výrazů",
+          "tags": [
+            "A-VYR"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "Always three items, 1 + 1 + 2 points.",
+          "children": [
+            {
+              "id": "ALG.VYR.roznasobeni",
+              "name": "Roznásobení závorek a sloučení členů",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.poradi"
+              ],
+              "tags": [
+                "A-VYR"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The worked 2-point item. The trap is a bracket to simplify before multiplying, e.g. (3n − 2n)."
+            },
+            {
+              "id": "ALG.VYR.vytykani",
+              "name": "Vytýkání",
+              "kind": "procedure",
+              "requires": [
+                "ALG.VYR.roznasobeni"
+              ],
+              "tags": [
+                "A-VYR"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Usually after simplifying first; also a prescribed factor such as (−x)."
+            },
+            {
+              "id": "ALG.VYR.umocneni",
+              "name": "Umocnění dvojčlenu (a ± b)²",
+              "kind": "procedure",
+              "requires": [
+                "ALG.VYR.roznasobeni",
+                "POC.VYR.mocniny"
+              ],
+              "tags": [
+                "A-VYR"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Awkward coefficients: fractions, decimals, two minus signs."
+            },
+            {
+              "id": "ALG.VYR.doplneni",
+              "name": "Vzorec (a ± b)² zpětně: rozklad trojčlenu, doplnění chybějících čísel",
+              "kind": "procedure",
+              "requires": [
+                "ALG.VYR.umocneni"
+              ],
+              "tags": [
+                "A-VYR"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "In 2022–2026 only as „Do rámečků doplňte chybějící čísla“; factoring a whole trinomial (9a² − 30a + 25) was asked in 2021 A 4.1."
+            },
+            {
+              "id": "ALG.VYR.rozdil",
+              "name": "Rozklad a² − b² na součin",
+              "kind": "procedure",
+              "requires": [
+                "ALG.VYR.umocneni"
+              ],
+              "tags": [
+                "A-VYR"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "In disguise: 49 − (−4a)², or simplify first and then factor."
+            },
+            {
+              "id": "ALG.VYR.hodnota",
+              "name": "Hodnota výrazu pro dané číslo",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "A-VYR"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "ALG.ROV",
+          "name": "Lineární rovnice a soustavy",
+          "tags": [
+            "A-ROV",
+            "A-SOU"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "Two worked items of 2 points; the check is never required.",
+          "children": [
+            {
+              "id": "ALG.ROV.zavorky",
+              "name": "Rovnice se závorkami a desetinnými čísly",
+              "kind": "procedure",
+              "requires": [
+                "ALG.VYR.roznasobeni",
+                "POC.VYR.desetinna"
+              ],
+              "tags": [
+                "A-ROV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "ALG.ROV.zlomky",
+              "name": "Rovnice se zlomky",
+              "kind": "procedure",
+              "requires": [
+                "ALG.ROV.zavorky",
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "A-ROV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Keep each numerator in a bracket; the minus before a fraction is the classic error."
+            },
+            {
+              "id": "ALG.ROV.bez-reseni",
+              "name": "Rovnice bez řešení",
+              "kind": "fact",
+              "requires": [
+                "ALG.ROV.zavorky"
+              ],
+              "tags": [
+                "A-ROV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The sentence „rovnice nemá řešení“ must be written. „Nekonečně mnoho řešení“ is in the specification only."
+            },
+            {
+              "id": "ALG.ROV.mocniny",
+              "name": "Rovnice s druhými mocninami dvojčlenů, ve které x² vypadne",
+              "kind": "procedure",
+              "requires": [
+                "ALG.ROV.zavorky",
+                "ALG.VYR.umocneni"
+              ],
+              "tags": [
+                "A-ROV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Only in the 2024 tests."
+            },
+            {
+              "id": "ALG.ROV.soustava",
+              "name": "Soustava dvou rovnic se dvěma neznámými",
+              "kind": "procedure",
+              "requires": [
+                "ALG.ROV.zavorky"
+              ],
+              "tags": [
+                "A-SOU"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "From 2025, in 4 of 8 tests. Dosazovací or sčítací metoda."
+            },
+            {
+              "id": "ALG.ROV.nekonecne",
+              "name": "Rovnice s nekonečně mnoha řešeními",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "A-ROV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "C1, 1: „rozhodne, má-li rovnice jedno řešení, nekonečně mnoho řešení, nebo nemá řešení“. Only the other two outcomes are keyed in the 20 tests."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VZT",
+      "name": "Vztahy mezi veličinami: zlomek, procento, poměr",
+      "tags": [],
+      "spec": [
+        1,
+        2
+      ],
+      "note": "The same relation is told as a fraction, a percentage or a ratio. Most points of tasks 6–8 and 15 are lost on reading the relation, not on computing.",
+      "children": [
+        {
+          "id": "VZT.CAST",
+          "name": "Zlomek jako část celku",
+          "tags": [
+            "N-ZLOM"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "Single 1-point word items solved by 21–33 %, while the fraction computation task scores 58–76 %.",
+          "children": [
+            {
+              "id": "VZT.CAST.cast",
+              "name": "Zlomek z množství a z času",
+              "kind": "translation",
+              "requires": [
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.CAST.zbytek",
+              "name": "Část ze zbytku",
+              "kind": "translation",
+              "requires": [
+                "VZT.CAST.cast"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "„dvě pětiny zbytku“ is a part of what is left, not of the whole."
+            },
+            {
+              "id": "VZT.CAST.zlomek-ze-zlomku",
+              "name": "Zlomek ze zlomku",
+              "kind": "translation",
+              "requires": [
+                "VZT.CAST.cast"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "„Tři čtvrtiny z této utracené částky“, „čtvrtina vzdálenosti, kterou předtím ujel“: multiply the fractions."
+            },
+            {
+              "id": "VZT.CAST.celek",
+              "name": "Celek z části",
+              "kind": "translation",
+              "requires": [
+                "VZT.CAST.cast"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "„pětina a o 180 více“ – find what fraction the known number is."
+            }
+          ]
+        },
+        {
+          "id": "VZT.NEZ",
+          "name": "Srovnání „o … více než“, „kolikrát“",
+          "tags": [
+            "A-SLOV"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "The phrases that carry the difficulty across fractions, percentages and word problems (03, section 20). Learn them once, here.",
+          "children": [
+            {
+              "id": "VZT.NEZ.okolik-kolikrat",
+              "name": "„o kolik“ je rozdíl, „kolikrát“ je podíl",
+              "kind": "translation",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.NEZ.o-zlomek",
+              "name": "„o třetinu více / méně než“ jako násobení",
+              "kind": "translation",
+              "requires": [
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "4/3 · x and 2/3 · x, where x is the quantity after „než“."
+            },
+            {
+              "id": "VZT.NEZ.krat-mene",
+              "name": "„dvakrát méně“, „čtyřikrát menší než“ jako dělení",
+              "kind": "translation",
+              "requires": [],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.NEZ.obraceni",
+              "name": "Obrácení vztahu: neznámá není veličina za „než“",
+              "kind": "translation",
+              "requires": [
+                "VZT.NEZ.o-zlomek"
+              ],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "„o polovinu levnější než skříň“ with the table = n means the wardrobe is 2n. Solved by 8–28 %."
+            }
+          ]
+        },
+        {
+          "id": "VZT.PROC",
+          "name": "Procenta",
+          "tags": [
+            "P-PROC"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "The largest topic: task 15 in every standard test plus one or two items elsewhere. Points are lost on choosing the base.",
+          "children": [
+            {
+              "id": "VZT.PROC.tri-vypocty",
+              "name": "Procentová část, počet procent, základ",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.desetinna"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Where the base is the obvious number, items score 70–80 %."
+            },
+            {
+              "id": "VZT.PROC.nasobitel",
+              "name": "„o x % více / méně“ jako násobitel",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.tri-vypocty"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "+25 % is ·1,25; −40 % is ·0,6; +150 % is ·2,5."
+            },
+            {
+              "id": "VZT.PROC.zaklad-po-zmene",
+              "name": "Základ po změně („což je o 40 % více než loni“)",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.nasobitel"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Divide by the multiplier: 420 : 1,4."
+            },
+            {
+              "id": "VZT.PROC.o-kolik-procent",
+              "name": "„O kolik procent“ se liší dvě veličiny",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.tri-vypocty"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Difference divided by the quantity after „než“."
+            },
+            {
+              "id": "VZT.PROC.obracene",
+              "name": "Obrácené srovnání („o třetinu méně“ je opačně „o 50 % více“)",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.o-kolik-procent",
+                "VZT.NEZ.obraceni"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "In 2025 B 15.2 the naive option 33 % drew 47,8 % of candidates."
+            },
+            {
+              "id": "VZT.PROC.postupne",
+              "name": "Dvě změny po sobě",
+              "kind": "procedure",
+              "requires": [
+                "VZT.PROC.nasobitel"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Multiply the multipliers: +40 % then −40 % is ·0,84."
+            },
+            {
+              "id": "VZT.PROC.ze-zbytku",
+              "name": "Procento ze zbytku",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.tri-vypocty",
+                "VZT.CAST.zbytek"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.PROC.se-souctem",
+              "name": "Dvě veličiny svázané procentem a známý součet",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.nasobitel",
+                "ALG.ROV.zavorky"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "x + 0,7x = 680."
+            },
+            {
+              "id": "VZT.PROC.prevody",
+              "name": "Procento, zlomek a poměr: převody mezi nimi",
+              "kind": "fact",
+              "requires": [
+                "VZT.PROC.tri-vypocty"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "„každý dvacátý“ = 5 %; 3 : 2 is „o 50 % více“."
+            },
+            {
+              "id": "VZT.PROC.body",
+              "name": "Změna v procentních bodech",
+              "kind": "translation",
+              "requires": [
+                "VZT.PROC.tri-vypocty"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "VZT.PROC.finance",
+              "name": "Úrok za jeden rok a daň z úroku",
+              "kind": "procedure",
+              "requires": [
+                "VZT.PROC.tri-vypocty"
+              ],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "VZT.PROC.promile",
+              "name": "Promile",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1."
+            },
+            {
+              "id": "VZT.PROC.finance-pojmy",
+              "name": "Jistina, úroková míra, úrokovací období, inflace; půjčky a úvěry",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "C1, 1: „používá s porozuměním základní pojmy finanční matematiky“, „získá základní informace o půjčkách a úvěrech“."
+            }
+          ]
+        },
+        {
+          "id": "VZT.POM",
+          "name": "Poměr a úměrnost",
+          "tags": [
+            "P-POM"
+          ],
+          "spec": [
+            1,
+            2,
+            3
+          ],
+          "note": "Result-only tasks 6–8 with graduated sub-items, or multiple choice. No formula is asked for; small numbers and reasoning.",
+          "children": [
+            {
+              "id": "VZT.POM.pomer",
+              "name": "Poměr v základním tvaru, dělení v poměru",
+              "kind": "procedure",
+              "requires": [
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Also the parts from their difference: 3 : 5 and a difference of 600 g."
+            },
+            {
+              "id": "VZT.POM.usecka",
+              "name": "Poměr na číselné ose a na úsečce",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.pomer",
+                "POC.VYR.osa"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.POM.meritko",
+              "name": "Měřítko mapy a plánu",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.pomer",
+                "POC.JED.delka",
+                "POC.JED.obsah"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Area scales with the square of the length scale."
+            },
+            {
+              "id": "VZT.POM.prima",
+              "name": "Přímá úměrnost",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.pomer"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.POM.neprima",
+              "name": "Nepřímá úměrnost",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.prima"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.POM.prace",
+              "name": "Společná práce",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.neprima",
+                "POC.ZLOM.operace"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "Add the rates per unit of time, not the times."
+            },
+            {
+              "id": "VZT.POM.pohyb",
+              "name": "Pohyb: s = v · t",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.prima",
+                "POC.JED.cas"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.POM.smesi",
+              "name": "Směsi a průměrná cena",
+              "kind": "procedure",
+              "requires": [
+                "VZT.POM.pomer"
+              ],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.POM.postupny",
+              "name": "Postupný a převrácený poměr, změna čísla v daném poměru",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "B1, 1: „změní číslo v daném poměru“, „zapíše a upraví postupný a převrácený poměr“."
+            },
+            {
+              "id": "VZT.POM.souradnice",
+              "name": "Bod v pravoúhlé soustavě souřadnic",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "B1, 2: „vyznačí bod v pravoúhlé soustavě souřadnic …, zapíše souřadnice daného bodu“. No coordinate system in any of the 20 tests."
+            },
+            {
+              "id": "VZT.POM.graf",
+              "name": "Přímá a nepřímá úměrnost tabulkou, rovnicí a grafem",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "C1, 2: „vyjádří přímou a nepřímou úměrnost tabulkou, rovnicí a grafem“."
+            }
+          ]
+        },
+        {
+          "id": "VZT.SLOV",
+          "name": "Slovní úlohy na rovnici",
+          "tags": [
+            "A-SLOV"
+          ],
+          "spec": [
+            1
+          ],
+          "note": "The fixed three-step task (two expressions, then an equation) in 12 of 16 standard tests; its last step is solved by 10–27 %.",
+          "children": [
+            {
+              "id": "VZT.SLOV.vyraz",
+              "name": "Vyjádření veličiny výrazem s proměnnou",
+              "kind": "translation",
+              "requires": [
+                "VZT.NEZ.o-zlomek",
+                "VZT.NEZ.obraceni"
+              ],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The answer is an expression such as 4x/3, not a number."
+            },
+            {
+              "id": "VZT.SLOV.rovnice",
+              "name": "Sestavení a vyřešení rovnice z další podmínky",
+              "kind": "strategy",
+              "requires": [
+                "VZT.SLOV.vyraz",
+                "ALG.ROV.zlomky"
+              ],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "Answer the quantity that is asked, which may not be x."
+            },
+            {
+              "id": "VZT.SLOV.dve-nezname",
+              "name": "Dvě neznámé: počty a součty",
+              "kind": "strategy",
+              "requires": [
+                "VZT.SLOV.rovnice",
+                "ALG.ROV.soustava"
+              ],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.SLOV.usudek",
+              "name": "Řešení úsudkem bez rovnice",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                4
+              ],
+              "note": ""
+            },
+            {
+              "id": "VZT.SLOV.cela-cisla",
+              "name": "Podmínka, že výsledek je celé číslo",
+              "kind": "strategy",
+              "requires": [
+                "VZT.SLOV.rovnice",
+                "POC.DEL.zbytek"
+              ],
+              "tags": [
+                "A-SLOV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DAT",
+      "name": "Grafy, tabulky, průměr",
+      "tags": [],
+      "spec": [
+        2
+      ],
+      "note": "Task 11 (A/N) in 9 of 16 standard tests. Reading values is easy; the conditions in the text are where points go.",
+      "children": [
+        {
+          "id": "DAT.GRAF",
+          "name": "Grafy a tabulky",
+          "tags": [
+            "D-GRAF"
+          ],
+          "spec": [
+            2
+          ],
+          "note": "",
+          "children": [
+            {
+              "id": "DAT.GRAF.sloupcovy",
+              "name": "Čtení sloupcového grafu (více řad, skládaný)",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "DAT.GRAF.chybejici",
+              "name": "Doplnění chybějícího údaje z podmínek v textu",
+              "kind": "strategy",
+              "requires": [
+                "DAT.GRAF.sloupcovy"
+              ],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "A missing bar or an axis without numbers. Open versions score 14–50 %."
+            },
+            {
+              "id": "DAT.GRAF.kruhovy",
+              "name": "Kruhový diagram (procenta, středové úhly)",
+              "kind": "procedure",
+              "requires": [
+                "VZT.PROC.tri-vypocty"
+              ],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "360° is the whole, 60° is one sixth."
+            },
+            {
+              "id": "DAT.GRAF.tabulka",
+              "name": "Čtení tabulky, třídění údajů z textu",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "DAT.GRAF.statistika",
+              "name": "Statistický soubor, statistický znak, statistické šetření, četnost",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "C1, 2. Medián and modus are neither in the specification nor in the tests."
+            },
+            {
+              "id": "DAT.GRAF.volba",
+              "name": "Volba vhodné tabulky a diagramu, vytvoření diagramu z dat",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "C1, 2: „zvolí vhodnou tabulku a vhodný diagram“; B1, 2: „vytvoří vhodný diagram ze vstupních dat“. Charts are always given, never drawn."
+            }
+          ]
+        },
+        {
+          "id": "DAT.PRUM",
+          "name": "Aritmetický průměr",
+          "tags": [
+            "D-GRAF"
+          ],
+          "spec": [
+            2
+          ],
+          "note": "",
+          "children": [
+            {
+              "id": "DAT.PRUM.vypocet",
+              "name": "Výpočet aritmetického průměru",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            },
+            {
+              "id": "DAT.PRUM.cetnosti",
+              "name": "Průměr z tabulky četností",
+              "kind": "procedure",
+              "requires": [
+                "DAT.PRUM.vypocet"
+              ],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "Count × value, divided by the total count."
+            },
+            {
+              "id": "DAT.PRUM.zpetne",
+              "name": "Chybějící hodnota z daného průměru",
+              "kind": "procedure",
+              "requires": [
+                "DAT.PRUM.vypocet"
+              ],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GEO",
+      "name": "Geometrie: výpočty",
+      "tags": [],
+      "spec": [
+        3
+      ],
+      "note": "No formula except the circle's is printed. Tasks are chains: a figure, a hidden right triangle, a unit change.",
+      "children": [
+        {
+          "id": "GEO.UHLY",
+          "name": "Úhly",
+          "tags": [
+            "G-UHLY"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "One multiple-choice item among 12–14 in most tests. Straight chains score 50–67 %, figures needing an auxiliary idea 21–24 %.",
+          "children": [
+            {
+              "id": "GEO.UHLY.dvojice",
+              "name": "Vrcholové, vedlejší, souhlasné a střídavé úhly",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.UHLY.soucet",
+              "name": "Součet úhlů v trojúhelníku a čtyřúhelníku",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.UHLY.rovnoramenny",
+              "name": "Úhly v rovnoramenném a rovnostranném trojúhelníku",
+              "kind": "fact",
+              "requires": [
+                "GEO.UHLY.soucet"
+              ],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.UHLY.s-promennou",
+              "name": "Úhly zapsané jako α, 2α, 3α nebo poměrem",
+              "kind": "strategy",
+              "requires": [
+                "GEO.UHLY.dvojice",
+                "GEO.UHLY.soucet"
+              ],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Set up an equation for α."
+            },
+            {
+              "id": "GEO.UHLY.osa",
+              "name": "Osa úhlu",
+              "kind": "fact",
+              "requires": [
+                "GEO.UHLY.soucet"
+              ],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.UHLY.mnohouhelnik",
+              "name": "Pravidelný mnohoúhelník",
+              "kind": "fact",
+              "requires": [
+                "GEO.UHLY.rovnoramenny"
+              ],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Regular pentagon 108°; hexagon as six equilateral triangles."
+            },
+            {
+              "id": "GEO.UHLY.kruznice",
+              "name": "Úhly v kružnici: poloměry a Thaletova věta",
+              "kind": "fact",
+              "requires": [
+                "GEO.UHLY.rovnoramenny"
+              ],
+              "tags": [
+                "G-UHLY"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "GEO.PYT",
+          "name": "Pythagorova věta",
+          "tags": [
+            "G-PYT"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "Never asked for by name; always a hidden step. Sides are whole numbers in the tasks traced.",
+          "children": [
+            {
+              "id": "GEO.PYT.veta",
+              "name": "Přepona z odvěsen, odvěsna z přepony",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.mocniny"
+              ],
+              "tags": [
+                "G-PYT"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Know the triples 3–4–5, 5–12–13, 8–15–17 and their multiples."
+            },
+            {
+              "id": "GEO.PYT.najit",
+              "name": "Nalezení pravoúhlého trojúhelníku v útvaru",
+              "kind": "strategy",
+              "requires": [
+                "GEO.PYT.veta"
+              ],
+              "tags": [
+                "G-PYT"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Height of an isosceles triangle or trapezoid, slanted side, diagonal."
+            },
+            {
+              "id": "GEO.PYT.telesa",
+              "name": "Pythagorova věta v tělesech",
+              "kind": "strategy",
+              "requires": [
+                "GEO.PYT.najit"
+              ],
+              "tags": [
+                "G-PYT"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Stěnová úhlopříčka; hypotenuse of the base as an edge."
+            }
+          ]
+        },
+        {
+          "id": "GEO.ROV",
+          "name": "Obvod a obsah rovinných útvarů",
+          "tags": [
+            "G-ROV"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "A result-only task among 6–8; 22 % leave it blank. A direct area from given sides does not occur alone.",
+          "children": [
+            {
+              "id": "GEO.ROV.vzorce",
+              "name": "Vzorce pro obvod a obsah",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Čtverec, obdélník, trojúhelník, rovnoběžník, kosočtverec, lichoběžník. None is printed."
+            },
+            {
+              "id": "GEO.ROV.zpetne",
+              "name": "Strana nebo výška z obsahu",
+              "kind": "procedure",
+              "requires": [
+                "GEO.ROV.vzorce",
+                "POC.VYR.mocniny"
+              ],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.ROV.dvojim",
+              "name": "Obsah vypočtený dvěma způsoby",
+              "kind": "strategy",
+              "requires": [
+                "GEO.ROV.zpetne"
+              ],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Height to the hypotenuse, height of a rhombus."
+            },
+            {
+              "id": "GEO.ROV.lichobeznik",
+              "name": "Lichoběžník rozdělený na obdélník a trojúhelník",
+              "kind": "strategy",
+              "requires": [
+                "GEO.ROV.vzorce",
+                "GEO.PYT.najit"
+              ],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.ROV.slozene",
+              "name": "Složené útvary",
+              "kind": "strategy",
+              "requires": [
+                "GEO.ROV.vzorce"
+              ],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.ROV.s-promennou",
+              "name": "Obvod vyjádřený proměnnou",
+              "kind": "strategy",
+              "requires": [
+                "GEO.ROV.vzorce",
+                "VZT.SLOV.rovnice"
+              ],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.ROV.nerovnost",
+              "name": "Trojúhelníková nerovnost",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "GEO.ROV.rozestupy",
+              "name": "Rozestupy po obvodu",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "GEO.ROV.sit",
+              "name": "Obvod a obsah mnohoúhelníku ve čtvercové síti",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „využívá čtvercovou síť pro výpočet obvodu a obsahu mnohoúhelníků“."
+            },
+            {
+              "id": "GEO.ROV.shodnost",
+              "name": "Shodnost trojúhelníků",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „používá věty o shodnosti trojúhelníků k řešení geometrických úloh“."
+            },
+            {
+              "id": "GEO.ROV.podobnost",
+              "name": "Podobnost trojúhelníků: věty sss, sus, uu, poměr podobnosti",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3: „pomocí poměru podobnosti určí rozměry trojúhelníků“."
+            }
+          ]
+        },
+        {
+          "id": "GEO.KRUH",
+          "name": "Kruh a kružnice",
+          "tags": [
+            "G-KRUH"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "o = 2πr and S = πr² are printed. Radii are round (5, 10, 50).",
+          "children": [
+            {
+              "id": "GEO.KRUH.vzorce",
+              "name": "Obvod a obsah kruhu, počítání s π ≐ 3,14, zaokrouhlení",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.desetinna"
+              ],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Do not confuse poloměr and průměr; round only the final result."
+            },
+            {
+              "id": "GEO.KRUH.zpetne",
+              "name": "Poloměr nebo průměr z obsahu",
+              "kind": "procedure",
+              "requires": [
+                "GEO.KRUH.vzorce",
+                "POC.VYR.mocniny"
+              ],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.KRUH.casti",
+              "name": "Půlkruh, čtvrtkruh, výseč: obsah a obvod",
+              "kind": "procedure",
+              "requires": [
+                "GEO.KRUH.vzorce"
+              ],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Perimeter of a part = arc + the straight sides."
+            },
+            {
+              "id": "GEO.KRUH.oblouky",
+              "name": "Útvary ohraničené oblouky",
+              "kind": "strategy",
+              "requires": [
+                "GEO.KRUH.casti",
+                "GEO.ROV.slozene"
+              ],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.KRUH.tecna",
+              "name": "Vzájemná poloha kružnice a přímky: tečna, sečna, vnější přímka",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3."
+            },
+            {
+              "id": "GEO.KRUH.dve-kruznice",
+              "name": "Vzájemná poloha dvou kružnic, průsečíky a body dotyku",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3."
+            }
+          ]
+        },
+        {
+          "id": "GEO.TEL",
+          "name": "Tělesa",
+          "tags": [
+            "G-TEL"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "In every standard test, mostly multiple choice 12–14. Several multi-step items score at the guessing rate.",
+          "children": [
+            {
+              "id": "GEO.TEL.krychle-kvadr",
+              "name": "Krychle a kvádr: objem, povrch, součet hran, i zpětně",
+              "kind": "procedure",
+              "requires": [
+                "GEO.ROV.zpetne"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.TEL.hranol",
+              "name": "Kolmý hranol: objem a povrch",
+              "kind": "procedure",
+              "requires": [
+                "GEO.ROV.vzorce"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "V = obsah podstavy × výška, for a triangular, rhombic or trapezoidal base."
+            },
+            {
+              "id": "GEO.TEL.valec",
+              "name": "Válec: objem, plášť, povrch",
+              "kind": "procedure",
+              "requires": [
+                "GEO.KRUH.vzorce"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "The plášť unrolled is a rectangle."
+            },
+            {
+              "id": "GEO.TEL.sit",
+              "name": "Síť tělesa",
+              "kind": "fact",
+              "requires": [
+                "GEO.TEL.hranol"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.TEL.slepena",
+              "name": "Slepená a rozříznutá tělesa",
+              "kind": "strategy",
+              "requires": [
+                "GEO.TEL.krychle-kvadr",
+                "GEO.TEL.hranol"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "The surface changes by the faces that disappear or appear."
+            },
+            {
+              "id": "GEO.TEL.krychlicky",
+              "name": "Tělesa z krychliček, prostorová představivost",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                4
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.TEL.vztah",
+              "name": "Vztah místo čísla: rovnice pro výšku nebo hranu",
+              "kind": "strategy",
+              "requires": [
+                "GEO.TEL.valec",
+                "ALG.ROV.zavorky"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "„obsah pláště je třikrát větší než obsah podstavy“."
+            },
+            {
+              "id": "GEO.TEL.litry",
+              "name": "Objem v litrech, výška hladiny",
+              "kind": "procedure",
+              "requires": [
+                "GEO.TEL.valec",
+                "POC.JED.objem"
+              ],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "GEO.TEL.pohledy",
+              "name": "Pohled na těleso shora, zepředu, zprava, zleva a zdola",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3."
+            },
+            {
+              "id": "GEO.TEL.nacrt",
+              "name": "Náčrt sítě a obrazu tělesa ve volném rovnoběžném promítání",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „načrtne a sestrojí síť krychle, kvádru a kolmého hranolu“; C1, 3: „načrtne síť válce“. Nets are always given, never drawn."
+            },
+            {
+              "id": "GEO.TEL.jehlan",
+              "name": "Jehlan: rozpoznání, síť, pohledy, metrické a polohové vlastnosti",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3. The specification does not ask for the volume or surface of a pyramid."
+            },
+            {
+              "id": "GEO.TEL.koule",
+              "name": "Koule: poloměr a průměr ve slovních úlohách",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3: „řeší aplikační slovní úlohy s využitím znalostí o válci a kouli (poloměr a průměr koule)“. No volume or surface."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KON",
+      "name": "Geometrie: konstrukce",
+      "tags": [],
+      "spec": [
+        3
+      ],
+      "note": "Tasks 9 and 10 in every test, 5–6 points, 32 % success and 28 % blank. Learned as three layers: the moves, the properties, the reading of the task.",
+      "children": [
+        {
+          "id": "KON.ZAKL",
+          "name": "Základní konstrukce",
+          "tags": [
+            "G-KON"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "The moves with ruler, set square and compass. Each must be automatic.",
+          "children": [
+            {
+              "id": "KON.ZAKL.kolmice",
+              "name": "Kolmice a rovnoběžka daným bodem",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.ZAKL.osa-usecky",
+              "name": "Střed a osa úsečky",
+              "kind": "procedure",
+              "requires": [
+                "KON.ZAKL.kolmice"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.ZAKL.osa-uhlu",
+              "name": "Osa úhlu",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.ZAKL.delka",
+              "name": "Přenesení délky kružnicí",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.ZAKL.uhel",
+              "name": "Úhel dané velikosti",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "120° and 40° with a protractor; 60° and 90° without."
+            },
+            {
+              "id": "KON.ZAKL.thales",
+              "name": "Thaletova kružnice nad úsečkou",
+              "kind": "procedure",
+              "requires": [
+                "KON.ZAKL.osa-usecky"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Never named in the task; named in the official keys."
+            },
+            {
+              "id": "KON.ZAKL.stredova",
+              "name": "Obraz bodu ve středové souměrnosti („S je střed“)",
+              "kind": "procedure",
+              "requires": [
+                "KON.ZAKL.delka"
+              ],
+              "tags": [
+                "G-KON",
+                "G-SOUM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.ZAKL.osova",
+              "name": "Obraz v osové souměrnosti, osa z bodu a jeho obrazu",
+              "kind": "procedure",
+              "requires": [
+                "KON.ZAKL.osa-usecky"
+              ],
+              "tags": [
+                "G-KON",
+                "G-SOUM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.ZAKL.prenos-uhlu",
+              "name": "Přenesení úhlu",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „přenese úhel, porovná dva úhly“."
+            },
+            {
+              "id": "KON.ZAKL.opsana",
+              "name": "Kružnice opsaná trojúhelníku",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3. Its centre is used in 2026 A 8 and 2026 C 10, but it is never constructed."
+            },
+            {
+              "id": "KON.ZAKL.tecna",
+              "name": "Tečna kružnice v jejím bodě",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3."
+            }
+          ]
+        },
+        {
+          "id": "KON.VLAST",
+          "name": "Vlastnosti útvarů, o které se konstrukce opírá",
+          "tags": [
+            "G-KON"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "The task never says which property to use; the student must recall it from the name of the figure.",
+          "children": [
+            {
+              "id": "KON.VLAST.rovnoramenny",
+              "name": "Rovnoramenný trojúhelník: osa souměrnosti je osou základny",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.osa-usecky"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.rovnostranny",
+              "name": "Rovnostranný trojúhelník",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.delka"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.pravouhly",
+              "name": "Pravoúhlý trojúhelník: kolmé odvěsny, vrchol pravého úhlu na Thaletově kružnici",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.kolmice",
+                "KON.ZAKL.thales"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.vyska-teznice",
+              "name": "Výška a těžnice",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.kolmice",
+                "KON.ZAKL.osa-usecky"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.ctverec",
+              "name": "Čtverec: shodné, kolmé, půlící se úhlopříčky",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.kolmice"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.obdelnik",
+              "name": "Obdélník: pravé úhly, shodné půlící se úhlopříčky, vrcholy na kružnici",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.thales"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.rovnobeznik",
+              "name": "Rovnoběžník: úhlopříčky se půlí, střed souměrnosti",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.stredova"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.kosoctverec",
+              "name": "Kosočtverec: kolmé úhlopříčky, osa souměrnosti",
+              "kind": "fact",
+              "requires": [
+                "KON.VLAST.rovnobeznik"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "2026 A 10 never says „kosočtverec“; 53 % left it blank."
+            },
+            {
+              "id": "KON.VLAST.lichobeznik",
+              "name": "Lichoběžník: rovnoramenný a pravoúhlý",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.kolmice"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.VLAST.sestiuhelnik",
+              "name": "Pravidelný šestiúhelník: strana = poloměr kružnice opsané",
+              "kind": "fact",
+              "requires": [
+                "KON.ZAKL.delka"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "KON.VLAST.osmiuhelnik",
+              "name": "Pravidelný osmiúhelník",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „sestrojí pravidelný šestiúhelník a osmiúhelník“."
+            }
+          ]
+        },
+        {
+          "id": "KON.ROZBOR",
+          "name": "Rozbor zadání",
+          "tags": [
+            "G-KON"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "Where the tasks are actually lost: the second construction is the most skipped regular task.",
+          "children": [
+            {
+              "id": "KON.ROZBOR.nacrt",
+              "name": "Náčrt a převod nepřímé podmínky na množinu bodů",
+              "kind": "strategy",
+              "requires": [
+                "KON.VLAST.rovnoramenny",
+                "KON.VLAST.obdelnik",
+                "KON.VLAST.rovnobeznik"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "„Přímka o je osou některé strany“, „Bod M leží na úhlopříčce BD“."
+            },
+            {
+              "id": "KON.ROZBOR.dve-reseni",
+              "name": "„Najděte všechna řešení“: druhé řešení",
+              "kind": "strategy",
+              "requires": [
+                "KON.ROZBOR.nacrt"
+              ],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "18 of 40 construction tasks; then exactly two figures. One of two costs a point."
+            },
+            {
+              "id": "KON.ROZBOR.sss",
+              "name": "Trojúhelník a čtyřúhelník ze zadaných údajů (sss, sus, usu)",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3. Not asked as a plain task."
+            }
+          ]
+        },
+        {
+          "id": "KON.SOUM",
+          "name": "Souměrnost útvarů",
+          "tags": [
+            "G-SOUM"
+          ],
+          "spec": [
+            3
+          ],
+          "note": "A task of its own in 4 of 16 standard tests; otherwise a tool inside constructions.",
+          "children": [
+            {
+              "id": "KON.SOUM.osy",
+              "name": "Osy souměrnosti útvaru ve čtvercové síti a mnohoúhelníků",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-SOUM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": ""
+            },
+            {
+              "id": "KON.SOUM.samodruzny",
+              "name": "Samodružný bod a útvar; vzor a obraz",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-SOUM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3."
+            },
+            {
+              "id": "KON.SOUM.obraz-utvaru",
+              "name": "Obraz celého útvaru ve středové souměrnosti",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-SOUM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „sestrojí obraz rovinného útvaru ve středové souměrnosti“. Only single points are reflected in the tests."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ZAK",
+      "name": "Zákonitosti a úsudek",
+      "tags": [],
+      "spec": [
+        4
+      ],
+      "note": "Task 16: 4 points, 10 % success, 36 % blank. No curriculum of its own; it is a way of working.",
+      "children": [
+        {
+          "id": "ZAK.RADA",
+          "name": "Rostoucí obrazce a číselné řady",
+          "tags": [
+            "X-NEST"
+          ],
+          "spec": [
+            4
+          ],
+          "note": "",
+          "children": [
+            {
+              "id": "ZAK.RADA.tabulka",
+              "name": "Pokračování pravidla a tabulka počtů po krocích",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": "Enough for 16.1, solved by 11–42 %. The cheapest point of task 16."
+            },
+            {
+              "id": "ZAK.RADA.nty-clen",
+              "name": "Obecný n-tý člen (lineární růst, n², n·(n + 1)/2)",
+              "kind": "strategy",
+              "requires": [
+                "ZAK.RADA.tabulka",
+                "VZT.SLOV.vyraz"
+              ],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": "Use the differences between consecutive steps. Needed for 16.3, solved by 1–3 %."
+            },
+            {
+              "id": "ZAK.RADA.obraceni",
+              "name": "Obrácení pravidla: který krok má daný počet",
+              "kind": "strategy",
+              "requires": [
+                "ZAK.RADA.nty-clen",
+                "POC.VYR.mocniny"
+              ],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": "361 = 19², so the 20th figure."
+            },
+            {
+              "id": "ZAK.RADA.mocniny",
+              "name": "Růst násobením (mocniny tří)",
+              "kind": "strategy",
+              "requires": [
+                "ZAK.RADA.tabulka"
+              ],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": "Once in 20 tests."
+            },
+            {
+              "id": "ZAK.RADA.cisla",
+              "name": "Číselná řada daná pravidlem",
+              "kind": "strategy",
+              "requires": [
+                "ZAK.RADA.tabulka"
+              ],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": ""
+            }
+          ]
+        },
+        {
+          "id": "ZAK.USUDEK",
+          "name": "Úsudek a systematické hledání",
+          "tags": [
+            "X-NEST"
+          ],
+          "spec": [
+            4
+          ],
+          "note": "",
+          "children": [
+            {
+              "id": "ZAK.USUDEK.periody",
+              "name": "Periodické děje: cykly a společný násobek",
+              "kind": "strategy",
+              "requires": [
+                "POC.DEL.nasobek"
+              ],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": ""
+            },
+            {
+              "id": "ZAK.USUDEK.vsechna",
+              "name": "Systematické vypsání všech řešení",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": ""
+            },
+            {
+              "id": "ZAK.USUDEK.strategie",
+              "name": "Strategické a netradiční geometrické úlohy",
+              "kind": "strategy",
+              "requires": [],
+              "tags": [
+                "X-NEST"
+              ],
+              "spec": [
+                4
+              ],
+              "note": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
