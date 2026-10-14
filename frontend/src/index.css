@@ -1,22 +1,100 @@
-/* Global base styles only. Feature styles live with the feature. */
+/* The only stylesheet: Tailwind plus the design tokens every page uses.
+   Components are styled with utility classes in their own files. */
+@import 'tailwindcss';
+
+@theme {
+  /* The whole palette: neutral greys, the ink colour for what is switched on, and one accent for links
+     and the highlights in graphs. Tailwind's default colours are switched off. These are the light
+     theme's values; the dark theme's are below. */
+  --color-*: initial;
+  --color-page: #fff;
+  --color-ink: #0d0d0d;
+  --color-muted: #5f5f5f;
+  --color-faint: #9a9a9a;
+  --color-line: #ebebeb;
+  --color-edge: #dedede;
+  /* Greys from faintest to strongest: the sidebar; a row or button under the pointer, chips and the
+     track of a switch; the selected row. Menus and the pressed option of a switch are raised. */
+  --color-surface: #f9f9f9;
+  --color-tint: #f2f2f2;
+  --color-selected: #e8e8e8;
+  --color-raised: #fff;
+  --color-accent: #1b5fc1;
+  --color-accent-soft: #e9f0fb;
+  --color-error: #a11;
+  /* Laid over the page behind the sidebar when it opens over it. */
+  --color-shade: rgb(0 0 0 / 0.2);
+  /* The white of the scanned test pages, the same in both themes, so a scan and its frame are one sheet. */
+  --color-paper: #fff;
+
+  --font-sans: ui-sans-serif, -apple-system, system-ui, 'Segoe UI', sans-serif;
+  /* The four text sizes, and no others: a pane's heading, body text (the default), secondary text
+     such as counts and hints, and the labels inside graph boxes. */
+  --text-*: initial;
+  --text-title: 1.4rem;
+  --text-title--line-height: 1.3;
+  --text-base: 1rem;
+  --text-small: 0.867rem;
+  --text-small--line-height: 1.4;
+  --text-tiny: 0.78rem;
+  --text-tiny--line-height: 15px;
+  /* One spacing step is 4 px, so p-4 is 16 px whatever the font size. Gaps use 1, 2, 3, 4 and 6
+     steps: tight within a row, wider between rows, widest between sections. */
+  --spacing: 4px;
+  /* Rounded corners: graph boxes and small fields, menu lines and tree rows, list rows and frames
+     around pictures and graphs, menus. Buttons and fields are pills (rounded-full). */
+  --radius-*: initial;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-2xl: 16px;
+  /* Shadows of menus, of fields, and of the pressed option of a switch. They point at the variables
+     below so that the dark theme can change them (Tailwind would otherwise write the values in). */
+  --shadow-*: initial;
+  --shadow-panel: var(--panel-shadow);
+  --shadow-control: var(--control-shadow);
+  --shadow-raised: var(--raised-shadow);
+}
+
 :root {
-  --text: #1c1c1c;
-  --muted: #646464;
-  --line: #dcdcdc;
-  --surface: #f5f5f4;
-  --accent: #1d4f91;
-  --accent-soft: #e9eff7;
-  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-  font-size: 15px;
-  line-height: 1.45;
-  color: var(--text);
-  background: #fff;
+  --panel-shadow: 0 8px 28px rgb(0 0 0 / 0.1), 0 0 0 1px rgb(0 0 0 / 0.04);
+  --control-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  --raised-shadow: 0 1px 3px rgb(0 0 0 / 0.12);
 }
 
-* {
-  box-sizing: border-box;
+@layer base {
+  html {
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--color-ink);
+    background: var(--color-page);
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+  }
+  input[type='checkbox'] {
+    accent-color: var(--color-ink);
+  }
 }
 
-body {
-  margin: 0;
+/* The dark theme. index.html sets data-theme on <html> before the page is drawn: the theme chosen in
+   the sidebar, or the system's. */
+:root[data-theme='dark'] {
+  --color-page: #212121;
+  --color-ink: #ececec;
+  --color-muted: #a8a8a8;
+  --color-faint: #747474;
+  --color-line: #303030;
+  --color-edge: #444;
+  --color-surface: #181818;
+  --color-tint: #2b2b2b;
+  --color-selected: #393939;
+  --color-raised: #333;
+  --color-accent: #7ba8f5;
+  --color-accent-soft: #1e2b40;
+  --color-error: #ff7b7b;
+  --color-shade: rgb(0 0 0 / 0.5);
+  --panel-shadow: 0 8px 28px rgb(0 0 0 / 0.5), 0 0 0 1px rgb(255 255 255 / 0.07);
+  --control-shadow: 0 0 #0000;
+  --raised-shadow: 0 1px 3px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
 }

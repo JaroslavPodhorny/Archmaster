@@ -29,9 +29,16 @@ def test_problem_shape_and_images(client):
         assert image.headers['content-type'] == 'image/png'
 
 
+def test_skills_are_returned_and_can_be_filtered_by(client):
+    body = client.get('/api/problems', params={'skills': ['ALG.ROV.soustava', 'POC.DEL.zbytek']}).json()
+    assert body['total'] == 5
+    first = body['problems'][0]['skills'][0]
+    assert set(first) == {'item', 'skill_id', 'name', 'main'}
+
+
 def test_filters(client):
     body = client.get('/api/problems/filters').json()
-    assert set(body) == {'years', 'terms', 'formats', 'tags', 'points'}
+    assert set(body) == {'years', 'terms', 'formats', 'tags', 'points', 'skills'}
     assert body['years'][0] == {'value': 2026, 'label': '2026', 'count': 64}
 
 

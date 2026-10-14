@@ -161,7 +161,7 @@ year	term	task	fmt	tags	subpoints	keys	desc
 2024	B	16	PR	P-PROC	16.1:2,16.2:2,16.3:2	D,C,B	Procenta: část z celku, sleva, podíl
 2024	C	1	OV	A-SLOV	1		Dvě města – součet a rozdíl počtu obyvatel
 2024	C	2	OV	G-TEL;G-KRUH	2		Přelití vody mezi válcovými nádobami – výška hladiny
-2024	C	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky, desetinnými a smíšenými čísly
+2024	C	3	OP	N-ZLOM	3.1:2,3.2:2		Dva výrazy se zlomky (složený zlomek s desetinným číslem; závorka a dělení)
 2024	C	4	OV+OP	A-VYR	4.1:1,4.2:1,4.3:2		Umocnění; úprava a rozklad podle vzorců; roznásobení
 2024	C	5	OP	A-ROV	5.1:2,5.2:2		Rovnice se zlomky; rovnice s druhými mocninami dvojčlenů vedoucí na lineární
 2024	C	6	OV	G-ROV	6.1:2,6.2:2		Pravoúhlý lichoběžník – výška z obsahu trojúhelníku, obsah

@@ -1,5 +1,27 @@
 // Shapes returned by the problem database endpoints (backend/api/problems.py).
 
+/** A skill of the curriculum tree that one scored item of a problem needs. */
+export type ItemSkill = {
+  /** "15.2", or the task number when the task has no sub-items. */
+  item: string
+  skill_id: string
+  name: string
+  /** The first skill listed for the item. */
+  main: boolean
+}
+
+/** A skill in the graph of what a problem rests on. */
+export type GraphSkill = {
+  skill_id: string
+  name: string
+  /** The name of the topic it belongs to. */
+  topic: string
+  /** Direct prerequisites; all of them are in the same graph. */
+  requires: string[]
+  /** An item of the problem needs it itself, not only as a prerequisite of another skill. */
+  needed: boolean
+}
+
 export type Problem = {
   id: string
   year: number
@@ -8,6 +30,9 @@ export type Problem = {
   format: string
   points: number
   tags: string[]
+  skills: ItemSkill[]
+  /** Those skills and everything they rest on, in learning order. */
+  skill_graph: GraphSkill[]
   description: string
   text: string
   answer_key: string
@@ -20,8 +45,9 @@ export type Problem = {
 export type SearchResult = { total: number; problems: Problem[] }
 
 export type FilterValue = string | number
-export type FilterOption = { value: FilterValue; label: string; count: number }
-export type FilterName = 'years' | 'terms' | 'formats' | 'tags' | 'points'
+/** depth is set for skills only: 0 area, 1 topic, 2 skill of the curriculum tree. */
+export type FilterOption = { value: FilterValue; label: string; count: number; depth?: number }
+export type FilterName = 'years' | 'terms' | 'skills' | 'formats' | 'points'
 export type FilterOptions = Record<FilterName, FilterOption[]>
 export type SelectedFilters = Record<FilterName, FilterValue[]>
 

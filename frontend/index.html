@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArchMaster – databáze úloh</title>
+    <title>ArchMaster</title>
+    <script>
+      // The colour theme, set before the page is drawn so a dark page never flashes white: the one
+      // chosen in the sidebar (src/ThemeSwitch.tsx keeps it under the same key), or else the system's,
+      // followed when the system changes.
+      ;(function () {
+        var system = window.matchMedia('(prefers-color-scheme: dark)')
+        function apply() {
+          var chosen = null
+          try {
+            chosen = localStorage.getItem('archmaster.theme')
+          } catch (e) {}
+          var dark = chosen === 'dark' || (chosen !== 'light' && system.matches)
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        }
+        apply()
+        system.addEventListener('change', apply)
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

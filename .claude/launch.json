@@ -4,14 +4,83 @@
     {
       "name": "backend",
       "runtimeExecutable": "uv",
-      "runtimeArgs": ["run", "--project", "backend", "uvicorn", "backend.api.main:app", "--reload", "--reload-dir", "backend", "--port", "8000"],
+      "runtimeArgs": [
+        "run",
+        "--project",
+        "backend",
+        "uvicorn",
+        "backend.api.main:app",
+        "--reload",
+        "--reload-dir",
+        "backend",
+        "--port",
+        "8000"
+      ],
       "port": 8000
+    },
+    {
+      "name": "backend-8001",
+      "runtimeExecutable": "uv",
+      "runtimeArgs": [
+        "run",
+        "--project",
+        "backend",
+        "uvicorn",
+        "backend.api.main:app",
+        "--reload",
+        "--reload-dir",
+        "backend",
+        "--port",
+        "8001"
+      ],
+      "port": 8001
     },
     {
       "name": "frontend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "frontend", "run", "dev", "--", "--port", "5173", "--strictPort"],
+      "runtimeArgs": [
+        "--prefix",
+        "frontend",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5173",
+        "--strictPort"
+      ],
       "port": 5173
+    },
+    {
+      "name": "frontend-5174",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "frontend",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5174",
+        "--strictPort"
+      ],
+      "port": 5174
+    },
+    {
+      "name": "frontend-5175",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "ARCHMASTER_API=http://127.0.0.1:8001",
+        "npm",
+        "--prefix",
+        "frontend",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5175",
+        "--strictPort"
+      ],
+      "port": 5175
     }
   ]
 }

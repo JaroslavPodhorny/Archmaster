@@ -29,6 +29,7 @@ def create_router(data_dir: str) -> APIRouter:
         terms: Optional[List[str]] = Query(None),
         formats: Optional[List[str]] = Query(None),
         tags: Optional[List[str]] = Query(None),
+        skills: Optional[List[str]] = Query(None),
         points: Optional[List[int]] = Query(None),
         min_success: Optional[float] = Query(None, ge=0, le=100),
         max_success: Optional[float] = Query(None, ge=0, le=100),
@@ -38,7 +39,7 @@ def create_router(data_dir: str) -> APIRouter:
     ):
         require_database()
         result = problem_db.search_problems(
-            db_path, q, years, terms, formats, tags, points, min_success, max_success,
+            db_path, q, years, terms, formats, tags, skills, points, min_success, max_success,
             order_by, limit, offset)
         return {
             'total': result.total,

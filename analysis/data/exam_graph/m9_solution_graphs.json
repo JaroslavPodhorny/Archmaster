@@ -1,0 +1,417 @@
+{
+"2025 B": {
+  "1": {
+    "zadani": [
+      {"id": "z1", "text": "dětská vstupenka stojí dvě pětiny ceny vstupenky pro dospělého"},
+      {"id": "z2", "text": "jeden dospělý se třemi dětmi zaplatil 330 Kč"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1", "z2"], "vysledek": "dospělý a tři děti: 1 + 3 · 2/5 = 11/5 ceny dospělé vstupenky", "princip": "VZT.CAST.cast"},
+        {"id": "k2", "vstupy": ["z2", "k1"], "vysledek": "11/5 ceny dospělého je 330 Kč: dospělá vstupenka 330 : 11/5 = 150 Kč", "princip": "VZT.CAST.celek"},
+        {"id": "k3", "vstupy": ["z1", "k2"], "vysledek": "dětská vstupenka 2/5 · 150 = 60 Kč", "princip": "VZT.CAST.cast", "odpoved": "1"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"1": 1}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "2": {
+    "zadani": [
+      {"id": "z1", "text": "druhá odmocnina ze součinu smíšených čísel 6 1/4 a 2 7/9, výsledek zlomkem v základním tvaru"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "zápis slovního zadání: √(6 1/4 · 2 7/9)", "princip": "POC.VYR.slovy"},
+        {"id": "k2", "vstupy": ["k1"], "vysledek": "6 1/4 = 25/4, 2 7/9 = 25/9", "princip": "POC.ZLOM.smisene"},
+        {"id": "k3", "vstupy": ["k2"], "vysledek": "25/4 · 25/9 = 625/36", "princip": "POC.ZLOM.nasobeni"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "√(625/36) = 25/6", "princip": "POC.ZLOM.mocnina", "odpoved": "2"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"2": 1}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "3": {
+    "zadani": [
+      {"id": "z1", "text": "3.1: (11/5 − 11/6) : (−1/3), výsledek zlomkem v základním tvaru"},
+      {"id": "z2", "text": "3.2: (20 − √(4 · 3²)) / (3 · √(100 − 64)) : (4 + 3)/(4 · 3), s postupem"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "11/5 − 11/6 = 66/30 − 55/30 = 11/30", "princip": "POC.ZLOM.scitani"},
+        {"id": "k2", "vstupy": ["k1"], "vysledek": "dělení zlomkem je násobení převráceným: 11/30 · (−3)", "princip": "POC.ZLOM.nasobeni"},
+        {"id": "k3", "vstupy": ["k2"], "vysledek": "kladné krát záporné je záporné: −33/30", "princip": "POC.VYR.zaporna"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "−33/30 = −11/10", "princip": "POC.ZLOM.kraceni", "odpoved": "3.1"},
+        {"id": "k5", "vstupy": ["z2"], "vysledek": "√(4 · 3²) = √36 = 6, √(100 − 64) = √36 = 6", "princip": "POC.VYR.odmocnina"},
+        {"id": "k6", "vstupy": ["z2", "k5"], "vysledek": "zlomková čára jako závorka: (20 − 6) : (3 · 6) = 14/18, druhý zlomek 7/12", "princip": "POC.VYR.poradi"},
+        {"id": "k7", "vstupy": ["k6"], "vysledek": "14/18 = 7/9", "princip": "POC.ZLOM.kraceni"},
+        {"id": "k8", "vstupy": ["k6", "k7"], "vysledek": "7/9 : 7/12 = 7/9 · 12/7 = 12/9", "princip": "POC.ZLOM.nasobeni"},
+        {"id": "k9", "vstupy": ["k8"], "vysledek": "12/9 = 4/3", "princip": "POC.ZLOM.kraceni", "odpoved": "3.2"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"3.1": 1, "3.2": 2},
+                 "poznamka": "3.2: 1 bod, má-li postup právě jeden nedostatek (výsledek není v základním tvaru, jedna numerická chyba, nadbytečná chybná úprava po správném výsledku)."},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "4": {
+    "zadani": [
+      {"id": "z1", "text": "4.1: x · 3x − 2x · 3 − (x − 3)², bez závorek"},
+      {"id": "z2", "text": "4.2: (2k)² − k · (1 + 2k), upravit a rozložit vytýkáním"},
+      {"id": "z3", "text": "4.3: 7a · (a + 3) + 2 · (1 − 3a) · (a + 5), bez závorek, s postupem"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "x · 3x = 3x², 2x · 3 = 6x", "princip": "ALG.VYR.nasobeni"},
+        {"id": "k2", "vstupy": ["z1"], "vysledek": "(x − 3)² = x² − 6x + 9", "princip": "ALG.VYR.umocneni"},
+        {"id": "k3", "vstupy": ["k1", "k2"], "vysledek": "3x² − 6x − (x² − 6x + 9) = 3x² − 6x − x² + 6x − 9 = 2x² − 9", "princip": "ALG.VYR.scitani", "odpoved": "4.1"},
+        {"id": "k4", "vstupy": ["z2"], "vysledek": "(2k)² = 4k², k · (1 + 2k) = k + 2k²", "princip": "ALG.VYR.nasobeni"},
+        {"id": "k5", "vstupy": ["k4"], "vysledek": "4k² − (k + 2k²) = 2k² − k", "princip": "ALG.VYR.scitani"},
+        {"id": "k6", "vstupy": ["k5"], "vysledek": "2k² − k = k · (2k − 1)", "princip": "ALG.VYR.vytykani", "odpoved": "4.2"},
+        {"id": "k7", "vstupy": ["z3"], "vysledek": "7a · (a + 3) = 7a² + 21a", "princip": "ALG.VYR.nasobeni"},
+        {"id": "k8", "vstupy": ["z3"], "vysledek": "2 · (1 − 3a) · (a + 5) = 2 · (−3a² − 14a + 5) = −6a² − 28a + 10", "princip": "ALG.VYR.nasobeni"},
+        {"id": "k9", "vstupy": ["k7", "k8"], "vysledek": "7a² + 21a − 6a² − 28a + 10 = a² − 7a + 10", "princip": "ALG.VYR.scitani", "odpoved": "4.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"4.1": 1, "4.2": 1, "4.3": 2},
+                 "poznamka": "4.3: 1 bod, má-li postup právě jeden nedostatek (jeden člen upraven chybně, jedna chyba při roznásobení, nesečtené kvadratické nebo lineární členy)."},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "5": {
+    "zadani": [
+      {"id": "z1", "text": "5.1: 7/12 x + 2 · (3/8 x − 1) = −3 · (x/9 + 1), s postupem"},
+      {"id": "z2", "text": "5.2: 6x + y = 14, 3x + 2y = 1, s postupem"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "roznásobení: 2 · (3/8 x − 1) = 3/4 x − 2", "princip": "ALG.VYR.nasobeni"},
+        {"id": "k2", "vstupy": ["z1"], "vysledek": "záporné číslo před závorkou: −3 · (x/9 + 1) = −x/3 − 3", "princip": "POC.VYR.zaporna"},
+        {"id": "k3", "vstupy": ["k1", "k2"], "vysledek": "7/12 x + 3/4 x − 2 = −x/3 − 3, vynásobení 12: 7x + 9x − 24 = −4x − 36", "princip": "ALG.ROV.zlomky"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "16x + 4x = −36 + 24, 20x = −12", "princip": "ALG.ROV.upravy"},
+        {"id": "k5", "vstupy": ["k4"], "vysledek": "x = −12/20 = −3/5", "princip": "POC.ZLOM.kraceni", "odpoved": "5.1"},
+        {"id": "k6", "vstupy": ["z2"], "vysledek": "z první rovnice y = 14 − 6x, dosazení do druhé: 3x + 2 · (14 − 6x) = 1", "princip": "ALG.ROV.soustava"},
+        {"id": "k7", "vstupy": ["k6"], "vysledek": "3x + 28 − 12x = 1, −9x = −27", "princip": "ALG.ROV.upravy"},
+        {"id": "k8", "vstupy": ["k7"], "vysledek": "x = −27 : (−9) = 3", "princip": "POC.VYR.zaporna"},
+        {"id": "k9", "vstupy": ["k6", "k8"], "vysledek": "y = 14 − 6 · 3 = −4; x = 3, y = −4", "princip": "ALG.ROV.soustava", "odpoved": "5.2"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"5.1": 2, "5.2": 2},
+                 "dilci": [{"polozka": "5.1", "krok": "k4", "body": 1}, {"polozka": "5.2", "krok": "k8", "body": 1}],
+                 "poznamka": "1 bod také za postup s právě jedním chybně upraveným členem; algoritmicky chybná úprava dává 0 bodů."},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["5.1: násobení zlomku celým číslem (2 · 3/8, 12 · 3/4) je uvnitř kroků k1 a k3, vlastní krok nemá."]}
+  },
+  "6": {
+    "zadani": [
+      {"id": "z1", "text": "231 = a · b · c, kde a, b, c jsou prvočísla"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "231 = 3 · 77 = 3 · 7 · 11, nejmenší je 3", "princip": "POC.DEL.prvocisla", "odpoved": "6.1"},
+        {"id": "k2", "vstupy": ["k1"], "vysledek": "součet prvočísel rozkladu: 3 + 7 + 11 = 21", "princip": "POC.DEL.prvocisla", "odpoved": "6.2"},
+        {"id": "k3", "vstupy": ["k1"], "vysledek": "dělitelé jsou součiny prvočísel rozkladu: 21, 33, 77; největší dvojciferný 77", "princip": "POC.DEL.delitele", "odpoved": "6.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"6.1": 1, "6.2": 1, "6.3": 1}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["6.2 jen sečte prvočísla nalezená v 6.1; krok nese princip rozkladu, protože jiný nepoužívá."]}
+  },
+  "7": {
+    "zadani": [
+      {"id": "z1", "text": "první den prodal třetinu všech salátů"},
+      {"id": "z2", "text": "druhý den o třetinu méně salátů než první den"},
+      {"id": "z3", "text": "třetí den prodal zbytek; cena za kus je stále stejná"},
+      {"id": "z4", "text": "7.1: za všechny saláty utržil 5 400 Kč"},
+      {"id": "z5", "text": "7.2: všech salátů je x; 7.3: třetí den prodal 120 salátů"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z2"], "vysledek": "o třetinu méně než první den jsou 2/3 prvního dne", "princip": "VZT.NEZ.o-zlomek"},
+        {"id": "k2", "vstupy": ["z1", "k1"], "vysledek": "druhý den 2/3 · 1/3 = 2/9 všech salátů", "princip": "VZT.CAST.zlomek-ze-zlomku"},
+        {"id": "k3", "vstupy": ["z3", "z4", "k2"], "vysledek": "2/9 z 5 400 Kč = 1 200 Kč", "princip": "VZT.CAST.cast", "odpoved": "7.1"},
+        {"id": "k4", "vstupy": ["z5", "k2"], "vysledek": "druhý den 2/9 · x = 2x/9", "princip": "VZT.SLOV.vyraz", "odpoved": "7.2"},
+        {"id": "k5", "vstupy": ["z1", "k2"], "vysledek": "první dva dny 1/3 + 2/9 = 3/9 + 2/9 = 5/9 všech", "princip": "POC.ZLOM.scitani"},
+        {"id": "k6", "vstupy": ["z3", "k5"], "vysledek": "třetí den zbytek 1 − 5/9 = 4/9 všech", "princip": "VZT.CAST.zbytek"},
+        {"id": "k7", "vstupy": ["z5", "k6"], "vysledek": "4/9 všech je 120: všech 120 : 4/9 = 270", "princip": "VZT.CAST.celek", "odpoved": "7.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"7.1": 1, "7.2": 1, "7.3": 2}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "8": {
+    "zadani": [
+      {"id": "z1", "text": "pravoúhlý lichoběžník: základny 140 cm a 100 cm, kolmé rameno (výška) 30 cm"},
+      {"id": "z2", "text": "úsečka rovnoběžná se šikmým ramenem ho dělí na menší lichoběžník a rovnoběžník"},
+      {"id": "z3", "text": "menší lichoběžník a rovnoběžník mají stejný obvod"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "S = (140 + 100) · 30 : 2 = 3 600 cm²", "princip": "GEO.ROV.lichobeznik", "odpoved": "8.1"},
+        {"id": "k2", "vstupy": ["z1"], "vysledek": "pravoúhlý trojúhelník s odvěsnami 140 − 100 = 40 cm a 30 cm, přeponou je šikmé rameno", "princip": "GEO.PYT.najit"},
+        {"id": "k3", "vstupy": ["k2"], "vysledek": "šikmé rameno = √(40² + 30²) = 50 cm", "princip": "GEO.PYT.veta"},
+        {"id": "k4", "vstupy": ["z1", "k3"], "vysledek": "o = 140 + 100 + 30 + 50 = 320 cm", "princip": "GEO.ROV.obvod", "odpoved": "8.2"},
+        {"id": "k5", "vstupy": ["z2", "k3"], "vysledek": "dělicí úsečka = šikmé rameno = 50 cm (protější strany rovnoběžníku jsou shodné)", "princip": "KON.VLAST.rovnobeznik"},
+        {"id": "k6", "vstupy": ["k5"], "vysledek": "rovnoběžník se stranami x a 50 cm: o = 2x + 100", "princip": "VZT.SLOV.vyraz"},
+        {"id": "k7", "vstupy": ["z1", "k5"], "vysledek": "menší lichoběžník: o = (140 − x) + (100 − x) + 30 + 50 = 320 − 2x", "princip": "VZT.SLOV.vyraz"},
+        {"id": "k8", "vstupy": ["z3", "k6", "k7"], "vysledek": "2x + 100 = 320 − 2x", "princip": "VZT.SLOV.rovnice"},
+        {"id": "k9", "vstupy": ["k8"], "vysledek": "4x = 220, x = 55 cm", "princip": "ALG.ROV.upravy"},
+        {"id": "k10", "vstupy": ["k6", "k9"], "vysledek": "o = 2 · 55 + 100 = 210 cm", "princip": "GEO.ROV.obvod", "odpoved": "8.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"8.1": 1, "8.2": 2, "8.3": 1},
+                 "dilci": [{"polozka": "8.2", "krok": "k3", "body": 1}]},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "9": {
+    "zadani": [
+      {"id": "z1", "text": "body A, B jsou vrcholy rovnoramenného trojúhelníku ABC"},
+      {"id": "z2", "text": "bod M leží uvnitř trojúhelníku na těžnici tc a není těžištěm; najít všechna řešení"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "střed S úsečky AB (osa úsečky AB)", "princip": "KON.ZAKL.osa-usecky"},
+        {"id": "k2", "vstupy": ["z2", "k1"], "vysledek": "těžnice tc leží na přímce SM", "princip": "KON.VLAST.teznice"},
+        {"id": "k3", "vstupy": ["z1", "z2", "k1"], "vysledek": "M neleží na ose AB, AB tedy není základna: AB je rameno, |AC| = |AB| nebo |BC| = |AB|", "princip": "KON.VLAST.rovnoramenny"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "C leží na kružnici (A, |AB|) nebo na kružnici (B, |AB|)", "princip": "KON.ZAKL.kruznice"},
+        {"id": "k5", "vstupy": ["k2", "k4"], "vysledek": "C je průsečík polopřímky SM (za bodem M) s jednou z kružnic: C₁ na (A, |AB|), C₂ na (B, |AB|)", "princip": "KON.ROZBOR.mnoziny"},
+        {"id": "k6", "vstupy": ["k5"], "vysledek": "dva trojúhelníky ABC₁ a ABC₂, M leží uvnitř obou", "princip": "KON.ROZBOR.dve-reseni", "odpoved": "9"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"9": 3},
+                 "poznamka": "2 body za oba trojúhelníky s mírnou nepřesností nebo s navíc nevyhovujícím, nebo za jeden přesný; 1 bod za jeden nepřesný nebo za přesný trojúhelník, který není rovnoramenný, ale jeho těžnice prochází M."},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Konstrukce odvozená z textu a porovnaná s obrázkem klíče, nerýsovaná."]}
+  },
+  "10": {
+    "zadani": [
+      {"id": "z1", "text": "body A, D jsou vrcholy rovnoběžníku ABCD"},
+      {"id": "z2", "text": "na polopřímce DM leží jedna z úhlopříček"},
+      {"id": "z3", "text": "druhá úhlopříčka je stejně dlouhá jako úsečka DM"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z2", "z3"], "vysledek": "polovina délky |DM|: střed úsečky DM (osa úsečky)", "princip": "KON.ZAKL.osa-usecky"},
+        {"id": "k2", "vstupy": ["z1", "z2", "z3"], "vysledek": "úhlopříčky se půlí: střed S leží na polopřímce DM a |AS| = |DM| : 2", "princip": "KON.VLAST.rovnobeznik"},
+        {"id": "k3", "vstupy": ["k1", "k2"], "vysledek": "S leží na kružnici (A, |DM| : 2)", "princip": "KON.ZAKL.kruznice"},
+        {"id": "k4", "vstupy": ["z2", "k3"], "vysledek": "S je průsečík polopřímky DM s kružnicí (A, |DM| : 2)", "princip": "KON.ROZBOR.mnoziny"},
+        {"id": "k5", "vstupy": ["k4"], "vysledek": "C je obraz bodu A a B obraz bodu D ve středové souměrnosti podle S; rovnoběžník ABCD", "princip": "KON.ZAKL.stredova", "odpoved": "10"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"10": 3},
+                 "dilci": [{"polozka": "10", "krok": "k4", "body": 2}],
+                 "poznamka": "2 body i za rovnoběžník s velmi mírnou nepřesností; 1 bod, je-li správně jen kružnice se středem A a poloměrem |DM| (na ní leží C)."},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Konstrukce odvozená z textu a porovnaná s obrázkem klíče, nerýsovaná."]}
+  },
+  "11": {
+    "zadani": [
+      {"id": "z1", "text": "kruhový diagram: magnolie 60°, jabloň 105°, hortenzie 30°, levandule 60°, bazalka 15°, růže bez údaje"},
+      {"id": "z2", "text": "magnolie zabírají 20 m²"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1", "z2"], "vysledek": "plocha výseče odpovídá jejímu úhlu: 60° je 20 m², 15° je 5 m²", "princip": "DAT.GRAF.kruhovy"},
+        {"id": "k2", "vstupy": ["z1", "k1"], "vysledek": "jabloň 105° = 7 · 15° je 35 m², o 15 m² více než magnolie: A", "princip": "VZT.POM.prima", "odpoved": "11.1"},
+        {"id": "k3", "vstupy": ["z1"], "vysledek": "plochy jsou v poměru úhlů: levandule a bazalka 60° + 15° = 75°, hortenzie 30°", "princip": "DAT.GRAF.kruhovy"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "75 : 30 = 2,5krát, ne 1,5krát: N", "princip": "VZT.NEZ.okolik-kolikrat", "odpoved": "11.2"},
+        {"id": "k5", "vstupy": ["z1"], "vysledek": "růže 360° − (60° + 105° + 30° + 60° + 15°) = 90°", "princip": "DAT.GRAF.kruhovy"},
+        {"id": "k6", "vstupy": ["k1", "k5"], "vysledek": "90° = 6 · 15° je 30 m², ne méně než 30 m²: N", "princip": "VZT.POM.prima", "odpoved": "11.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "pocet-spravnych", "body": {"0": 0, "1": 0, "2": 2, "3": 4}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "12": {
+    "zadani": [
+      {"id": "z1", "text": "dva shodné rovnoramenné trojúhelníky, u hlavního vrcholu prvního je úhel 40°"},
+      {"id": "z2", "text": "přímka p je rovnoběžná se základnou prvního trojúhelníku"},
+      {"id": "z3", "text": "druhý trojúhelník má právě jedno rameno rovnoběžné s ramenem prvního"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "úhly při základně (180° − 40°) : 2 = 70°; shodný druhý trojúhelník má u dolního vrcholu také 70°", "princip": "KON.VLAST.rovnoramenny"},
+        {"id": "k2", "vstupy": ["z2", "z3", "k1"], "vysledek": "rameno prvního i rovnoběžné rameno druhého svírají s p úhel 70°", "princip": "GEO.UHLY.rovnobezky"},
+        {"id": "k3", "vstupy": ["k1", "k2"], "vysledek": "v trojúhelníku pod přímkou p: 180° − 70° − 70° = 40°", "princip": "GEO.UHLY.trojuhelnik"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "α = 180° − 40° = 140°: B", "princip": "GEO.UHLY.vedlejsi", "odpoved": "12"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"12": 2}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "13": {
+    "zadani": [
+      {"id": "z1", "text": "krychle ze 4 · 4 · 4 shodných krychliček"},
+      {"id": "z2", "text": "šedé krychličky leží podél jedné úhlopříčky každé stěny; obrázek ukazuje tři stěny"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "krychliček je celkem 4 · 4 · 4 = 64", "princip": "GEO.TEL.krychlicky"},
+        {"id": "k2", "vstupy": ["z2"], "vysledek": "na 6 stěnách je 6 · 4 = 24 šedých čtverečků; úhlopříčky tvoří čtyřstěn, každý ze 4 šedých rohů patří třem stěnám: 24 − 4 · 2 = 16 šedých krychliček", "princip": "GEO.TEL.krychlicky"},
+        {"id": "k3", "vstupy": ["k1", "k2"], "vysledek": "bílých krychliček 64 − 16 = 48: C", "princip": "GEO.TEL.krychlicky", "odpoved": "13"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"13": 2}},
+    "kontrola": {"odpovedi": "prevzato-z-klice", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Úhlopříčky skrytých stěn obrázek neukazuje; 48 vychází, když všechny tvoří čtyřstěn (každý šedý roh patří třem stěnám), což je výklad klíče."]}
+  },
+  "14": {
+    "zadani": [
+      {"id": "z1", "text": "první forma: válec s poloměrem podstavy 8 cm a výškou 5 cm"},
+      {"id": "z2", "text": "druhá forma: poloměr o čtvrtinu menší, výška také 5 cm; korpusy mají objem svých forem"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1", "z2"], "vysledek": "poloměr druhé formy 8 · 3/4 = 6 cm", "princip": "VZT.NEZ.o-zlomek"},
+        {"id": "k2", "vstupy": ["z1", "z2", "k1"], "vysledek": "V = π · 8² · 5 + π · 6² · 5 = 320π + 180π = 500π cm³: D", "princip": "GEO.TEL.valec-objem", "odpoved": "14"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"14": 2}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  },
+  "15": {
+    "zadani": [
+      {"id": "z1", "text": "na táboře bylo 80 dětí, 5 vedoucích a 4 instruktoři"},
+      {"id": "z2", "text": "15.1: děti jsou rozdělené do stejných oddílů, každý vedoucí má jeden"},
+      {"id": "z3", "text": "15.2: mladších dětí bylo o třetinu méně než starších; o kolik procent více bylo starších?"},
+      {"id": "z4", "text": "15.3: šla čtvrtina chlapců a polovina dívek, chlapců o 4 méně než dívek; kolik procent dětí jsou dívky?"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Obrácení srovnání", "kroky": [
+        {"id": "k1", "vstupy": ["z1", "z2"], "vysledek": "pět stejných oddílů: jeden je pětina všech dětí, 1/5 = 20 %: A", "princip": "VZT.PROC.prevody", "odpoved": "15.1"},
+        {"id": "k2", "vstupy": ["z3"], "vysledek": "mladších je o třetinu méně než starších: M = 2/3 S", "princip": "VZT.NEZ.o-zlomek"},
+        {"id": "k3", "vstupy": ["k2"], "vysledek": "obráceně: S = 3/2 M", "princip": "VZT.NEZ.obraceni"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "starších je o 3/2 − 1 = 1/2 = 50 % více než mladších: F", "princip": "VZT.PROC.o-kolik-procent", "odpoved": "15.2"},
+        {"id": "k5", "vstupy": ["z1", "z4"], "vysledek": "ch + d = 80 a d/2 − ch/4 = 4", "princip": "VZT.SLOV.dve-nezname"},
+        {"id": "k6", "vstupy": ["k5"], "vysledek": "ch = 80 − d: d/2 − (80 − d)/4 = 4, 2d − 80 + d = 16, d = 32", "princip": "ALG.ROV.soustava"},
+        {"id": "k7", "vstupy": ["z1", "k6"], "vysledek": "32 z 80 dětí je 40 %: D", "princip": "VZT.PROC.pocet", "odpoved": "15.3"}
+      ]},
+      {"id": "dily", "nazev": "Díly místo obrácení", "kroky": [
+        {"id": "k1", "vstupy": ["z1", "z2"], "vysledek": "pět stejných oddílů: jeden je pětina všech dětí, 1/5 = 20 %: A", "princip": "VZT.PROC.prevody", "odpoved": "15.1"},
+        {"id": "k2", "vstupy": ["z3"], "vysledek": "starší 3 díly, mladší o třetinu méně: 2 díly", "princip": "VZT.NEZ.o-zlomek"},
+        {"id": "k3", "vstupy": ["k2"], "vysledek": "starších je o 1 díl více, to je 1/2 ze 2 dílů mladších: o 50 % více: F", "princip": "VZT.PROC.o-kolik-procent", "odpoved": "15.2"},
+        {"id": "k4", "vstupy": ["z1", "z4"], "vysledek": "ch + d = 80 a d/2 − ch/4 = 4", "princip": "VZT.SLOV.dve-nezname"},
+        {"id": "k5", "vstupy": ["k4"], "vysledek": "ch = 80 − d: d/2 − (80 − d)/4 = 4, 2d − 80 + d = 16, d = 32", "princip": "ALG.ROV.soustava"},
+        {"id": "k6", "vstupy": ["z1", "k5"], "vysledek": "32 z 80 dětí je 40 %: D", "princip": "VZT.PROC.pocet", "odpoved": "15.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "pocet-spravnych", "body": {"0": 0, "1": 2, "2": 4, "3": 6}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Druhý postup je převzatý z návrhu druhé relace (analysis/graph_research/example-exam-graph.json); liší se jen v 15.2, kde se nic neobrací. Chyba 33 % (základ starších) tam padá na volbu základu v posledním kroku."]}
+  },
+  "16": {
+    "zadani": [
+      {"id": "z1", "text": "Mirek říká 1, 2, 3, … až 1 000; po každé dvojici Zuzka řekne součet posledních dvou čísel: 1, 2, 3, 3, 4, 7, 5, 6, 11, …"},
+      {"id": "z2", "text": "16.2: 90. vyslovené číslo C zazní později ještě jednou; 16.3: prvních 150 vyslovených čísel"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "čísla zaznívají po trojicích: dvě po sobě jdoucí Mirkova čísla a jejich součet", "princip": "ZAK.RADA.cisla"},
+        {"id": "k2", "vstupy": ["k1"], "vysledek": "po dvojici 23, 24 řekne Zuzka 23 + 24 = 47", "princip": "ZAK.RADA.cisla", "odpoved": "16.1"},
+        {"id": "k3", "vstupy": ["k1"], "vysledek": "v k-té trojici zazní 2k − 1, 2k a 4k − 1", "princip": "ZAK.RADA.nty-clen"},
+        {"id": "k4", "vstupy": ["z2", "k3"], "vysledek": "90 = 3 · 30: 90. číslo je poslední v 30. trojici, C = 4 · 30 − 1 = 119", "princip": "POC.DEL.zbytek"},
+        {"id": "k5", "vstupy": ["k3", "k4"], "vysledek": "Mirek řekne 119 = 2k − 1 pro k = 60, jako první číslo 60. trojice", "princip": "ZAK.RADA.obraceni"},
+        {"id": "k6", "vstupy": ["k3", "k5"], "vysledek": "těsně před ním zazní poslední číslo 59. trojice: 4 · 59 − 1 = 235", "princip": "ZAK.RADA.nty-clen", "odpoved": "16.2"},
+        {"id": "k7", "vstupy": ["z2", "k3"], "vysledek": "150 čísel je 50 trojic: Mirek řekl 1 až 100, Zuzka čísla 4k − 1 pro k = 1 až 50", "princip": "ZAK.RADA.nty-clen"},
+        {"id": "k8", "vstupy": ["k7"], "vysledek": "dvakrát zazní čísla tvaru 4k − 1 nejvýše 100; největší je 4 · 25 − 1 = 99", "princip": "ZAK.RADA.nty-clen", "odpoved": "16.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"16.1": 1, "16.2": 1, "16.3": 2}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  }
+},
+"2022 A": {
+  "12": {
+    "zadani": [
+      {"id": "z1", "text": "čtyři různoběžné přímky, tři procházejí bodem A; v obrázku úhly 60°, 132°, α a 3α"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "v trojúhelníku mezi přímkami: úhel u horního vrcholu je vrcholový k 60°, tedy 60°", "princip": "GEO.UHLY.vedlejsi"},
+        {"id": "k2", "vstupy": ["z1"], "vysledek": "úhel u pravého vrcholu je vedlejší k 132°: 180° − 132° = 48°", "princip": "GEO.UHLY.vedlejsi"},
+        {"id": "k3", "vstupy": ["k1", "k2"], "vysledek": "třetí úhel trojúhelníku, u bodu A: 180° − 60° − 48° = 72°", "princip": "GEO.UHLY.trojuhelnik"},
+        {"id": "k4", "vstupy": ["z1", "k3"], "vysledek": "úhly u bodu A na přímce dávají přímý úhel: 3α + α + 72° = 180°", "princip": "VZT.SLOV.rovnice"},
+        {"id": "k5", "vstupy": ["k4"], "vysledek": "4α = 108°, α = 27°: B", "princip": "ALG.ROV.upravy", "odpoved": "12"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"12": 2}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Rovnice 3α + α + 72° = 180° má dva kroky (sloučit, vydělit), podle pravidla 5 specifikace se tedy uvádí ALG.ROV.upravy; na tuto otázku upozornil i návrh druhé relace."]}
+  }
+},
+"2022 D": {
+  "7": {
+    "zadani": [
+      {"id": "z1", "text": "nahoru na ochoz vede 80 stejných vyšších schodů, dolů 96 stejných nižších; obě schodiště mají stejnou výšku a dvě společná odpočívadla"},
+      {"id": "z2", "text": "Václav po 60 schodech nahoru potkal na 2. odpočívadle Danu, která šla dolů"},
+      {"id": "z3", "text": "Dana sešla ještě o 30 schodů níž a na 1. odpočívadle potkala Evu, která šla nahoru"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1", "z2"], "vysledek": "z 2. odpočívadla na ochoz zbývá 80 − 60 = 20 vyšších schodů; Dana sešla stejnou výšku", "princip": "VZT.SLOV.usudek"},
+        {"id": "k2", "vstupy": ["z1", "k1"], "vysledek": "stejné výšce odpovídá 20 · 96 : 80 = 24 nižších schodů", "princip": "VZT.POM.prima", "odpoved": "7.1"},
+        {"id": "k3", "vstupy": ["z1", "z3", "k2"], "vysledek": "Dana sešla 24 + 30 = 54 nižších schodů, do nádvoří zbývá 96 − 54 = 42; Eva vyšla stejnou výšku", "princip": "VZT.SLOV.usudek"},
+        {"id": "k4", "vstupy": ["z1", "k3"], "vysledek": "stejné výšce odpovídá 42 · 80 : 96 = 35 vyšších schodů", "princip": "VZT.POM.prima", "odpoved": "7.2"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"7.1": 2, "7.2": 2}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Kroky k1 a k3 jsou rozbor situace: který úsek druhého schodiště má stejnou výšku. Nesou VZT.SLOV.usudek, uložené seznamy mají jen přímou úměrnost."]}
+  }
+},
+"2023 A": {
+  "15": {
+    "zadani": [
+      {"id": "z1", "text": "15.1: v roce 2020 firma vyrobila 250 výrobků, v letech 2021 a 2022 vždy o 20 % více než v předchozím roce"},
+      {"id": "z2", "text": "15.2: Roman ujel 400 km, o čtvrtinu více než Jana"},
+      {"id": "z3", "text": "15.3: na konci krize měla firma o 40 % méně zaměstnanců než před krizí; po přijetí 42 nových o 25 % více než na konci krize"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "o 20 % více je násobení 1,2", "princip": "VZT.PROC.nasobitel"},
+        {"id": "k2", "vstupy": ["z1", "k1"], "vysledek": "dvě změny po sobě: 250 · 1,2 · 1,2 = 360: E", "princip": "VZT.PROC.postupne", "odpoved": "15.1"},
+        {"id": "k3", "vstupy": ["z2"], "vysledek": "Roman ujel 5/4 Janiny vzdálenosti", "princip": "VZT.NEZ.o-zlomek"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "obráceně: Jana ujela 400 : 5/4 = 400 · 4/5 = 320 km: C", "princip": "VZT.NEZ.obraceni", "odpoved": "15.2"},
+        {"id": "k5", "vstupy": ["z3"], "vysledek": "42 nových je 25 % stavu na konci krize: ten je 42 : 0,25 = 168", "princip": "VZT.PROC.zaklad"},
+        {"id": "k6", "vstupy": ["z3", "k5"], "vysledek": "168 je 60 % stavu před krizí: 168 : 0,6 = 280: A", "princip": "VZT.PROC.zaklad-po-zmene", "odpoved": "15.3"}
+      ]}
+    ],
+    "bodovani": {"typ": "pocet-spravnych", "body": {"0": 0, "1": 2, "2": 4, "3": 6}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  }
+},
+"2026 A": {
+  "9": {
+    "zadani": [
+      {"id": "z1", "text": "bod A je vrchol trojúhelníku ABC; strana AB je kolmá k přímce b a vrchol B leží na b"},
+      {"id": "z2", "text": "strana BC je o 2 cm delší než AB a vrchol C leží na přímce c; najít všechna řešení"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "B je pata kolmice z bodu A na přímku b", "princip": "KON.ZAKL.kolmice"},
+        {"id": "k2", "vstupy": ["z2", "k1"], "vysledek": "C leží na kružnici (B, |AB| + 2 cm)", "princip": "KON.ZAKL.kruznice"},
+        {"id": "k3", "vstupy": ["z2", "k2"], "vysledek": "C je průsečík přímky c s kružnicí: dva průsečíky C₁ a C₂", "princip": "KON.ROZBOR.mnoziny"},
+        {"id": "k4", "vstupy": ["k3"], "vysledek": "dva trojúhelníky ABC₁ a ABC₂", "princip": "KON.ROZBOR.dve-reseni", "odpoved": "9"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"9": 3},
+                 "poznamka": "2 body s právě jedním nedostatkem (mírně nepřesná kolmice, chybí nebo je mírně nepřesný jeden trojúhelník, chybné pojmenování, navíc nevyhovující trojúhelník); 1 bod při dvou takových nedostatcích, při nepřesné kolmici s jinak bezchybnou konstrukcí, nebo jsou-li oba trojúhelníky mírně nepřesné v délce BC."},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh",
+                 "poznamky": ["Konstrukce odvozená z textu a porovnaná s obrázkem klíče, nerýsovaná."]}
+  }
+},
+"2026 B": {
+  "8": {
+    "zadani": [
+      {"id": "z1", "text": "dvě strany trojúhelníku ABC: a = 7 cm, b = 30 cm"},
+      {"id": "z2", "text": "obvod trojúhelníku v cm je celé číslo"}
+    ],
+    "postupy": [
+      {"id": "hlavni", "nazev": "Přirozený postup", "kroky": [
+        {"id": "k1", "vstupy": ["z1"], "vysledek": "trojúhelníková nerovnost: 30 − 7 < c < 30 + 7, tedy 23 < c < 37", "princip": "KON.VLAST.nerovnost"},
+        {"id": "k2", "vstupy": ["z2", "k1"], "vysledek": "obvod 37 + c je celé číslo, c je tedy celé; nejmenší celé c větší než 23 (ne rovné) je 24 cm", "princip": "KON.VLAST.nerovnost", "odpoved": "8.1"},
+        {"id": "k3", "vstupy": ["z2", "k1"], "vysledek": "největší celé c menší než 37 je 36 cm", "princip": "KON.VLAST.nerovnost", "odpoved": "8.2"}
+      ]}
+    ],
+    "bodovani": {"typ": "soucet", "body": {"8.1": 1, "8.2": 1}},
+    "kontrola": {"odpovedi": "shoda-s-klicem", "kroky": "navrh", "principy": "navrh", "poznamky": []}
+  }
+}
+}

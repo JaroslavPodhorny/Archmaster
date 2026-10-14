@@ -24,18 +24,12 @@
               "id": "POC.VYR.poradi",
               "name": "Pořadí operací, závorky, záporná čísla",
               "kind": "procedure",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "N-ARIT"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2022 B 1",
-                "2022 D 2",
-                "2023 C 2"
               ],
               "note": "Sign rules: (−6)² = 36, −3·(−3) = +9."
             },
@@ -43,7 +37,6 @@
               "id": "POC.VYR.desetinna",
               "name": "Počítání s desetinnými čísly bez kalkulačky",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "POC.VYR.poradi"
               ],
@@ -52,10 +45,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2026 A 2.1",
-                "2026 D 2.1"
               ],
               "note": "Multiplying and dividing by decimals: (0,08 − 1) : 0,2."
             },
@@ -63,7 +52,6 @@
               "id": "POC.VYR.mocniny",
               "name": "Druhá mocnina a odmocnina",
               "kind": "fact",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "N-ARIT"
@@ -71,19 +59,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 1",
-                "2023 B 1",
-                "2022 C 1",
-                "2025 B 2"
-              ],
               "note": "Squares 1–20 and their roots, decimals, powers of ten, root of a fraction and of a product. Compute inside the root first. Needed all over geometry."
             },
             {
               "id": "POC.VYR.slovy",
               "name": "Výraz zadaný slovy (součet, rozdíl, součin, podíl)",
               "kind": "translation",
-              "priority": "2",
               "requires": [
                 "POC.VYR.poradi"
               ],
@@ -93,35 +74,40 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2023 C 1",
-                "2025 A 1"
-              ],
               "note": "The verbal items are the ones that fail, not the computations."
             },
             {
               "id": "POC.VYR.osa",
               "name": "Číselná osa se stejnými dílky",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "N-ARIT"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2023 D 2",
-                "2022 B 2"
               ],
               "note": ""
             },
             {
-              "id": "POC.VYR.spec",
-              "name": "Absolutní hodnota, opačné číslo, periodické číslo, zaokrouhlování, odhady",
+              "id": "POC.VYR.zaokrouhleni",
+              "name": "Zaokrouhlení výsledku na daný řád",
+              "kind": "procedure",
+              "requires": [
+                "POC.VYR.desetinna"
+              ],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "The last step of the π tasks: „zaokrouhlete na desítky cm³ / celé cm² / desetiny centimetru“. Round once, at the end."
+            },
+            {
+              "id": "POC.VYR.absolutni",
+              "name": "Absolutní hodnota a opačné číslo",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "N-ARIT"
@@ -129,8 +115,33 @@
               "spec": [
                 1
               ],
-              "examples": [],
-              "note": "Rounding occurs only as the last step of π tasks."
+              "note": "B1, 1: „určí číslo kladné, záporné a opačné, znázorní a určí absolutní hodnotu čísla“."
+            },
+            {
+              "id": "POC.VYR.periodicke",
+              "name": "Periodické číslo: zápis, porovnání, převod zlomku",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „rozumí zápisu … desetinného čísla včetně periodického čísla“, „převádí zlomek na desetinné číslo včetně čísla s periodou“. One appears only as an answer option (2022 A 14)."
+            },
+            {
+              "id": "POC.VYR.odhady",
+              "name": "Odhad výsledku s danou přesností",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-ARIT"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „provádí odhady početních operací s racionálními čísly s danou přesností“."
             }
           ]
         },
@@ -149,7 +160,6 @@
               "id": "POC.ZLOM.operace",
               "name": "Čtyři operace se zlomky, společný jmenovatel, krácení, základní tvar",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "POC.VYR.poradi"
               ],
@@ -159,17 +169,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 B 3",
-                "2023 B 3"
-              ],
               "note": "An unreduced result costs 1 of 2 points. Never multiply the expression by the common denominator as if it were an equation."
             },
             {
               "id": "POC.ZLOM.slozeny",
               "name": "Složený zlomek",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "POC.ZLOM.operace"
               ],
@@ -179,18 +184,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 3",
-                "2023 A 3",
-                "2026 B 2"
-              ],
               "note": "The worked 2-point item in almost every test."
             },
             {
               "id": "POC.ZLOM.desetinna",
               "name": "Zlomky spolu s desetinnými čísly",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "POC.ZLOM.operace",
                 "POC.VYR.desetinna"
@@ -201,19 +200,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2024 A 3.2",
-                "2024 C 3.1",
-                "2024 D 3.1",
-                "2026 C 2.2"
-              ],
               "note": "Convert the decimal to a fraction first (1,4 = 7/5)."
             },
             {
               "id": "POC.ZLOM.mocniny",
               "name": "Zlomky s druhou mocninou a odmocninou",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "POC.ZLOM.operace",
                 "POC.VYR.mocniny"
@@ -224,19 +216,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 A 2",
-                "2025 B 3",
-                "2025 C 3",
-                "2025 D 3"
-              ],
               "note": "From 2025."
             },
             {
               "id": "POC.ZLOM.smisene",
               "name": "Smíšené číslo",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "POC.ZLOM.operace"
               ],
@@ -246,16 +231,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 B 2"
-              ],
               "note": "Once in 20 tests."
             },
             {
-              "id": "POC.ZLOM.spec",
-              "name": "Porovnávání zlomků, převrácený zlomek, zlomek jako periodické číslo",
-              "kind": "fact",
-              "priority": "S",
+              "id": "POC.ZLOM.porovnani",
+              "name": "Porovnávání zlomků",
+              "kind": "procedure",
               "requires": [],
               "tags": [
                 "N-ZLOM"
@@ -263,8 +244,20 @@
               "spec": [
                 1
               ],
-              "examples": [],
-              "note": ""
+              "note": "B1, 1: „porovnává zlomky“. Not asked as a task of its own."
+            },
+            {
+              "id": "POC.ZLOM.prevraceny",
+              "name": "Převrácený zlomek podle názvu",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1: „zapíše převrácený zlomek“. Used silently whenever a fraction divides."
             }
           ]
         },
@@ -283,16 +276,12 @@
               "id": "POC.DEL.delitele",
               "name": "Dělitelé a násobky čísla",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "N-DEL"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2022 D 1"
               ],
               "note": ""
             },
@@ -300,7 +289,6 @@
               "id": "POC.DEL.prvocisla",
               "name": "Prvočísla a rozklad na prvočísla",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "POC.DEL.delitele"
               ],
@@ -309,11 +297,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2025 B 6",
-                "2025 C 2",
-                "2026 B 12"
               ],
               "note": "2 is the only even prime."
             },
@@ -321,7 +304,6 @@
               "id": "POC.DEL.zbytek",
               "name": "Dělení se zbytkem ve slovní úloze",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "N-DEL"
@@ -329,16 +311,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2026 D 13"
-              ],
               "note": ""
             },
             {
               "id": "POC.DEL.nasobek",
               "name": "Společný násobek",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "POC.DEL.delitele"
               ],
@@ -348,16 +326,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 A 8.3"
-              ],
               "note": "Never asked by name, but it is what common denominators and the periodic tasks of task 16 use."
             },
             {
-              "id": "POC.DEL.spec",
-              "name": "Znaky dělitelnosti, nejmenší společný násobek a největší společný dělitel podle názvu",
+              "id": "POC.DEL.znaky",
+              "name": "Znaky dělitelnosti čísly 2, 3, 4, 5, 6, 8 a 10",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "N-DEL"
@@ -365,8 +339,20 @@
               "spec": [
                 1
               ],
-              "examples": [],
-              "note": ""
+              "note": "B1, 1."
+            },
+            {
+              "id": "POC.DEL.nsn-nsd",
+              "name": "Nejmenší společný násobek a největší společný dělitel dvou až tří čísel",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "N-DEL"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "B1, 1. The words do not occur in the 20 tests."
             }
           ]
         },
@@ -385,17 +371,12 @@
               "id": "POC.JED.delka",
               "name": "Délka (mm, cm, dm, m, km)",
               "kind": "fact",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "N-JED"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2024 B 1",
-                "2022 C 2"
               ],
               "note": ""
             },
@@ -403,7 +384,6 @@
               "id": "POC.JED.obsah",
               "name": "Obsah (krok × 100)",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "POC.JED.delka"
               ],
@@ -412,10 +392,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2026 B 1",
-                "2022 A 2"
               ],
               "note": ""
             },
@@ -423,7 +399,6 @@
               "id": "POC.JED.objem",
               "name": "Objem a litry (krok × 1 000, 1 l = 1 dm³)",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "POC.JED.delka"
               ],
@@ -433,27 +408,18 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 2.2",
-                "2023 A 2.2",
-                "2025 A 6"
-              ],
               "note": ""
             },
             {
               "id": "POC.JED.hmotnost",
               "name": "Hmotnost (g, kg)",
               "kind": "fact",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "N-JED"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2025 C 1"
               ],
               "note": ""
             },
@@ -461,26 +427,19 @@
               "id": "POC.JED.cas",
               "name": "Čas (hodiny, minuty, desetinné hodiny, sčítání časů)",
               "kind": "fact",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "N-JED"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2026 C 1",
-                "2022 A 11",
-                "2022 C 2.2"
               ],
               "note": "Needed for pohyb."
             },
             {
-              "id": "POC.JED.spec",
-              "name": "Sekunda a týden jako převáděné jednotky",
+              "id": "POC.JED.uhel",
+              "name": "Stupně a minuty (1° = 60′)",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "N-JED"
@@ -488,8 +447,20 @@
               "spec": [
                 1
               ],
-              "examples": [],
               "note": ""
+            },
+            {
+              "id": "POC.JED.sekunda-tyden",
+              "name": "Sekunda a týden v převodech času",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "N-JED"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "A1, 2: „časové jednotky (sekunda, minuta, hodina, den, týden)“."
             }
           ]
         }
@@ -519,7 +490,6 @@
               "id": "ALG.VYR.roznasobeni",
               "name": "Roznásobení závorek a sloučení členů",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "POC.VYR.poradi"
               ],
@@ -529,16 +499,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 4.3"
-              ],
               "note": "The worked 2-point item. The trap is a bracket to simplify before multiplying, e.g. (3n − 2n)."
             },
             {
               "id": "ALG.VYR.vytykani",
               "name": "Vytýkání",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "ALG.VYR.roznasobeni"
               ],
@@ -548,20 +514,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 4.1",
-                "2023 A 4.1",
-                "2023 B 4.1",
-                "2026 B 3.2",
-                "2026 D 3.1"
-              ],
               "note": "Usually after simplifying first; also a prescribed factor such as (−x)."
             },
             {
               "id": "ALG.VYR.umocneni",
               "name": "Umocnění dvojčlenu (a ± b)²",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "ALG.VYR.roznasobeni",
                 "POC.VYR.mocniny"
@@ -572,20 +530,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 B 4.2",
-                "2023 D 4.1",
-                "2024 A 4.1",
-                "2025 C 4.1",
-                "2026 C 3.2"
-              ],
               "note": "Awkward coefficients: fractions, decimals, two minus signs."
             },
             {
               "id": "ALG.VYR.doplneni",
-              "name": "Vzorec (a ± b)² zpětně – doplnění chybějících čísel",
+              "name": "Vzorec (a ± b)² zpětně: rozklad trojčlenu, doplnění chybějících čísel",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "ALG.VYR.umocneni"
               ],
@@ -595,17 +545,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 D 4.2",
-                "2025 A 3.1"
-              ],
-              "note": ""
+              "note": "In 2022–2026 only as „Do rámečků doplňte chybějící čísla“; factoring a whole trinomial (9a² − 30a + 25) was asked in 2021 A 4.1."
             },
             {
               "id": "ALG.VYR.rozdil",
               "name": "Rozklad a² − b² na součin",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "ALG.VYR.umocneni"
               ],
@@ -614,13 +559,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2023 C 4.1",
-                "2024 B 4.2",
-                "2025 D 4.2",
-                "2025 A 3.3",
-                "2023 B 4"
               ],
               "note": "In disguise: 49 − (−4a)², or simplify first and then factor."
             },
@@ -628,16 +566,12 @@
               "id": "ALG.VYR.hodnota",
               "name": "Hodnota výrazu pro dané číslo",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "A-VYR"
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2026 A 3"
               ],
               "note": ""
             }
@@ -659,7 +593,6 @@
               "id": "ALG.ROV.zavorky",
               "name": "Rovnice se závorkami a desetinnými čísly",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "ALG.VYR.roznasobeni",
                 "POC.VYR.desetinna"
@@ -670,18 +603,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 B 5",
-                "2023 B 5",
-                "2026 D 4"
-              ],
               "note": ""
             },
             {
               "id": "ALG.ROV.zlomky",
               "name": "Rovnice se zlomky",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "ALG.ROV.zavorky",
                 "POC.ZLOM.operace"
@@ -692,19 +619,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 5",
-                "2023 C 5",
-                "2025 C 5",
-                "2026 B 4"
-              ],
               "note": "Keep each numerator in a bracket; the minus before a fraction is the classic error."
             },
             {
               "id": "ALG.ROV.bez-reseni",
               "name": "Rovnice bez řešení",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "ALG.ROV.zavorky"
               ],
@@ -714,17 +634,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2023 A 5",
-                "2025 A 4"
-              ],
               "note": "The sentence „rovnice nemá řešení“ must be written. „Nekonečně mnoho řešení“ is in the specification only."
             },
             {
               "id": "ALG.ROV.mocniny",
               "name": "Rovnice s druhými mocninami dvojčlenů, ve které x² vypadne",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "ALG.ROV.zavorky",
                 "ALG.VYR.umocneni"
@@ -735,17 +650,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2024 A 5",
-                "2024 C 5"
-              ],
               "note": "Only in the 2024 tests."
             },
             {
               "id": "ALG.ROV.soustava",
               "name": "Soustava dvou rovnic se dvěma neznámými",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "ALG.ROV.zavorky"
               ],
@@ -755,13 +665,20 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 B 5",
-                "2025 D 5",
-                "2026 A 4",
-                "2026 C 4"
-              ],
               "note": "From 2025, in 4 of 8 tests. Dosazovací or sčítací metoda."
+            },
+            {
+              "id": "ALG.ROV.nekonecne",
+              "name": "Rovnice s nekonečně mnoha řešeními",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "A-ROV"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "C1, 1: „rozhodne, má-li rovnice jedno řešení, nekonečně mnoho řešení, nebo nemá řešení“. Only the other two outcomes are keyed in the 20 tests."
             }
           ]
         }
@@ -792,7 +709,6 @@
               "id": "VZT.CAST.cast",
               "name": "Zlomek z množství a z času",
               "kind": "translation",
-              "priority": "2",
               "requires": [
                 "POC.ZLOM.operace"
               ],
@@ -802,17 +718,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 11",
-                "2022 C 2.2"
-              ],
               "note": ""
             },
             {
               "id": "VZT.CAST.zbytek",
               "name": "Část ze zbytku",
               "kind": "translation",
-              "priority": "2",
               "requires": [
                 "VZT.CAST.cast"
               ],
@@ -822,16 +733,27 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 D 1"
-              ],
               "note": "„dvě pětiny zbytku“ is a part of what is left, not of the whole."
+            },
+            {
+              "id": "VZT.CAST.zlomek-ze-zlomku",
+              "name": "Zlomek ze zlomku",
+              "kind": "translation",
+              "requires": [
+                "VZT.CAST.cast"
+              ],
+              "tags": [
+                "N-ZLOM"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "„Tři čtvrtiny z této utracené částky“, „čtvrtina vzdálenosti, kterou předtím ujel“: multiply the fractions."
             },
             {
               "id": "VZT.CAST.celek",
               "name": "Celek z části",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "VZT.CAST.cast"
               ],
@@ -840,14 +762,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2022 B 6",
-                "2023 B 14",
-                "2023 C 12",
-                "2025 B 1",
-                "2026 B 14",
-                "2023 A 1"
               ],
               "note": "„pětina a o 180 více“ – find what fraction the known number is."
             }
@@ -868,7 +782,6 @@
               "id": "VZT.NEZ.okolik-kolikrat",
               "name": "„o kolik“ je rozdíl, „kolikrát“ je podíl",
               "kind": "translation",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "N-ARIT"
@@ -876,20 +789,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 2",
-                "2022 C 14",
-                "2026 B 7",
-                "2022 B 6",
-                "2025 D 12"
-              ],
               "note": ""
             },
             {
               "id": "VZT.NEZ.o-zlomek",
               "name": "„o třetinu více / méně než“ jako násobení",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "POC.ZLOM.operace"
               ],
@@ -899,20 +804,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 C 6",
-                "2023 D 6",
-                "2023 B 7",
-                "2024 B 7",
-                "2025 B 7"
-              ],
               "note": "4/3 · x and 2/3 · x, where x is the quantity after „než“."
             },
             {
               "id": "VZT.NEZ.krat-mene",
               "name": "„dvakrát méně“, „čtyřikrát menší než“ jako dělení",
               "kind": "translation",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "A-SLOV"
@@ -920,18 +817,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 D 13",
-                "2026 D 5",
-                "2025 C 7"
-              ],
               "note": ""
             },
             {
               "id": "VZT.NEZ.obraceni",
               "name": "Obrácení vztahu: neznámá není veličina za „než“",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "VZT.NEZ.o-zlomek"
               ],
@@ -940,11 +831,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2025 C 6",
-                "2026 A 5",
-                "2023 B 7"
               ],
               "note": "„o polovinu levnější než skříň“ with the table = n means the wardrobe is 2n. Solved by 8–28 %."
             }
@@ -965,7 +851,6 @@
               "id": "VZT.PROC.tri-vypocty",
               "name": "Procentová část, počet procent, základ",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "POC.VYR.desetinna"
               ],
@@ -975,19 +860,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2024 B 16",
-                "2024 D 12",
-                "2025 A 15.1",
-                "2026 D 15"
-              ],
               "note": "Where the base is the obvious number, items score 70–80 %."
             },
             {
               "id": "VZT.PROC.nasobitel",
               "name": "„o x % více / méně“ jako násobitel",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "VZT.PROC.tri-vypocty"
               ],
@@ -997,17 +875,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2023 B 2",
-                "2023 C 15"
-              ],
               "note": "+25 % is ·1,25; −40 % is ·0,6; +150 % is ·2,5."
             },
             {
               "id": "VZT.PROC.zaklad-po-zmene",
               "name": "Základ po změně („což je o 40 % více než loni“)",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "VZT.PROC.nasobitel"
               ],
@@ -1017,19 +890,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 15",
-                "2023 A 15.2",
-                "2023 D 15",
-                "2026 B 15"
-              ],
               "note": "Divide by the multiplier: 420 : 1,4."
             },
             {
               "id": "VZT.PROC.o-kolik-procent",
               "name": "„O kolik procent“ se liší dvě veličiny",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "VZT.PROC.tri-vypocty"
               ],
@@ -1039,20 +905,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 B 15",
-                "2024 B 2",
-                "2026 B 5",
-                "2026 C 15",
-                "2026 A 15"
-              ],
               "note": "Difference divided by the quantity after „než“."
             },
             {
               "id": "VZT.PROC.obracene",
               "name": "Obrácené srovnání („o třetinu méně“ je opačně „o 50 % více“)",
               "kind": "translation",
-              "priority": "2",
               "requires": [
                 "VZT.PROC.o-kolik-procent",
                 "VZT.NEZ.obraceni"
@@ -1063,17 +921,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2025 B 15.2",
-                "2022 D 15"
-              ],
               "note": "In 2025 B 15.2 the naive option 33 % drew 47,8 % of candidates."
             },
             {
               "id": "VZT.PROC.postupne",
               "name": "Dvě změny po sobě",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.PROC.nasobitel"
               ],
@@ -1083,20 +936,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2023 A 15",
-                "2024 B 11",
-                "2024 D 2",
-                "2026 D 1",
-                "2026 D 12"
-              ],
               "note": "Multiply the multipliers: +40 % then −40 % is ·0,84."
             },
             {
               "id": "VZT.PROC.ze-zbytku",
               "name": "Procento ze zbytku",
               "kind": "translation",
-              "priority": "2",
               "requires": [
                 "VZT.PROC.tri-vypocty",
                 "VZT.CAST.zbytek"
@@ -1107,18 +952,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 B 15",
-                "2022 C 15",
-                "2026 B 15"
-              ],
               "note": ""
             },
             {
               "id": "VZT.PROC.se-souctem",
               "name": "Dvě veličiny svázané procentem a známý součet",
               "kind": "translation",
-              "priority": "2",
               "requires": [
                 "VZT.PROC.nasobitel",
                 "ALG.ROV.zavorky"
@@ -1129,18 +968,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2023 D 15",
-                "2024 C 12",
-                "2025 C 15"
-              ],
               "note": "x + 0,7x = 680."
             },
             {
               "id": "VZT.PROC.prevody",
               "name": "Procento, zlomek a poměr: převody mezi nimi",
               "kind": "fact",
-              "priority": "1",
               "requires": [
                 "VZT.PROC.tri-vypocty"
               ],
@@ -1149,12 +982,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2026 A 12",
-                "2025 D 15",
-                "2022 D 15",
-                "2026 C 15"
               ],
               "note": "„každý dvacátý“ = 5 %; 3 : 2 is „o 50 % více“."
             },
@@ -1162,7 +989,6 @@
               "id": "VZT.PROC.body",
               "name": "Změna v procentních bodech",
               "kind": "translation",
-              "priority": "3",
               "requires": [
                 "VZT.PROC.tri-vypocty"
               ],
@@ -1171,9 +997,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2024 C 13"
               ],
               "note": "Once in 20 tests."
             },
@@ -1181,7 +1004,6 @@
               "id": "VZT.PROC.finance",
               "name": "Úrok za jeden rok a daň z úroku",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "VZT.PROC.tri-vypocty"
               ],
@@ -1191,16 +1013,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2024 A 16"
-              ],
               "note": "Once in 20 tests."
             },
             {
-              "id": "VZT.PROC.spec",
-              "name": "Promile; jistina, úroková míra, úrokovací období, inflace, půjčky a úvěry",
+              "id": "VZT.PROC.promile",
+              "name": "Promile",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "P-PROC"
@@ -1208,8 +1026,20 @@
               "spec": [
                 1
               ],
-              "examples": [],
-              "note": ""
+              "note": "B1, 1."
+            },
+            {
+              "id": "VZT.PROC.finance-pojmy",
+              "name": "Jistina, úroková míra, úrokovací období, inflace; půjčky a úvěry",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "P-PROC"
+              ],
+              "spec": [
+                1
+              ],
+              "note": "C1, 1: „používá s porozuměním základní pojmy finanční matematiky“, „získá základní informace o půjčkách a úvěrech“."
             }
           ]
         },
@@ -1230,7 +1060,6 @@
               "id": "VZT.POM.pomer",
               "name": "Poměr v základním tvaru, dělení v poměru",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "POC.ZLOM.operace"
               ],
@@ -1240,18 +1069,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2023 D 1",
-                "2025 D 2",
-                "2026 D 7"
-              ],
               "note": "Also the parts from their difference: 3 : 5 and a difference of 600 g."
             },
             {
               "id": "VZT.POM.usecka",
               "name": "Poměr na číselné ose a na úsečce",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "VZT.POM.pomer",
                 "POC.VYR.osa"
@@ -1262,16 +1085,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 B 2"
-              ],
               "note": ""
             },
             {
               "id": "VZT.POM.meritko",
               "name": "Měřítko mapy a plánu",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.POM.pomer",
                 "POC.JED.delka",
@@ -1283,17 +1102,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 A 11",
-                "2024 A 15"
-              ],
               "note": "Area scales with the square of the length scale."
             },
             {
               "id": "VZT.POM.prima",
               "name": "Přímá úměrnost",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.POM.pomer"
               ],
@@ -1303,17 +1117,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2026 B 5",
-                "2026 C 13"
-              ],
               "note": ""
             },
             {
               "id": "VZT.POM.neprima",
               "name": "Nepřímá úměrnost",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.POM.prima"
               ],
@@ -1323,19 +1132,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2026 C 12",
-                "2023 B 6",
-                "2024 C 16",
-                "2024 A 1"
-              ],
               "note": ""
             },
             {
               "id": "VZT.POM.prace",
               "name": "Společná práce",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.POM.neprima",
                 "POC.ZLOM.operace"
@@ -1346,18 +1148,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2024 D 13",
-                "2025 D 6",
-                "2022 A 7"
-              ],
               "note": "Add the rates per unit of time, not the times."
             },
             {
               "id": "VZT.POM.pohyb",
               "name": "Pohyb: s = v · t",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.POM.prima",
                 "POC.JED.cas"
@@ -1368,18 +1164,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2025 C 7",
-                "2026 A 7",
-                "2026 D 8"
-              ],
               "note": ""
             },
             {
               "id": "VZT.POM.smesi",
               "name": "Směsi a průměrná cena",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "VZT.POM.pomer"
               ],
@@ -1389,16 +1179,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2023 C 8"
-              ],
               "note": ""
             },
             {
-              "id": "VZT.POM.spec",
-              "name": "Postupný a převrácený poměr; graf a rovnice přímé a nepřímé úměrnosti; bod v pravoúhlé soustavě souřadnic",
-              "kind": "fact",
-              "priority": "S",
+              "id": "VZT.POM.postupny",
+              "name": "Postupný a převrácený poměr, změna čísla v daném poměru",
+              "kind": "procedure",
               "requires": [],
               "tags": [
                 "P-POM"
@@ -1406,8 +1192,33 @@
               "spec": [
                 2
               ],
-              "examples": [],
-              "note": "No coordinate system in any of the 20 tests."
+              "note": "B1, 1: „změní číslo v daném poměru“, „zapíše a upraví postupný a převrácený poměr“."
+            },
+            {
+              "id": "VZT.POM.souradnice",
+              "name": "Bod v pravoúhlé soustavě souřadnic",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "B1, 2: „vyznačí bod v pravoúhlé soustavě souřadnic …, zapíše souřadnice daného bodu“. No coordinate system in any of the 20 tests."
+            },
+            {
+              "id": "VZT.POM.graf",
+              "name": "Přímá a nepřímá úměrnost tabulkou, rovnicí a grafem",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "P-POM"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "C1, 2: „vyjádří přímou a nepřímou úměrnost tabulkou, rovnicí a grafem“."
             }
           ]
         },
@@ -1426,7 +1237,6 @@
               "id": "VZT.SLOV.vyraz",
               "name": "Vyjádření veličiny výrazem s proměnnou",
               "kind": "translation",
-              "priority": "1",
               "requires": [
                 "VZT.NEZ.o-zlomek",
                 "VZT.NEZ.obraceni"
@@ -1437,19 +1247,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 8.1",
-                "2022 C 6",
-                "2026 C 5",
-                "2022 B 14"
-              ],
               "note": "The answer is an expression such as 4x/3, not a number."
             },
             {
               "id": "VZT.SLOV.rovnice",
               "name": "Sestavení a vyřešení rovnice z další podmínky",
               "kind": "strategy",
-              "priority": "1",
               "requires": [
                 "VZT.SLOV.vyraz",
                 "ALG.ROV.zlomky"
@@ -1460,19 +1263,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2022 A 8",
-                "2023 B 7",
-                "2026 A 6",
-                "2026 D 5"
-              ],
               "note": "Answer the quantity that is asked, which may not be x."
             },
             {
               "id": "VZT.SLOV.dve-nezname",
               "name": "Dvě neznámé: počty a součty",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "VZT.SLOV.rovnice",
                 "ALG.ROV.soustava"
@@ -1483,20 +1279,12 @@
               "spec": [
                 1
               ],
-              "examples": [
-                "2026 B 6",
-                "2026 C 14",
-                "2023 D 7",
-                "2024 D 6",
-                "2025 D 13"
-              ],
               "note": ""
             },
             {
               "id": "VZT.SLOV.usudek",
               "name": "Řešení úsudkem bez rovnice",
               "kind": "strategy",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "A-SLOV"
@@ -1504,18 +1292,12 @@
               "spec": [
                 4
               ],
-              "examples": [
-                "2022 D 6",
-                "2024 D 7",
-                "2022 C 7"
-              ],
               "note": ""
             },
             {
               "id": "VZT.SLOV.cela-cisla",
               "name": "Podmínka, že výsledek je celé číslo",
               "kind": "strategy",
-              "priority": "3",
               "requires": [
                 "VZT.SLOV.rovnice",
                 "POC.DEL.zbytek"
@@ -1525,11 +1307,6 @@
               ],
               "spec": [
                 1
-              ],
-              "examples": [
-                "2023 D 7",
-                "2024 D 15",
-                "2026 D 13"
               ],
               "note": ""
             }
@@ -1561,7 +1338,6 @@
               "id": "DAT.GRAF.sloupcovy",
               "name": "Čtení sloupcového grafu (více řad, skládaný)",
               "kind": "procedure",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "D-GRAF"
@@ -1569,18 +1345,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2022 C 11",
-                "2025 C 11",
-                "2024 B 15"
-              ],
               "note": ""
             },
             {
               "id": "DAT.GRAF.chybejici",
               "name": "Doplnění chybějícího údaje z podmínek v textu",
               "kind": "strategy",
-              "priority": "1",
               "requires": [
                 "DAT.GRAF.sloupcovy"
               ],
@@ -1590,20 +1360,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2023 A 7",
-                "2025 D 14",
-                "2023 D 11",
-                "2026 B 11",
-                "2022 B 7"
-              ],
               "note": "A missing bar or an axis without numbers. Open versions score 14–50 %."
             },
             {
               "id": "DAT.GRAF.kruhovy",
               "name": "Kruhový diagram (procenta, středové úhly)",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "VZT.PROC.tri-vypocty"
               ],
@@ -1613,37 +1375,25 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2025 B 11",
-                "2026 A 11",
-                "2022 A 14",
-                "2024 C 15"
-              ],
               "note": "360° is the whole, 60° is one sixth."
             },
             {
               "id": "DAT.GRAF.tabulka",
               "name": "Čtení tabulky, třídění údajů z textu",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "D-GRAF"
               ],
               "spec": [
                 2
-              ],
-              "examples": [
-                "2024 D 7",
-                "2024 A 7"
               ],
               "note": ""
             },
             {
-              "id": "DAT.GRAF.spec",
-              "name": "Statistický soubor, statistický znak, četnost; volba vhodného grafu",
+              "id": "DAT.GRAF.statistika",
+              "name": "Statistický soubor, statistický znak, statistické šetření, četnost",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "D-GRAF"
@@ -1651,8 +1401,20 @@
               "spec": [
                 2
               ],
-              "examples": [],
-              "note": "Medián and modus are neither in the specification nor in the tests."
+              "note": "C1, 2. Medián and modus are neither in the specification nor in the tests."
+            },
+            {
+              "id": "DAT.GRAF.volba",
+              "name": "Volba vhodné tabulky a diagramu, vytvoření diagramu z dat",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "D-GRAF"
+              ],
+              "spec": [
+                2
+              ],
+              "note": "C1, 2: „zvolí vhodnou tabulku a vhodný diagram“; B1, 2: „vytvoří vhodný diagram ze vstupních dat“. Charts are always given, never drawn."
             }
           ]
         },
@@ -1671,7 +1433,6 @@
               "id": "DAT.PRUM.vypocet",
               "name": "Výpočet aritmetického průměru",
               "kind": "procedure",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "D-GRAF"
@@ -1679,17 +1440,12 @@
               "spec": [
                 2
               ],
-              "examples": [
-                "2022 B 7",
-                "2026 D 11"
-              ],
               "note": ""
             },
             {
               "id": "DAT.PRUM.cetnosti",
               "name": "Průměr z tabulky četností",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "DAT.PRUM.vypocet"
               ],
@@ -1698,9 +1454,6 @@
               ],
               "spec": [
                 2
-              ],
-              "examples": [
-                "2025 A 14"
               ],
               "note": "Count × value, divided by the total count."
             },
@@ -1708,7 +1461,6 @@
               "id": "DAT.PRUM.zpetne",
               "name": "Chybějící hodnota z daného průměru",
               "kind": "procedure",
-              "priority": "3",
               "requires": [
                 "DAT.PRUM.vypocet"
               ],
@@ -1717,9 +1469,6 @@
               ],
               "spec": [
                 2
-              ],
-              "examples": [
-                "2025 D 7"
               ],
               "note": ""
             }
@@ -1751,17 +1500,12 @@
               "id": "GEO.UHLY.dvojice",
               "name": "Vrcholové, vedlejší, souhlasné a střídavé úhly",
               "kind": "fact",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "G-UHLY"
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2022 B 13",
-                "2025 A 7"
               ],
               "note": ""
             },
@@ -1769,7 +1513,6 @@
               "id": "GEO.UHLY.soucet",
               "name": "Součet úhlů v trojúhelníku a čtyřúhelníku",
               "kind": "fact",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "G-UHLY"
@@ -1777,18 +1520,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2024 A 11",
-                "2024 B 13",
-                "2023 D 13"
-              ],
               "note": ""
             },
             {
               "id": "GEO.UHLY.rovnoramenny",
               "name": "Úhly v rovnoramenném a rovnostranném trojúhelníku",
               "kind": "fact",
-              "priority": "1",
               "requires": [
                 "GEO.UHLY.soucet"
               ],
@@ -1798,18 +1535,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 B 12",
-                "2025 B 12",
-                "2022 D 12"
-              ],
               "note": ""
             },
             {
               "id": "GEO.UHLY.s-promennou",
               "name": "Úhly zapsané jako α, 2α, 3α nebo poměrem",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "GEO.UHLY.dvojice",
                 "GEO.UHLY.soucet"
@@ -1820,19 +1551,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 12",
-                "2023 A 14",
-                "2022 C 12",
-                "2024 C 8"
-              ],
               "note": "Set up an equation for α."
             },
             {
               "id": "GEO.UHLY.osa",
               "name": "Osa úhlu",
               "kind": "fact",
-              "priority": "3",
               "requires": [
                 "GEO.UHLY.soucet"
               ],
@@ -1842,17 +1566,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2025 C 14",
-                "2026 A 8"
-              ],
               "note": ""
             },
             {
               "id": "GEO.UHLY.mnohouhelnik",
               "name": "Pravidelný mnohoúhelník",
               "kind": "fact",
-              "priority": "3",
               "requires": [
                 "GEO.UHLY.rovnoramenny"
               ],
@@ -1861,9 +1580,6 @@
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2026 C 8"
               ],
               "note": "Regular pentagon 108°; hexagon as six equilateral triangles."
             },
@@ -1871,7 +1587,6 @@
               "id": "GEO.UHLY.kruznice",
               "name": "Úhly v kružnici: poloměry a Thaletova věta",
               "kind": "fact",
-              "priority": "3",
               "requires": [
                 "GEO.UHLY.rovnoramenny"
               ],
@@ -1880,10 +1595,6 @@
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2025 D 11",
-                "2026 A 8"
               ],
               "note": ""
             }
@@ -1904,7 +1615,6 @@
               "id": "GEO.PYT.veta",
               "name": "Přepona z odvěsen, odvěsna z přepony",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "POC.VYR.mocniny"
               ],
@@ -1914,18 +1624,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 C 8",
-                "2025 C 12",
-                "2024 B 2"
-              ],
               "note": "Know the triples 3–4–5, 5–12–13, 8–15–17 and their multiples."
             },
             {
               "id": "GEO.PYT.najit",
               "name": "Nalezení pravoúhlého trojúhelníku v útvaru",
               "kind": "strategy",
-              "priority": "1",
               "requires": [
                 "GEO.PYT.veta"
               ],
@@ -1935,20 +1639,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2024 A 6",
-                "2024 B 6",
-                "2025 B 8",
-                "2026 A 13",
-                "2025 D 8"
-              ],
               "note": "Height of an isosceles triangle or trapezoid, slanted side, diagonal."
             },
             {
               "id": "GEO.PYT.telesa",
               "name": "Pythagorova věta v tělesech",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "GEO.PYT.najit"
               ],
@@ -1957,13 +1653,6 @@
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2023 A 12",
-                "2022 A 6",
-                "2022 D 13",
-                "2023 C 7",
-                "2023 D 14"
               ],
               "note": "Stěnová úhlopříčka; hypotenuse of the base as an edge."
             }
@@ -1984,7 +1673,6 @@
               "id": "GEO.ROV.vzorce",
               "name": "Vzorce pro obvod a obsah",
               "kind": "fact",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "G-ROV"
@@ -1992,17 +1680,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 A 6",
-                "2025 B 8"
-              ],
               "note": "Čtverec, obdélník, trojúhelník, rovnoběžník, kosočtverec, lichoběžník. None is printed."
             },
             {
               "id": "GEO.ROV.zpetne",
               "name": "Strana nebo výška z obsahu",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "GEO.ROV.vzorce",
                 "POC.VYR.mocniny"
@@ -2013,20 +1696,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 B 8",
-                "2022 D 8",
-                "2025 A 5",
-                "2024 C 6",
-                "2022 C 8"
-              ],
               "note": ""
             },
             {
               "id": "GEO.ROV.dvojim",
               "name": "Obsah vypočtený dvěma způsoby",
               "kind": "strategy",
-              "priority": "3",
               "requires": [
                 "GEO.ROV.zpetne"
               ],
@@ -2036,16 +1711,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 B 11"
-              ],
               "note": "Height to the hypotenuse, height of a rhombus."
             },
             {
               "id": "GEO.ROV.lichobeznik",
               "name": "Lichoběžník rozdělený na obdélník a trojúhelník",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "GEO.ROV.vzorce",
                 "GEO.PYT.najit"
@@ -2056,19 +1727,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2024 A 6",
-                "2024 B 6",
-                "2025 B 8",
-                "2025 D 8"
-              ],
               "note": ""
             },
             {
               "id": "GEO.ROV.slozene",
               "name": "Složené útvary",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "GEO.ROV.vzorce"
               ],
@@ -2078,20 +1742,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 B 8",
-                "2023 D 12",
-                "2024 A 12",
-                "2026 C 6",
-                "2026 D 6"
-              ],
               "note": ""
             },
             {
               "id": "GEO.ROV.s-promennou",
               "name": "Obvod vyjádřený proměnnou",
               "kind": "strategy",
-              "priority": "3",
               "requires": [
                 "GEO.ROV.vzorce",
                 "VZT.SLOV.rovnice"
@@ -2102,26 +1758,18 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 A 8",
-                "2024 A 13"
-              ],
               "note": ""
             },
             {
               "id": "GEO.ROV.nerovnost",
               "name": "Trojúhelníková nerovnost",
               "kind": "fact",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "G-ROV"
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2026 B 8"
               ],
               "note": "Once in 20 tests."
             },
@@ -2129,24 +1777,19 @@
               "id": "GEO.ROV.rozestupy",
               "name": "Rozestupy po obvodu",
               "kind": "strategy",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "G-ROV"
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2025 A 8"
               ],
               "note": "Once in 20 tests."
             },
             {
-              "id": "GEO.ROV.spec",
-              "name": "Podobnost trojúhelníků (věty sss, sus, uu, poměr podobnosti), shodnost",
-              "kind": "fact",
-              "priority": "S",
+              "id": "GEO.ROV.sit",
+              "name": "Obvod a obsah mnohoúhelníku ve čtvercové síti",
+              "kind": "procedure",
               "requires": [],
               "tags": [
                 "G-ROV"
@@ -2154,8 +1797,33 @@
               "spec": [
                 3
               ],
-              "examples": [],
-              "note": ""
+              "note": "B1, 3: „využívá čtvercovou síť pro výpočet obvodu a obsahu mnohoúhelníků“."
+            },
+            {
+              "id": "GEO.ROV.shodnost",
+              "name": "Shodnost trojúhelníků",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „používá věty o shodnosti trojúhelníků k řešení geometrických úloh“."
+            },
+            {
+              "id": "GEO.ROV.podobnost",
+              "name": "Podobnost trojúhelníků: věty sss, sus, uu, poměr podobnosti",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-ROV"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3: „pomocí poměru podobnosti určí rozměry trojúhelníků“."
             }
           ]
         },
@@ -2174,7 +1842,6 @@
               "id": "GEO.KRUH.vzorce",
               "name": "Obvod a obsah kruhu, počítání s π ≐ 3,14, zaokrouhlení",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "POC.VYR.desetinna"
               ],
@@ -2184,17 +1851,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2025 C 8",
-                "2024 B 14"
-              ],
               "note": "Do not confuse poloměr and průměr; round only the final result."
             },
             {
               "id": "GEO.KRUH.zpetne",
               "name": "Poloměr nebo průměr z obsahu",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "GEO.KRUH.vzorce",
                 "POC.VYR.mocniny"
@@ -2205,17 +1867,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 B 8",
-                "2024 C 7"
-              ],
               "note": ""
             },
             {
               "id": "GEO.KRUH.casti",
               "name": "Půlkruh, čtvrtkruh, výseč: obsah a obvod",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "GEO.KRUH.vzorce"
               ],
@@ -2225,17 +1882,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 13",
-                "2026 B 7"
-              ],
               "note": "Perimeter of a part = arc + the straight sides."
             },
             {
               "id": "GEO.KRUH.oblouky",
               "name": "Útvary ohraničené oblouky",
               "kind": "strategy",
-              "priority": "3",
               "requires": [
                 "GEO.KRUH.casti",
                 "GEO.ROV.slozene"
@@ -2246,16 +1898,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2024 A 8"
-              ],
               "note": ""
             },
             {
-              "id": "GEO.KRUH.spec",
-              "name": "Tečna, sečna, vnější přímka; vzájemná poloha dvou kružnic",
+              "id": "GEO.KRUH.tecna",
+              "name": "Vzájemná poloha kružnice a přímky: tečna, sečna, vnější přímka",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "G-KRUH"
@@ -2263,8 +1911,20 @@
               "spec": [
                 3
               ],
-              "examples": [],
-              "note": ""
+              "note": "C1, 3."
+            },
+            {
+              "id": "GEO.KRUH.dve-kruznice",
+              "name": "Vzájemná poloha dvou kružnic, průsečíky a body dotyku",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-KRUH"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3."
             }
           ]
         },
@@ -2283,7 +1943,6 @@
               "id": "GEO.TEL.krychle-kvadr",
               "name": "Krychle a kvádr: objem, povrch, součet hran, i zpětně",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "GEO.ROV.zpetne"
               ],
@@ -2293,18 +1952,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2025 D 12",
-                "2025 C 13",
-                "2026 C 7"
-              ],
               "note": ""
             },
             {
               "id": "GEO.TEL.hranol",
               "name": "Kolmý hranol: objem a povrch",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "GEO.ROV.vzorce"
               ],
@@ -2314,21 +1967,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 6",
-                "2022 C 13",
-                "2023 B 13",
-                "2023 C 14",
-                "2025 A 12",
-                "2026 D 14"
-              ],
               "note": "V = obsah podstavy × výška, for a triangular, rhombic or trapezoidal base."
             },
             {
               "id": "GEO.TEL.valec",
               "name": "Válec: objem, plášť, povrch",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "GEO.KRUH.vzorce"
               ],
@@ -2338,20 +1982,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 B 12",
-                "2022 C 14",
-                "2023 A 13",
-                "2025 B 14",
-                "2024 A 2"
-              ],
               "note": "The plášť unrolled is a rectangle."
             },
             {
               "id": "GEO.TEL.sit",
               "name": "Síť tělesa",
               "kind": "fact",
-              "priority": "3",
               "requires": [
                 "GEO.TEL.hranol"
               ],
@@ -2361,17 +1997,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 B 11",
-                "2026 D 14"
-              ],
               "note": ""
             },
             {
               "id": "GEO.TEL.slepena",
               "name": "Slepená a rozříznutá tělesa",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "GEO.TEL.krychle-kvadr",
                 "GEO.TEL.hranol"
@@ -2382,21 +2013,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 D 13",
-                "2022 D 14",
-                "2025 A 11",
-                "2026 B 13",
-                "2024 C 11",
-                "2023 D 14"
-              ],
               "note": "The surface changes by the faces that disappear or appear."
             },
             {
               "id": "GEO.TEL.krychlicky",
               "name": "Tělesa z krychliček, prostorová představivost",
               "kind": "strategy",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "G-TEL"
@@ -2404,17 +2026,12 @@
               "spec": [
                 4
               ],
-              "examples": [
-                "2025 B 13",
-                "2026 A 15"
-              ],
               "note": ""
             },
             {
               "id": "GEO.TEL.vztah",
               "name": "Vztah místo čísla: rovnice pro výšku nebo hranu",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "GEO.TEL.valec",
                 "ALG.ROV.zavorky"
@@ -2425,18 +2042,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 A 13",
-                "2026 A 14",
-                "2022 C 14"
-              ],
               "note": "„obsah pláště je třikrát větší než obsah podstavy“."
             },
             {
               "id": "GEO.TEL.litry",
               "name": "Objem v litrech, výška hladiny",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "GEO.TEL.valec",
                 "POC.JED.objem"
@@ -2447,17 +2058,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2025 A 6",
-                "2024 C 2"
-              ],
               "note": ""
             },
             {
-              "id": "GEO.TEL.spec",
-              "name": "Jehlan (promítání, síť, pohledy), koule (poloměr a průměr), pohledy na těleso, náčrt sítě",
-              "kind": "fact",
-              "priority": "S",
+              "id": "GEO.TEL.pohledy",
+              "name": "Pohled na těleso shora, zepředu, zprava, zleva a zdola",
+              "kind": "strategy",
               "requires": [],
               "tags": [
                 "G-TEL"
@@ -2465,8 +2071,46 @@
               "spec": [
                 3
               ],
-              "examples": [],
-              "note": "Volume and surface of a pyramid, cone or sphere are not in the specification."
+              "note": "B1, 3."
+            },
+            {
+              "id": "GEO.TEL.nacrt",
+              "name": "Náčrt sítě a obrazu tělesa ve volném rovnoběžném promítání",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „načrtne a sestrojí síť krychle, kvádru a kolmého hranolu“; C1, 3: „načrtne síť válce“. Nets are always given, never drawn."
+            },
+            {
+              "id": "GEO.TEL.jehlan",
+              "name": "Jehlan: rozpoznání, síť, pohledy, metrické a polohové vlastnosti",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3. The specification does not ask for the volume or surface of a pyramid."
+            },
+            {
+              "id": "GEO.TEL.koule",
+              "name": "Koule: poloměr a průměr ve slovních úlohách",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-TEL"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3: „řeší aplikační slovní úlohy s využitím znalostí o válci a kouli (poloměr a průměr koule)“. No volume or surface."
             }
           ]
         }
@@ -2496,7 +2140,6 @@
               "id": "KON.ZAKL.kolmice",
               "name": "Kolmice a rovnoběžka daným bodem",
               "kind": "procedure",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "G-KON"
@@ -2504,17 +2147,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 B 10",
-                "2022 C 10"
-              ],
               "note": ""
             },
             {
               "id": "KON.ZAKL.osa-usecky",
               "name": "Střed a osa úsečky",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "KON.ZAKL.kolmice"
               ],
@@ -2524,26 +2162,18 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 C 9",
-                "2026 B 9"
-              ],
               "note": ""
             },
             {
               "id": "KON.ZAKL.osa-uhlu",
               "name": "Osa úhlu",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "G-KON"
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2025 A 9"
               ],
               "note": ""
             },
@@ -2551,19 +2181,12 @@
               "id": "KON.ZAKL.delka",
               "name": "Přenesení délky kružnicí",
               "kind": "procedure",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "G-KON"
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2022 B 9",
-                "2022 D 10",
-                "2026 A 9",
-                "2023 C 9"
               ],
               "note": ""
             },
@@ -2571,7 +2194,6 @@
               "id": "KON.ZAKL.uhel",
               "name": "Úhel dané velikosti",
               "kind": "procedure",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "G-KON"
@@ -2579,17 +2201,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 D 9",
-                "2023 D 10"
-              ],
               "note": "120° and 40° with a protractor; 60° and 90° without."
             },
             {
               "id": "KON.ZAKL.thales",
               "name": "Thaletova kružnice nad úsečkou",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "KON.ZAKL.osa-usecky"
               ],
@@ -2599,19 +2216,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 B 10",
-                "2024 C 9",
-                "2024 D 9",
-                "2026 B 10"
-              ],
               "note": "Never named in the task; named in the official keys."
             },
             {
               "id": "KON.ZAKL.stredova",
               "name": "Obraz bodu ve středové souměrnosti („S je střed“)",
               "kind": "procedure",
-              "priority": "1",
               "requires": [
                 "KON.ZAKL.delka"
               ],
@@ -2622,19 +2232,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 9",
-                "2022 D 9",
-                "2025 C 10",
-                "2025 D 10"
-              ],
               "note": ""
             },
             {
               "id": "KON.ZAKL.osova",
               "name": "Obraz v osové souměrnosti, osa z bodu a jeho obrazu",
               "kind": "procedure",
-              "priority": "2",
               "requires": [
                 "KON.ZAKL.osa-usecky"
               ],
@@ -2645,11 +2248,46 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2025 D 9",
-                "2024 C 10"
-              ],
               "note": ""
+            },
+            {
+              "id": "KON.ZAKL.prenos-uhlu",
+              "name": "Přenesení úhlu",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „přenese úhel, porovná dva úhly“."
+            },
+            {
+              "id": "KON.ZAKL.opsana",
+              "name": "Kružnice opsaná trojúhelníku",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3. Its centre is used in 2026 A 8 and 2026 C 10, but it is never constructed."
+            },
+            {
+              "id": "KON.ZAKL.tecna",
+              "name": "Tečna kružnice v jejím bodě",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "C1, 3."
             }
           ]
         },
@@ -2668,7 +2306,6 @@
               "id": "KON.VLAST.rovnoramenny",
               "name": "Rovnoramenný trojúhelník: osa souměrnosti je osou základny",
               "kind": "fact",
-              "priority": "1",
               "requires": [
                 "KON.ZAKL.osa-usecky"
               ],
@@ -2678,19 +2315,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 9",
-                "2022 B 9",
-                "2023 C 10",
-                "2025 B 9"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.rovnostranny",
               "name": "Rovnostranný trojúhelník",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "KON.ZAKL.delka"
               ],
@@ -2700,18 +2330,14 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2024 A 9",
-                "2025 D 9"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.pravouhly",
-              "name": "Pravoúhlý trojúhelník: vrchol pravého úhlu na Thaletově kružnici",
+              "name": "Pravoúhlý trojúhelník: kolmé odvěsny, vrchol pravého úhlu na Thaletově kružnici",
               "kind": "fact",
-              "priority": "1",
               "requires": [
+                "KON.ZAKL.kolmice",
                 "KON.ZAKL.thales"
               ],
               "tags": [
@@ -2720,18 +2346,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 B 10",
-                "2024 D 10",
-                "2026 B 10"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.vyska-teznice",
               "name": "Výška a těžnice",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "KON.ZAKL.kolmice",
                 "KON.ZAKL.osa-usecky"
@@ -2742,17 +2362,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2025 A 10",
-                "2025 C 9"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.ctverec",
               "name": "Čtverec: shodné, kolmé, půlící se úhlopříčky",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "KON.ZAKL.kolmice"
               ],
@@ -2762,17 +2377,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 10",
-                "2023 D 9"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.obdelnik",
-              "name": "Obdélník: shodné půlící se úhlopříčky, vrcholy na kružnici",
+              "name": "Obdélník: pravé úhly, shodné půlící se úhlopříčky, vrcholy na kružnici",
               "kind": "fact",
-              "priority": "1",
               "requires": [
                 "KON.ZAKL.thales"
               ],
@@ -2782,19 +2392,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 A 9",
-                "2026 C 10",
-                "2026 D 10",
-                "2024 D 9"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.rovnobeznik",
               "name": "Rovnoběžník: úhlopříčky se půlí, střed souměrnosti",
               "kind": "fact",
-              "priority": "1",
               "requires": [
                 "KON.ZAKL.stredova"
               ],
@@ -2804,19 +2407,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 B 10",
-                "2022 D 9",
-                "2025 B 10",
-                "2025 D 10"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.kosoctverec",
               "name": "Kosočtverec: kolmé úhlopříčky, osa souměrnosti",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "KON.VLAST.rovnobeznik"
               ],
@@ -2826,17 +2422,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2024 B 9",
-                "2026 A 10"
-              ],
               "note": "2026 A 10 never says „kosočtverec“; 53 % left it blank."
             },
             {
               "id": "KON.VLAST.lichobeznik",
               "name": "Lichoběžník: rovnoramenný a pravoúhlý",
               "kind": "fact",
-              "priority": "2",
               "requires": [
                 "KON.ZAKL.kolmice"
               ],
@@ -2846,18 +2437,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2023 B 9",
-                "2023 C 9",
-                "2024 C 10"
-              ],
               "note": ""
             },
             {
               "id": "KON.VLAST.sestiuhelnik",
               "name": "Pravidelný šestiúhelník: strana = poloměr kružnice opsané",
               "kind": "fact",
-              "priority": "3",
               "requires": [
                 "KON.ZAKL.delka"
               ],
@@ -2867,10 +2452,20 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2026 B 9"
-              ],
               "note": "Once in 20 tests."
+            },
+            {
+              "id": "KON.VLAST.osmiuhelnik",
+              "name": "Pravidelný osmiúhelník",
+              "kind": "fact",
+              "requires": [],
+              "tags": [
+                "G-KON"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „sestrojí pravidelný šestiúhelník a osmiúhelník“."
             }
           ]
         },
@@ -2889,7 +2484,6 @@
               "id": "KON.ROZBOR.nacrt",
               "name": "Náčrt a převod nepřímé podmínky na množinu bodů",
               "kind": "strategy",
-              "priority": "1",
               "requires": [
                 "KON.VLAST.rovnoramenny",
                 "KON.VLAST.obdelnik",
@@ -2901,19 +2495,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 C 9",
-                "2023 A 9",
-                "2025 A 10",
-                "2026 A 10"
-              ],
               "note": "„Přímka o je osou některé strany“, „Bod M leží na úhlopříčce BD“."
             },
             {
               "id": "KON.ROZBOR.dve-reseni",
               "name": "„Najděte všechna řešení“: druhé řešení",
               "kind": "strategy",
-              "priority": "1",
               "requires": [
                 "KON.ROZBOR.nacrt"
               ],
@@ -2923,19 +2510,12 @@
               "spec": [
                 3
               ],
-              "examples": [
-                "2022 A 9",
-                "2023 D 9",
-                "2026 A 9",
-                "2025 C 10"
-              ],
               "note": "18 of 40 construction tasks; then exactly two figures. One of two costs a point."
             },
             {
-              "id": "KON.ROZBOR.zapis",
-              "name": "Označení vrcholů a obtažení konstrukce",
-              "kind": "fact",
-              "priority": "1",
+              "id": "KON.ROZBOR.sss",
+              "name": "Trojúhelník a čtyřúhelník ze zadaných údajů (sss, sus, usu)",
+              "kind": "procedure",
               "requires": [],
               "tags": [
                 "G-KON"
@@ -2943,23 +2523,7 @@
               "spec": [
                 3
               ],
-              "examples": [],
-              "note": "Letters on all vertices, the whole construction traced in pen, auxiliary lines left visible."
-            },
-            {
-              "id": "KON.ROZBOR.spec",
-              "name": "Trojúhelník podle sss, sus, usu; kružnice opsaná; tečna kružnice v jejím bodě",
-              "kind": "fact",
-              "priority": "S",
-              "requires": [],
-              "tags": [
-                "G-KON"
-              ],
-              "spec": [
-                3
-              ],
-              "examples": [],
-              "note": ""
+              "note": "B1, 3. Not asked as a plain task."
             }
           ]
         },
@@ -2978,26 +2542,19 @@
               "id": "KON.SOUM.osy",
               "name": "Osy souměrnosti útvaru ve čtvercové síti a mnohoúhelníků",
               "kind": "fact",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "G-SOUM"
               ],
               "spec": [
                 3
-              ],
-              "examples": [
-                "2022 D 11",
-                "2023 D 8",
-                "2026 C 8"
               ],
               "note": ""
             },
             {
-              "id": "KON.SOUM.spec",
+              "id": "KON.SOUM.samodruzny",
               "name": "Samodružný bod a útvar; vzor a obraz",
               "kind": "fact",
-              "priority": "S",
               "requires": [],
               "tags": [
                 "G-SOUM"
@@ -3005,8 +2562,20 @@
               "spec": [
                 3
               ],
-              "examples": [],
-              "note": ""
+              "note": "B1, 3."
+            },
+            {
+              "id": "KON.SOUM.obraz-utvaru",
+              "name": "Obraz celého útvaru ve středové souměrnosti",
+              "kind": "procedure",
+              "requires": [],
+              "tags": [
+                "G-SOUM"
+              ],
+              "spec": [
+                3
+              ],
+              "note": "B1, 3: „sestrojí obraz rovinného útvaru ve středové souměrnosti“. Only single points are reflected in the tests."
             }
           ]
         }
@@ -3036,7 +2605,6 @@
               "id": "ZAK.RADA.tabulka",
               "name": "Pokračování pravidla a tabulka počtů po krocích",
               "kind": "strategy",
-              "priority": "1",
               "requires": [],
               "tags": [
                 "X-NEST"
@@ -3044,18 +2612,12 @@
               "spec": [
                 4
               ],
-              "examples": [
-                "2022 B 16",
-                "2025 A 16",
-                "2023 D 16"
-              ],
               "note": "Enough for 16.1, solved by 11–42 %. The cheapest point of task 16."
             },
             {
               "id": "ZAK.RADA.nty-clen",
               "name": "Obecný n-tý člen (lineární růst, n², n·(n + 1)/2)",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "ZAK.RADA.tabulka",
                 "VZT.SLOV.vyraz"
@@ -3066,19 +2628,12 @@
               "spec": [
                 4
               ],
-              "examples": [
-                "2022 C 16",
-                "2023 C 16",
-                "2025 C 16",
-                "2026 C 16"
-              ],
               "note": "Use the differences between consecutive steps. Needed for 16.3, solved by 1–3 %."
             },
             {
               "id": "ZAK.RADA.obraceni",
               "name": "Obrácení pravidla: který krok má daný počet",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "ZAK.RADA.nty-clen",
                 "POC.VYR.mocniny"
@@ -3089,16 +2644,12 @@
               "spec": [
                 4
               ],
-              "examples": [
-                "2024 B 8"
-              ],
               "note": "361 = 19², so the 20th figure."
             },
             {
               "id": "ZAK.RADA.mocniny",
               "name": "Růst násobením (mocniny tří)",
               "kind": "strategy",
-              "priority": "3",
               "requires": [
                 "ZAK.RADA.tabulka"
               ],
@@ -3107,9 +2658,6 @@
               ],
               "spec": [
                 4
-              ],
-              "examples": [
-                "2023 A 16"
               ],
               "note": "Once in 20 tests."
             },
@@ -3117,7 +2665,6 @@
               "id": "ZAK.RADA.cisla",
               "name": "Číselná řada daná pravidlem",
               "kind": "strategy",
-              "priority": "3",
               "requires": [
                 "ZAK.RADA.tabulka"
               ],
@@ -3126,10 +2673,6 @@
               ],
               "spec": [
                 4
-              ],
-              "examples": [
-                "2022 D 16",
-                "2025 B 16"
               ],
               "note": ""
             }
@@ -3150,7 +2693,6 @@
               "id": "ZAK.USUDEK.periody",
               "name": "Periodické děje: cykly a společný násobek",
               "kind": "strategy",
-              "priority": "2",
               "requires": [
                 "POC.DEL.nasobek"
               ],
@@ -3160,29 +2702,18 @@
               "spec": [
                 4
               ],
-              "examples": [
-                "2022 A 16",
-                "2026 A 16"
-              ],
               "note": ""
             },
             {
               "id": "ZAK.USUDEK.vsechna",
               "name": "Systematické vypsání všech řešení",
               "kind": "strategy",
-              "priority": "2",
               "requires": [],
               "tags": [
                 "X-NEST"
               ],
               "spec": [
                 4
-              ],
-              "examples": [
-                "2023 B 16",
-                "2026 D 16",
-                "2025 D 7",
-                "2023 D 8"
               ],
               "note": ""
             },
@@ -3190,17 +2721,12 @@
               "id": "ZAK.USUDEK.strategie",
               "name": "Strategické a netradiční geometrické úlohy",
               "kind": "strategy",
-              "priority": "3",
               "requires": [],
               "tags": [
                 "X-NEST"
               ],
               "spec": [
                 4
-              ],
-              "examples": [
-                "2025 D 16",
-                "2026 D 16"
               ],
               "note": ""
             }

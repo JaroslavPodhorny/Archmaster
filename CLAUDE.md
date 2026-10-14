@@ -18,7 +18,16 @@ The owner has experience with React + TypeScript frontends and has not built a f
 
 ## In progress: rebuilding the M9 graph (handoff of 2 October 2026)
 
-The topic tree is being rebuilt from solutions of all 610 items. **Read `analysis/graph_design_spec.md` first**: it holds the goal, the granularity and assignment rules, the new node set and the remaining steps. The solved items are in `analysis/data/m9_item_solutions.json` (raw notes and helper scripts in `analysis/solving/`). `m9_topic_tree.json` and `m9_item_skills.json` are still the old ones; untouched copies are in `analysis/data/before_rebuild/`. Remove this section when the rebuild is finished.
+The topic tree is being rebuilt from solutions of all 610 items. **Read `analysis/graph_design_spec.md` first**: it holds the goal, the granularity and assignment rules, the node set, the review of the links and the remaining steps. Remove this section when the rebuild is finished.
+
+- **Two trees exist side by side, on the owner's decision of 2 October 2026**: the old one is not deleted yet, and the new graph gets a page of its own instead of replacing `/strom`.
+  - The **new tree** is in `analysis/data/rebuilt/` (`m9_topic_tree.json`, `m9_item_skills.json`, `m9_item_skills_older.json`): 7 areas, 23 topics, 157 principles, 131 links. Its assignment is the `principy` lists of the solved items in `analysis/data/m9_item_solutions.json` (20 tests) and `m9_item_solutions_older.json` (the three tests before 2022, no keys to check against). Views: `analysis/05_graf_M9.md` and `.html`. Raw notes and helper scripts are in `analysis/solving/`.
+  - The **old tree** in `analysis/data/` (`m9_topic_tree.json`, `m9_item_skills.json`) is unchanged and is still what the backend, the `/strom` page and the problem database read. Everything this file says below about the tree describes the old one. `analysis/data/before_rebuild/` holds identical copies.
+- `analysis/topic_tree.py` edits the **new** tree by default and keeps the solutions files in step with it (`check`, `show`, `assign … --solution`, `from-solutions`, `build`); `--old` selects the old tree.
+- Done: the tree, the assignment, the older tests, the review of the links (steps 1–4 of the spec's section 9).
+- Done: **the `/strom` page switches between the two trees** („Původní | Nový“ in its bar, `/strom?tree=novy`, kept through the tree and graph views). `GET /api/topic-tree?tree=new` serves the new tree (`tree_view(analysis_data_dir, rebuilt=True)` reads `data/rebuilt/` with the catalog of `data/`). Each tree is fetched when first shown and kept. A node the other tree lacks falls back to its topic or area.
+- **Not done:** the problem database stores only the old tree's skills. In the new tree the page therefore has no „Zobrazit N úloh v databázi úloh“ link and its items open their task without a skill filter; the database's „ve stromu“ links lead to the old tree. The solution lines and per-task subgraphs (spec, section 9, steps 5–7) and the graph redesign (section 11) are not built.
+- **The exam graph (decided 4 October 2026, to be built):** the owner asked to build the layered graph as a new page beside `/strom` and `/ulohy`, deleting nothing. **Start from `analysis/exam_graph_handoff.md`**: what to build, the data format, the pilot, what must not change. Design and measurements: `analysis/07_graph_representation.md` (diagrams in `.html`; numbers from `analysis/graph_representation_audit.py`). A parallel proposal from another session with the same core: `analysis/07_graph_research_proposal.md` and `analysis/graph_research/`. Earlier review: `analysis/06_graph_review.md`.
 
 ## Decisions made
 
@@ -51,23 +60,23 @@ frontend/    React + TypeScript pages that only call the API
 Problem database (branch `problem-database`, October 2026), working end to end for M9 2022–2026 only:
 
 - `backend/core/booklet.py` finds and crops each task in a booklet PDF, `answer_key.py` does the same for each task's rows (solution and scoring notes) in the official key PDF, `catalog.py` reads `analysis/data`, `topic_tree.py` reads the tree and the item–skill assignment kept there (see "Curriculum tree page" below), `problem_db.py` has `build_database`, `search_problems`, `filter_options`.
-- The database stores the tree (`skills`) and the skills of every item (`problem_skills`); `search_problems(skills=[...])` takes a skill, topic or area id, and every problem comes back with its skills per item.
+- The database stores the tree (`skills`), its prerequisite links (`skill_requires`) and the skills of every item (`problem_skills`); `search_problems(skills=[...])` takes a skill, topic or area id, and every problem comes back with its skills per item and with `skill_graph`: those skills plus everything they rest on, directly or not, each with its direct prerequisites.
 - `backend/api/problems.py` exposes `GET /api/problems` and `GET /api/problems/filters`; `main.py` mounts it and serves the images under `/api/screenshots/`. `create_app(data_dir)` lets tests point it at a temporary database.
 - `backend/tests/` builds the database from the real booklets once per run (about 6 s) and tests core and API against it.
-- `frontend/src/features/problem-database/` is the page: a filter bar with one dropdown menu per filter on top, where the „Téma“ menu is the curriculum tree (areas, topics that open to their skills; it replaced the 19 catalog tags in the page, the API still accepts `tags`), a compact result list on the left and the selected problem with the skills each of its items needs (click one to filter by it) and its solution on the right. The window never scrolls as a whole; arrow keys step through the list; below 640 px the list and the detail take turns. The search and the shown problem are kept in the address (`/ulohy?skills=VZT.PROC&years=2025&problem=M9-2025-B-15`, same parameter names as the API; `address.ts`). In development Vite proxies `/api` to FastAPI on port 8000, so there is no CORS setup.
+- `frontend/src/features/problem-database/` is the page: a filter bar with one dropdown menu per filter on top, where the „Téma“ menu is the curriculum tree (areas, topics that open to their skills; it replaced the 19 catalog tags in the page, the API still accepts `tags`), a compact result list on the left (the row above it holds the count, the filters in use and the sort order; the next page loads by itself as the end of the list comes near) and the selected problem with its skills, each once with the items that need it (click one to filter by it), under it its screenshot, its solution (opened by a button) and last the graph of those skills with all their prerequisites (`components/ProblemSkillGraph.tsx`; the problem's own skills in the accent colour, a box links to the skill in the tree), on the right. The window never scrolls as a whole; arrow keys step through the list; below 640 px the list and the detail take turns. The search and the shown problem are kept in the address (`/ulohy?skills=VZT.PROC&years=2025&problem=M9-2025-B-15`, same parameter names as the API; `address.ts`). In development Vite proxies `/api` to FastAPI on port 8000, so there is no CORS setup.
 - SQLite is used locally for now; the owner is considering a hosted database (Supabase) for later.
 
 Curriculum tree page (October 2026, built in the same working tree as the problem database), cross-referenced with it:
 
 - `backend/core/topic_tree.py` also holds the numbers the tree is read by (`statistics`: priority, tests, points, success, hardest items; moved there from the console editor, which now imports them) and `tree_view(analysis_data_dir)`, which returns every area, topic and skill in learning order with those numbers and, for a skill, the items that need it with the id of their problem.
 - `backend/api/topic_tree.py` exposes `GET /api/topic-tree`. It reads `analysis/data` on every request (about 10 ms), so an edit made with the console editor shows on reload. The problem database is a snapshot: **after editing the tree or the assignment, rebuild it** (`try_problem_db.py build`), or the tree's links lead to stale results. `backend/tests/test_topic_tree.py` checks that every node's problem count equals what the database finds for its id.
-- `frontend/src/features/topic-tree/` is the page at `/strom`: a filter bar (search, priority, kind of skill, „Jen související“), the tree on the left (arrow keys move, left/right close and open) and the selected node on the right with its numbers and the graph of its prerequisites. The selected node is in the address (`/strom?node=VZT.PROC.obracene`). It replaces `analysis/04_strom_M9.html` for browsing; that file is still generated.
-- The same page has a second view, switched by „Strom | Graf“ in the bar (`/strom?node=…&view=graf`): the graph of all prerequisite links in place of the tree pane (`components/SkillGraph.tsx`). A skill's column is the length of the longest chain of prerequisites before it; skills no link joins form separate groups, one under another; the skills without any link are listed below by area. Selecting a skill draws its whole chain in the accent colour, the filters grey skills out without moving them, „Jen související“ hides the rest, arrow keys move between boxes, and the detail pane lists „Potřebuje“ and „Navazuje“ instead of the small graph. The layout is our own code (`graphLayout.ts`, no library; dagre was tried and was no clearer), deterministic, worked out once per load.
+- `frontend/src/features/topic-tree/` is the page at `/strom`: a filter bar (search, priority and kind of skill as dropdown menus like the problem database's, „Jen související“; the switches between the trees and between tree and graph at its right end), the tree on the left (arrow keys move, left/right close and open) and the selected node on the right with its numbers and the graph of its prerequisites. The selected node is in the address (`/strom?node=VZT.PROC.obracene`). It replaces `analysis/04_strom_M9.html` for browsing; that file is still generated.
+- The same page has a second view, switched by „Strom | Graf“ in the bar (`/strom?node=…&view=graf`): the graph of all prerequisite links in place of the tree pane (`components/SkillGraph.tsx`). A skill's column is the length of the longest chain of prerequisites before it; skills no link joins form separate groups, one under another; the skills without any link are listed below by area. Selecting a skill draws its whole chain in the accent colour, the filters grey skills out without moving them, „Jen související“ hides the rest, arrow keys move between boxes, and the detail pane lists „Potřebuje“ and „Navazuje“ instead of the small graph. The layout is our own code (`shared/graphLayout.ts`, also used by the problem database for a problem's graph; no library; dagre was tried and was no clearer), deterministic, worked out once per load.
 - The cross-references: in the tree, every node has „Zobrazit N úloh v databázi úloh“ and every item of a skill opens its task in the database filtered by that skill; in the database, every skill of a problem has „ve stromu“. Tasks of the tests before 2022 are not in the database and are plain text in the tree.
 
 Commands, all from the repository root (Python dependencies are managed with uv: `backend/pyproject.toml`, `backend/uv.lock`, Python 3.13 in `backend/.venv`):
 
-```
+```bash
 uv run --project backend python backend/try_problem_db.py build   # writes backend/data/ (SQLite + 640 images: each task and its solution, not in git)
 uv run --project backend pytest backend/tests
 uv run --project backend uvicorn backend.api.main:app --reload    # API on :8000
@@ -88,21 +97,27 @@ backend/api/<tool>.py             an APIRouter built by create_router(...); main
 backend/tests/test_<tool>*.py
 frontend/src/features/<tool>/     index.ts (the only file imported from outside), <Tool>Page.tsx,
                                   api.ts, types.ts, a use<Tool>.ts state hook, components/
-frontend/src/shared/              code used by more than one feature (http.ts, routes.ts, controls.ts)
+frontend/src/shared/              code used by more than one feature (http.ts, routes.ts, controls.ts, graphLayout.ts,
+                                  Dropdown.tsx, CheckOption.tsx, Section.tsx, Loading.tsx, icons.tsx,
+                                  SidebarButton.tsx, sidebar.ts)
 ```
 
-- `frontend/src/App.tsx` and `backend/api/main.py` are shells that only mount features. Do not put feature code in them.
+- `frontend/src/App.tsx` and `backend/api/main.py` are shells that only mount features. Do not put feature code in them. The shell's other pieces are `frontend/src/Sidebar.tsx` (`WithSidebar`: the navigation around every page) and `ThemeSwitch.tsx` (light, dark or the system's theme, in the sidebar).
 - A feature never imports from another feature's folder; code two features need moves to `shared/` (frontend) or its own `core/` module (backend).
 - Styling is Tailwind utility classes in the component itself. A class list used more than once becomes a constant in that file, or a small component; the ones every page uses (button, input, link, message, focus ring) are in `shared/controls.ts`. Use only the colours defined in `index.css` (Tailwind's default palette is switched off), and do not add feature stylesheets.
-- Pages are routed with React Router (`BrowserRouter` and `Routes` in `App.tsx`, which also holds the navigation row). Each page has a Czech address (`/strom`, `/ulohy`) defined in `shared/routes.ts`; a page links to another only through the address builders there (`treeUrl`, `problemsUrl`). State another page or a reload must be able to restore (the selected node, the search and the shown problem) lives in the address, not only in component state.
+- Pages are routed with React Router (`BrowserRouter` and `Routes` in `App.tsx`; the links to the pages are in `Sidebar.tsx`). Each page has a Czech address (`/strom`, `/ulohy`) defined in `shared/routes.ts`; a page links to another only through the address builders there (`treeUrl`, `problemsUrl`). State another page or a reload must be able to restore (the selected node, the search and the shown problem) lives in the address, not only in component state.
 
 ## Interface design
 
-The owner rejects generic AI-looking interfaces and long scrolling pages. For every page:
+**Read `frontend/DESIGN.md` before any UI work.** It is the design guide: what the owner wants and has rejected, the tokens (colours for both themes, the four text sizes, spacing, corners, shadows, layers), the page anatomy (sidebar, bar, panes, detail pane), the shared controls and patterns, the responsive, dark-theme, interaction and wording rules, and a checklist for finishing UI work. Keep it in step with the code, and update it whenever the owner decides something new about the interface.
 
-- Controls the user needs repeatedly (filters, navigation) stay visible; never make the user scroll to reach them. Prefer a fixed bar plus panes that scroll separately over one long page.
-- Plain and dense: system font, neutral greys, one accent colour used only for selection and links, hairline borders. No letter-spaced or uppercase labels, gradients, purple/indigo palettes, decorative cards, icons for decoration, or animations.
-- For a new page or a real redesign, show the owner a mockup before building.
+The rules that matter most:
+
+- The owner rejects generic AI-looking interfaces (gradients, purple, letter-spaced or uppercase labels, decorative cards and icons, animations) and long scrolling pages. The model is the ChatGPT web interface: plain, calm, soft greys, pills, rounded rows.
+- Controls the user needs repeatedly stay visible: a fixed bar plus panes that scroll on their own; the window never scrolls.
+- Every colour is a token from `index.css` (light and dark themes); shared class names are in `shared/controls.ts`, shared components in `shared/`. No fixed colours, no ad-hoc text sizes.
+- Every number has its label beside it, related things sit in a section under a heading, weight shows level and never importance, and nothing moves, overflows or wraps into more than two rows when the window changes.
+- For a new page or a real redesign, show the owner a mockup before building; when unsure, offer variants on real data.
 
 ## How to build tools
 

@@ -47,6 +47,14 @@ _ITEM_ALIAS = {('2023', 'B', '9'): '9.3'}
 
 
 @dataclass
+class CatalogItem:
+    """One scored part of a task: a sub-item ("4.1"), or the whole task ("6") when it has none."""
+    name: str
+    points: float                   # statements of an A/N bundle share the bundle's points equally
+    success_pct: Optional[float]
+
+
+@dataclass
 class CatalogTask:
     year: int
     term: str
@@ -58,6 +66,12 @@ class CatalogTask:
     answer_key: str                 # closed tasks only, e.g. "A,N,N" or "C"
     success_pct: Optional[float]    # None where CERMAT published no results
     skipped_pct: Optional[float]
+    items: List[CatalogItem]
+
+    @property
+    def problem_id(self) -> str:
+        """What the task is called everywhere else, e.g. M9-2025-A-07."""
+        return f'M9-{self.year}-{self.term}-{self.task:02d}'
 
 
 def _sub_items(task: str, subpoints: str) -> Tuple[List[Tuple[str, Optional[int]]], int]:
@@ -92,9 +106,10 @@ def load_catalog(analysis_data_dir: str) -> List[CatalogTask]:
             items, points = _sub_items(r['task'], r['subpoints'])
             keys = r['keys'].split(',') if r['keys'] else []
             closed = r['fmt'] in ('AN', 'MC', 'PR')
-            values, weights, skips = [], [], []
-            for i, (item, item_points) in enumerate(items):
-                item = _ITEM_ALIAS.get((r['year'], r['term'], item), item)
+            values, weights, skips, parts = [], [], [], []
+            for i, (name, item_points) in enumerate(items):
+                parts.append(CatalogItem(name, item_points or points / len(items), None))
+                item = _ITEM_ALIAS.get((r['year'], r['term'], name), name)
                 s = stats.get((r['year'], r['term'], item))
                 if not s and not closed:
                     s = stats.get((r['year'], r['term'], r['task']))
@@ -107,6 +122,8 @@ def load_catalog(analysis_data_dir: str) -> List[CatalogTask]:
                 if v is not None:
                     values.append(v)
                     weights.append(item_points or 1)
+                    if s['item'] != r['task'] or len(items) == 1:   # not the task's result standing in for a part
+                        parts[-1].success_pct = v
                 if s['skipped_pct'] != '':
                     skips.append(float(s['skipped_pct']))
             tasks.append(CatalogTask(
@@ -114,5 +131,6 @@ def load_catalog(analysis_data_dir: str) -> List[CatalogTask]:
                 tags=r['tags'].split(';'), points=points, description=r['desc'], answer_key=r['keys'],
                 success_pct=sum(v * w for v, w in zip(values, weights)) / sum(weights) if values else None,
                 skipped_pct=sum(skips) / len(skips) if skips else None,
+                items=parts,
             ))
     return tasks

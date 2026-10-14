@@ -5,16 +5,13 @@ import type { FilterName, FilterOptions, FilterValue, OrderBy } from './types'
 export const FILTER_TITLES: Record<FilterName, string> = {
   years: 'Rok',
   terms: 'Termín',
-  tags: 'Téma',
+  skills: 'Téma',
   formats: 'Typ úlohy',
   points: 'Body',
 }
 
 /** The order the filters are shown in. */
-export const FILTER_ORDER: FilterName[] = ['years', 'terms', 'tags', 'formats', 'points']
-
-/** Filters with long option lists get a two-column menu. */
-export const WIDE_FILTERS: FilterName[] = ['tags']
+export const FILTER_ORDER: FilterName[] = ['years', 'terms', 'skills', 'formats', 'points']
 
 export const ORDERINGS: Record<OrderBy, string> = {
   newest: 'Nejnovější',
@@ -34,7 +31,7 @@ export function pointsLabel(points: number): string {
 }
 
 export function percentLabel(value: number): string {
-  return `${value.toFixed(0)} %`
+  return `${value.toFixed(0)}\u00a0%`
 }
 
 export function successLabel(value: number | null): string {
@@ -45,4 +42,10 @@ export function successLabel(value: number | null): string {
 export function problemCountLabel(count: number): string {
   if (count === 1) return '1 úloha'
   return count >= 2 && count <= 4 ? `${count} úlohy` : `${count} úloh`
+}
+
+/** "dovednost" in the right grammatical form for a count. */
+export function skillCountLabel(count: number): string {
+  if (count === 1) return '1 dovednost'
+  return count >= 2 && count <= 4 ? `${count} dovednosti` : `${count} dovedností`
 }

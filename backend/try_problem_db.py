@@ -1,7 +1,7 @@
 """Throwaway try-out of backend/core/problem_db.py on the real booklets.
 
     uv run --project backend python backend/try_problem_db.py build
-    uv run --project backend python backend/try_problem_db.py search "obdelnik" --tags G-ROV --years 2025 2026
+    uv run --project backend python backend/try_problem_db.py search "obdelnik" --skills GEO.ROV --years 2025 2026
     uv run --project backend python backend/try_problem_db.py filters
 
 search opens the screenshots of the listed problems in Preview (macOS);
@@ -30,6 +30,7 @@ s.add_argument('--years', nargs='*', type=int)
 s.add_argument('--terms', nargs='*')
 s.add_argument('--formats', nargs='*')
 s.add_argument('--tags', nargs='*')
+s.add_argument('--skills', nargs='*', help='ids from the tree: a skill, a topic or an area')
 s.add_argument('--points', nargs='*', type=int)
 s.add_argument('--min-success', type=float)
 s.add_argument('--max-success', type=float)
@@ -47,10 +48,10 @@ elif args.command == 'filters':
     for name, options in problem_db.filter_options(DB).items():
         print(name)
         for o in options:
-            print(f"  {o['value']!s:8} {o['count']:4d}  {o['label']}")
+            print(f"  {o['value']!s:8} {o['count']:4d}  {'  ' * o.get('depth', 0)}{o['label']}")
 else:
     result = problem_db.search_problems(
-        DB, args.query, args.years, args.terms, args.formats, args.tags, args.points,
+        DB, args.query, args.years, args.terms, args.formats, args.tags, args.skills, args.points,
         args.min_success, args.max_success, args.order, args.limit)
     print(f'{result.total} found, showing {len(result.problems)}')
     for p in result.problems:

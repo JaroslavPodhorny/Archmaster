@@ -11,15 +11,20 @@ import os
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from . import problems
+from . import exam_graph, problems, topic_tree
 
-_DEFAULT_DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data')
+_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_DEFAULT_DATA_DIR = os.path.join(_ROOT, 'backend', 'data')
+_ANALYSIS_DATA_DIR = os.path.join(_ROOT, 'analysis', 'data')
 
 
-def create_app(data_dir: str) -> FastAPI:
-    """data_dir is where the tools keep their built data (backend/data by default)."""
+def create_app(data_dir: str, analysis_data_dir: str = _ANALYSIS_DATA_DIR) -> FastAPI:
+    """data_dir is where the tools keep their built data (backend/data by default),
+    analysis_data_dir the hand-made files they are built from."""
     app = FastAPI(title='ArchMaster API')
     app.include_router(problems.create_router(data_dir))
+    app.include_router(topic_tree.create_router(analysis_data_dir))
+    app.include_router(exam_graph.create_router(analysis_data_dir))
     app.mount(problems.SCREENSHOTS_URL,
               StaticFiles(directory=os.path.join(data_dir, 'screenshots'), check_dir=False))
     return app

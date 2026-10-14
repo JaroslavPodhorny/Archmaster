@@ -1,19 +1,24 @@
-import { FILTER_ORDER, FILTER_TITLES, ORDERINGS, WIDE_FILTERS } from '../labels'
-import type { OrderBy } from '../types'
+import { CheckOption } from '../../../shared/CheckOption'
+import { input } from '../../../shared/controls'
+import { Dropdown } from '../../../shared/Dropdown'
+import { SidebarButton } from '../../../shared/SidebarButton'
+import { FILTER_ORDER, FILTER_TITLES } from '../labels'
 import type { ProblemSearch } from '../useProblemSearch'
-import { Dropdown } from './Dropdown'
+import { SkillMenu } from './SkillMenu'
 import { SuccessRangeFields } from './SuccessRangeFields'
 
-/** Search field, one menu per filter, and the sort order: everything that narrows the list. */
+/** Search field and one menu per filter: everything that narrows the list. The sort order sits with
+ *  the results, in ActiveFilters. */
 export function FilterBar({ search }: { search: ProblemSearch }) {
   const { options, selected, success } = search
   const successActive = success.min !== null || success.max !== null
 
   return (
-    <div className="pd-filterbar">
+    <div className="flex flex-wrap items-center gap-2 px-6 pt-3.5 pb-2.5 max-sm:px-4 max-sm:group-data-[detail=true]/pd:hidden">
+      <SidebarButton />
       <input
         type="search"
-        className="pd-search"
+        className={`${input} max-sm:max-w-none max-sm:basis-full`}
         value={search.input}
         onChange={(e) => search.setInput(e.target.value)}
         placeholder="Hledat v zadání"
@@ -27,37 +32,31 @@ export function FilterBar({ search }: { search: ProblemSearch }) {
               key={name}
               label={count ? `${FILTER_TITLES[name]} · ${count}` : FILTER_TITLES[name]}
               active={count > 0}
-              wide={WIDE_FILTERS.includes(name)}
+              wide={name === 'skills'}
             >
-              {options[name].map((option) => (
-                <label key={option.value} className="pd-option">
-                  <input
-                    type="checkbox"
+              {name === 'skills' ? (
+                <SkillMenu
+                  options={options.skills}
+                  selected={selected.skills}
+                  onToggle={(value) => search.toggleFilter('skills', value)}
+                />
+              ) : (
+                options[name].map((option) => (
+                  <CheckOption
+                    key={option.value}
+                    label={option.label}
+                    count={option.count}
                     checked={selected[name].includes(option.value)}
                     onChange={() => search.toggleFilter(name, option.value)}
                   />
-                  <span>{option.label}</span>
-                  <span className="pd-option-count">{option.count}</span>
-                </label>
-              ))}
+                ))
+              )}
             </Dropdown>
           )
         })}
       <Dropdown label="Úspěšnost" active={successActive}>
         <SuccessRangeFields value={success} onChange={search.setSuccess} />
       </Dropdown>
-      <select
-        className="pd-button pd-sort"
-        value={search.orderBy}
-        onChange={(e) => search.setOrderBy(e.target.value as OrderBy)}
-        aria-label="Řazení"
-      >
-        {Object.entries(ORDERINGS).map(([value, label]) => (
-          <option key={value} value={value}>
-            {label}
-          </option>
-        ))}
-      </select>
     </div>
   )
 }
