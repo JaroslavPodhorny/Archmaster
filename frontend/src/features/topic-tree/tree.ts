@@ -29,8 +29,8 @@ export function indexTree(nodes: TreeNode[]): TreeIndex {
   return index
 }
 
-/** The node with this id; failing that the nearest group above where it would be (the two trees
- *  share most areas and topics but not all skills); failing that the first area. */
+/** The node with this id; failing that the nearest group above where it would be (a link may name a
+ *  skill the tree no longer has); failing that the first area. */
 export function nearest(index: TreeIndex, id: string): TreeNode {
   for (let at = id; at; at = at.slice(0, Math.max(0, at.lastIndexOf('.')))) {
     const node = index.byId.get(at)

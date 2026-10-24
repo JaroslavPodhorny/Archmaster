@@ -71,8 +71,8 @@ def test_every_problem_has_skills_for_each_of_its_items(db_path):
             assert [s.main for s in needed] == [True] + [False] * (len(needed) - 1)
     p = search_problems(db_path, years=[2025], terms=['B'], order_by='oldest').problems[14]
     assert [(s.item, s.skill_id) for s in p.skills if s.main] == [
-        ('15.1', 'VZT.PROC.tri-vypocty'), ('15.2', 'VZT.PROC.obracene'), ('15.3', 'VZT.PROC.tri-vypocty')]
-    assert p.skills[1].name.startswith('Obrácené srovnání')
+        ('15.1', 'VZT.PROC.prevody'), ('15.2', 'VZT.NEZ.obraceni'), ('15.3', 'VZT.SLOV.dve-nezname')]
+    assert p.skills[1].name.startswith('Obrácení vztahu')
 
 
 def test_skill_graph_holds_the_needed_skills_and_all_their_prerequisites(db_path):
@@ -94,14 +94,14 @@ def test_skill_graph_holds_the_needed_skills_and_all_their_prerequisites(db_path
 def test_skill_filter_takes_a_skill_a_topic_or_an_area(db_path):
     skill = search_problems(db_path, skills=['ALG.ROV.soustava'], limit=1000)
     assert {p.id for p in skill.problems} == {
-        'M9-2025-B-05', 'M9-2025-D-05', 'M9-2026-A-04', 'M9-2026-C-04'}
+        'M9-2025-B-05', 'M9-2025-B-15', 'M9-2025-D-05', 'M9-2026-A-04', 'M9-2026-C-04', 'M9-2026-C-14'}
     topic = search_problems(db_path, skills=['ALG.ROV'], limit=1000)
-    assert topic.total == 20              # the equation task of every test
+    assert topic.total == 40              # the equation task of every test, and word problems solved by one
     area = search_problems(db_path, skills=['ALG'], limit=1000)
-    assert area.total == 40
+    assert area.total == 61
     assert all(any(s.skill_id.startswith('ALG.') for s in p.skills) for p in area.problems)
     both = search_problems(db_path, skills=['ALG.ROV.soustava', 'POC.DEL'], years=[2025])
-    assert both.total == 2 + 3
+    assert both.total == 3 + 4
     assert search_problems(db_path, skills=['ALG.RO']).total == 0     # not a prefix match on text
 
 
@@ -167,7 +167,7 @@ def test_filter_options(db_path):
         assert search_problems(db_path, formats=[o['value']]).total == o['count']
     skills = options['skills']
     assert skills[0] == {'value': 'POC', 'label': 'Počítání s čísly', 'count': skills[0]['count'], 'depth': 0}
-    assert [o['value'] for o in skills if o['depth'] == 0] == ['POC', 'ALG', 'VZT', 'DAT', 'GEO', 'KON', 'ZAK']
+    assert [o['value'] for o in skills if o['depth'] == 0] == ['POC', 'ALG', 'VZT', 'DAT', 'KON', 'GEO', 'ZAK']
     assert all(o['count'] > 0 for o in skills)
     for o in skills[::7]:
         assert search_problems(db_path, skills=[o['value']]).total == o['count']

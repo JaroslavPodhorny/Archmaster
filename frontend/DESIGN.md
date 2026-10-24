@@ -159,7 +159,7 @@ Use the shared piece when one exists; if two features need something new, it goe
   as a fallback). Arrow keys walk the list or tree; a row reached by a link or the address comes to the
   middle of the pane, a row reached by the keys just into view.
 - A pane's tool row (`px-5 pt-2.5 pb-1 text-small`) holds actions on that pane in `linkQuiet` and, at its
-  right end, how many items the filters leave ("41 z 162 dovedností").
+  right end, how many items the filters leave ("41 z 157 dovedností").
 
 ### Detail panes
 

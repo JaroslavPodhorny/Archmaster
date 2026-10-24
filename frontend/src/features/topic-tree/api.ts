@@ -1,6 +1,6 @@
 import { getJson } from '../../shared/http'
-import type { TreeNode, TreeVersion } from './types'
+import type { TreeNode } from './types'
 
-export function fetchTree(version: TreeVersion, signal?: AbortSignal): Promise<TreeNode[]> {
-  return getJson(version === 'new' ? '/api/topic-tree?tree=new' : '/api/topic-tree', signal)
+export function fetchTree(signal?: AbortSignal): Promise<TreeNode[]> {
+  return getJson('/api/topic-tree', signal)
 }

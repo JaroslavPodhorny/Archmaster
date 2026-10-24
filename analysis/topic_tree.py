@@ -1,16 +1,14 @@
 """Console editor for the tree of what the M9 test examines (m9_topic_tree.json) and for the
 skills each test item needs (m9_item_skills.json).
 
-There are two trees. The rebuilt one (analysis/graph_design_spec.md) is in data/rebuilt/ and is the
-one the editor works on. Its assignment is the 'principy' lists of the solved items in
-data/m9_item_solutions.json (and m9_item_solutions_older.json for the tests before 2022); the
-editor keeps the two in step. The old tree in data/ is kept as it was for the pages that still
-show it; --old selects it.
+The tree was rebuilt from the solutions of all items (analysis/graph_design_spec.md). Its assignment
+is the 'principy' lists of the solved items in data/m9_item_solutions.json (and
+m9_item_solutions_older.json for the tests before 2022); the editor keeps the two in step.
 
 This file is the only thing that writes the tree and the assignment. Every edit is validated first
 (ids, prerequisites that come earlier in the tree, every item of every catalogued test assigned to
 existing skills, the solutions saying the same as the assignment), then saved, then the two views
-are rebuilt: 05_graf_M9.md and .html for the rebuilt tree, 04_strom_M9.md and .html for the old one.
+are rebuilt: 04_strom_M9.md and 04_strom_M9.html.
 
     uv run --project backend python analysis/topic_tree.py show [ID]
     uv run --project backend python analysis/topic_tree.py assign "2025 B 15.2" SKILL [SKILL ...] [--solution TEXT]
@@ -21,7 +19,6 @@ are rebuilt: 05_graf_M9.md and .html for the rebuilt tree, 04_strom_M9.md and .h
     uv run --project backend python analysis/topic_tree.py remove ID
     uv run --project backend python analysis/topic_tree.py from-solutions
     uv run --project backend python analysis/topic_tree.py check | build
-    uv run --project backend python analysis/topic_tree.py --old show | check | ...
 """
 import argparse, collections, functools, json, os, sys
 
@@ -40,11 +37,11 @@ GROUP_FIELDS = ('name', 'tags', 'spec', 'note')
 SOLUTION_FILES = ('m9_item_solutions.json', 'm9_item_solutions_older.json')   # the 20 catalogued tests, the older ones
 SOLUTION_FIELDS = {'reseni', 'principy'}
 
-# Where each tree is kept, what its views are called and what they say about how it was made.
-REBUILT = dict(
-    dir=os.path.join(DATA, core.REBUILT_DIR), path=f'analysis/data/{core.REBUILT_DIR}', md='05_graf_M9.md', html='05_graf_M9.html',
-    title='Graf principů M9', solved=True,
-    heading='Graf principů M9: the principles the solutions of the test use, as a tree in learning order',
+# Where the tree is kept, what its views are called and what they say about how it was made.
+target = dict(
+    dir=DATA, path='analysis/data', md='04_strom_M9.md', html='04_strom_M9.html',
+    title='Strom učiva M9',
+    heading='Strom učiva M9: the principles the solutions of the test use, as a tree in learning order',
     assignment=f"""- **The assignment is what the solution of each item applies.** Every task was solved from its image and the
   result compared with the official key (`analysis/graph_design_spec.md`, section 8, names the few exceptions);
   the solutions are in `analysis/data/{SOLUTION_FILES[0]}`. An item is assigned every principle its natural
@@ -67,32 +64,8 @@ REBUILT = dict(
 it was not built from ({{tests}}; booklets in `References/Matematika_starsi/`) were solved the same way from
 their page images: {{n_items}} items. No official keys of these tests are in the repository, so their results are
 not checked against a key. The solutions are in `data/{SOLUTION_FILES[1]}`, the assignment in
-`data/rebuilt/{OLDER_FILE}`; they count in none of the numbers below, because the next tests will resemble
+`data/{OLDER_FILE}`; they count in none of the numbers below, because the next tests will resemble
 the recent ones more than the old ones.""")
-OLD = dict(
-    dir=DATA, path='analysis/data', md='04_strom_M9.md', html='04_strom_M9.html',
-    title='Strom učiva M9', solved=False,
-    heading='Strom učiva M9: what the test examines, as a tree in learning order',
-    assignment="""- **The assignment is my reading of each task.** 18 tests were read from the wording extracted from the
-  booklets (figures not seen, so geometry and construction items are placed by their text and the
-  catalog description), 2024 A and B from the task screenshots. Which skills an item needs, which one
-  is its main skill, the grouping and the prerequisite links are judgement, not CERMAT's.""",
-    cut="""- **A leaf is one thing a student can practise in one sitting** and recognise in a task: „složený zlomek“,
-  „základ po změně“, „Thaletova kružnice“. Areas and topics only group leaves.
-- **Order is learning order.** Everything a leaf needs comes earlier; the *needs* column names the direct
-  prerequisites (the editor refuses an order that breaks this).
-- **Computing and reading are separated.** Computing with fractions is in POC, fraction word problems in
-  VZT. The phrases „o třetinu více než“, „kolikrát“, „o kolik procent“ recur in fractions, percentages
-  and equation word problems, so they are one topic (VZT.NEZ) learned once instead of three times.
-- **Constructions are three layers**: the moves, the properties of figures, and the reading of the task.
-- **Tools used everywhere stay single leaves** (druhá mocnina, převody jednotek, Pythagorova věta,
-  zaokrouhlení) and are pulled in through *needs* rather than repeated under each topic.""",
-    older=f"""The tree was built from the 2022–2026 tests, so they fit it by construction. As a check, {{n_tests}} older tests
-it was not built from ({{tests}}; booklets in `References/Matematika_starsi/`, read from their
-extracted wording, figures not seen) were assigned the same way: {{n_items}} items. They are in
-`data/{OLDER_FILE}` and count in none of the numbers below, because the next tests will resemble the
-recent ones more than the old ones.""")
-target = REBUILT                                    # main() switches to OLD on --old
 
 
 # ---- the files
@@ -423,8 +396,6 @@ def edit_assign(tree, item_skills, older, a, solutions=None):
     test = f'{year} {term}'
     in_older = test in older or (test not in item_skills and (test, name) not in catalog_items())
     (older if in_older else item_skills).setdefault(test, {})[name] = a.skills
-    if a.solution and not solutions:
-        raise ValueError('the old tree has no solutions; --solution belongs to the rebuilt one')
     if a.solution:                                   # a new or corrected solution; the principles follow in main()
         solutions[in_older].setdefault(test, {})[name] = {'reseni': ' '.join(a.solution), 'principy': a.skills}
 
@@ -509,12 +480,10 @@ def show(tree, item_skills, older, node_id):
 
 
 def main():
-    global target
     p = argparse.ArgumentParser(description=__doc__.split('\n')[0])
-    p.add_argument('--old', action='store_true', help='work on the old tree in data/ instead of the rebuilt one')
     sub = p.add_subparsers(dest='cmd', required=True)
-    sub.add_parser('check', help='validate the tree, the assignment and (rebuilt tree) the solutions')
-    sub.add_parser('build', help='rebuild the two views (05_graf_M9.*, or 04_strom_M9.* with --old)')
+    sub.add_parser('check', help='validate the tree, the assignment and the solutions')
+    sub.add_parser('build', help='rebuild the two views (04_strom_M9.md and .html)')
     sub.add_parser('from-solutions', help='take the assignment from the principy lists of the solutions files')
     c = sub.add_parser('show', help='print the tree, one branch, or one skill with its items')
     c.add_argument('id', nargs='?')
@@ -541,13 +510,10 @@ def main():
     c.add_argument('id')
     a = p.parse_args()
 
-    target = OLD if a.old else REBUILT
-    solutions = load_solutions() if target['solved'] else None
+    solutions = load_solutions()
     edits = ('assign', 'set', 'add', 'move', 'rename', 'remove', 'from-solutions')
     tree = load_tree(target['dir'])
     if a.cmd == 'from-solutions':
-        if not solutions:
-            sys.exit('error: the old tree has no solutions')
         item_skills, older = map(assignment_of, solutions)
     else:
         item_skills, older = load_item_skills(target['dir']), load_older(target['dir'])
@@ -560,7 +526,7 @@ def main():
             globals()['edit_' + a.cmd](tree, item_skills, older, a)
     except ValueError as e:
         sys.exit(f'error: {e}')
-    if solutions and a.cmd in edits:
+    if a.cmd in edits:
         follow(solutions, item_skills, older)
     wrong = problems(tree, item_skills, older, solutions)
     if wrong:
@@ -570,7 +536,7 @@ def main():
         return print(f'valid: {n.count(0)} areas, {n.count(1)} topics, {n.count(2)} skills, '
                      f'{sum(len(v) for v in item_skills.values())} items assigned, '
                      f'{sum(len(v) for v in older.values())} items of older tests'
-                     + (', every one with its solution' if solutions else ''))
+                     + ', every one with its solution')
     if a.cmd in edits:
         save(tree, item_skills, older, solutions)
     build(tree, item_skills, older)

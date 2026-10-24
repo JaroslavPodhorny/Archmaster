@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router'
 import { fetchTree } from './api'
 import { ancestors, dependents, depth, fold, indexTree, nearest, prerequisites, skillsUnder } from './tree'
-import type { Kind, Priority, TreeNode, TreeVersion } from './types'
+import type { Kind, Priority, TreeNode } from './types'
 
 /** The tree with its groups, or the graph of all prerequisite links. */
 export type View = 'tree' | 'graph'
@@ -36,36 +36,28 @@ function isOpen(node: TreeNode, toggled: ReadonlySet<string>): boolean {
   return (depth(node) === 0) !== toggled.has(node.id)
 }
 
-/** All state of the page: the tree from the backend (the old or the new one), the selected node and
- *  the view (all three kept in the address as ?node=VZT.PROC.obracene&view=graf&tree=novy, so other
- *  pages can link to it), what is open and the filters. */
+/** All state of the page: the tree from the backend, the selected node and the view (both kept in the
+ *  address as ?node=VZT.NEZ.obraceni&view=graf, so other pages can link to it), what is open and the filters. */
 export function useTopicTree() {
-  // Each tree is fetched when first shown and kept, so switching back and forth is immediate.
-  const [trees, setTrees] = useState<Partial<Record<TreeVersion, TreeNode[]>>>({})
-  const [failed, setFailed] = useState<{ version: TreeVersion; message: string } | null>(null)
+  const [nodes, setNodes] = useState<TreeNode[] | null>(null)
+  const [error, setError] = useState<string | null>(null)
   const [address, setAddress] = useSearchParams()
   const [filters, setFilters] = useState(NO_FILTERS)
   const [toggled, setToggled] = useState<ReadonlySet<string>>(new Set())
   const [revealedId, setRevealedId] = useState<string | null>(null)
 
-  const version: TreeVersion = address.get('tree') === 'novy' ? 'new' : 'old'
-  const nodes = trees[version] ?? null
-  const error = failed?.version === version ? failed.message : null
-  const loaded = nodes !== null
-
   useEffect(() => {
-    if (loaded) return
     const controller = new AbortController()
-    fetchTree(version, controller.signal)
-      .then((fetched) => setTrees((known) => ({ ...known, [version]: fetched })))
+    fetchTree(controller.signal)
+      .then(setNodes)
       .catch((e) => {
-        if (e.name !== 'AbortError') setFailed({ version, message: e.message })
+        if (e.name !== 'AbortError') setError(e.message)
       })
     return () => controller.abort()
-  }, [version, loaded])
+  }, [])
 
   const index = useMemo(() => (nodes ? indexTree(nodes) : null), [nodes])
-  // A node of one tree may be missing in the other; then the group it would belong to is shown.
+  // An id that is no longer in the tree (an old link) shows the group it would belong to.
   const selected = index ? nearest(index, address.get('node') ?? '') : null
   const view: View = address.get('view') === 'graf' ? 'graph' : 'tree'
   const skill = selected && depth(selected) === 2 ? selected : null
@@ -120,27 +112,20 @@ export function useTopicTree() {
     return { rows, matching: skills.filter(matches).length, total: skills.length, passes, isRelated }
   }, [index, filters, toggled, skill, before, after])
 
-  function show(id: string | null, inView: View, inVersion: TreeVersion, push: boolean) {
+  function show(id: string | null, inView: View, push: boolean) {
     const next: Record<string, string> = {}
     if (id) next.node = id
     if (inView === 'graph') next.view = 'graf'
-    if (inVersion === 'new') next.tree = 'novy'
     setAddress(next, { replace: !push })
   }
 
   /** `push` adds a step to the browser's history, so Back returns to the node shown before. */
   function select(id: string, push = false) {
-    show(id, view, version, push)
+    show(id, view, push)
   }
 
   function setView(next: View) {
-    if (selected && next !== view) show(selected.id, next, version, true)
-  }
-
-  /** The node named in the address is kept, so switching there and back returns to the same node
-   *  even when the other tree does not have it. */
-  function setVersion(next: TreeVersion) {
-    if (next !== version) show(address.get('node'), view, next, true)
+    if (selected && next !== view) show(selected.id, next, true)
   }
 
   function setOpen(node: TreeNode, open: boolean) {
@@ -156,7 +141,7 @@ export function useTopicTree() {
   }
 
   return {
-    index, error, version, setVersion, selected, view, setView, before, after, filters, setFilters,
+    index, error, selected, view, setView, before, after, filters, setFilters,
     clearFilters: () => setFilters(NO_FILTERS), ...shown,
     select, isOpen: (node: TreeNode) => isOpen(node, toggled), setOpen, setAllOpen,
   }

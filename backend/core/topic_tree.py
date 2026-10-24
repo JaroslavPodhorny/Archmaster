@@ -6,10 +6,8 @@ m9_topic_tree.json    areas > topics > skills, in learning order
 m9_item_skills.json   for every scored item of every test, the skills it needs, the main one first:
                       {"2022 A": {"4.1": ["ALG.VYR.vytykani"], ...}, ...}
 
-A skill no item needs is in CERMAT's specification but was not seen in the tests.
-
-The tree rebuilt from the solutions of all items (analysis/graph_design_spec.md) is kept beside the
-old one, as the same two files in analysis/data/rebuilt. Both read the one task catalog in analysis/data.
+A skill no item needs is in CERMAT's specification but was not seen in the tests. The tree and the
+assignment were rebuilt from the solutions of all items (analysis/graph_design_spec.md).
 
 Nothing computed is stored. statistics() works out from the assignment and the task catalog how
 often each skill is needed, how many points depend on it and how well its items are solved;
@@ -31,7 +29,6 @@ ITEM_SKILLS_FILE = 'm9_item_skills.json'
 # Tests from before 2022 (References/Matematika_starsi), assigned the same way to check the tree against
 # tests it was not built from. They are not in the task catalog and count in no statistic.
 OLDER_FILE = 'm9_item_skills_older.json'
-REBUILT_DIR = 'rebuilt'                     # under analysis/data: the rebuilt tree and its assignment
 STANDARD_YEARS = (2022, 2023, 2025, 2026)   # the 2024 tests follow a different design (baseline, section 3)
 RECENT_YEARS = (2025, 2026)
 REGULAR_TERMS = ('A', 'B')                  # C and D were sat by a few hundred candidates
@@ -206,13 +203,11 @@ class TreeNode:
     uses: Sequence[ItemUse] = ()    # by year, term and task
 
 
-def tree_view(analysis_data_dir: str, rebuilt: bool = False) -> List[TreeNode]:
-    """Every area, topic and skill in learning order, with its numbers and the problems behind them.
-    `rebuilt` gives the rebuilt tree instead of the old one."""
-    tree_dir = os.path.join(analysis_data_dir, REBUILT_DIR) if rebuilt else analysis_data_dir
-    tree = load_tree(tree_dir)
-    stat, uses = statistics(tree, load_item_skills(tree_dir), load_catalog(analysis_data_dir))
-    before = older_uses(load_older(tree_dir))
+def tree_view(analysis_data_dir: str) -> List[TreeNode]:
+    """Every area, topic and skill in learning order, with its numbers and the problems behind them."""
+    tree = load_tree(analysis_data_dir)
+    stat, uses = statistics(tree, load_item_skills(analysis_data_dir), load_catalog(analysis_data_dir))
+    before = older_uses(load_older(analysis_data_dir))
     nodes = []
     for n, parent in walk(tree):
         st = stat[n['id']]

@@ -17,8 +17,3 @@ export function problemsUrl(link: { skills?: string[]; problem?: string } = {}):
   return query.size ? `${PROBLEMS_PATH}?${query}` : PROBLEMS_PATH
 }
 
-/** The tree rebuilt from the solutions of all items (/strom?tree=novy), with a principle selected. */
-export function newTreeUrl(nodeId: string): string {
-  return `${TREE_PATH}?${new URLSearchParams({ tree: 'novy', node: nodeId })}`
-}
-

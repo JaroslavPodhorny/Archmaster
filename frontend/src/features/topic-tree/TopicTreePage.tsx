@@ -13,8 +13,7 @@ const PANES = {
 }
 
 /** The curriculum tree of the M9 test: what is examined, in learning order, and how much each skill matters.
- *  There are two of them for now, the old one and the one rebuilt from the solutions of all items; the bar
- *  switches between them. Either is shown as a tree, or as the graph of all prerequisite links between the skills.
+ *  It is shown as a tree, or as the graph of all prerequisite links between the skills.
  *  The page never scrolls as a whole: the filters stay on top, and the tree or graph and the selected
  *  node scroll separately below them (on narrow windows the tree above, the node below). */
 export function TopicTreePage() {
@@ -27,7 +26,7 @@ export function TopicTreePage() {
       <TreeBar tree={tree} />
 
       {tree.error && <p className={errorMessage}>Nepodařilo se načíst data: {tree.error}</p>}
-      {!index && !tree.error && <Loading key={tree.version} />}
+      {!index && !tree.error && <Loading />}
 
       {index && selected && (
         <div className={`grid min-h-0 flex-1 max-sm:grid-cols-1 ${PANES[tree.view]}`}>
@@ -37,8 +36,6 @@ export function TopicTreePage() {
             index={index}
             node={selected}
             links={tree.view === 'graph' ? 'list' : 'graph'}
-            version={tree.version}
-            inDatabase={tree.version === 'old'}
             before={tree.before}
             after={tree.after}
             onGo={(id) => tree.select(id, true)}

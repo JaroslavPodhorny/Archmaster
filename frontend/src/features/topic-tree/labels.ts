@@ -1,6 +1,6 @@
 // Czech wording used by the curriculum tree page.
 
-import type { Kind, Priority, TreeVersion } from './types'
+import type { Kind, Priority } from './types'
 
 export const PRIORITIES: Priority[] = ['1', '2', '3', 'S']
 
@@ -28,27 +28,6 @@ export const TERM_NAMES: Record<string, string> = {
   D: '2. náhradní',
 }
 
-export const VERSION_NAMES: Record<TreeVersion, string> = { old: 'Původní', new: 'Nový' }
-
-export const VERSION_MEANING: Record<TreeVersion, string> = {
-  old: 'Původní strom: dovednosti přiřazené úlohám podle jejich zadání',
-  new: 'Nový strom: principy, které používají řešení všech úloh',
-}
-
-/** The leaves of the tree, in the form that follows a count: "157 principů". */
-export const LEAVES_COUNTED: Record<TreeVersion, string> = { old: 'dovedností', new: 'principů' }
-
-/** The leaves of the tree as a heading. */
-export const LEAVES_TITLE: Record<TreeVersion, string> = { old: 'Dovednosti', new: 'Principy' }
-
-/** One leaf that builds on another, after "Včetně": "jedné navazující dovednosti". */
-export const ONE_DEPENDENT: Record<TreeVersion, string> = {
-  old: 'jedné navazující dovednosti',
-  new: 'jednoho navazujícího principu',
-}
-
-/** What the search field of each tree looks for. */
-export const SEARCH_PLACEHOLDER: Record<TreeVersion, string> = { old: 'Hledat dovednost', new: 'Hledat princip' }
 
 /** The years of the last 8 tests, joined so that a line never breaks at the dash. */
 export const RECENT_YEARS = '2025–\u20602026'

@@ -1,9 +1,5 @@
 // Shapes returned by the curriculum tree endpoint (backend/api/topic_tree.py).
 
-/** The old tree, or the one rebuilt from the solutions of all items (analysis/graph_design_spec.md).
- *  They are two answers to the same question, kept side by side until the old one is retired. */
-export type TreeVersion = 'old' | 'new'
-
 /** 1–3 by how often a skill is needed; S = in CERMAT's specification only. */
 export type Priority = '1' | '2' | '3' | 'S'
 export type Kind = 'procedure' | 'translation' | 'fact' | 'strategy'

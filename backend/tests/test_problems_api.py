@@ -31,7 +31,7 @@ def test_problem_shape_and_images(client):
 
 def test_skills_are_returned_and_can_be_filtered_by(client):
     body = client.get('/api/problems', params={'skills': ['ALG.ROV.soustava', 'POC.DEL.zbytek']}).json()
-    assert body['total'] == 5
+    assert body['total'] == 12
     first = body['problems'][0]['skills'][0]
     assert set(first) == {'item', 'skill_id', 'name', 'main'}
 

@@ -7,9 +7,6 @@ import { Section } from '../../../shared/Section'
 import {
   KIND_MEANING,
   KIND_NAMES,
-  LEAVES_COUNTED,
-  LEAVES_TITLE,
-  ONE_DEPENDENT,
   PRIORITIES,
   PRIORITY_LABELS,
   PRIORITY_NAMES,
@@ -23,7 +20,7 @@ import {
 } from '../labels'
 import { ancestors, depth, skillsUnder } from '../tree'
 import type { TreeIndex } from '../tree'
-import type { TreeNode, TreeVersion } from '../types'
+import type { TreeNode } from '../types'
 import { PrerequisiteGraph } from './PrerequisiteGraph'
 import { PriorityBadge } from './PriorityBadge'
 
@@ -36,11 +33,6 @@ type Props = {
   /** How a skill's prerequisite links are shown: as the small graph, or, beside the graph of all
    *  links, as two lists. */
   links: 'graph' | 'list'
-  /** Which tree the node belongs to: its leaves are skills (dovednosti) or principles (principy). */
-  version: TreeVersion
-  /** The problem database can list the tasks of this tree's nodes. It stores the skills of the old
-   *  tree only; for the new one an item opens its task without a filter. */
-  inDatabase: boolean
   /** Selects another node of the tree. */
   onGo: (nodeId: string) => void
 }
@@ -82,9 +74,9 @@ function Stats({ stats }: { stats: Stat[] }) {
 }
 
 /** The tasks that need the skill as a table, hardest first: the item, its test, and how many students
- *  solved it. A row opens the task in the problem database, among the skill's other tasks when the
- *  database knows the skill (`filterBy` is then given). The first few show; the rest open on request. */
-function Tasks({ node, filterBy }: { node: TreeNode; filterBy: TreeNode | null }) {
+ *  solved it. A row opens the task in the problem database, among the skill's other tasks. The first
+ *  few show; the rest open on request. */
+function Tasks({ node }: { node: TreeNode }) {
   const [all, setAll] = useState(false)
   const sorted = [...node.uses].sort((a, b) => (a.success_pct ?? 101) - (b.success_pct ?? 101))
   const shown = all ? sorted : sorted.slice(0, TASKS_SHOWN)
@@ -106,7 +98,7 @@ function Tasks({ node, filterBy }: { node: TreeNode; filterBy: TreeNode | null }
                 <li key={use.ref}>
                   <Link
                     className={`${taskColumns} border-b border-line py-1.5 hover:bg-tint ${focusRing} ${use.main ? '' : 'text-muted'}`}
-                    to={problemsUrl({ skills: filterBy ? [filterBy.id] : [], problem: use.problem_id })}
+                    to={problemsUrl({ skills: [node.id], problem: use.problem_id })}
                     title="Otevřít úlohu v databázi úloh"
                   >
                     <span className={use.main ? 'text-accent' : ''}>{item}</span>
@@ -163,8 +155,8 @@ function SkillLinks({ index, ids, all, onGo }: { index: TreeIndex; ids: string[]
 }
 
 /** Where a skill's priority comes from when others build on it: it counts their tasks too. */
-function reachSentence(node: TreeNode, version: TreeVersion): string {
-  const counting = node.dependents === 1 ? ONE_DEPENDENT[version] : `${node.dependents} navazujících ${LEAVES_COUNTED[version]}`
+function reachSentence(node: TreeNode): string {
+  const counting = node.dependents === 1 ? 'jedné navazující dovednosti' : `${node.dependents} navazujících dovedností`
   return `Včetně ${counting} je potřeba v ${node.reach_tests} ze 16 standardních testů a v ${node.reach_recent} z 8 testů ${RECENT_YEARS}.`
 }
 
@@ -172,7 +164,7 @@ function reachSentence(node: TreeNode, version: TreeVersion): string {
  *  the way to its tasks in the problem database; then sections under thin lines: for an area or topic
  *  its skills by priority, its numbers in the tests and the skills most built on; for a skill its
  *  numbers in the tests, its tasks and its links to other skills; last what else is known about it. */
-export function NodeDetail({ index, node, before, after, links, version, inDatabase, onGo }: Props) {
+export function NodeDetail({ index, node, before, after, links, onGo }: Props) {
   const isSkill = depth(node) === 2
   const groups = ancestors(index, node)
   const skills = isSkill ? [] : skillsUnder(index, node)
@@ -245,11 +237,11 @@ export function NodeDetail({ index, node, before, after, links, version, inDatab
               <PriorityBadge priority={node.priority!} />
               <span>Priorita {PRIORITY_NAMES[node.priority!]}</span>
             </p>
-            {node.dependents > 0 && <p className={`mt-1 ${hint}`}>{reachSentence(node, version)}</p>}
+            {node.dependents > 0 && <p className={`mt-1 ${hint}`}>{reachSentence(node)}</p>}
           </div>
         )}
 
-        {node.problems > 0 && inDatabase && (
+        {node.problems > 0 && (
           <p className="mt-4">
             <Link className={`${button} max-w-full gap-2`} to={problemsUrl({ skills: [node.id] })}>
               <span className="truncate">Zobrazit {problemsToShowLabel(node.problems)} v databázi úloh</span>
@@ -257,15 +249,9 @@ export function NodeDetail({ index, node, before, after, links, version, inDatab
             </Link>
           </p>
         )}
-        {node.problems > 0 && !inDatabase && (
-          <p className={`mt-4 ${hint}`}>
-            Databáze úloh zatím filtruje jen podle původního stromu
-            {isSkill ? '; úlohy níže se v ní otevřou bez filtru.' : '.'}
-          </p>
-        )}
 
         {byPriority.length > 0 && (
-          <Section title={LEAVES_TITLE[version]} aside={skills.length}>
+          <Section title="Dovednosti" aside={skills.length}>
             <ul className="grid max-w-80 grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-2.5 gap-y-1.5">
               {byPriority.map(({ priority, count }) => (
                 <li key={priority} className="contents">
@@ -285,7 +271,7 @@ export function NodeDetail({ index, node, before, after, links, version, inDatab
         )}
 
         {foundations.length > 0 && (
-          <Section title="Na čem se nejvíc staví" aside={`číslo: kolik dalších ${LEAVES_COUNTED[version]} na tom staví`}>
+          <Section title="Na čem se nejvíc staví" aside={"číslo: kolik dalších dovedností na tom staví"}>
             <ul className="space-y-1">
               {foundations.map((s) => (
                 <li key={s.id} className="flex items-baseline gap-4">
@@ -301,7 +287,7 @@ export function NodeDetail({ index, node, before, after, links, version, inDatab
 
         {isSkill && (node.uses.length > 0 || node.older.length > 0) && (
           <Section title="Úlohy" aside={node.uses.length > 0 ? `${node.uses.length} · od nejtěžší` : undefined}>
-            <Tasks node={node} filterBy={inDatabase ? node : null} />
+            <Tasks node={node} />
           </Section>
         )}
 

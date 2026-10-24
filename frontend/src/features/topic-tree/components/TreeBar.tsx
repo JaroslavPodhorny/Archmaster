@@ -8,16 +8,12 @@ import {
   PRIORITIES,
   PRIORITY_MEANING,
   PRIORITY_NAMES,
-  SEARCH_PLACEHOLDER,
-  VERSION_MEANING,
-  VERSION_NAMES,
   capitalized,
 } from '../labels'
 import { depth } from '../tree'
-import type { Kind, TreeVersion } from '../types'
+import type { Kind } from '../types'
 import type { TopicTree, View } from '../useTopicTree'
 
-const VERSIONS: TreeVersion[] = ['old', 'new']
 const VIEWS: View[] = ['tree', 'graph']
 const VIEW_NAMES: Record<View, string> = { tree: 'Strom', graph: 'Graf' }
 const KINDS = Object.keys(KIND_NAMES) as Kind[]
@@ -27,13 +23,12 @@ type SwitchProps<T extends string> = {
   label: string
   options: T[]
   names: Record<T, string>
-  hints?: Record<T, string>
   value: T
   onChange: (value: T) => void
 }
 
 /** Options of which one is pressed. */
-function Switch<T extends string>({ label, options, names, hints, value, onChange }: SwitchProps<T>) {
+function Switch<T extends string>({ label, options, names, value, onChange }: SwitchProps<T>) {
   return (
     <div className={switchTrack} role="group" aria-label={label}>
       {options.map((option) => (
@@ -42,7 +37,6 @@ function Switch<T extends string>({ label, options, names, hints, value, onChang
           type="button"
           className={`${switchOption} px-3.5 ${value === option ? switchOptionOn : switchOptionOff}`}
           aria-pressed={value === option}
-          title={hints?.[option]}
           onClick={() => onChange(option)}
         >
           {names[option]}
@@ -78,8 +72,8 @@ export function TreeBar({ tree }: { tree: TopicTree }) {
           className={`${input} max-sm:max-w-none max-sm:basis-full`}
           value={filters.q}
           onChange={(e) => setFilters({ ...filters, q: e.target.value })}
-          placeholder={SEARCH_PLACEHOLDER[tree.version]}
-          aria-label={SEARCH_PLACEHOLDER[tree.version]}
+          placeholder="Hledat dovednost"
+          aria-label="Hledat dovednost"
         />
         <Dropdown label={label('Priorita', filters.priorities.length)} active={filters.priorities.length > 0}>
           {PRIORITIES.map((priority) => (
@@ -121,14 +115,6 @@ export function TreeBar({ tree }: { tree: TopicTree }) {
         </button>
       </div>
       <div className="flex flex-wrap gap-2">
-        <Switch
-          label="Verze stromu"
-          options={VERSIONS}
-          names={VERSION_NAMES}
-          hints={VERSION_MEANING}
-          value={tree.version}
-          onChange={tree.setVersion}
-        />
         <Switch label="Zobrazení" options={VIEWS} names={VIEW_NAMES} value={tree.view} onChange={tree.setView} />
       </div>
     </div>
