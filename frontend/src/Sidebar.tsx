@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react'
 import { NavLink } from 'react-router'
 import { focusRing, iconButton } from './shared/controls'
-import { GRAPH_PATH, PROBLEMS_PATH, TREE_PATH } from './shared/routes'
+import { PROBLEMS_PATH, TREE_PATH } from './shared/routes'
 import { SidebarContext } from './shared/sidebar'
 import { PanelIcon } from './shared/icons'
 import { ThemeSwitch } from './ThemeSwitch'
@@ -78,9 +78,6 @@ function Panel({ onHide, onNavigate }: PanelProps) {
         </NavLink>
         <NavLink to={PROBLEMS_PATH} className={navLink} onClick={onNavigate}>
           Databáze úloh
-        </NavLink>
-        <NavLink to={GRAPH_PATH} className={navLink} onClick={onNavigate}>
-          Graf zkoušky
         </NavLink>
       </nav>
 

@@ -1,8 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
-import { ExamGraphPage } from './features/exam-graph'
 import { ProblemDatabasePage } from './features/problem-database'
 import { TopicTreePage } from './features/topic-tree'
-import { GRAPH_PATH, PROBLEMS_PATH, TREE_PATH } from './shared/routes'
+import { PROBLEMS_PATH, TREE_PATH } from './shared/routes'
 import { WithSidebar } from './Sidebar'
 
 // The app shell: the sidebar with the navigation on the left (a row on top on narrow screens) and the
@@ -15,7 +14,6 @@ function App() {
         <Routes>
           <Route path={TREE_PATH} element={<TopicTreePage />} />
           <Route path={PROBLEMS_PATH} element={<ProblemDatabasePage />} />
-          <Route path={GRAPH_PATH} element={<ExamGraphPage />} />
           <Route path="*" element={<Navigate to={TREE_PATH} replace />} />
         </Routes>
       </WithSidebar>

@@ -20,7 +20,6 @@ Longer-term purpose: the graph is the core of the application. A CERMAT problem 
 | Script that turns raw notes into the solutions file (holds the id mapping) | `analysis/solving/consolidate.py` | done |
 | Helpers: catalog rows + trimmed key of a test; enlarge part of a task figure | `analysis/solving/info.py`, `zoom.py` | done |
 | Old tree, still what the app shows (`/strom`, the problem database) | `analysis/data/m9_topic_tree.json`, `m9_item_skills.json`, `m9_item_skills_older.json`, views `04_strom_M9.*` | **kept unchanged on the owner's wish** |
-| Copies of the old tree made before the rebuild (identical to the above) | `analysis/data/before_rebuild/` | backup |
 
 The owner decided on 2 October 2026 not to replace the old tree yet: it stays, with its page, and the new graph gets a page of its own. That is why the new tree is in `data/rebuilt/` and not in the old tree's place.
 
@@ -344,7 +343,7 @@ Still to do. The owner keeps the old tree and its page, so the steps below add t
 5. **Backend.** Reading the new tree is done (`tree_view(..., rebuilt=True)`). The API must still give, per problem and item, the principles, the links among them and the solution line. To decide with the owner first: whether the problem database stores the skills of both trees or only of one, since its „Téma“ menu and its links to `/strom` use the old ids.
 6. **A page for the new graph**, beside `/strom` (section 11; mockup first). A task shows its subgraph: principles as boxes with the links among them, main one marked, per item, with the solution line. A graph component used by more than one page belongs in `frontend/src/shared/`.
 7. **Problem database page**: show the subgraph and the solution line of each task, once step 5 is decided.
-8. **Docs.** `CLAUDE.md`; once the owner agrees to retire the old tree: move `data/rebuilt/*` to `data/`, drop `--old` from the editor, delete `04_strom_M9.*`, `analysis/data/before_rebuild/` and the old page.
+8. **Docs.** `CLAUDE.md`; once the owner agrees to retire the old tree: move `data/rebuilt/*` to `data/`, drop `--old` from the editor, delete `04_strom_M9.*` and the old page.
 
 ## 10. Deliberately left out
 
