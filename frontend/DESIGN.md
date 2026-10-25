@@ -89,7 +89,7 @@ the parts of a graph that belong to the selection.
 │ Databáze úloh             │ (scrolls on its own)       │ (scrolls on its own)                │
 │ …                         │                            │                                     │
 │ Matematika M9             │                            │                                     │
-│ [Světlý|Tmavý|Systém]     │                            │                                     │
+│ [Světlý|Tmavý]            │                            │                                     │
 └───────────────────────────┴────────────────────────────┴─────────────────────────────────────┘
 ```
 
@@ -219,7 +219,8 @@ Use the shared piece when one exists; if two features need something new, it goe
 
 - Every colour is a token; `:root[data-theme='dark']` redefines them. A script in `index.html` sets
   `data-theme` before the first paint from the sidebar's choice (`localStorage` key `archmaster.theme`)
-  or the system's setting, and follows the system while "Systém" is chosen. `color-scheme` follows, so
+  or, until one is chosen, the system's setting at load. There is no "Systém" option (the owner removed
+  it, October 2026): the switch offers only "Světlý" and "Tmavý". `color-scheme` follows, so
   native controls and scrollbars match.
 - `text-page` on `bg-ink` inverts correctly (an active filter is a light pill in the dark theme).
 - Check every change in both themes: menus raised above the page, hairlines visible, badges readable,

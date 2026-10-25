@@ -15,6 +15,48 @@ The platform is meant to prepare the student by familiarizing him with CERMAT ty
 - **Backend**: Python + FastAPI
 - **Frontend**: TypeScript + React + Vite
 
+## Run locally
+
+Prerequisites: Python 3.11+, `uv`, and Node.js 22.12+ with npm. Run all commands below from the repository root.
+
+### First-time setup
+
+Install dependencies and build the local problem database:
+
+```sh
+uv sync --project backend
+npm --prefix frontend ci
+uv run --project backend python backend/try_problem_db.py build
+```
+
+The build needs the test booklets and answer-key PDFs in `References/Matematika/` and the catalog and curriculum files in `analysis/data/`. It creates `backend/data/problems.sqlite` and the problem and solution images in `backend/data/screenshots/`. These generated files are not tracked in Git. Rerun the build after changing the source data; it replaces the generated database and images.
+
+### Start the app
+
+In one terminal, start the backend:
+
+```sh
+uv run --project backend uvicorn backend.api.main:app --reload
+```
+
+In a second terminal, start the frontend:
+
+```sh
+npm --prefix frontend run dev
+```
+
+Open http://localhost:5173 (or the URL printed by Vite). The frontend forwards `/api` requests to the backend on port 8000. Interactive API documentation is available at http://127.0.0.1:8000/docs. Both servers reload when their source files change; press `Ctrl+C` in each terminal to stop them.
+
+If the problem API returns “The problem database has not been built yet”, run the database build command above.
+
+### Development checks
+
+```sh
+uv run --project backend pytest backend/tests
+npm --prefix frontend run build
+npm --prefix frontend run lint
+```
+
 ## Important Product Principles
 
 ### AI does not design the UI/UX

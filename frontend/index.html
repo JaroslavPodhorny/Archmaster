@@ -7,20 +7,15 @@
     <title>ArchMaster</title>
     <script>
       // The colour theme, set before the page is drawn so a dark page never flashes white: the one
-      // chosen in the sidebar (src/ThemeSwitch.tsx keeps it under the same key), or else the system's,
-      // followed when the system changes.
+      // chosen in the sidebar (src/ThemeSwitch.tsx keeps it under the same key), or else, until one is
+      // chosen, the system's at the time the page loads.
       ;(function () {
-        var system = window.matchMedia('(prefers-color-scheme: dark)')
-        function apply() {
-          var chosen = null
-          try {
-            chosen = localStorage.getItem('archmaster.theme')
-          } catch (e) {}
-          var dark = chosen === 'dark' || (chosen !== 'light' && system.matches)
-          document.documentElement.dataset.theme = dark ? 'dark' : 'light'
-        }
-        apply()
-        system.addEventListener('change', apply)
+        var chosen = null
+        try {
+          chosen = localStorage.getItem('archmaster.theme')
+        } catch (e) {}
+        var dark = chosen === 'dark' || (chosen !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
       })()
     </script>
   </head>

@@ -1,43 +1,31 @@
 import { useState } from 'react'
 import { switchOption, switchOptionOff, switchOptionOn, switchTrack } from './shared/controls'
 
-type Theme = 'light' | 'dark' | 'system'
+type Theme = 'light' | 'dark'
 
-const THEMES: Theme[] = ['light', 'dark', 'system']
-const NAMES: Record<Theme, string> = { light: 'Světlý', dark: 'Tmavý', system: 'Systém' }
-const HINTS: Record<Theme, string> = {
-  light: 'Vždy světlý vzhled',
-  dark: 'Vždy tmavý vzhled',
-  system: 'Světlý nebo tmavý podle nastavení systému',
-}
+const THEMES: Theme[] = ['light', 'dark']
+const NAMES: Record<Theme, string> = { light: 'Světlý', dark: 'Tmavý' }
 
 // index.html reads the same key to set the theme before the page is drawn.
 const STORAGE_KEY = 'archmaster.theme'
 
+/** The theme index.html set: the saved one, or the system's until one is chosen. */
 function readTheme(): Theme {
-  try {
-    const saved = localStorage.getItem(STORAGE_KEY)
-    if (saved === 'light' || saved === 'dark') return saved
-  } catch {
-    // Storage may be blocked (private window); the system's theme applies.
-  }
-  return 'system'
+  return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
 }
 
 /** Sets the theme on <html> the way index.html does. */
 function apply(theme: Theme) {
-  const dark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+  document.documentElement.dataset.theme = theme
 }
 
-/** Light, dark, or whatever the system uses; remembered in this browser. */
+/** Light or dark; remembered in this browser. */
 export function ThemeSwitch() {
   const [theme, setTheme] = useState(readTheme)
 
   function choose(next: Theme) {
     try {
-      if (next === 'system') localStorage.removeItem(STORAGE_KEY)
-      else localStorage.setItem(STORAGE_KEY, next)
+      localStorage.setItem(STORAGE_KEY, next)
     } catch {
       // Without storage the choice lasts until the page is reloaded.
     }
@@ -53,7 +41,6 @@ export function ThemeSwitch() {
           type="button"
           className={`${switchOption} flex-1 px-1.5 text-small ${theme === option ? switchOptionOn : switchOptionOff}`}
           aria-pressed={theme === option}
-          title={HINTS[option]}
           onClick={() => choose(option)}
         >
           {NAMES[option]}

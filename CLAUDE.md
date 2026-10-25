@@ -98,7 +98,7 @@ frontend/src/shared/              code used by more than one feature (http.ts, r
                                   SidebarButton.tsx, sidebar.ts)
 ```
 
-- `frontend/src/App.tsx` and `backend/api/main.py` are shells that only mount features. Do not put feature code in them. The shell's other pieces are `frontend/src/Sidebar.tsx` (`WithSidebar`: the navigation around every page) and `ThemeSwitch.tsx` (light, dark or the system's theme, in the sidebar).
+- `frontend/src/App.tsx` and `backend/api/main.py` are shells that only mount features. Do not put feature code in them. The shell's other pieces are `frontend/src/Sidebar.tsx` (`WithSidebar`: the navigation around every page) and `ThemeSwitch.tsx` (light or dark theme, in the sidebar).
 - A feature never imports from another feature's folder; code two features need moves to `shared/` (frontend) or its own `core/` module (backend).
 - Styling is Tailwind utility classes in the component itself. A class list used more than once becomes a constant in that file, or a small component; the ones every page uses (button, input, link, message, focus ring) are in `shared/controls.ts`. Use only the colours defined in `index.css` (Tailwind's default palette is switched off), and do not add feature stylesheets.
 - Pages are routed with React Router (`BrowserRouter` and `Routes` in `App.tsx`; the links to the pages are in `Sidebar.tsx`). Each page has a Czech address (`/strom`, `/ulohy`) defined in `shared/routes.ts`; a page links to another only through the address builders there (`treeUrl`, `problemsUrl`). State another page or a reload must be able to restore (the selected node, the search and the shown problem) lives in the address, not only in component state.
