@@ -32,7 +32,7 @@ FMT = {'OV': 'otevřená, jen výsledek', 'OP': 'otevřená s postupem',
 TERM = {'A': '1. řádný', 'B': '2. řádný', 'C': '1. náhradní', 'D': '2. náhradní'}
 
 stats = {}
-with open(os.path.join(HERE, 'data/m9_item_stats_2022_2026.csv')) as f:
+with open(os.path.join(HERE, 'data/m9_item_stats_2022_2026.csv'), encoding='utf-8') as f:
     for r in csv.DictReader(f):
         stats[(r['year'], r['term'], r['item'])] = r
 ALIAS = {('2023', 'B', '9'): '9.3'}
@@ -59,7 +59,7 @@ def pct_correct(row, key):
 
 
 tasks = []
-with open(os.path.join(HERE, 'data/m9_task_catalog.tsv')) as f:
+with open(os.path.join(HERE, 'data/m9_task_catalog.tsv'), encoding='utf-8') as f:
     for r in csv.DictReader(f, delimiter='\t'):
         sl, pts = subs(r['task'], r['subpoints'], r['fmt'])
         keys = r['keys'].split(',') if r['keys'] else []
@@ -115,7 +115,7 @@ for (y, term) in sorted(tot):
         k = f"{t['skip']:.0f} %" if t['skip'] is not None else '–'
         out.append(f"| {t['task']} | {t['pts']} | {t['fmt']} | {', '.join(t['taglist'])} | {t['desc']} | {s} | {k} |")
     out.append('')
-open(os.path.join(HERE, '02_katalog_uloh.md'), 'w').write('\n'.join(out))
+open(os.path.join(HERE, '02_katalog_uloh.md'), 'w', encoding='utf-8').write('\n'.join(out))
 
 # ---- summaries (printed; pasted into 01_baseline_M9.md)
 STD = [t for t in tasks if t['year'] != '2024']

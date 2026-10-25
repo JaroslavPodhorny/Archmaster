@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     // The page calls /api/...; in development Vite forwards that to FastAPI. ARCHMASTER_API names another
-    // backend when a second pair of dev servers runs beside the first (.claude/launch.json).
+    // backend, e.g. one started on a different port.
     proxy: { '/api': process.env.ARCHMASTER_API ?? 'http://127.0.0.1:8000' },
   },
 })

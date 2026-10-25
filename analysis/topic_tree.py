@@ -7,8 +7,8 @@ m9_item_solutions_older.json for the tests before 2022); the editor keeps the tw
 
 This file is the only thing that writes the tree and the assignment. Every edit is validated first
 (ids, prerequisites that come earlier in the tree, every item of every catalogued test assigned to
-existing skills, the solutions saying the same as the assignment), then saved, then the two views
-are rebuilt: 04_strom_M9.md and 04_strom_M9.html.
+existing skills, the solutions saying the same as the assignment), then saved, then the view
+is rebuilt: 04_strom_M9.md. (The tree is browsed in the app at /strom.)
 
     uv run --project backend python analysis/topic_tree.py show [ID]
     uv run --project backend python analysis/topic_tree.py assign "2025 B 15.2" SKILL [SKILL ...] [--solution TEXT]
@@ -37,10 +37,9 @@ GROUP_FIELDS = ('name', 'tags', 'spec', 'note')
 SOLUTION_FILES = ('m9_item_solutions.json', 'm9_item_solutions_older.json')   # the 20 catalogued tests, the older ones
 SOLUTION_FIELDS = {'reseni', 'principy'}
 
-# Where the tree is kept, what its views are called and what they say about how it was made.
+# Where the tree is kept, what its view is called and what they say about how it was made.
 target = dict(
-    dir=DATA, path='analysis/data', md='04_strom_M9.md', html='04_strom_M9.html',
-    title='Strom učiva M9',
+    dir=DATA, path='analysis/data', md='04_strom_M9.md',
     heading='Strom učiva M9: the principles the solutions of the test use, as a tree in learning order',
     assignment=f"""- **The assignment is what the solution of each item applies.** Every task was solved from its image and the
   result compared with the official key (`analysis/graph_design_spec.md`, section 8, names the few exceptions);
@@ -274,7 +273,7 @@ What rests on what:
 {target['assignment']}
 - **Numbers are computed, not estimated**: points from the catalog, success rates from CERMAT's
   published item results.
-- **Skills marked S** are quoted from CERMAT's specification (`References/MASPECIFIKACEPOZADAVKU2022 (1).pdf`,
+- **Skills marked S** are quoted from CERMAT's specification (`References/Matematika_specifikace_pozadavku_2022.pdf`,
   parts A1, B1, C1; C1 says a candidate must also know A1 and B1) and are needed by no item of the 20
   tests. The specification's four areas are 1 Číslo a proměnná, 2 Závislosti, vztahy a práce s daty,
   3 Geometrie v rovině a prostoru, 4 Nestandardní aplikační úlohy a problémy.
@@ -359,35 +358,9 @@ Points per standard test in brackets (each item counted once per topic).
     return '\n'.join(out)
 
 
-def view_page(tree, item_skills, older):
-    """One self-contained page; the screenshots are linked, not embedded."""
-    (stat, uses), before = statistics(tree, item_skills), older_uses(older)
-    rows = []
-    for n, parent in walk(tree):
-        mine = sorted({u.ref: u for s in skills_under(n) for u in uses[s['id']]}.values(),
-                      key=lambda u: (u.year, u.term, u.task, u.item))
-        st = stat[n['id']]
-        rows.append({
-            'id': n['id'], 'parent': parent['id'] if parent else '', 'name': n['name'],
-            'kind': KINDS.get(n.get('kind'), ''), 'requires': n.get('requires', []),
-            'spec': ', '.join(map(str, n['spec'])), 'note': n['note'],
-            'priority': st['priority'], 'items': st['items'], 'tests': st['tests'], 'recent': st['recent'],
-            'points': number(st['points']), 'success': None if st['success'] is None else round(st['success']),
-            'hardest': [u.ref for u in st['hardest']], 'older': before[n['id']],
-            'dependents': st.get('dependents', 0), 'reach': [st.get('reach_tests'), st.get('reach_recent'),
-                                                             number(st.get('reach_points', 0))],
-            'ex': [{'ref': u.ref, 'pct': None if u.success_pct is None else round(u.success_pct),
-                    'png': screenshot(u), 'main': u.main} for u in mine] if depth(n) == 2 else []})
-    with open(os.path.join(HERE, 'tree_view_template.html'), encoding='utf-8') as f:
-        return f.read().replace('<title>Strom učiva M9</title>', f"<title>{target['title']}</title>") \
-            .replace('/*DATA*/', json.dumps(rows, ensure_ascii=False))
-
-
 def build(tree, item_skills, older):
-    for name, text in ((target['md'], markdown(tree, item_skills, older)),
-                       (target['html'], view_page(tree, item_skills, older))):
-        with open(os.path.join(HERE, name), 'w', encoding='utf-8') as f:
-            f.write(text)
+    with open(os.path.join(HERE, target['md']), 'w', encoding='utf-8') as f:
+        f.write(markdown(tree, item_skills, older))
 
 
 # ---- edits (each changes the data in memory; main() validates, saves and rebuilds)
@@ -483,7 +456,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     sub = p.add_subparsers(dest='cmd', required=True)
     sub.add_parser('check', help='validate the tree, the assignment and the solutions')
-    sub.add_parser('build', help='rebuild the two views (04_strom_M9.md and .html)')
+    sub.add_parser('build', help='rebuild the view (04_strom_M9.md)')
     sub.add_parser('from-solutions', help='take the assignment from the principy lists of the solutions files')
     c = sub.add_parser('show', help='print the tree, one branch, or one skill with its items')
     c.add_argument('id', nargs='?')

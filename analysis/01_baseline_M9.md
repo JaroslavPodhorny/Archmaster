@@ -15,7 +15,7 @@ Status: first full pass, October 2026. Companion files:
 | Source | What it was used for |
 |---|---|
 | 20 test booklets + 20 keys in `References/Matematika/` (2022–2026, terms A–D) | Everything about structure, formats, content, scoring rules. All 20 were read in full: 18 from extracted text, 2024 A and B (image-only PDFs) page by page as images. Figures were additionally checked visually on 9 tests (2022 A–D, 2023 A, 2024 A, B, 2025 A, 2026 A) and on single pages of 4 more. |
-| `References/MASPECIFIKACEPOZADAVKU2022 (1).pdf` | The curriculum. CERMAT's site states that for 2025/2026 this specification applies "ve stejném znění" as for 2022/2023. Whether it is unchanged for 2026/2027 is **not yet confirmed**. |
+| `References/Matematika_specifikace_pozadavku_2022.pdf` | The curriculum. CERMAT's site states that for 2025/2026 this specification applies "ve stejném znění" as for 2022/2023. Whether it is unchanged for 2026/2027 is **not yet confirmed**. |
 | CERMAT, *Souhrnná závěrečná zpráva JPZ 2022* (Nov 2022), ch. 5 and 9 | The official test blueprint and how open tasks are marked. |
 | CERMAT, *Agregované výsledky úloh JPZ* (data.cermat.cz), math four-year programs 2022–2026 | Success and omission rates per item. Available for 18 of the 20 tests (not for 2024 C, D). |
 | CERMAT, *JPZ 2023 signální výsledky*; *PZ 2025 – výsledky* (press presentation) | Year-level averages. |
@@ -303,7 +303,7 @@ pupils rather than to cover the whole population. None of their booklets has bee
 ## Sources
 
 - Test booklets and keys: `References/Matematika/` (also at prijimacky.cermat.cz → Testová zadání k procvičování → čtyřleté obory, matematika).
-- Specification: `References/MASPECIFIKACEPOZADAVKU2022 (1).pdf`; validity note at https://prijimacky.cermat.cz/menu/specifikace-pozadavku-k-jpz.html
+- Specification: `References/Matematika_specifikace_pozadavku_2022.pdf`; validity note at https://prijimacky.cermat.cz/menu/specifikace-pozadavku-k-jpz.html
 - Blueprint and marking: https://data.cermat.cz/files/files/2022/JPZ/Souhrnna_zaverecna-zprava_JPZ_2022.pdf
 - Item results: https://data.cermat.cz/data-a-analyticke-vystupy-jednotna-prijimaci-zkouska/agregovana-data-jpz/agregovane-vysledky-uloh-jpz.html
 - Year averages: https://data.cermat.cz/files/files/JPZ2023_signalni_vysledky.pdf (p. 37); https://data.cermat.cz/files/files/JPZ/PZ2025_prezentace_vysledky_TK.pdf (p. 7)

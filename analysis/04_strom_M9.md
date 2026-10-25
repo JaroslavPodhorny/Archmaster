@@ -14,7 +14,7 @@ What rests on what:
   prerequisite links are one solver's judgement, not CERMAT's.
 - **Numbers are computed, not estimated**: points from the catalog, success rates from CERMAT's
   published item results.
-- **Skills marked S** are quoted from CERMAT's specification (`References/MASPECIFIKACEPOZADAVKU2022 (1).pdf`,
+- **Skills marked S** are quoted from CERMAT's specification (`References/Matematika_specifikace_pozadavku_2022.pdf`,
   parts A1, B1, C1; C1 says a candidate must also know A1 and B1) and are needed by no item of the 20
   tests. The specification's four areas are 1 Číslo a proměnná, 2 Závislosti, vztahy a práce s daty,
   3 Geometrie v rovině a prostoru, 4 Nestandardní aplikační úlohy a problémy.

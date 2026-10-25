@@ -28,7 +28,7 @@ Evidence and its limits:
 
 - "Must know" items marked **[seen]** are backed by tasks I read in the 20 booklets: 18 from the extracted
   text in the database, 2024 A and B from the screenshots. Items marked **[spec only]** are required by
-  CERMAT's specification (`References/MASPECIFIKACEPOZADAVKU2022 (1).pdf`, part C1, which includes A1 and
+  CERMAT's specification (`References/Matematika_specifikace_pozadavku_2022.pdf`, part C1, which includes A1 and
   B1) but did not occur in these 20 tests. A perfect score cannot be guaranteed without them, because
   CERMAT may use anything in the specification.
 - Topic boundaries and tags are mine, not CERMAT's. Point averages and success rates per topic are taken
@@ -1196,6 +1196,6 @@ linked.
 ## Sources
 
 - Tasks and keys: `References/Matematika/` (20 booklets, 20 keys), through the problem database (`backend/data/`).
-- Curriculum: `References/MASPECIFIKACEPOZADAVKU2022 (1).pdf`, parts A1, B1, C1, C2.
+- Curriculum: `References/Matematika_specifikace_pozadavku_2022.pdf`, parts A1, B1, C1, C2.
 - Success rates: CERMAT, *Agregované výsledky úloh JPZ* (`analysis/data/m9_item_stats_2022_2026.csv`).
 - Topic averages, scoring rules and test structure: [01_baseline_M9.md](01_baseline_M9.md), sections 3–5.
