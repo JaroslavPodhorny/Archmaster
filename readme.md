@@ -2,6 +2,10 @@
 
 Platforma pro přípravu na CERMAT testy
 
+## použití AI
+
+Při práci byly použity nástroje umělé inteligence (Claude Code), mimo jiné při analýze testů, programování a psaní dokumentace. Cíle projektu, rozhodování o tom, co se ponechá a co se zahodí, a posouzení výsledků jsou moje.
+
 ## závislosti
 
 Potřeba: [uv](https://docs.astral.sh/uv/getting-started/installation/) a [Node.js](https://nodejs.org) 22.12 nebo novější.

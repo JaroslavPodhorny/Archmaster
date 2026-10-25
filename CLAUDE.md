@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-A web platform that helps students prepare for the Czech CERMAT standardized exams, using artificial intelligence. It will consist of several tools; which tools, and the overall product shape, are not decided yet. Two tools exist so far: the problem database (`/ulohy`) and the curriculum tree (`/strom`).
+A web platform that helps students prepare for the Czech CERMAT standardized exams, using artificial intelligence. It will consist of several tools; which tools, and the overall product shape, are not decided yet. No tool of the platform exists yet. The pages that exist, the problem database (`/ulohy`) and the curriculum tree (`/strom`), are a viewer for browsing the M9 analysis, something to build on; they are not part of the website students will use.
 
 The owner has experience with React + TypeScript frontends and has not built a full platform before. Explain backend and infrastructure choices plainly and keep the setup small.
 
@@ -14,7 +14,7 @@ The owner has experience with React + TypeScript frontends and has not built a f
    - **Mathematics for the 9th-grade entrance exam: first full pass done** (see `analysis/`).
    - The other tests are probably not very different, so expect many findings to carry over, but confirm that rather than assume it.
 2. **Find out what helps students prepare most time-efficiently and effectively** (planned for the following month), so the tool is designed around what works in practice.
-3. **Build tools one at a time** (see "How to build tools"). The first, a searchable database of CERMAT problems that returns a screenshot of each problem and its official solution, works for M9 2022–2026; structured content that can be displayed in a custom way, including diagrams, is not built.
+3. **Build tools one at a time** (see "How to build tools"), once the analysis and the research say what they should be. None is built yet; the analysis viewer (`/ulohy`, `/strom`) is not one of them.
 
 ## The M9 tree (rebuilt October 2026)
 
@@ -51,6 +51,8 @@ backend/
   tests/     tests for core/
 frontend/    React + TypeScript pages that only call the API
 ```
+
+The analysis viewer: two pages for browsing the M9 analysis, built as analysis tooling, not as part of the platform. Present and describe them that way (in Czech: „prohlížeč analýzy“). They follow the same code organization as future tools.
 
 Problem database (October 2026), working end to end for M9 2022–2026 only:
 
