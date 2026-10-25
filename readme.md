@@ -4,7 +4,7 @@ Platforma pro přípravu na CERMAT testy
 
 ## závislosti
 
-Potřeba: [uv](https://docs.astral.sh/uv/getting-started/installation/) a [Node.js](https://nodejs.org) 22.12 nebo novější. Všechny příkazy se spouští z kořene repozitáře.
+Potřeba: [uv](https://docs.astral.sh/uv/getting-started/installation/) a [Node.js](https://nodejs.org) 22.12 nebo novější.
 
 ```sh
 uv sync --project backend
@@ -20,10 +20,7 @@ uv run --project backend uvicorn backend.api.main:app --reload
 
 ## frontend
 
-V druhém terminálu:
-
 ```sh
 npm --prefix frontend run dev
 ```
 
-Pak otevřít http://localhost:5173
