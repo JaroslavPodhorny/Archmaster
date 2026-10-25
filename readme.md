@@ -4,7 +4,7 @@ Platforma pro přípravu na CERMAT testy
 
 ## použití AI
 
-Při práci byly použity nástroje umělé inteligence (Claude Code), mimo jiné při analýze testů, programování a psaní dokumentace. Cíle projektu, rozhodování o tom, co se ponechá a co se zahodí, a posouzení výsledků jsou moje.
+Při práci byly použity nástroje umělé inteligence (Claude Code), mimo jiné při analýze testů, programování a psaní dokumentace.
 
 ## závislosti
 
